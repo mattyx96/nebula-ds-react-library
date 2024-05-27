@@ -1,3 +1,53 @@
+@import 'nebula-ds-tokens/build/light-variables.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1 {
+  font: var(--nb-display1);
+}
+
+h2 {
+  font: var(--nb-display2);
+}
+
+h3 {
+  font: var(--nb-header1);
+}
+
+h4 {
+  font: var(--nb-header2);
+}
+
+h5 {
+  font: var(--nb-header3);
+}
+
+h6 {
+  font: var(--nb-header4);
+}
+
+p {
+  font: var(--nb-body1);
+}
+
+p.small {
+  font: var(--nb-body2);
+}
+
+span {
+  font: var(--nb-body3);
+}
+
+small {
+  font: var(--nb-body4);
+}
+
+button {
+  font: var(--nb-button);
+}
+
+caption {
+  font: var(--nb-caption);
+}

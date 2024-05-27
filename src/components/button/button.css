@@ -1,0 +1,23 @@
+.translate-button-spacing-xs-compensation-diff-l {
+  transform: translateX(calc((var(--nb-button-spacing-xs-compensation) - var(--nb-button-spacing-xs-h-default) + 1.5px)));
+}
+
+.translate-button-spacing-xs-compensation-diff-r {
+  transform: translateX(calc((var(--nb-button-spacing-xs-h-default) - var(--nb-button-spacing-xs-compensation) - 1.5px)));
+}
+
+.translate-button-spacing-md-compensation-diff-l {
+  transform: translateX(calc((var(--nb-button-spacing-md-compensation) - var(--nb-button-spacing-md-h-default)) + 2.5px))
+}
+
+.translate-button-spacing-md-compensation-diff-r {
+  transform: translateX(calc((var(--nb-button-spacing-md-h-default) - var(--nb-button-spacing-md-compensation)) - 2.5px))
+}
+
+.translate-button-spacing-lg-compensation-diff-l {
+  transform: translateX(calc(var(--nb-button-spacing-lg-compensation) - var(--nb-button-spacing-lg-h-default)));
+}
+
+.translate-button-spacing-lg-compensation-diff-r {
+  transform: translateX(calc(var(--nb-button-spacing-lg-h-default) - var(--nb-button-spacing-lg-compensation)));
+}

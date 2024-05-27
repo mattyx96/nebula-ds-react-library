@@ -1,35 +1,59 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// App.tsx
+import { generateTailwindCompatibleTheme } from '../theme.ts';
+import Button from './components/button/Button.tsx';
+import { IconButton } from './components/button/IconButton.tsx';
+import { PlusIcon } from '@heroicons/react/24/solid';
 
-function App() {
-  const [count, setCount] = useState(0)
+window.console.log(generateTailwindCompatibleTheme());
 
+const variants = ['filled', 'outlined', 'text', 'standard'] as const;
+const sizes = ['L', 'M', 'S'] as const;
+const rounded = [
+  'Default',
+  'R',
+  'RTop',
+  'RBottom',
+  'L',
+  'LTop',
+  'LBottom',
+] as const;
+
+export default function App() {
   return (
-    <>
-      <div className="bg-red-500">
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="bg-background-primary">
+      <div className="w-3/4 mx-auto min-h-screen min-w-screen gap-5 flex flex-col justify-center items-center pt-10">
+        {variants.map((variant) => (
+          <div key={variant} className="mb-10">
+            <h2 className="text-2xl mb-4">
+              {variant.charAt(0).toUpperCase() + variant.slice(1)} Variant
+            </h2>
+            <div className="flex flex-wrap gap-4">
+              {sizes.map((size) =>
+                rounded.map((round) => (
+                  <Button
+                    key={`${variant}-${size}-${round}`}
+                    text={`Variant: ${variant}, Size: ${size}, Rounded: ${round}`}
+                    variant={variant}
+                    size={size}
+                    rounded={round}
+                  />
+                ))
+              )}
+              {sizes.map((size) =>
+                rounded.map((round) => (
+                  <IconButton
+                    key={`${variant}-${size}-${round}-icon`}
+                    variant={variant}
+                    size={size}
+                    rounded={round}
+                    icon={<PlusIcon />}
+                  />
+                ))
+              )}
+            </div>
+          </div>
+        ))}
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    </div>
+  );
 }
-
-export default App
