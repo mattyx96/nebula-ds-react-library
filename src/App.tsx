@@ -1,11 +1,7 @@
 import Button from './components/button/Button.tsx';
-import { IconButton } from './components/button/IconButton.tsx';
-import { PlusIcon } from '@heroicons/react/24/solid';
-import {
-  buttonRoundedVariants,
-  buttonSizeVariants,
-  buttonVariantVariants,
-} from './variants/button';
+import {IconButton} from './components/button/IconButton.tsx';
+import {PlusIcon} from '@heroicons/react/24/solid';
+import {buttonRoundedVariants, buttonSizeVariants, buttonVariantVariants,} from './variants/button';
 
 export default function App() {
   return (
@@ -25,7 +21,7 @@ export default function App() {
                     variant={variant}
                     size={size}
                     rounded={round}
-                    leftIcon={<PlusIcon />}
+                    leftIcon={<PlusIcon/>}
                   />
                 ))
               )}
@@ -36,7 +32,7 @@ export default function App() {
                     variant={variant}
                     size={size}
                     rounded={round}
-                    icon={<PlusIcon />}
+                    icon={<PlusIcon/>}
                   />
                 ))
               )}

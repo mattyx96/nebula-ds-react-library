@@ -2,6 +2,8 @@ import { defineConfig } from 'vitest/config';
 import dts from 'vite-plugin-dts';
 import react from '@vitejs/plugin-react'; /// <reference types="vitest" />
 import path from 'path';
+import copy from 'rollup-plugin-copy';
+import {Simulate} from "react-dom/test-utils";
 
 export default defineConfig({
   server: {
@@ -31,5 +33,10 @@ export default defineConfig({
     setupFiles: ['./setupTests.ts'],
     include: ['**/*.test{.tsx,.ts}'],
   },
-  plugins: [react(), dts()],
+  plugins: [react(), dts(), copy({
+    targets: [
+      { src: 'src/index.css', dest: 'dist' },
+    ],
+    hook: 'closeBundle',
+  }),],
 });

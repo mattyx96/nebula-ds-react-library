@@ -5,49 +5,61 @@
 @tailwind utilities;
 
 h1 {
+  color: var(--nb-background-contrast-primary-500);
   font: var(--nb-display1);
 }
 
 h2 {
+  color: var(--nb-background-contrast-primary-500);
   font: var(--nb-display2);
 }
 
 h3 {
+  color: var(--nb-background-contrast-primary-500);
   font: var(--nb-header1);
 }
 
 h4 {
+  color: var(--nb-background-contrast-primary-500);
   font: var(--nb-header2);
 }
 
 h5 {
+  color: var(--nb-background-contrast-primary-500);
   font: var(--nb-header3);
 }
 
 h6 {
+  color: var(--nb-background-contrast-primary-500);
   font: var(--nb-header4);
 }
 
 p {
+  color: var(--nb-background-contrast-primary-500);
   font: var(--nb-body1);
 }
 
 p.small {
+  color: var(--nb-background-contrast-primary-500);
   font: var(--nb-body2);
 }
 
 span {
+  color: var(--nb-background-contrast-primary-500);
   font: var(--nb-body3);
 }
 
 small {
+  color: var(--nb-background-contrast-primary-500);
   font: var(--nb-body4);
 }
 
 button {
+  color: var(--nb-background-contrast-primary-500);
   font: var(--nb-button);
 }
 
 caption {
+  color: var(--nb-background-contrast-primary-500);
   font: var(--nb-caption);
 }
