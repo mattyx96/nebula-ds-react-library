@@ -19,7 +19,7 @@ importers:
         version: 2.1.1
       nebula-ds-tokens:
         specifier: ^0.1.6
-        version: 0.1.6
+        version: 0.1.9
       react:
         specifier: ^18.2.0
         version: 18.3.1
@@ -79,16 +79,16 @@ importers:
         specifier: ^20.12.12
         version: 20.12.12
       '@types/react':
-        specifier: ^18.2.66
+        specifier: ^18.3.2
         version: 18.3.2
       '@types/react-dom':
-        specifier: ^18.2.22
+        specifier: ^18.3.0
         version: 18.3.0
       '@typescript-eslint/eslint-plugin':
-        specifier: ^7.2.0
+        specifier: ^7.10.0
         version: 7.10.0(@typescript-eslint/parser@7.10.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)(typescript@5.4.5)
       '@typescript-eslint/parser':
-        specifier: ^7.2.0
+        specifier: ^7.10.0
         version: 7.10.0(eslint@8.57.0)(typescript@5.4.5)
       '@vitejs/plugin-react':
         specifier: ^4.2.1
@@ -109,10 +109,10 @@ importers:
         specifier: ^9.1.0
         version: 9.1.0(eslint@8.57.0)
       eslint-plugin-import:
-        specifier: ^2.25.3
+        specifier: ^2.29.1
         version: 2.29.1(@typescript-eslint/parser@7.10.0(eslint@8.57.0)(typescript@5.4.5))(eslint@8.57.0)
       eslint-plugin-jsx-a11y:
-        specifier: ^6.5.1
+        specifier: ^6.8.0
         version: 6.8.0(eslint@8.57.0)
       eslint-plugin-prettier:
         specifier: ^5.1.3
@@ -133,7 +133,7 @@ importers:
         specifier: ^15.3.0
         version: 15.3.0
       husky:
-        specifier: ^8.0.0
+        specifier: ^8.0.3
         version: 8.0.3
       lint-staged:
         specifier: ^15.2.4
@@ -151,13 +151,13 @@ importers:
         specifier: ^3.4.3
         version: 3.4.3
       typescript:
-        specifier: ^5.2.2
+        specifier: ^5.4.5
         version: 5.4.5
       typescript-eslint:
         specifier: ^7.10.0
         version: 7.10.0(eslint@8.57.0)(typescript@5.4.5)
       vite:
-        specifier: ^5.2.0
+        specifier: ^5.2.11
         version: 5.2.11(@types/node@20.12.12)
       vite-plugin-dts:
         specifier: ^3.9.1
@@ -2491,6 +2491,15 @@ packages:
       supports-color:
         optional: true
 
+  debug@4.3.5:
+    resolution: {integrity: sha512-pt0bNEmneDIvdL1Xsd9oDQ/wrQRkXDT4AUWlNZNPKvW5x/jyO9VFXkJUP07vQ2upmw5PlaITaPKc31jK13V+jg==}
+    engines: {node: '>=6.0'}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
+
   decimal.js@10.4.3:
     resolution: {integrity: sha512-VBBaLc1MgL5XpzgIP7ny5Z6Nx3UrRkIViUkPUdtl9aya5amy3De1gsUUSB1g3+3sExYNjCAsAznmukyxCb1GRA==}
 
@@ -3806,8 +3815,8 @@ packages:
   natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
 
-  nebula-ds-tokens@0.1.6:
-    resolution: {integrity: sha512-vcgmiFvpX+/3Xi0VFaLT/FaQxJRYDhHIMcuodp/8Acd7O8IZfgg5/cU+IqOkusaS9mwqIVkyyYjmtu4vUlO72Q==}
+  nebula-ds-tokens@0.1.9:
+    resolution: {integrity: sha512-CqUk0u0VcjlUnDni/tSwpnDfyoBjOV3qbsERzE0z+pnDFCD8pNPylb5UGIA82lRYBONy++IfJDZCmPjehwSRMg==}
 
   negotiator@0.6.3:
     resolution: {integrity: sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==}
@@ -7678,7 +7687,7 @@ snapshots:
 
   agent-base@7.1.1:
     dependencies:
-      debug: 4.3.4
+      debug: 4.3.5
     transitivePeerDependencies:
       - supports-color
     optional: true
@@ -8204,6 +8213,11 @@ snapshots:
   debug@4.3.4:
     dependencies:
       ms: 2.1.2
+
+  debug@4.3.5:
+    dependencies:
+      ms: 2.1.2
+    optional: true
 
   decimal.js@10.4.3:
     optional: true
@@ -9149,7 +9163,7 @@ snapshots:
   http-proxy-agent@7.0.2:
     dependencies:
       agent-base: 7.1.1
-      debug: 4.3.4
+      debug: 4.3.5
     transitivePeerDependencies:
       - supports-color
     optional: true
@@ -9157,7 +9171,7 @@ snapshots:
   https-proxy-agent@7.0.4:
     dependencies:
       agent-base: 7.1.1
-      debug: 4.3.4
+      debug: 4.3.5
     transitivePeerDependencies:
       - supports-color
     optional: true
@@ -9733,7 +9747,7 @@ snapshots:
 
   natural-compare@1.4.0: {}
 
-  nebula-ds-tokens@0.1.6: {}
+  nebula-ds-tokens@0.1.9: {}
 
   negotiator@0.6.3: {}
 

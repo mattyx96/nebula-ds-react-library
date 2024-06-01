@@ -1,5 +1,5 @@
-import { extendTailwindMerge } from 'tailwind-merge';
-import { generateTailwindCompatibleTheme } from '../theme.ts';
+import {tw} from 'nebula-ds-tokens';
+import {extendTailwindMerge} from 'tailwind-merge';
 
 type Tokens = {
   color?: Record<string, string>;
@@ -35,7 +35,7 @@ const transformTokens = (
 
 window.console.log(
   'tw merge: ',
-  transformTokens(generateTailwindCompatibleTheme())
+  transformTokens(tw.generateTailwindCompatibleTheme())
 );
 
 const twMerge = extendTailwindMerge({
@@ -45,7 +45,7 @@ const twMerge = extendTailwindMerge({
       'font-size': ['font-orbitron', 'font-orbitron-3'],
     },
     theme: {
-      ...transformTokens(generateTailwindCompatibleTheme()),
+      ...transformTokens(tw.generateTailwindCompatibleTheme()),
     },
   },
 });

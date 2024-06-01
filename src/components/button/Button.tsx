@@ -6,7 +6,7 @@ import { buttonVariants } from '../../variants';
 
 type ButtonElementProps = ComponentPropsWithRef<'button'>;
 
-export interface ButtonPropsBase
+interface ButtonPropsBase
   extends ButtonElementProps,
     VariantProps<typeof buttonVariants> {}
 

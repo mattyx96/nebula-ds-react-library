@@ -1,10 +1,10 @@
-import { generateTailwindCompatibleTheme } from './theme.ts';
+import {tw} from 'nebula-ds-tokens'
 
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      ...generateTailwindCompatibleTheme(),
+      ...tw.generateTailwindCompatibleTheme(),
     },
   },
   plugins: [],
