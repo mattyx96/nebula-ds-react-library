@@ -1,9 +1,9 @@
-import { defineConfig } from 'vitest/config';
+import {defineConfig} from 'vitest/config';
 import dts from 'vite-plugin-dts';
 import react from '@vitejs/plugin-react'; /// <reference types="vitest" />
 import path from 'path';
 import copy from 'rollup-plugin-copy';
-import {Simulate} from "react-dom/test-utils";
+import tailwindcss from "tailwindcss";
 
 export default defineConfig({
   server: {
@@ -12,15 +12,16 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'index.ts'),
-      name: 'serif-ui-components',
+      name: 'nebula-ds-react-library',
       fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
-      external: ['react', 'react-dom'],
+      external: ["react", "react-dom", "tailwindcss"],
       output: {
         globals: {
-          react: 'React',
-          'react-dom': 'ReactDOM',
+          react: "React",
+          "react-dom": "ReactDOM",
+          tailwindcss: "tailwindcss",
         },
       },
     },
@@ -35,8 +36,13 @@ export default defineConfig({
   },
   plugins: [react(), dts(), copy({
     targets: [
-      { src: 'src/index.css', dest: 'dist' },
+      {src: 'src/index.css', dest: 'dist'},
     ],
     hook: 'closeBundle',
   }),],
+  css: {
+    postcss: {
+      plugins: [tailwindcss],
+    },
+  }
 });
