@@ -18,7 +18,7 @@ importers:
         specifier: ^2.1.1
         version: 2.1.1
       nebula-ds-tokens:
-        specifier: ^0.1.6
+        specifier: ^0.1.9
         version: 0.1.9
       react:
         specifier: ^18.2.0
