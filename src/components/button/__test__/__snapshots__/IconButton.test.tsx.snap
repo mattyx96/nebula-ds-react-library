@@ -1,0 +1,4883 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`IconButton > button is disabled correctly 1`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
+    disabled=""
+    icon="[object Object]"
+    id="icon"
+    type="button"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > render correctly with rounded prop 1`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="Default"
+    type="button"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > render correctly with rounded prop 2`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-l-button-border-radius-md-lg-default rounded-r-button-border-radius-md-big relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="R"
+    type="button"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6 translate-button-spacing-md-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > render correctly with rounded prop 3`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+            rounded-br-button-border-radius-md-lg-default 
+            rounded-bl-button-border-radius-md-lg-default 
+            rounded-tl-button-border-radius-md-lg-default
+            rounded-tr-button-border-radius-md-big
+            pr-button-spacing-md-compensation
+           relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="RTop"
+    type="button"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6 translate-button-spacing-md-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > render correctly with rounded prop 4`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+            rounded-bl-button-border-radius-md-lg-default 
+            rounded-tl-button-border-radius-md-lg-default 
+            rounded-tr-button-border-radius-md-lg-default
+            rounded-br-button-border-radius-md-big
+            pl-button-spacing-md-compensation
+           relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="RBottom"
+    type="button"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6 translate-button-spacing-md-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > render correctly with rounded prop 5`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-r-button-border-radius-md-lg-default rounded-l-button-border-radius-md-big relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="L"
+    type="button"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6 translate-button-spacing-md-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > render correctly with rounded prop 6`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+            rounded-bl-button-border-radius-md-lg-default 
+            rounded-br-button-border-radius-md-lg-default 
+            rounded-tr-button-border-radius-md-lg-default
+            rounded-tl-button-border-radius-md-big
+            pl-button-spacing-md-compensation
+           relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="LTop"
+    type="button"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6 translate-button-spacing-md-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > render correctly with rounded prop 7`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+            rounded-br-button-border-radius-md-lg-default 
+            rounded-tr-button-border-radius-md-lg-default 
+            rounded-tl-button-border-radius-md-lg-default
+            rounded-bl-button-border-radius-md-big
+            pr-button-spacing-md-compensation
+           relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="LBottom"
+    type="button"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6 translate-button-spacing-md-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > render correctly with size prop 1`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    type="button"
+    variant="filled"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > render correctly with size prop 2`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-button-background-primary hover:ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    type="button"
+    variant="outlined"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > render correctly with size prop 3`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-background-accent-200 px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    type="button"
+    variant="standard"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > render correctly with size prop 4`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    type="button"
+    variant="text"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > render correctly with size prop 5`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-lg w-button-lg"
+    icon="[object Object]"
+    type="button"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-7 h-7"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > render correctly with size prop 6`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    type="button"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > render correctly with size prop 7`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default relative flex !px-0 !py-0 h-button-sm w-button-sm"
+    icon="[object Object]"
+    type="button"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-5 h-5"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > render correctly with variant prop 1`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    type="button"
+    variant="filled"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > render correctly with variant prop 2`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-button-background-primary hover:ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    type="button"
+    variant="outlined"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > render correctly with variant prop 3`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-background-accent-200 px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    type="button"
+    variant="standard"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > render correctly with variant prop 4`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    type="button"
+    variant="text"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > renders correctly 1`] = `
+<button
+  class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
+  icon="[object Object]"
+  type="button"
+>
+  <div
+    class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6"
+  >
+    <svg
+      aria-hidden="true"
+      data-slot="icon"
+      fill="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        clip-rule="evenodd"
+        d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+        fill-rule="evenodd"
+      />
+    </svg>
+  </div>
+</button>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 1`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-lg w-button-lg"
+    icon="[object Object]"
+    rounded="Default"
+    type="button"
+    variant="filled"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-7 h-7"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 2`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-l-button-border-radius-md-lg-default rounded-r-button-border-radius-lg-big relative flex !px-0 !py-0 h-button-lg w-button-lg"
+    icon="[object Object]"
+    rounded="R"
+    type="button"
+    variant="filled"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-7 h-7 translate-button-spacing-lg-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 3`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
+            rounded-br-button-border-radius-md-lg-default 
+            rounded-bl-button-border-radius-md-lg-default 
+            rounded-tl-button-border-radius-md-lg-default
+            rounded-tr-button-border-radius-lg-big
+            pr-button-spacing-lg-compensation
+           relative flex !px-0 !py-0 h-button-lg w-button-lg"
+    icon="[object Object]"
+    rounded="RTop"
+    type="button"
+    variant="filled"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-7 h-7 translate-button-spacing-lg-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 4`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
+            rounded-bl-button-border-radius-md-lg-default 
+            rounded-tl-button-border-radius-md-lg-default 
+            rounded-tr-button-border-radius-md-lg-default
+            rounded-br-button-border-radius-lg-big
+            pl-button-spacing-lg-compensation
+           relative flex !px-0 !py-0 h-button-lg w-button-lg"
+    icon="[object Object]"
+    rounded="RBottom"
+    type="button"
+    variant="filled"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-7 h-7 translate-button-spacing-lg-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 5`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-r-button-border-radius-md-lg-default rounded-l-button-border-radius-lg-big relative flex !px-0 !py-0 h-button-lg w-button-lg"
+    icon="[object Object]"
+    rounded="L"
+    type="button"
+    variant="filled"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-7 h-7 translate-button-spacing-lg-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 6`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
+            rounded-bl-button-border-radius-md-lg-default 
+            rounded-br-button-border-radius-md-lg-default 
+            rounded-tr-button-border-radius-md-lg-default
+            rounded-tl-button-border-radius-lg-big
+            pl-button-spacing-lg-compensation
+           relative flex !px-0 !py-0 h-button-lg w-button-lg"
+    icon="[object Object]"
+    rounded="LTop"
+    type="button"
+    variant="filled"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-7 h-7 translate-button-spacing-lg-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 7`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
+            rounded-br-button-border-radius-md-lg-default 
+            rounded-tr-button-border-radius-md-lg-default 
+            rounded-tl-button-border-radius-md-lg-default
+            rounded-bl-button-border-radius-lg-big
+            pr-button-spacing-lg-compensation
+           relative flex !px-0 !py-0 h-button-lg w-button-lg"
+    icon="[object Object]"
+    rounded="LBottom"
+    type="button"
+    variant="filled"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-7 h-7 translate-button-spacing-lg-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 8`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="Default"
+    type="button"
+    variant="filled"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 9`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-l-button-border-radius-md-lg-default rounded-r-button-border-radius-md-big relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="R"
+    type="button"
+    variant="filled"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6 translate-button-spacing-md-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 10`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+            rounded-br-button-border-radius-md-lg-default 
+            rounded-bl-button-border-radius-md-lg-default 
+            rounded-tl-button-border-radius-md-lg-default
+            rounded-tr-button-border-radius-md-big
+            pr-button-spacing-md-compensation
+           relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="RTop"
+    type="button"
+    variant="filled"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6 translate-button-spacing-md-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 11`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+            rounded-bl-button-border-radius-md-lg-default 
+            rounded-tl-button-border-radius-md-lg-default 
+            rounded-tr-button-border-radius-md-lg-default
+            rounded-br-button-border-radius-md-big
+            pl-button-spacing-md-compensation
+           relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="RBottom"
+    type="button"
+    variant="filled"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6 translate-button-spacing-md-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 12`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-r-button-border-radius-md-lg-default rounded-l-button-border-radius-md-big relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="L"
+    type="button"
+    variant="filled"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6 translate-button-spacing-md-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 13`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+            rounded-bl-button-border-radius-md-lg-default 
+            rounded-br-button-border-radius-md-lg-default 
+            rounded-tr-button-border-radius-md-lg-default
+            rounded-tl-button-border-radius-md-big
+            pl-button-spacing-md-compensation
+           relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="LTop"
+    type="button"
+    variant="filled"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6 translate-button-spacing-md-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 14`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+            rounded-br-button-border-radius-md-lg-default 
+            rounded-tr-button-border-radius-md-lg-default 
+            rounded-tl-button-border-radius-md-lg-default
+            rounded-bl-button-border-radius-md-big
+            pr-button-spacing-md-compensation
+           relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="LBottom"
+    type="button"
+    variant="filled"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6 translate-button-spacing-md-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 15`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default relative flex !px-0 !py-0 h-button-sm w-button-sm"
+    icon="[object Object]"
+    rounded="Default"
+    type="button"
+    variant="filled"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-5 h-5"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 16`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big relative flex !px-0 !py-0 h-button-sm w-button-sm"
+    icon="[object Object]"
+    rounded="R"
+    type="button"
+    variant="filled"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-5 h-5 translate-button-spacing-xs-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 17`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
+            rounded-br-button-border-radius-xs-default 
+            rounded-bl-button-border-radius-xs-default 
+            rounded-tl-button-border-radius-xs-default 
+            rounded-tr-button-border-radius-xs-big
+            pr-button-spacing-xs-compensation
+           relative flex !px-0 !py-0 h-button-sm w-button-sm"
+    icon="[object Object]"
+    rounded="RTop"
+    type="button"
+    variant="filled"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-5 h-5 translate-button-spacing-xs-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 18`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
+            rounded-bl-button-border-radius-xs-default 
+            rounded-tl-button-border-radius-xs-default 
+            rounded-tr-button-border-radius-xs-default 
+            rounded-br-button-border-radius-xs-big
+            pl-button-spacing-xs-compensation
+           relative flex !px-0 !py-0 h-button-sm w-button-sm"
+    icon="[object Object]"
+    rounded="RBottom"
+    type="button"
+    variant="filled"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-5 h-5 translate-button-spacing-xs-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 19`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-r-button-border-radius-xs-default rounded-l-button-border-radius-xs-big relative flex !px-0 !py-0 h-button-sm w-button-sm"
+    icon="[object Object]"
+    rounded="L"
+    type="button"
+    variant="filled"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-5 h-5 translate-button-spacing-xs-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 20`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
+            rounded-bl-button-border-radius-xs-default 
+            rounded-br-button-border-radius-xs-default 
+            rounded-tr-button-border-radius-xs-default 
+            rounded-tl-button-border-radius-xs-big
+            pl-button-spacing-xs-compensation
+           relative flex !px-0 !py-0 h-button-sm w-button-sm"
+    icon="[object Object]"
+    rounded="LTop"
+    type="button"
+    variant="filled"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-5 h-5 translate-button-spacing-xs-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 21`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
+            rounded-br-button-border-radius-xs-default 
+            rounded-tr-button-border-radius-xs-default 
+            rounded-tl-button-border-radius-xs-default 
+            rounded-bl-button-border-radius-xs-big
+            pr-button-spacing-xs-compensation
+           relative flex !px-0 !py-0 h-button-sm w-button-sm"
+    icon="[object Object]"
+    rounded="LBottom"
+    type="button"
+    variant="filled"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-5 h-5 translate-button-spacing-xs-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 22`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-button-background-primary hover:ring-button-background-primary px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-lg w-button-lg"
+    icon="[object Object]"
+    rounded="Default"
+    type="button"
+    variant="outlined"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-7 h-7"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 23`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-button-background-primary hover:ring-button-background-primary px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-l-button-border-radius-md-lg-default rounded-r-button-border-radius-lg-big relative flex !px-0 !py-0 h-button-lg w-button-lg"
+    icon="[object Object]"
+    rounded="R"
+    type="button"
+    variant="outlined"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-7 h-7 translate-button-spacing-lg-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 24`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-button-background-primary hover:ring-button-background-primary px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
+            rounded-br-button-border-radius-md-lg-default 
+            rounded-bl-button-border-radius-md-lg-default 
+            rounded-tl-button-border-radius-md-lg-default
+            rounded-tr-button-border-radius-lg-big
+            pr-button-spacing-lg-compensation
+           relative flex !px-0 !py-0 h-button-lg w-button-lg"
+    icon="[object Object]"
+    rounded="RTop"
+    type="button"
+    variant="outlined"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-7 h-7 translate-button-spacing-lg-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 25`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-button-background-primary hover:ring-button-background-primary px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
+            rounded-bl-button-border-radius-md-lg-default 
+            rounded-tl-button-border-radius-md-lg-default 
+            rounded-tr-button-border-radius-md-lg-default
+            rounded-br-button-border-radius-lg-big
+            pl-button-spacing-lg-compensation
+           relative flex !px-0 !py-0 h-button-lg w-button-lg"
+    icon="[object Object]"
+    rounded="RBottom"
+    type="button"
+    variant="outlined"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-7 h-7 translate-button-spacing-lg-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 26`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-button-background-primary hover:ring-button-background-primary px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-r-button-border-radius-md-lg-default rounded-l-button-border-radius-lg-big relative flex !px-0 !py-0 h-button-lg w-button-lg"
+    icon="[object Object]"
+    rounded="L"
+    type="button"
+    variant="outlined"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-7 h-7 translate-button-spacing-lg-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 27`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-button-background-primary hover:ring-button-background-primary px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
+            rounded-bl-button-border-radius-md-lg-default 
+            rounded-br-button-border-radius-md-lg-default 
+            rounded-tr-button-border-radius-md-lg-default
+            rounded-tl-button-border-radius-lg-big
+            pl-button-spacing-lg-compensation
+           relative flex !px-0 !py-0 h-button-lg w-button-lg"
+    icon="[object Object]"
+    rounded="LTop"
+    type="button"
+    variant="outlined"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-7 h-7 translate-button-spacing-lg-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 28`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-button-background-primary hover:ring-button-background-primary px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
+            rounded-br-button-border-radius-md-lg-default 
+            rounded-tr-button-border-radius-md-lg-default 
+            rounded-tl-button-border-radius-md-lg-default
+            rounded-bl-button-border-radius-lg-big
+            pr-button-spacing-lg-compensation
+           relative flex !px-0 !py-0 h-button-lg w-button-lg"
+    icon="[object Object]"
+    rounded="LBottom"
+    type="button"
+    variant="outlined"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-7 h-7 translate-button-spacing-lg-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 29`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-button-background-primary hover:ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="Default"
+    type="button"
+    variant="outlined"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 30`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-button-background-primary hover:ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-l-button-border-radius-md-lg-default rounded-r-button-border-radius-md-big relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="R"
+    type="button"
+    variant="outlined"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6 translate-button-spacing-md-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 31`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-button-background-primary hover:ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+            rounded-br-button-border-radius-md-lg-default 
+            rounded-bl-button-border-radius-md-lg-default 
+            rounded-tl-button-border-radius-md-lg-default
+            rounded-tr-button-border-radius-md-big
+            pr-button-spacing-md-compensation
+           relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="RTop"
+    type="button"
+    variant="outlined"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6 translate-button-spacing-md-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 32`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-button-background-primary hover:ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+            rounded-bl-button-border-radius-md-lg-default 
+            rounded-tl-button-border-radius-md-lg-default 
+            rounded-tr-button-border-radius-md-lg-default
+            rounded-br-button-border-radius-md-big
+            pl-button-spacing-md-compensation
+           relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="RBottom"
+    type="button"
+    variant="outlined"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6 translate-button-spacing-md-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 33`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-button-background-primary hover:ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-r-button-border-radius-md-lg-default rounded-l-button-border-radius-md-big relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="L"
+    type="button"
+    variant="outlined"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6 translate-button-spacing-md-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 34`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-button-background-primary hover:ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+            rounded-bl-button-border-radius-md-lg-default 
+            rounded-br-button-border-radius-md-lg-default 
+            rounded-tr-button-border-radius-md-lg-default
+            rounded-tl-button-border-radius-md-big
+            pl-button-spacing-md-compensation
+           relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="LTop"
+    type="button"
+    variant="outlined"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6 translate-button-spacing-md-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 35`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-button-background-primary hover:ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+            rounded-br-button-border-radius-md-lg-default 
+            rounded-tr-button-border-radius-md-lg-default 
+            rounded-tl-button-border-radius-md-lg-default
+            rounded-bl-button-border-radius-md-big
+            pr-button-spacing-md-compensation
+           relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="LBottom"
+    type="button"
+    variant="outlined"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6 translate-button-spacing-md-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 36`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-button-background-primary hover:ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default relative flex !px-0 !py-0 h-button-sm w-button-sm"
+    icon="[object Object]"
+    rounded="Default"
+    type="button"
+    variant="outlined"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-5 h-5"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 37`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-button-background-primary hover:ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big relative flex !px-0 !py-0 h-button-sm w-button-sm"
+    icon="[object Object]"
+    rounded="R"
+    type="button"
+    variant="outlined"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-5 h-5 translate-button-spacing-xs-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 38`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-button-background-primary hover:ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
+            rounded-br-button-border-radius-xs-default 
+            rounded-bl-button-border-radius-xs-default 
+            rounded-tl-button-border-radius-xs-default 
+            rounded-tr-button-border-radius-xs-big
+            pr-button-spacing-xs-compensation
+           relative flex !px-0 !py-0 h-button-sm w-button-sm"
+    icon="[object Object]"
+    rounded="RTop"
+    type="button"
+    variant="outlined"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-5 h-5 translate-button-spacing-xs-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 39`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-button-background-primary hover:ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
+            rounded-bl-button-border-radius-xs-default 
+            rounded-tl-button-border-radius-xs-default 
+            rounded-tr-button-border-radius-xs-default 
+            rounded-br-button-border-radius-xs-big
+            pl-button-spacing-xs-compensation
+           relative flex !px-0 !py-0 h-button-sm w-button-sm"
+    icon="[object Object]"
+    rounded="RBottom"
+    type="button"
+    variant="outlined"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-5 h-5 translate-button-spacing-xs-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 40`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-button-background-primary hover:ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-r-button-border-radius-xs-default rounded-l-button-border-radius-xs-big relative flex !px-0 !py-0 h-button-sm w-button-sm"
+    icon="[object Object]"
+    rounded="L"
+    type="button"
+    variant="outlined"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-5 h-5 translate-button-spacing-xs-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 41`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-button-background-primary hover:ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
+            rounded-bl-button-border-radius-xs-default 
+            rounded-br-button-border-radius-xs-default 
+            rounded-tr-button-border-radius-xs-default 
+            rounded-tl-button-border-radius-xs-big
+            pl-button-spacing-xs-compensation
+           relative flex !px-0 !py-0 h-button-sm w-button-sm"
+    icon="[object Object]"
+    rounded="LTop"
+    type="button"
+    variant="outlined"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-5 h-5 translate-button-spacing-xs-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 42`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-button-background-primary hover:ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
+            rounded-br-button-border-radius-xs-default 
+            rounded-tr-button-border-radius-xs-default 
+            rounded-tl-button-border-radius-xs-default 
+            rounded-bl-button-border-radius-xs-big
+            pr-button-spacing-xs-compensation
+           relative flex !px-0 !py-0 h-button-sm w-button-sm"
+    icon="[object Object]"
+    rounded="LBottom"
+    type="button"
+    variant="outlined"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-5 h-5 translate-button-spacing-xs-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 43`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-background-accent-200 px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-lg w-button-lg"
+    icon="[object Object]"
+    rounded="Default"
+    type="button"
+    variant="standard"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-7 h-7"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 44`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-background-accent-200 px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-l-button-border-radius-md-lg-default rounded-r-button-border-radius-lg-big relative flex !px-0 !py-0 h-button-lg w-button-lg"
+    icon="[object Object]"
+    rounded="R"
+    type="button"
+    variant="standard"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-7 h-7 translate-button-spacing-lg-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 45`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-background-accent-200 px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
+            rounded-br-button-border-radius-md-lg-default 
+            rounded-bl-button-border-radius-md-lg-default 
+            rounded-tl-button-border-radius-md-lg-default
+            rounded-tr-button-border-radius-lg-big
+            pr-button-spacing-lg-compensation
+           relative flex !px-0 !py-0 h-button-lg w-button-lg"
+    icon="[object Object]"
+    rounded="RTop"
+    type="button"
+    variant="standard"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-7 h-7 translate-button-spacing-lg-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 46`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-background-accent-200 px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
+            rounded-bl-button-border-radius-md-lg-default 
+            rounded-tl-button-border-radius-md-lg-default 
+            rounded-tr-button-border-radius-md-lg-default
+            rounded-br-button-border-radius-lg-big
+            pl-button-spacing-lg-compensation
+           relative flex !px-0 !py-0 h-button-lg w-button-lg"
+    icon="[object Object]"
+    rounded="RBottom"
+    type="button"
+    variant="standard"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-7 h-7 translate-button-spacing-lg-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 47`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-background-accent-200 px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-r-button-border-radius-md-lg-default rounded-l-button-border-radius-lg-big relative flex !px-0 !py-0 h-button-lg w-button-lg"
+    icon="[object Object]"
+    rounded="L"
+    type="button"
+    variant="standard"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-7 h-7 translate-button-spacing-lg-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 48`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-background-accent-200 px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
+            rounded-bl-button-border-radius-md-lg-default 
+            rounded-br-button-border-radius-md-lg-default 
+            rounded-tr-button-border-radius-md-lg-default
+            rounded-tl-button-border-radius-lg-big
+            pl-button-spacing-lg-compensation
+           relative flex !px-0 !py-0 h-button-lg w-button-lg"
+    icon="[object Object]"
+    rounded="LTop"
+    type="button"
+    variant="standard"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-7 h-7 translate-button-spacing-lg-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 49`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-background-accent-200 px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
+            rounded-br-button-border-radius-md-lg-default 
+            rounded-tr-button-border-radius-md-lg-default 
+            rounded-tl-button-border-radius-md-lg-default
+            rounded-bl-button-border-radius-lg-big
+            pr-button-spacing-lg-compensation
+           relative flex !px-0 !py-0 h-button-lg w-button-lg"
+    icon="[object Object]"
+    rounded="LBottom"
+    type="button"
+    variant="standard"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-7 h-7 translate-button-spacing-lg-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 50`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-background-accent-200 px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="Default"
+    type="button"
+    variant="standard"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 51`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-background-accent-200 px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-l-button-border-radius-md-lg-default rounded-r-button-border-radius-md-big relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="R"
+    type="button"
+    variant="standard"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6 translate-button-spacing-md-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 52`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-background-accent-200 px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+            rounded-br-button-border-radius-md-lg-default 
+            rounded-bl-button-border-radius-md-lg-default 
+            rounded-tl-button-border-radius-md-lg-default
+            rounded-tr-button-border-radius-md-big
+            pr-button-spacing-md-compensation
+           relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="RTop"
+    type="button"
+    variant="standard"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6 translate-button-spacing-md-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 53`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-background-accent-200 px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+            rounded-bl-button-border-radius-md-lg-default 
+            rounded-tl-button-border-radius-md-lg-default 
+            rounded-tr-button-border-radius-md-lg-default
+            rounded-br-button-border-radius-md-big
+            pl-button-spacing-md-compensation
+           relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="RBottom"
+    type="button"
+    variant="standard"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6 translate-button-spacing-md-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 54`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-background-accent-200 px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-r-button-border-radius-md-lg-default rounded-l-button-border-radius-md-big relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="L"
+    type="button"
+    variant="standard"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6 translate-button-spacing-md-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 55`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-background-accent-200 px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+            rounded-bl-button-border-radius-md-lg-default 
+            rounded-br-button-border-radius-md-lg-default 
+            rounded-tr-button-border-radius-md-lg-default
+            rounded-tl-button-border-radius-md-big
+            pl-button-spacing-md-compensation
+           relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="LTop"
+    type="button"
+    variant="standard"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6 translate-button-spacing-md-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 56`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-background-accent-200 px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+            rounded-br-button-border-radius-md-lg-default 
+            rounded-tr-button-border-radius-md-lg-default 
+            rounded-tl-button-border-radius-md-lg-default
+            rounded-bl-button-border-radius-md-big
+            pr-button-spacing-md-compensation
+           relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="LBottom"
+    type="button"
+    variant="standard"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6 translate-button-spacing-md-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 57`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-background-accent-200 px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default relative flex !px-0 !py-0 h-button-sm w-button-sm"
+    icon="[object Object]"
+    rounded="Default"
+    type="button"
+    variant="standard"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-5 h-5"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 58`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-background-accent-200 px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big relative flex !px-0 !py-0 h-button-sm w-button-sm"
+    icon="[object Object]"
+    rounded="R"
+    type="button"
+    variant="standard"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-5 h-5 translate-button-spacing-xs-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 59`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-background-accent-200 px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
+            rounded-br-button-border-radius-xs-default 
+            rounded-bl-button-border-radius-xs-default 
+            rounded-tl-button-border-radius-xs-default 
+            rounded-tr-button-border-radius-xs-big
+            pr-button-spacing-xs-compensation
+           relative flex !px-0 !py-0 h-button-sm w-button-sm"
+    icon="[object Object]"
+    rounded="RTop"
+    type="button"
+    variant="standard"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-5 h-5 translate-button-spacing-xs-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 60`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-background-accent-200 px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
+            rounded-bl-button-border-radius-xs-default 
+            rounded-tl-button-border-radius-xs-default 
+            rounded-tr-button-border-radius-xs-default 
+            rounded-br-button-border-radius-xs-big
+            pl-button-spacing-xs-compensation
+           relative flex !px-0 !py-0 h-button-sm w-button-sm"
+    icon="[object Object]"
+    rounded="RBottom"
+    type="button"
+    variant="standard"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-5 h-5 translate-button-spacing-xs-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 61`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-background-accent-200 px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-r-button-border-radius-xs-default rounded-l-button-border-radius-xs-big relative flex !px-0 !py-0 h-button-sm w-button-sm"
+    icon="[object Object]"
+    rounded="L"
+    type="button"
+    variant="standard"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-5 h-5 translate-button-spacing-xs-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 62`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-background-accent-200 px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
+            rounded-bl-button-border-radius-xs-default 
+            rounded-br-button-border-radius-xs-default 
+            rounded-tr-button-border-radius-xs-default 
+            rounded-tl-button-border-radius-xs-big
+            pl-button-spacing-xs-compensation
+           relative flex !px-0 !py-0 h-button-sm w-button-sm"
+    icon="[object Object]"
+    rounded="LTop"
+    type="button"
+    variant="standard"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-5 h-5 translate-button-spacing-xs-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 63`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-background-accent-200 px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
+            rounded-br-button-border-radius-xs-default 
+            rounded-tr-button-border-radius-xs-default 
+            rounded-tl-button-border-radius-xs-default 
+            rounded-bl-button-border-radius-xs-big
+            pr-button-spacing-xs-compensation
+           relative flex !px-0 !py-0 h-button-sm w-button-sm"
+    icon="[object Object]"
+    rounded="LBottom"
+    type="button"
+    variant="standard"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-5 h-5 translate-button-spacing-xs-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 64`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-lg w-button-lg"
+    icon="[object Object]"
+    rounded="Default"
+    type="button"
+    variant="text"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-7 h-7"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 65`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-l-button-border-radius-md-lg-default rounded-r-button-border-radius-lg-big relative flex !px-0 !py-0 h-button-lg w-button-lg"
+    icon="[object Object]"
+    rounded="R"
+    type="button"
+    variant="text"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-7 h-7 translate-button-spacing-lg-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 66`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
+            rounded-br-button-border-radius-md-lg-default 
+            rounded-bl-button-border-radius-md-lg-default 
+            rounded-tl-button-border-radius-md-lg-default
+            rounded-tr-button-border-radius-lg-big
+            pr-button-spacing-lg-compensation
+           relative flex !px-0 !py-0 h-button-lg w-button-lg"
+    icon="[object Object]"
+    rounded="RTop"
+    type="button"
+    variant="text"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-7 h-7 translate-button-spacing-lg-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 67`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
+            rounded-bl-button-border-radius-md-lg-default 
+            rounded-tl-button-border-radius-md-lg-default 
+            rounded-tr-button-border-radius-md-lg-default
+            rounded-br-button-border-radius-lg-big
+            pl-button-spacing-lg-compensation
+           relative flex !px-0 !py-0 h-button-lg w-button-lg"
+    icon="[object Object]"
+    rounded="RBottom"
+    type="button"
+    variant="text"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-7 h-7 translate-button-spacing-lg-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 68`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-r-button-border-radius-md-lg-default rounded-l-button-border-radius-lg-big relative flex !px-0 !py-0 h-button-lg w-button-lg"
+    icon="[object Object]"
+    rounded="L"
+    type="button"
+    variant="text"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-7 h-7 translate-button-spacing-lg-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 69`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
+            rounded-bl-button-border-radius-md-lg-default 
+            rounded-br-button-border-radius-md-lg-default 
+            rounded-tr-button-border-radius-md-lg-default
+            rounded-tl-button-border-radius-lg-big
+            pl-button-spacing-lg-compensation
+           relative flex !px-0 !py-0 h-button-lg w-button-lg"
+    icon="[object Object]"
+    rounded="LTop"
+    type="button"
+    variant="text"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-7 h-7 translate-button-spacing-lg-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 70`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
+            rounded-br-button-border-radius-md-lg-default 
+            rounded-tr-button-border-radius-md-lg-default 
+            rounded-tl-button-border-radius-md-lg-default
+            rounded-bl-button-border-radius-lg-big
+            pr-button-spacing-lg-compensation
+           relative flex !px-0 !py-0 h-button-lg w-button-lg"
+    icon="[object Object]"
+    rounded="LBottom"
+    type="button"
+    variant="text"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-7 h-7 translate-button-spacing-lg-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 71`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="Default"
+    type="button"
+    variant="text"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 72`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-l-button-border-radius-md-lg-default rounded-r-button-border-radius-md-big relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="R"
+    type="button"
+    variant="text"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6 translate-button-spacing-md-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 73`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+            rounded-br-button-border-radius-md-lg-default 
+            rounded-bl-button-border-radius-md-lg-default 
+            rounded-tl-button-border-radius-md-lg-default
+            rounded-tr-button-border-radius-md-big
+            pr-button-spacing-md-compensation
+           relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="RTop"
+    type="button"
+    variant="text"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6 translate-button-spacing-md-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 74`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+            rounded-bl-button-border-radius-md-lg-default 
+            rounded-tl-button-border-radius-md-lg-default 
+            rounded-tr-button-border-radius-md-lg-default
+            rounded-br-button-border-radius-md-big
+            pl-button-spacing-md-compensation
+           relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="RBottom"
+    type="button"
+    variant="text"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6 translate-button-spacing-md-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 75`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-r-button-border-radius-md-lg-default rounded-l-button-border-radius-md-big relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="L"
+    type="button"
+    variant="text"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6 translate-button-spacing-md-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 76`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+            rounded-bl-button-border-radius-md-lg-default 
+            rounded-br-button-border-radius-md-lg-default 
+            rounded-tr-button-border-radius-md-lg-default
+            rounded-tl-button-border-radius-md-big
+            pl-button-spacing-md-compensation
+           relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="LTop"
+    type="button"
+    variant="text"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6 translate-button-spacing-md-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 77`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+            rounded-br-button-border-radius-md-lg-default 
+            rounded-tr-button-border-radius-md-lg-default 
+            rounded-tl-button-border-radius-md-lg-default
+            rounded-bl-button-border-radius-md-big
+            pr-button-spacing-md-compensation
+           relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    rounded="LBottom"
+    type="button"
+    variant="text"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6 translate-button-spacing-md-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 78`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default relative flex !px-0 !py-0 h-button-sm w-button-sm"
+    icon="[object Object]"
+    rounded="Default"
+    type="button"
+    variant="text"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-5 h-5"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 79`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big relative flex !px-0 !py-0 h-button-sm w-button-sm"
+    icon="[object Object]"
+    rounded="R"
+    type="button"
+    variant="text"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-5 h-5 translate-button-spacing-xs-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 80`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
+            rounded-br-button-border-radius-xs-default 
+            rounded-bl-button-border-radius-xs-default 
+            rounded-tl-button-border-radius-xs-default 
+            rounded-tr-button-border-radius-xs-big
+            pr-button-spacing-xs-compensation
+           relative flex !px-0 !py-0 h-button-sm w-button-sm"
+    icon="[object Object]"
+    rounded="RTop"
+    type="button"
+    variant="text"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-5 h-5 translate-button-spacing-xs-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 81`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
+            rounded-bl-button-border-radius-xs-default 
+            rounded-tl-button-border-radius-xs-default 
+            rounded-tr-button-border-radius-xs-default 
+            rounded-br-button-border-radius-xs-big
+            pl-button-spacing-xs-compensation
+           relative flex !px-0 !py-0 h-button-sm w-button-sm"
+    icon="[object Object]"
+    rounded="RBottom"
+    type="button"
+    variant="text"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-5 h-5 translate-button-spacing-xs-compensation-diff-l"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 82`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-r-button-border-radius-xs-default rounded-l-button-border-radius-xs-big relative flex !px-0 !py-0 h-button-sm w-button-sm"
+    icon="[object Object]"
+    rounded="L"
+    type="button"
+    variant="text"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-5 h-5 translate-button-spacing-xs-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 83`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
+            rounded-bl-button-border-radius-xs-default 
+            rounded-br-button-border-radius-xs-default 
+            rounded-tr-button-border-radius-xs-default 
+            rounded-tl-button-border-radius-xs-big
+            pl-button-spacing-xs-compensation
+           relative flex !px-0 !py-0 h-button-sm w-button-sm"
+    icon="[object Object]"
+    rounded="LTop"
+    type="button"
+    variant="text"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-5 h-5 translate-button-spacing-xs-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 84`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
+            rounded-br-button-border-radius-xs-default 
+            rounded-tr-button-border-radius-xs-default 
+            rounded-tl-button-border-radius-xs-default 
+            rounded-bl-button-border-radius-xs-big
+            pr-button-spacing-xs-compensation
+           relative flex !px-0 !py-0 h-button-sm w-button-sm"
+    icon="[object Object]"
+    rounded="LBottom"
+    type="button"
+    variant="text"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-5 h-5 translate-button-spacing-xs-compensation-diff-r"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 85`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-lg w-button-lg"
+    icon="[object Object]"
+    type="button"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-7 h-7"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 86`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
+    icon="[object Object]"
+    type="button"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-6 h-6"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
+
+exports[`IconButton > should render correctly with all props mix and handle click 87`] = `
+<div>
+  <button
+    class="
+    flex flex-row items-center justify-center gap-3
+    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
+    ring-border-1
+    hover:ring-background-contrast-primary-500
+    hover:ring-border-2
+    active:ring-button-background-secondary 
+    active:bg-button-background-pressed 
+    focus:outline-0 focus:ring-background-contrast-primary-500 
+    disabled:cursor-not-allowed
+    disabled:opacity-button-opacity-disabled
+   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default relative flex !px-0 !py-0 h-button-sm w-button-sm"
+    icon="[object Object]"
+    type="button"
+  >
+    <div
+      class="
+  absolute m-auto left-0 right-0 top-0 bottom-0
+ w-5 h-5"
+    >
+      <svg
+        aria-hidden="true"
+        data-slot="icon"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M12 3.75a.75.75 0 0 1 .75.75v6.75h6.75a.75.75 0 0 1 0 1.5h-6.75v6.75a.75.75 0 0 1-1.5 0v-6.75H4.5a.75.75 0 0 1 0-1.5h6.75V4.5a.75.75 0 0 1 .75-.75Z"
+          fill-rule="evenodd"
+        />
+      </svg>
+    </div>
+  </button>
+</div>
+`;
