@@ -1,6 +1,7 @@
+/// <reference types="vitest" />
 import {defineConfig} from 'vitest/config';
 import dts from 'vite-plugin-dts';
-import react from '@vitejs/plugin-react'; /// <reference types="vitest" />
+import react from '@vitejs/plugin-react';
 import path from 'path';
 import copy from 'rollup-plugin-copy';
 import tailwindcss from "tailwindcss";
@@ -10,13 +11,15 @@ export default defineConfig({
     port: 3000,
   },
   build: {
+    copyPublicDir: false,
     lib: {
       entry: path.resolve(__dirname, 'index.ts'),
       name: 'nebula-ds-react-library',
+      formats: ['es', 'cjs', 'umd'],
       fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
-      external: ["react", "react-dom", "tailwindcss"],
+      external: ["react", "react-dom", "react/jsx-runtime", "tailwindcss"],
       output: {
         globals: {
           react: "React",
@@ -34,7 +37,7 @@ export default defineConfig({
     setupFiles: ['./setupTests.ts'],
     include: ['**/*.test{.tsx,.ts}'],
   },
-  plugins: [react(), dts(), copy({
+  plugins: [react(), dts({ include: ["lib"], insertTypesEntry: true }), copy({
     targets: [
       {src: 'src/index.css', dest: 'dist'},
     ],
