@@ -18,8 +18,8 @@ importers:
         specifier: ^2.1.1
         version: 2.1.1
       nebula-ds-tokens:
-        specifier: ^0.1.11
-        version: 0.1.11
+        specifier: ^0.1.12
+        version: 0.1.12
       react:
         specifier: ^18.2.0
         version: 18.3.1
@@ -3836,8 +3836,8 @@ packages:
   natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
 
-  nebula-ds-tokens@0.1.11:
-    resolution: {integrity: sha512-PUHuf0+cy74Dj7xeK7WjV5ZT04Rai4yOcjRrjHI+r6QPvsUunLMz43d4fzQxVnBsyg/DKpjVV8Bde5F6uylCCw==}
+  nebula-ds-tokens@0.1.12:
+    resolution: {integrity: sha512-YYDjdnN2RzdRfWrJvM1ALRkzXXXsG1P9MtBY9MUZu9AkFYc4Ck0X+UZ3UO6w/Lk4kq69LvsHD956Fzy4gRrrGQ==}
 
   negotiator@0.6.3:
     resolution: {integrity: sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==}
@@ -9797,7 +9797,7 @@ snapshots:
 
   natural-compare@1.4.0: {}
 
-  nebula-ds-tokens@0.1.11: {}
+  nebula-ds-tokens@0.1.12: {}
 
   negotiator@0.6.3: {}
 
