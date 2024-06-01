@@ -39,7 +39,7 @@
     "build-storybook": "storybook build",
     "release": "sh ./scripts/release.sh"
   },
-  "dependencies": {
+  "peerDependencies": {
     "@heroicons/react": "^2.1.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
@@ -56,10 +56,12 @@
     "@storybook/addon-interactions": "^8.1.3",
     "@storybook/addon-links": "^8.1.3",
     "@storybook/addon-onboarding": "^8.1.3",
+    "@storybook/addons": "^7.6.17",
     "@storybook/blocks": "^8.1.3",
     "@storybook/react": "^8.1.3",
     "@storybook/react-vite": "^8.1.3",
     "@storybook/test": "^8.1.3",
+    "@storybook/theming": "^8.1.5",
     "@testing-library/jest-dom": "^6.4.5",
     "@testing-library/react": "^15.0.7",
     "@types/node": "^20.12.12",

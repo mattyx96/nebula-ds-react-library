@@ -10,6 +10,7 @@ type Tokens = {
   fontSizes?: Record<string, string>;
   letterSpacing?: Record<string, string>;
   borderWidth?: Record<string, string>;
+  ringWidth?: Record<string, string>;
   borderRadius?: Record<string, string>;
   opacity?: Record<string, string>;
   height?: Record<string, string>;
@@ -31,6 +32,11 @@ const transformTokens = (
     {} as { [key in keyof Tokens]: string[] }
   );
 };
+
+window.console.log(
+  'tw merge: ',
+  transformTokens(generateTailwindCompatibleTheme())
+);
 
 const twMerge = extendTailwindMerge({
   // ↓ Add values to existing theme scale or create a new one

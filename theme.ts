@@ -28,6 +28,7 @@ export const generateTailwindCompatibleTheme = () => {
     // @ts-expect-error object not type safe
     letterSpacing: letterSpacing.letterSpacing,
     borderWidth,
+    ringWidth: borderWidth,
     borderRadius,
     opacity,
     width: sizing,
