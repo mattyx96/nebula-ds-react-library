@@ -1,7 +1,7 @@
 {
   "name": "nebula-ds-react-library",
   "private": false,
-  "version": "0.0.7",
+  "version": "0.0.8",
   "license": "MIT",
   "author": {
     "name": "mattyx96",
@@ -48,7 +48,7 @@
     "tailwind-merge": "^2.3.0"
   },
   "dependencies": {
-    "nebula-ds-tokens": "^0.1.10"
+    "nebula-ds-tokens": "^0.1.11"
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^1.4.0",
