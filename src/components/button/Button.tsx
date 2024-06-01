@@ -1,14 +1,15 @@
-import React, { type ComponentPropsWithRef } from 'react';
-import { type VariantProps } from 'class-variance-authority';
-import { clsxMerge } from '../../common/utils/classNameUtils';
-import { Icon } from '../icon/icon.tsx';
-import { buttonVariants } from '../../variants';
+import React, {type ComponentPropsWithRef} from 'react';
+import {type VariantProps} from 'class-variance-authority';
+import {clsxMerge} from '../../common/utils/classNameUtils';
+import {Icon} from '../icon/Icon.tsx';
+import {buttonVariants} from '../../variants';
 
 type ButtonElementProps = ComponentPropsWithRef<'button'>;
 
 interface ButtonPropsBase
   extends ButtonElementProps,
-    VariantProps<typeof buttonVariants> {}
+    VariantProps<typeof buttonVariants> {
+}
 
 export interface ButtonWithTextProps extends ButtonPropsBase {
   leftIcon?: React.ReactNode;
@@ -18,8 +19,8 @@ export interface ButtonWithTextProps extends ButtonPropsBase {
 
 export type ButtonProps = ButtonWithTextProps;
 
-export default function Button(props: ButtonProps) {
-  const { leftIcon, rightIcon, text, children, ...rest } = props;
+export const Button = (props: ButtonProps) => {
+  const {leftIcon, rightIcon, text, children, ...rest} = props;
   return (
     <button
       className={clsxMerge(

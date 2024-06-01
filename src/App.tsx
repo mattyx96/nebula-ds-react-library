@@ -1,4 +1,4 @@
-import Button from './components/button/Button.tsx';
+import {Button} from './components/button/Button.tsx';
 import {IconButton} from './components/button/IconButton.tsx';
 import {PlusIcon} from '@heroicons/react/24/solid';
 import {buttonRoundedVariants, buttonSizeVariants, buttonVariantVariants,} from './variants/button';

@@ -1,11 +1,7 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import Button from '../Button.tsx';
-import {
-  buttonRoundedVariants,
-  buttonSizeVariants,
-  buttonVariantVariants,
-} from '../../../variants/button';
-import { PlusIcon } from '@heroicons/react/24/solid'; // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
+import type {Meta, StoryObj} from '@storybook/react';
+import {Button} from '../Button.tsx';
+import {buttonRoundedVariants, buttonSizeVariants, buttonVariantVariants,} from '../../../variants/button';
+import {PlusIcon} from '@heroicons/react/24/solid'; // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 const meta = {
@@ -14,7 +10,7 @@ const meta = {
   tags: ['autodocs'],
   argTypes: {
     size: {
-      control: { type: 'inline-radio' },
+      control: {type: 'inline-radio'},
       options: buttonSizeVariants,
       table: {
         defaultValue: {
@@ -23,15 +19,15 @@ const meta = {
       },
     },
     leftIcon: {
-      control: { type: 'select' },
-      options: [undefined, <PlusIcon key="icon" />],
+      control: {type: 'select'},
+      options: [undefined, <PlusIcon key="icon"/>],
     },
     rightIcon: {
-      control: { type: 'select' },
-      options: [undefined, <PlusIcon key="icon" />],
+      control: {type: 'select'},
+      options: [undefined, <PlusIcon key="icon"/>],
     },
     variant: {
-      control: { type: 'inline-radio' },
+      control: {type: 'inline-radio'},
       defaultValue: 'filled',
       options: buttonVariantVariants,
       table: {
@@ -41,7 +37,7 @@ const meta = {
       },
     },
     rounded: {
-      control: { type: 'inline-radio' },
+      control: {type: 'inline-radio'},
       options: buttonRoundedVariants,
       defaultValue: 'Default',
       table: {
@@ -119,7 +115,7 @@ export const Text: Story = {
   render: () => (
     <div className="flex gap-5">
       {buttonRoundedVariants.map((rounded) => (
-        <Button key={rounded} text="Button" variant="text" rounded={rounded} />
+        <Button key={rounded} text="Button" variant="text" rounded={rounded}/>
       ))}
     </div>
   ),
