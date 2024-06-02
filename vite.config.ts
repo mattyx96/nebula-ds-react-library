@@ -5,7 +5,6 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 import copy from 'rollup-plugin-copy';
 import tailwindcss from "tailwindcss";
-import cssInjectedByJsPlugin from "vite-plugin-css-injected-by-js";
 
 export default defineConfig({
   server: {
@@ -38,7 +37,7 @@ export default defineConfig({
     setupFiles: ['./setupTests.ts'],
     include: ['**/*.test{.tsx,.ts}'],
   },
-  plugins: [react(), dts({include: ["lib"], insertTypesEntry: true}), cssInjectedByJsPlugin(), copy({
+  plugins: [react(), dts(), copy({
     targets: [
       {src: 'src/index.css', dest: 'dist'},
     ],
