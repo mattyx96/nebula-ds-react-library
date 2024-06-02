@@ -1,7 +1,7 @@
 {
   "name": "nebula-ds-react-library",
   "private": false,
-  "version": "0.0.12",
+  "version": "0.0.13",
   "license": "MIT",
   "author": {
     "name": "mattyx96",
@@ -43,7 +43,7 @@
     "@heroicons/react": "^2.1.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
-    "nebula-ds-tokens": "^0.1.13",
+    "nebula-ds-tokens": "^0.1.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwind-merge": "^2.3.0"
