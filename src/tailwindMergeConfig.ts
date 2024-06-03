@@ -1,5 +1,4 @@
 import {tw} from 'nebula-ds-tokens';
-import tokens from 'nebula-ds-tokens/build/light-tokens.json';
 import {extendTailwindMerge} from 'tailwind-merge';
 
 type Tokens = {
@@ -36,7 +35,7 @@ const transformTokens = (
 
 window.console.log(
   'tw merge: ',
-  transformTokens(tw.generateTailwindCompatibleTheme(tokens))
+  transformTokens(tw.generateTailwindCompatibleTheme())
 );
 
 const twMerge = extendTailwindMerge({
@@ -46,7 +45,7 @@ const twMerge = extendTailwindMerge({
       'font-size': ['font-orbitron', 'font-orbitron-3'],
     },
     theme: {
-      ...transformTokens(tw.generateTailwindCompatibleTheme(tokens)),
+      ...transformTokens(tw.generateTailwindCompatibleTheme()),
     },
   },
 });
