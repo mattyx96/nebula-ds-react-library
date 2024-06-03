@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 h1 {
   color: var(--nb-background-contrast-primary-500);
   font: var(--nb-display1);

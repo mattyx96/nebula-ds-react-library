@@ -1,7 +1,7 @@
 {
   "name": "nebula-ds-react-library",
   "private": false,
-  "version": "0.0.14",
+  "version": "0.0.15",
   "license": "MIT",
   "author": {
     "name": "mattyx96",
@@ -29,7 +29,8 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && pnpm build-tailwind && vite build && rm src/nebula.css",
+    "build-tailwind": "NODE_ENV=production npx tailwindcss -i ./src/index.css -o ./src/nebula.css --postcss --minify",
     "preview": "vite preview",
     "prepare": "husky install",
     "lint": "eslint src -c eslint.config.js --report-unused-disable-directives --max-warnings 0",
@@ -71,6 +72,7 @@
     "@typescript-eslint/parser": "^7.10.0",
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.19",
+    "cssnano": "^7.0.1",
     "eslint": "^8.57.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-airbnb-typescript": "^18.0.0",
@@ -100,8 +102,5 @@
     "extends": [
       "plugin:storybook/recommended"
     ]
-  },
-  "dependencies": {
-    "vite-plugin-css-injected-by-js": "^3.5.1"
   }
 }

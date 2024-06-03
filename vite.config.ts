@@ -3,8 +3,7 @@ import {defineConfig} from 'vitest/config';
 import dts from 'vite-plugin-dts';
 import react from '@vitejs/plugin-react';
 import path from 'path';
-import copy from 'rollup-plugin-copy';
-import tailwindcss from "tailwindcss";
+import tailwindcss from 'tailwindcss';
 
 export default defineConfig({
   server: {
@@ -19,17 +18,27 @@ export default defineConfig({
       fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
-      external: ["react", "react-dom", "react/jsx-runtime", "tailwindcss"],
+      external: ["react", "react-dom", "react/jsx-runtime"],
       output: {
         globals: {
           react: "React",
           "react-dom": "ReactDOM",
-          tailwindcss: "tailwindcss",
         },
       },
     },
     sourcemap: true,
     emptyOutDir: true,
+  },
+  plugins: [
+    react(),
+    dts(),
+  ],
+  css: {
+    postcss: {
+      plugins: [
+        tailwindcss('./tailwind.config.mjs'),
+      ],
+    },
   },
   test: {
     globals: true,
@@ -37,15 +46,4 @@ export default defineConfig({
     setupFiles: ['./setupTests.ts'],
     include: ['**/*.test{.tsx,.ts}'],
   },
-  plugins: [react(), dts(), copy({
-    targets: [
-      {src: 'src/index.css', dest: 'dist'},
-    ],
-    hook: 'closeBundle',
-  }),],
-  css: {
-    postcss: {
-      plugins: [tailwindcss],
-    },
-  }
 });
