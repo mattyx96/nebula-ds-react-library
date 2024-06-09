@@ -14,7 +14,7 @@ exports[`Button > button is disabled correctly 1`] = `
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default"
     disabled=""
     type="button"
   >
@@ -37,7 +37,7 @@ exports[`Button > render correctly with rounded prop 1`] = `
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default"
     rounded="Default"
     type="button"
   />
@@ -58,7 +58,7 @@ exports[`Button > render correctly with rounded prop 2`] = `
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-l-button-border-radius-md-lg-default rounded-r-button-border-radius-md-big"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-l-button-border-radius-md-lg-default rounded-r-button-border-radius-md-big"
     rounded="R"
     type="button"
   />
@@ -79,7 +79,7 @@ exports[`Button > render correctly with rounded prop 3`] = `
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
             rounded-br-button-border-radius-md-lg-default 
             rounded-bl-button-border-radius-md-lg-default 
             rounded-tl-button-border-radius-md-lg-default
@@ -106,7 +106,7 @@ exports[`Button > render correctly with rounded prop 4`] = `
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
             rounded-bl-button-border-radius-md-lg-default 
             rounded-tl-button-border-radius-md-lg-default 
             rounded-tr-button-border-radius-md-lg-default
@@ -133,7 +133,7 @@ exports[`Button > render correctly with rounded prop 5`] = `
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-r-button-border-radius-md-lg-default rounded-l-button-border-radius-md-big"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-r-button-border-radius-md-lg-default rounded-l-button-border-radius-md-big"
     rounded="L"
     type="button"
   />
@@ -154,7 +154,7 @@ exports[`Button > render correctly with rounded prop 6`] = `
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
             rounded-bl-button-border-radius-md-lg-default 
             rounded-br-button-border-radius-md-lg-default 
             rounded-tr-button-border-radius-md-lg-default
@@ -181,7 +181,7 @@ exports[`Button > render correctly with rounded prop 7`] = `
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
             rounded-br-button-border-radius-md-lg-default 
             rounded-tr-button-border-radius-md-lg-default 
             rounded-tl-button-border-radius-md-lg-default
@@ -208,7 +208,7 @@ exports[`Button > render correctly with size prop 1`] = `
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default"
     type="button"
     variant="filled"
   />
@@ -292,7 +292,7 @@ exports[`Button > render correctly with size prop 5`] = `
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-button-border-radius-md-lg-default"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-button-border-radius-md-lg-default"
     type="button"
   />
 </div>
@@ -312,7 +312,7 @@ exports[`Button > render correctly with size prop 6`] = `
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default"
     type="button"
   />
 </div>
@@ -332,7 +332,7 @@ exports[`Button > render correctly with size prop 7`] = `
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default"
     type="button"
   />
 </div>
@@ -352,7 +352,7 @@ exports[`Button > render correctly with variant prop 1`] = `
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default"
     type="button"
     variant="filled"
   />
@@ -435,7 +435,7 @@ exports[`Button > renders correctly 1`] = `
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default"
   type="button"
 >
   Click Me
@@ -456,7 +456,7 @@ exports[`Button > renders correctly with left icon 1`] = `
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default"
     type="button"
   >
     <div
@@ -487,7 +487,7 @@ exports[`Button > renders correctly with right icon 1`] = `
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default"
     type="button"
   >
     Click Me
@@ -518,7 +518,7 @@ exports[`Button > should render correctly with all props mix and handle click 1`
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-button-border-radius-md-lg-default"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-button-border-radius-md-lg-default"
     rounded="Default"
     type="button"
     variant="filled"
@@ -561,7 +561,7 @@ exports[`Button > should render correctly with all props mix and handle click 2`
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-l-button-border-radius-md-lg-default rounded-r-button-border-radius-lg-big"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-l-button-border-radius-md-lg-default rounded-r-button-border-radius-lg-big"
     rounded="R"
     type="button"
     variant="filled"
@@ -604,7 +604,7 @@ exports[`Button > should render correctly with all props mix and handle click 3`
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
             rounded-br-button-border-radius-md-lg-default 
             rounded-bl-button-border-radius-md-lg-default 
             rounded-tl-button-border-radius-md-lg-default
@@ -653,7 +653,7 @@ exports[`Button > should render correctly with all props mix and handle click 4`
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
             rounded-bl-button-border-radius-md-lg-default 
             rounded-tl-button-border-radius-md-lg-default 
             rounded-tr-button-border-radius-md-lg-default
@@ -702,7 +702,7 @@ exports[`Button > should render correctly with all props mix and handle click 5`
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-r-button-border-radius-md-lg-default rounded-l-button-border-radius-lg-big"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-r-button-border-radius-md-lg-default rounded-l-button-border-radius-lg-big"
     rounded="L"
     type="button"
     variant="filled"
@@ -745,7 +745,7 @@ exports[`Button > should render correctly with all props mix and handle click 6`
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
             rounded-bl-button-border-radius-md-lg-default 
             rounded-br-button-border-radius-md-lg-default 
             rounded-tr-button-border-radius-md-lg-default
@@ -794,7 +794,7 @@ exports[`Button > should render correctly with all props mix and handle click 7`
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
             rounded-br-button-border-radius-md-lg-default 
             rounded-tr-button-border-radius-md-lg-default 
             rounded-tl-button-border-radius-md-lg-default
@@ -843,7 +843,7 @@ exports[`Button > should render correctly with all props mix and handle click 8`
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default"
     rounded="Default"
     type="button"
     variant="filled"
@@ -886,7 +886,7 @@ exports[`Button > should render correctly with all props mix and handle click 9`
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-l-button-border-radius-md-lg-default rounded-r-button-border-radius-md-big"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-l-button-border-radius-md-lg-default rounded-r-button-border-radius-md-big"
     rounded="R"
     type="button"
     variant="filled"
@@ -929,7 +929,7 @@ exports[`Button > should render correctly with all props mix and handle click 10
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
             rounded-br-button-border-radius-md-lg-default 
             rounded-bl-button-border-radius-md-lg-default 
             rounded-tl-button-border-radius-md-lg-default
@@ -978,7 +978,7 @@ exports[`Button > should render correctly with all props mix and handle click 11
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
             rounded-bl-button-border-radius-md-lg-default 
             rounded-tl-button-border-radius-md-lg-default 
             rounded-tr-button-border-radius-md-lg-default
@@ -1027,7 +1027,7 @@ exports[`Button > should render correctly with all props mix and handle click 12
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-r-button-border-radius-md-lg-default rounded-l-button-border-radius-md-big"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-r-button-border-radius-md-lg-default rounded-l-button-border-radius-md-big"
     rounded="L"
     type="button"
     variant="filled"
@@ -1070,7 +1070,7 @@ exports[`Button > should render correctly with all props mix and handle click 13
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
             rounded-bl-button-border-radius-md-lg-default 
             rounded-br-button-border-radius-md-lg-default 
             rounded-tr-button-border-radius-md-lg-default
@@ -1119,7 +1119,7 @@ exports[`Button > should render correctly with all props mix and handle click 14
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
             rounded-br-button-border-radius-md-lg-default 
             rounded-tr-button-border-radius-md-lg-default 
             rounded-tl-button-border-radius-md-lg-default
@@ -1168,7 +1168,7 @@ exports[`Button > should render correctly with all props mix and handle click 15
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default"
     rounded="Default"
     type="button"
     variant="filled"
@@ -1211,7 +1211,7 @@ exports[`Button > should render correctly with all props mix and handle click 16
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big"
     rounded="R"
     type="button"
     variant="filled"
@@ -1254,7 +1254,7 @@ exports[`Button > should render correctly with all props mix and handle click 17
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
             rounded-br-button-border-radius-xs-default 
             rounded-bl-button-border-radius-xs-default 
             rounded-tl-button-border-radius-xs-default 
@@ -1303,7 +1303,7 @@ exports[`Button > should render correctly with all props mix and handle click 18
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
             rounded-bl-button-border-radius-xs-default 
             rounded-tl-button-border-radius-xs-default 
             rounded-tr-button-border-radius-xs-default 
@@ -1352,7 +1352,7 @@ exports[`Button > should render correctly with all props mix and handle click 19
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-r-button-border-radius-xs-default rounded-l-button-border-radius-xs-big"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-r-button-border-radius-xs-default rounded-l-button-border-radius-xs-big"
     rounded="L"
     type="button"
     variant="filled"
@@ -1395,7 +1395,7 @@ exports[`Button > should render correctly with all props mix and handle click 20
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
             rounded-bl-button-border-radius-xs-default 
             rounded-br-button-border-radius-xs-default 
             rounded-tr-button-border-radius-xs-default 
@@ -1444,7 +1444,7 @@ exports[`Button > should render correctly with all props mix and handle click 21
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
             rounded-br-button-border-radius-xs-default 
             rounded-tr-button-border-radius-xs-default 
             rounded-tl-button-border-radius-xs-default 
@@ -4418,7 +4418,7 @@ exports[`Button > should render correctly with all props mix and handle click 85
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-button-border-radius-md-lg-default"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-button-border-radius-md-lg-default"
     type="button"
   />
 </div>
@@ -4438,7 +4438,7 @@ exports[`Button > should render correctly with all props mix and handle click 86
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default"
     type="button"
   />
 </div>
@@ -4458,7 +4458,7 @@ exports[`Button > should render correctly with all props mix and handle click 87
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default"
     type="button"
   />
 </div>

@@ -1,12 +1,12 @@
-import React, { type ComponentPropsWithRef } from 'react';
-import { type VariantProps } from 'class-variance-authority';
-import { clsxMerge } from '../../common/utils/classNameUtils';
-import './button.css';
+import React, {type ComponentPropsWithRef} from 'react';
+import {clsxMerge} from '../../common/utils/classNameUtils';
+import '../../variants/button/button.css';
 import {
   buttonIconIconVariants,
   iconButtonVariantsExtendsButton,
 } from '../../variants/button/iconButtonVariants.ts';
-import { buttonVariants } from '../../variants';
+import {buttonVariants} from '../../variants';
+import {ButtonVariants, IconButtonVariants} from "../../variants/button";
 
 type ButtonElementProps = ComponentPropsWithRef<'button'>;
 
@@ -15,9 +15,7 @@ interface BaseIconButton extends ButtonElementProps {
   iconClasses?: string;
 }
 
-export type IconButtonProps = (BaseIconButton &
-  VariantProps<typeof iconButtonVariantsExtendsButton>) &
-  (BaseIconButton & VariantProps<typeof buttonVariants>);
+export type IconButtonProps = (BaseIconButton & IconButtonVariants) & ButtonVariants;
 
 export const IconButton = (props: IconButtonProps) => {
   return (
@@ -38,7 +36,7 @@ export const IconButton = (props: IconButtonProps) => {
     >
       <div
         className={clsxMerge(
-          buttonIconIconVariants({ size: props.size, rounded: props.rounded })
+          buttonIconIconVariants({size: props.size, rounded: props.rounded})
         )}
       >
         {props.icon}

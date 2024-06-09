@@ -1,14 +1,14 @@
 import React, {type ComponentPropsWithRef} from 'react';
-import {type VariantProps} from 'class-variance-authority';
 import {clsxMerge} from '../../common/utils/classNameUtils';
 import {Icon} from '../icon/Icon.tsx';
 import {buttonVariants} from '../../variants';
+import {ButtonVariants} from "../../variants/button";
 
 type ButtonElementProps = ComponentPropsWithRef<'button'>;
 
 interface ButtonPropsBase
   extends ButtonElementProps,
-    VariantProps<typeof buttonVariants> {
+    ButtonVariants {
 }
 
 export interface ButtonWithTextProps extends ButtonPropsBase {
@@ -20,7 +20,8 @@ export interface ButtonWithTextProps extends ButtonPropsBase {
 export type ButtonProps = ButtonWithTextProps;
 
 export const Button = (props: ButtonProps) => {
-  const {leftIcon, rightIcon, text, children, ...rest} = props;
+  const {leftIcon, rightIcon, text, children, className, ...rest} = props;
+
   return (
     <button
       className={clsxMerge(
@@ -29,7 +30,7 @@ export const Button = (props: ButtonProps) => {
           rounded: props.rounded,
           variant: props.variant,
         }),
-        props.className
+        className
       )}
       type="button"
       {...rest}

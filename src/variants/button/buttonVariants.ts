@@ -17,7 +17,7 @@ export const buttonVariants = cva(
   {
     variants: {
       variant: {
-        filled: `bg-button-background-primary text-button-text-color-primary ring-transparent`,
+        filled: `bg-button-background-primary text-button-text-color-primary ring-button-background-primary`,
         standard: 'ring-background-accent-200',
         text: 'ring-transparent',
         outlined:

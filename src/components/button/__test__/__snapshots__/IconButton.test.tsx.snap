@@ -14,7 +14,7 @@ exports[`IconButton > button is disabled correctly 1`] = `
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
     disabled=""
     icon="[object Object]"
     id="icon"
@@ -57,7 +57,7 @@ exports[`IconButton > render correctly with rounded prop 1`] = `
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
     icon="[object Object]"
     rounded="Default"
     type="button"
@@ -99,7 +99,7 @@ exports[`IconButton > render correctly with rounded prop 2`] = `
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-l-button-border-radius-md-lg-default rounded-r-button-border-radius-md-big relative flex !px-0 !py-0 h-button-md w-button-md"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-l-button-border-radius-md-lg-default rounded-r-button-border-radius-md-big relative flex !px-0 !py-0 h-button-md w-button-md"
     icon="[object Object]"
     rounded="R"
     type="button"
@@ -141,7 +141,7 @@ exports[`IconButton > render correctly with rounded prop 3`] = `
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
             rounded-br-button-border-radius-md-lg-default 
             rounded-bl-button-border-radius-md-lg-default 
             rounded-tl-button-border-radius-md-lg-default
@@ -189,7 +189,7 @@ exports[`IconButton > render correctly with rounded prop 4`] = `
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
             rounded-bl-button-border-radius-md-lg-default 
             rounded-tl-button-border-radius-md-lg-default 
             rounded-tr-button-border-radius-md-lg-default
@@ -237,7 +237,7 @@ exports[`IconButton > render correctly with rounded prop 5`] = `
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-r-button-border-radius-md-lg-default rounded-l-button-border-radius-md-big relative flex !px-0 !py-0 h-button-md w-button-md"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-r-button-border-radius-md-lg-default rounded-l-button-border-radius-md-big relative flex !px-0 !py-0 h-button-md w-button-md"
     icon="[object Object]"
     rounded="L"
     type="button"
@@ -279,7 +279,7 @@ exports[`IconButton > render correctly with rounded prop 6`] = `
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
             rounded-bl-button-border-radius-md-lg-default 
             rounded-br-button-border-radius-md-lg-default 
             rounded-tr-button-border-radius-md-lg-default
@@ -327,7 +327,7 @@ exports[`IconButton > render correctly with rounded prop 7`] = `
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
             rounded-br-button-border-radius-md-lg-default 
             rounded-tr-button-border-radius-md-lg-default 
             rounded-tl-button-border-radius-md-lg-default
@@ -375,7 +375,7 @@ exports[`IconButton > render correctly with size prop 1`] = `
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
     icon="[object Object]"
     type="button"
     variant="filled"
@@ -543,7 +543,7 @@ exports[`IconButton > render correctly with size prop 5`] = `
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-lg w-button-lg"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-lg w-button-lg"
     icon="[object Object]"
     type="button"
   >
@@ -584,7 +584,7 @@ exports[`IconButton > render correctly with size prop 6`] = `
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
     icon="[object Object]"
     type="button"
   >
@@ -625,7 +625,7 @@ exports[`IconButton > render correctly with size prop 7`] = `
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default relative flex !px-0 !py-0 h-button-sm w-button-sm"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default relative flex !px-0 !py-0 h-button-sm w-button-sm"
     icon="[object Object]"
     type="button"
   >
@@ -666,7 +666,7 @@ exports[`IconButton > render correctly with variant prop 1`] = `
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
     icon="[object Object]"
     type="button"
     variant="filled"
@@ -833,7 +833,7 @@ exports[`IconButton > renders correctly 1`] = `
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
   icon="[object Object]"
   type="button"
 >
@@ -873,7 +873,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-lg w-button-lg"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-lg w-button-lg"
     icon="[object Object]"
     rounded="Default"
     type="button"
@@ -916,7 +916,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-l-button-border-radius-md-lg-default rounded-r-button-border-radius-lg-big relative flex !px-0 !py-0 h-button-lg w-button-lg"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-l-button-border-radius-md-lg-default rounded-r-button-border-radius-lg-big relative flex !px-0 !py-0 h-button-lg w-button-lg"
     icon="[object Object]"
     rounded="R"
     type="button"
@@ -959,7 +959,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
             rounded-br-button-border-radius-md-lg-default 
             rounded-bl-button-border-radius-md-lg-default 
             rounded-tl-button-border-radius-md-lg-default
@@ -1008,7 +1008,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
             rounded-bl-button-border-radius-md-lg-default 
             rounded-tl-button-border-radius-md-lg-default 
             rounded-tr-button-border-radius-md-lg-default
@@ -1057,7 +1057,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-r-button-border-radius-md-lg-default rounded-l-button-border-radius-lg-big relative flex !px-0 !py-0 h-button-lg w-button-lg"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-r-button-border-radius-md-lg-default rounded-l-button-border-radius-lg-big relative flex !px-0 !py-0 h-button-lg w-button-lg"
     icon="[object Object]"
     rounded="L"
     type="button"
@@ -1100,7 +1100,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
             rounded-bl-button-border-radius-md-lg-default 
             rounded-br-button-border-radius-md-lg-default 
             rounded-tr-button-border-radius-md-lg-default
@@ -1149,7 +1149,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg 
             rounded-br-button-border-radius-md-lg-default 
             rounded-tr-button-border-radius-md-lg-default 
             rounded-tl-button-border-radius-md-lg-default
@@ -1198,7 +1198,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
     icon="[object Object]"
     rounded="Default"
     type="button"
@@ -1241,7 +1241,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-l-button-border-radius-md-lg-default rounded-r-button-border-radius-md-big relative flex !px-0 !py-0 h-button-md w-button-md"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-l-button-border-radius-md-lg-default rounded-r-button-border-radius-md-big relative flex !px-0 !py-0 h-button-md w-button-md"
     icon="[object Object]"
     rounded="R"
     type="button"
@@ -1284,7 +1284,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
             rounded-br-button-border-radius-md-lg-default 
             rounded-bl-button-border-radius-md-lg-default 
             rounded-tl-button-border-radius-md-lg-default
@@ -1333,7 +1333,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
             rounded-bl-button-border-radius-md-lg-default 
             rounded-tl-button-border-radius-md-lg-default 
             rounded-tr-button-border-radius-md-lg-default
@@ -1382,7 +1382,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-r-button-border-radius-md-lg-default rounded-l-button-border-radius-md-big relative flex !px-0 !py-0 h-button-md w-button-md"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-r-button-border-radius-md-lg-default rounded-l-button-border-radius-md-big relative flex !px-0 !py-0 h-button-md w-button-md"
     icon="[object Object]"
     rounded="L"
     type="button"
@@ -1425,7 +1425,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
             rounded-bl-button-border-radius-md-lg-default 
             rounded-br-button-border-radius-md-lg-default 
             rounded-tr-button-border-radius-md-lg-default
@@ -1474,7 +1474,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md 
             rounded-br-button-border-radius-md-lg-default 
             rounded-tr-button-border-radius-md-lg-default 
             rounded-tl-button-border-radius-md-lg-default
@@ -1523,7 +1523,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default relative flex !px-0 !py-0 h-button-sm w-button-sm"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default relative flex !px-0 !py-0 h-button-sm w-button-sm"
     icon="[object Object]"
     rounded="Default"
     type="button"
@@ -1566,7 +1566,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big relative flex !px-0 !py-0 h-button-sm w-button-sm"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big relative flex !px-0 !py-0 h-button-sm w-button-sm"
     icon="[object Object]"
     rounded="R"
     type="button"
@@ -1609,7 +1609,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
             rounded-br-button-border-radius-xs-default 
             rounded-bl-button-border-radius-xs-default 
             rounded-tl-button-border-radius-xs-default 
@@ -1658,7 +1658,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
             rounded-bl-button-border-radius-xs-default 
             rounded-tl-button-border-radius-xs-default 
             rounded-tr-button-border-radius-xs-default 
@@ -1707,7 +1707,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-r-button-border-radius-xs-default rounded-l-button-border-radius-xs-big relative flex !px-0 !py-0 h-button-sm w-button-sm"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-r-button-border-radius-xs-default rounded-l-button-border-radius-xs-big relative flex !px-0 !py-0 h-button-sm w-button-sm"
     icon="[object Object]"
     rounded="L"
     type="button"
@@ -1750,7 +1750,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
             rounded-bl-button-border-radius-xs-default 
             rounded-br-button-border-radius-xs-default 
             rounded-tr-button-border-radius-xs-default 
@@ -1799,7 +1799,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm 
             rounded-br-button-border-radius-xs-default 
             rounded-tr-button-border-radius-xs-default 
             rounded-tl-button-border-radius-xs-default 
@@ -4773,7 +4773,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-lg w-button-lg"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-lg-h-default py-button-spacing-lg-v-default h-button-lg rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-lg w-button-lg"
     icon="[object Object]"
     type="button"
   >
@@ -4814,7 +4814,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-md-h-default py-button-spacing-md-v-default h-button-md rounded-button-border-radius-md-lg-default relative flex !px-0 !py-0 h-button-md w-button-md"
     icon="[object Object]"
     type="button"
   >
@@ -4855,7 +4855,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
     focus:outline-0 focus:ring-background-contrast-primary-500 
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-transparent px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default relative flex !px-0 !py-0 h-button-sm w-button-sm"
+   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default relative flex !px-0 !py-0 h-button-sm w-button-sm"
     icon="[object Object]"
     type="button"
   >
