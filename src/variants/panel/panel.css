@@ -1,0 +1,3 @@
+.translate-y-full-plus-var-spacing {
+  transform: translateY(calc(-100% - var(--nb-4)));
+}
