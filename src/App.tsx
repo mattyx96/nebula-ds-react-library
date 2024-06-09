@@ -1,5 +1,5 @@
-import {Buttons} from "./dev/Buttons.tsx";
-import {Panels} from "./dev/Panels.tsx";
+import {Buttons} from "./pages/Buttons.tsx";
+import {Panels} from "./pages/Panels.tsx";
 import {useState} from "react";
 import {Button} from "./components/button/Button.tsx";
 
