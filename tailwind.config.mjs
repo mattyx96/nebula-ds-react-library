@@ -7,5 +7,6 @@ export default {
       ...tw.generateTailwindCompatibleTheme(),
     },
   },
-  plugins: [],
+  plugins: [
+  ],
 };

@@ -36,12 +36,12 @@
     "lint": "eslint src -c eslint.config.js --report-unused-disable-directives --max-warnings 0",
     "lint-fix": "eslint src -c eslint.config.js --fix",
     "test": "vitest",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "storybook": "pnpm run build && storybook dev -p 6006",
+    "build-storybook": "pnpm run build && storybook build",
     "release": "sh ./.scripts/release.sh"
   },
   "dependencies": {
-    "nebula-ds-tokens": "0.1.19-test"
+    "nebula-ds-tokens": "0.1.20"
   },
   "peerDependencies": {
     "@heroicons/react": "^2.1.3",
