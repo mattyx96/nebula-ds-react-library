@@ -10,4 +10,25 @@
   input[type='radio'] {
     accent-color: #E35A3D;
   }
+
+  * :where(p:not(.sb-anchor, .sb-unstyled, .sb-unstyled p)),
+  * :where(h1:not(.sb-anchor, .sb-unstyled, .sb-unstyled h1)),
+  * :where(h2:not(.sb-anchor, .sb-unstyled, .sb-unstyled h2)),
+  * :where(h3:not(.sb-anchor, .sb-unstyled, .sb-unstyled h3)),
+  * :where(h4:not(.sb-anchor, .sb-unstyled, .sb-unstyled h4)),
+  * :where(ul:not(.sb-anchor, .sb-unstyled, .sb-unstyled ul)),
+  * :where(ol:not(.sb-anchor, .sb-unstyled, .sb-unstyled ol)),
+  * :where(li:not(.sb-anchor, .sb-unstyled, .sb-unstyled li)) {
+    color: var(--nb-background-contrast-primary-500) !important;
+    font: var(--nb-header3) !important;
+  }
+
+  * :where(p:not(.sb-anchor, .sb-unstyled, .sb-unstyled p)),
+  * :where(ul:not(.sb-anchor, .sb-unstyled, .sb-unstyled ul)),
+  * :where(ol:not(.sb-anchor, .sb-unstyled, .sb-unstyled ol)),
+  * :where(li:not(.sb-anchor, .sb-unstyled, .sb-unstyled li)) {
+    color: var(--nb-background-contrast-primary-500) !important;
+    font: var(--nb-body2) !important;
+  }
+
 </style>

@@ -1,0 +1,69 @@
+import {Meta} from "@storybook/blocks";
+
+
+<Meta title="Getting started"/>
+
+# Configuring Your React UI Library
+
+<p>This guide will help you configure and start using the `nebula-ds-react-library` in your React project.</p>
+
+## Step 1: Install the Library
+
+First, install the library using your preferred package manager. Select the appropriate tab below for `pnpm`, `npm`, or `yarn`.
+
+**pnpm**
+````bash
+  pnpm add nebula-ds-react-library
+````
+
+**npm**
+````bash
+  npm i nebula-ds-react-library
+````
+
+**yarn**
+````bash
+  yarn add nebula-ds-react-library
+````
+## Step 2: Add Fonts to Your Project
+
+Next, add the required fonts (`Orbitron` and `Roboto Mono`) to your `index.html` file. Insert the following lines within the `<head>` tag:
+
+````html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+````
+
+## Step 3: Import the Library CSS File
+
+To use the components with the correct styling, import the library's CSS file into your project. Add the following import statement to your main entry file (e.g., `index.js` or `App.js`):
+
+````javascript
+import 'nebula-ds-react-library/style';
+````
+
+## Step 4: Start Using the Library
+
+You are now ready to start using the components from `nebula-ds-react-library` in your project. For example, to use a Button component, you can do the following:
+
+````javascript
+  import { Button } from 'nebula-ds-react-library';
+
+  function App() {
+    return (
+      <div>
+        <Button text="Click Me" variant="filled" />
+      </div>
+    );
+  }
+
+  export default App;
+````
+
+For more details and to explore the available components, visit the [components documentation](?path=/docs/components-button--docs).
+
+---
+
+You have successfully configured the `nebula-ds-react-library` in your React project. Happy coding!
