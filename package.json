@@ -38,7 +38,6 @@
     "test": "vitest",
     "storybook": "pnpm run build && storybook dev -p 6006",
     "build-storybook": "pnpm run build && storybook build",
-    "serve-storybook": "serve storybook-static",
     "release": "sh ./.scripts/release.sh"
   },
   "dependencies": {
