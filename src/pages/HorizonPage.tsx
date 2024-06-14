@@ -1,4 +1,4 @@
-import Horizon from "../components/horizon/Horizon.tsx";
+import {Horizon} from "../components/horizon/Horizon.tsx";
 import {lightJsTokens} from 'nebula-ds-tokens'
 import {Button} from "../components/button/Button.tsx";
 import {useState} from "react";
