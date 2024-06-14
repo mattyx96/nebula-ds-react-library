@@ -1,0 +1,2544 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Horizon > renders correctly with all props mixed 1`] = `
+<svg
+  class="custom-class"
+  fill="none"
+  height="600"
+  width="800"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M0 826.8H1512"
+    stroke="blue"
+    stroke-width="15"
+  />
+  <path
+    d="M0 805.5999999999999H1512"
+    stroke="blue"
+    stroke-width="12.75"
+  />
+  <path
+    d="M0 784.3999999999999H1512"
+    stroke="blue"
+    stroke-width="10.8375"
+  />
+  <path
+    d="M0 763.1999999999998H1512"
+    stroke="blue"
+    stroke-width="9.211875000000001"
+  />
+  <path
+    d="M0 741.9999999999998H1512"
+    stroke="blue"
+    stroke-width="7.8300937500000005"
+  />
+  <path
+    d="M0 720.7999999999997H1512"
+    stroke="blue"
+    stroke-width="6.6555796875"
+  />
+  <path
+    d="M0 699.5999999999997H1512"
+    stroke="blue"
+    stroke-width="5.657242734375"
+  />
+  <path
+    d="M0 678.3999999999996H1512"
+    stroke="blue"
+    stroke-width="4.80865632421875"
+  />
+  <path
+    d="M0 657.1999999999996H1512"
+    stroke="blue"
+    stroke-width="4.087357875585937"
+  />
+  <path
+    d="M0 635.9999999999995H1512"
+    stroke="blue"
+    stroke-width="3.4742541942480463"
+  />
+  <path
+    d="M0 614.7999999999995H1512"
+    stroke="blue"
+    stroke-width="2.9531160651108395"
+  />
+  <path
+    d="M0 593.5999999999995H1512"
+    stroke="blue"
+    stroke-width="2.5101486553442136"
+  />
+  <path
+    d="M0 572.3999999999994H1512"
+    stroke="blue"
+    stroke-width="2.1336263570425813"
+  />
+  <path
+    d="M0 551.1999999999994H1512"
+    stroke="blue"
+    stroke-width="1.813582403486194"
+  />
+  <path
+    d="M0 529.9999999999993H1512"
+    stroke="blue"
+    stroke-width="1.5415450429632649"
+  />
+  <path
+    d="M0 508.79999999999933H1512"
+    stroke="blue"
+    stroke-width="1.3103132865187752"
+  />
+  <path
+    d="M0 487.59999999999934H1512"
+    stroke="blue"
+    stroke-width="1.113766293540959"
+  />
+  <path
+    d="M0 466.39999999999935H1512"
+    stroke="blue"
+    stroke-width="0.946701349509815"
+  />
+  <path
+    d="M0 445.19999999999936H1512"
+    stroke="blue"
+    stroke-width="0.8046961470833427"
+  />
+  <path
+    d="M0 423.9999999999994H1512"
+    stroke="blue"
+    stroke-width="0.6839917250208413"
+  />
+  <path
+    d="M0 402.7999999999994H1512"
+    stroke="blue"
+    stroke-width="0.5813929662677151"
+  />
+  <path
+    d="M0 381.5999999999994H1512"
+    stroke="blue"
+    stroke-width="0.4941840213275578"
+  />
+  <path
+    d="M0 360.3999999999994H1512"
+    stroke="blue"
+    stroke-width="0.4200564181284241"
+  />
+  <path
+    d="M0 339.1999999999994H1512"
+    stroke="blue"
+    stroke-width="0.35704795540916046"
+  />
+  <path
+    d="M0 317.99999999999943H1512"
+    stroke="blue"
+    stroke-width="0.30349076209778636"
+  />
+  <path
+    d="M0 296.79999999999944H1512"
+    stroke="blue"
+    stroke-width="0.2579671477831184"
+  />
+  <path
+    d="M0 275.59999999999945H1512"
+    stroke="blue"
+    stroke-width="0.21927207561565065"
+  />
+  <path
+    d="M0 254.39999999999947H1512"
+    stroke="blue"
+    stroke-width="0.18638126427330304"
+  />
+  <path
+    d="M0 233.19999999999948H1512"
+    stroke="blue"
+    stroke-width="0.15842407463230757"
+  />
+  <path
+    d="M0 211.9999999999995H1512"
+    stroke="blue"
+    stroke-width="0.13466046343746144"
+  />
+  <path
+    d="M0 190.7999999999995H1512"
+    stroke="blue"
+    stroke-width="0.11446139392184222"
+  />
+  <path
+    d="M0 169.5999999999995H1512"
+    stroke="blue"
+    stroke-width="0.09729218483356589"
+  />
+  <path
+    d="M0 148.39999999999952H1512"
+    stroke="blue"
+    stroke-width="0.082698357108531"
+  />
+  <path
+    d="M0 127.19999999999952H1512"
+    stroke="blue"
+    stroke-width="0.07029360354225135"
+  />
+  <path
+    d="M0 105.99999999999952H1512"
+    stroke="blue"
+    stroke-width="0.059749563010913644"
+  />
+  <path
+    d="M0 84.79999999999951H1512"
+    stroke="blue"
+    stroke-width="0.0507871285592766"
+  />
+  <path
+    d="M0 63.59999999999951H1512"
+    stroke="blue"
+    stroke-width="0.043169059275385106"
+  />
+  <path
+    d="M0 42.39999999999951H1512"
+    stroke="blue"
+    stroke-width="0.03669370038407734"
+  />
+  <path
+    d="M0 21.19999999999951H1512"
+    stroke="blue"
+    stroke-width="0.03118964532646574"
+  />
+  <path
+    d="M0 -4.902744876744691e-13H1512"
+    stroke="blue"
+    stroke-width="0.026511198527495877"
+  />
+</svg>
+`;
+
+exports[`Horizon > renders correctly with className prop 1`] = `
+<div>
+  <svg
+    class="custom-class"
+    fill="none"
+    height="100"
+    width="100"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M0 0H1512"
+      stroke="#000"
+      stroke-width="10"
+    />
+    <path
+      d="M0 11.05H1512"
+      stroke="#000"
+      stroke-width="9.5"
+    />
+    <path
+      d="M0 22.1H1512"
+      stroke="#000"
+      stroke-width="9.025"
+    />
+    <path
+      d="M0 33.150000000000006H1512"
+      stroke="#000"
+      stroke-width="8.57375"
+    />
+    <path
+      d="M0 44.2H1512"
+      stroke="#000"
+      stroke-width="8.1450625"
+    />
+    <path
+      d="M0 55.25H1512"
+      stroke="#000"
+      stroke-width="7.737809374999999"
+    />
+    <path
+      d="M0 66.3H1512"
+      stroke="#000"
+      stroke-width="7.3509189062499996"
+    />
+    <path
+      d="M0 77.35H1512"
+      stroke="#000"
+      stroke-width="6.9833729609374995"
+    />
+    <path
+      d="M0 88.39999999999999H1512"
+      stroke="#000"
+      stroke-width="6.634204312890624"
+    />
+    <path
+      d="M0 99.44999999999999H1512"
+      stroke="#000"
+      stroke-width="6.302494097246092"
+    />
+    <path
+      d="M0 110.49999999999999H1512"
+      stroke="#000"
+      stroke-width="5.987369392383788"
+    />
+    <path
+      d="M0 121.54999999999998H1512"
+      stroke="#000"
+      stroke-width="5.688000922764598"
+    />
+    <path
+      d="M0 132.6H1512"
+      stroke="#000"
+      stroke-width="5.403600876626368"
+    />
+    <path
+      d="M0 143.65H1512"
+      stroke="#000"
+      stroke-width="5.133420832795049"
+    />
+    <path
+      d="M0 154.70000000000002H1512"
+      stroke="#000"
+      stroke-width="4.876749791155296"
+    />
+    <path
+      d="M0 165.75000000000003H1512"
+      stroke="#000"
+      stroke-width="4.632912301597531"
+    />
+    <path
+      d="M0 176.80000000000004H1512"
+      stroke="#000"
+      stroke-width="4.401266686517654"
+    />
+    <path
+      d="M0 187.85000000000005H1512"
+      stroke="#000"
+      stroke-width="4.181203352191771"
+    />
+    <path
+      d="M0 198.90000000000006H1512"
+      stroke="#000"
+      stroke-width="3.972143184582182"
+    />
+    <path
+      d="M0 209.95000000000007H1512"
+      stroke="#000"
+      stroke-width="3.7735360253530725"
+    />
+    <path
+      d="M0 221.00000000000009H1512"
+      stroke="#000"
+      stroke-width="3.584859224085419"
+    />
+    <path
+      d="M0 232.0500000000001H1512"
+      stroke="#000"
+      stroke-width="3.4056162628811477"
+    />
+    <path
+      d="M0 243.1000000000001H1512"
+      stroke="#000"
+      stroke-width="3.2353354497370903"
+    />
+    <path
+      d="M0 254.15000000000012H1512"
+      stroke="#000"
+      stroke-width="3.0735686772502357"
+    />
+    <path
+      d="M0 265.2000000000001H1512"
+      stroke="#000"
+      stroke-width="2.919890243387724"
+    />
+    <path
+      d="M0 276.2500000000001H1512"
+      stroke="#000"
+      stroke-width="2.7738957312183374"
+    />
+    <path
+      d="M0 287.3000000000001H1512"
+      stroke="#000"
+      stroke-width="2.6352009446574205"
+    />
+    <path
+      d="M0 298.35000000000014H1512"
+      stroke="#000"
+      stroke-width="2.5034408974245492"
+    />
+    <path
+      d="M0 309.40000000000015H1512"
+      stroke="#000"
+      stroke-width="2.3782688525533215"
+    />
+    <path
+      d="M0 320.45000000000016H1512"
+      stroke="#000"
+      stroke-width="2.2593554099256554"
+    />
+    <path
+      d="M0 331.50000000000017H1512"
+      stroke="#000"
+      stroke-width="2.1463876394293724"
+    />
+    <path
+      d="M0 342.5500000000002H1512"
+      stroke="#000"
+      stroke-width="2.0390682574579038"
+    />
+    <path
+      d="M0 353.6000000000002H1512"
+      stroke="#000"
+      stroke-width="1.9371148445850084"
+    />
+    <path
+      d="M0 364.6500000000002H1512"
+      stroke="#000"
+      stroke-width="1.840259102355758"
+    />
+    <path
+      d="M0 375.7000000000002H1512"
+      stroke="#000"
+      stroke-width="1.74824614723797"
+    />
+    <path
+      d="M0 386.7500000000002H1512"
+      stroke="#000"
+      stroke-width="1.6608338398760714"
+    />
+    <path
+      d="M0 397.80000000000024H1512"
+      stroke="#000"
+      stroke-width="1.5777921478822676"
+    />
+    <path
+      d="M0 408.85000000000025H1512"
+      stroke="#000"
+      stroke-width="1.4989025404881542"
+    />
+    <path
+      d="M0 419.90000000000026H1512"
+      stroke="#000"
+      stroke-width="1.4239574134637465"
+    />
+    <path
+      d="M0 430.9500000000003H1512"
+      stroke="#000"
+      stroke-width="1.3527595427905592"
+    />
+    <path
+      d="M0 442.0000000000003H1512"
+      stroke="#000"
+      stroke-width="1.285121565651031"
+    />
+    <path
+      d="M0 453.0500000000003H1512"
+      stroke="#000"
+      stroke-width="1.2208654873684794"
+    />
+    <path
+      d="M0 464.1000000000003H1512"
+      stroke="#000"
+      stroke-width="1.1598222130000555"
+    />
+    <path
+      d="M0 475.1500000000003H1512"
+      stroke="#000"
+      stroke-width="1.1018311023500527"
+    />
+    <path
+      d="M0 486.20000000000033H1512"
+      stroke="#000"
+      stroke-width="1.04673954723255"
+    />
+    <path
+      d="M0 497.25000000000034H1512"
+      stroke="#000"
+      stroke-width="0.9944025698709225"
+    />
+    <path
+      d="M0 508.30000000000035H1512"
+      stroke="#000"
+      stroke-width="0.9446824413773763"
+    />
+    <path
+      d="M0 519.3500000000004H1512"
+      stroke="#000"
+      stroke-width="0.8974483193085074"
+    />
+    <path
+      d="M0 530.4000000000003H1512"
+      stroke="#000"
+      stroke-width="0.852575903343082"
+    />
+    <path
+      d="M0 541.4500000000003H1512"
+      stroke="#000"
+      stroke-width="0.8099471081759279"
+    />
+    <path
+      d="M0 552.5000000000002H1512"
+      stroke="#000"
+      stroke-width="0.7694497527671315"
+    />
+    <path
+      d="M0 563.5500000000002H1512"
+      stroke="#000"
+      stroke-width="0.7309772651287748"
+    />
+    <path
+      d="M0 574.6000000000001H1512"
+      stroke="#000"
+      stroke-width="0.694428401872336"
+    />
+    <path
+      d="M0 585.6500000000001H1512"
+      stroke="#000"
+      stroke-width="0.6597069817787192"
+    />
+    <path
+      d="M0 596.7H1512"
+      stroke="#000"
+      stroke-width="0.6267216326897832"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Horizon > renders correctly with custom color 1`] = `
+<div>
+  <svg
+    fill="none"
+    height="100"
+    width="100"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M0 0H1512"
+      stroke="red"
+      stroke-width="10"
+    />
+    <path
+      d="M0 11.05H1512"
+      stroke="red"
+      stroke-width="9.5"
+    />
+    <path
+      d="M0 22.1H1512"
+      stroke="red"
+      stroke-width="9.025"
+    />
+    <path
+      d="M0 33.150000000000006H1512"
+      stroke="red"
+      stroke-width="8.57375"
+    />
+    <path
+      d="M0 44.2H1512"
+      stroke="red"
+      stroke-width="8.1450625"
+    />
+    <path
+      d="M0 55.25H1512"
+      stroke="red"
+      stroke-width="7.737809374999999"
+    />
+    <path
+      d="M0 66.3H1512"
+      stroke="red"
+      stroke-width="7.3509189062499996"
+    />
+    <path
+      d="M0 77.35H1512"
+      stroke="red"
+      stroke-width="6.9833729609374995"
+    />
+    <path
+      d="M0 88.39999999999999H1512"
+      stroke="red"
+      stroke-width="6.634204312890624"
+    />
+    <path
+      d="M0 99.44999999999999H1512"
+      stroke="red"
+      stroke-width="6.302494097246092"
+    />
+    <path
+      d="M0 110.49999999999999H1512"
+      stroke="red"
+      stroke-width="5.987369392383788"
+    />
+    <path
+      d="M0 121.54999999999998H1512"
+      stroke="red"
+      stroke-width="5.688000922764598"
+    />
+    <path
+      d="M0 132.6H1512"
+      stroke="red"
+      stroke-width="5.403600876626368"
+    />
+    <path
+      d="M0 143.65H1512"
+      stroke="red"
+      stroke-width="5.133420832795049"
+    />
+    <path
+      d="M0 154.70000000000002H1512"
+      stroke="red"
+      stroke-width="4.876749791155296"
+    />
+    <path
+      d="M0 165.75000000000003H1512"
+      stroke="red"
+      stroke-width="4.632912301597531"
+    />
+    <path
+      d="M0 176.80000000000004H1512"
+      stroke="red"
+      stroke-width="4.401266686517654"
+    />
+    <path
+      d="M0 187.85000000000005H1512"
+      stroke="red"
+      stroke-width="4.181203352191771"
+    />
+    <path
+      d="M0 198.90000000000006H1512"
+      stroke="red"
+      stroke-width="3.972143184582182"
+    />
+    <path
+      d="M0 209.95000000000007H1512"
+      stroke="red"
+      stroke-width="3.7735360253530725"
+    />
+    <path
+      d="M0 221.00000000000009H1512"
+      stroke="red"
+      stroke-width="3.584859224085419"
+    />
+    <path
+      d="M0 232.0500000000001H1512"
+      stroke="red"
+      stroke-width="3.4056162628811477"
+    />
+    <path
+      d="M0 243.1000000000001H1512"
+      stroke="red"
+      stroke-width="3.2353354497370903"
+    />
+    <path
+      d="M0 254.15000000000012H1512"
+      stroke="red"
+      stroke-width="3.0735686772502357"
+    />
+    <path
+      d="M0 265.2000000000001H1512"
+      stroke="red"
+      stroke-width="2.919890243387724"
+    />
+    <path
+      d="M0 276.2500000000001H1512"
+      stroke="red"
+      stroke-width="2.7738957312183374"
+    />
+    <path
+      d="M0 287.3000000000001H1512"
+      stroke="red"
+      stroke-width="2.6352009446574205"
+    />
+    <path
+      d="M0 298.35000000000014H1512"
+      stroke="red"
+      stroke-width="2.5034408974245492"
+    />
+    <path
+      d="M0 309.40000000000015H1512"
+      stroke="red"
+      stroke-width="2.3782688525533215"
+    />
+    <path
+      d="M0 320.45000000000016H1512"
+      stroke="red"
+      stroke-width="2.2593554099256554"
+    />
+    <path
+      d="M0 331.50000000000017H1512"
+      stroke="red"
+      stroke-width="2.1463876394293724"
+    />
+    <path
+      d="M0 342.5500000000002H1512"
+      stroke="red"
+      stroke-width="2.0390682574579038"
+    />
+    <path
+      d="M0 353.6000000000002H1512"
+      stroke="red"
+      stroke-width="1.9371148445850084"
+    />
+    <path
+      d="M0 364.6500000000002H1512"
+      stroke="red"
+      stroke-width="1.840259102355758"
+    />
+    <path
+      d="M0 375.7000000000002H1512"
+      stroke="red"
+      stroke-width="1.74824614723797"
+    />
+    <path
+      d="M0 386.7500000000002H1512"
+      stroke="red"
+      stroke-width="1.6608338398760714"
+    />
+    <path
+      d="M0 397.80000000000024H1512"
+      stroke="red"
+      stroke-width="1.5777921478822676"
+    />
+    <path
+      d="M0 408.85000000000025H1512"
+      stroke="red"
+      stroke-width="1.4989025404881542"
+    />
+    <path
+      d="M0 419.90000000000026H1512"
+      stroke="red"
+      stroke-width="1.4239574134637465"
+    />
+    <path
+      d="M0 430.9500000000003H1512"
+      stroke="red"
+      stroke-width="1.3527595427905592"
+    />
+    <path
+      d="M0 442.0000000000003H1512"
+      stroke="red"
+      stroke-width="1.285121565651031"
+    />
+    <path
+      d="M0 453.0500000000003H1512"
+      stroke="red"
+      stroke-width="1.2208654873684794"
+    />
+    <path
+      d="M0 464.1000000000003H1512"
+      stroke="red"
+      stroke-width="1.1598222130000555"
+    />
+    <path
+      d="M0 475.1500000000003H1512"
+      stroke="red"
+      stroke-width="1.1018311023500527"
+    />
+    <path
+      d="M0 486.20000000000033H1512"
+      stroke="red"
+      stroke-width="1.04673954723255"
+    />
+    <path
+      d="M0 497.25000000000034H1512"
+      stroke="red"
+      stroke-width="0.9944025698709225"
+    />
+    <path
+      d="M0 508.30000000000035H1512"
+      stroke="red"
+      stroke-width="0.9446824413773763"
+    />
+    <path
+      d="M0 519.3500000000004H1512"
+      stroke="red"
+      stroke-width="0.8974483193085074"
+    />
+    <path
+      d="M0 530.4000000000003H1512"
+      stroke="red"
+      stroke-width="0.852575903343082"
+    />
+    <path
+      d="M0 541.4500000000003H1512"
+      stroke="red"
+      stroke-width="0.8099471081759279"
+    />
+    <path
+      d="M0 552.5000000000002H1512"
+      stroke="red"
+      stroke-width="0.7694497527671315"
+    />
+    <path
+      d="M0 563.5500000000002H1512"
+      stroke="red"
+      stroke-width="0.7309772651287748"
+    />
+    <path
+      d="M0 574.6000000000001H1512"
+      stroke="red"
+      stroke-width="0.694428401872336"
+    />
+    <path
+      d="M0 585.6500000000001H1512"
+      stroke="red"
+      stroke-width="0.6597069817787192"
+    />
+    <path
+      d="M0 596.7H1512"
+      stroke="red"
+      stroke-width="0.6267216326897832"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Horizon > renders correctly with custom distance and distance growth factor 1`] = `
+<div>
+  <svg
+    fill="none"
+    height="100"
+    width="100"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M0 0H1512"
+      stroke="#000"
+      stroke-width="10"
+    />
+    <path
+      d="M0 16.1H1512"
+      stroke="#000"
+      stroke-width="9.5"
+    />
+    <path
+      d="M0 32.2H1512"
+      stroke="#000"
+      stroke-width="9.025"
+    />
+    <path
+      d="M0 48.300000000000004H1512"
+      stroke="#000"
+      stroke-width="8.57375"
+    />
+    <path
+      d="M0 64.4H1512"
+      stroke="#000"
+      stroke-width="8.1450625"
+    />
+    <path
+      d="M0 80.5H1512"
+      stroke="#000"
+      stroke-width="7.737809374999999"
+    />
+    <path
+      d="M0 96.6H1512"
+      stroke="#000"
+      stroke-width="7.3509189062499996"
+    />
+    <path
+      d="M0 112.69999999999999H1512"
+      stroke="#000"
+      stroke-width="6.9833729609374995"
+    />
+    <path
+      d="M0 128.79999999999998H1512"
+      stroke="#000"
+      stroke-width="6.634204312890624"
+    />
+    <path
+      d="M0 144.89999999999998H1512"
+      stroke="#000"
+      stroke-width="6.302494097246092"
+    />
+    <path
+      d="M0 160.99999999999997H1512"
+      stroke="#000"
+      stroke-width="5.987369392383788"
+    />
+    <path
+      d="M0 177.09999999999997H1512"
+      stroke="#000"
+      stroke-width="5.688000922764598"
+    />
+    <path
+      d="M0 193.19999999999996H1512"
+      stroke="#000"
+      stroke-width="5.403600876626368"
+    />
+    <path
+      d="M0 209.29999999999995H1512"
+      stroke="#000"
+      stroke-width="5.133420832795049"
+    />
+    <path
+      d="M0 225.39999999999995H1512"
+      stroke="#000"
+      stroke-width="4.876749791155296"
+    />
+    <path
+      d="M0 241.49999999999994H1512"
+      stroke="#000"
+      stroke-width="4.632912301597531"
+    />
+    <path
+      d="M0 257.59999999999997H1512"
+      stroke="#000"
+      stroke-width="4.401266686517654"
+    />
+    <path
+      d="M0 273.7H1512"
+      stroke="#000"
+      stroke-width="4.181203352191771"
+    />
+    <path
+      d="M0 289.8H1512"
+      stroke="#000"
+      stroke-width="3.972143184582182"
+    />
+    <path
+      d="M0 305.90000000000003H1512"
+      stroke="#000"
+      stroke-width="3.7735360253530725"
+    />
+    <path
+      d="M0 322.00000000000006H1512"
+      stroke="#000"
+      stroke-width="3.584859224085419"
+    />
+    <path
+      d="M0 338.1000000000001H1512"
+      stroke="#000"
+      stroke-width="3.4056162628811477"
+    />
+    <path
+      d="M0 354.2000000000001H1512"
+      stroke="#000"
+      stroke-width="3.2353354497370903"
+    />
+    <path
+      d="M0 370.3000000000001H1512"
+      stroke="#000"
+      stroke-width="3.0735686772502357"
+    />
+    <path
+      d="M0 386.40000000000015H1512"
+      stroke="#000"
+      stroke-width="2.919890243387724"
+    />
+    <path
+      d="M0 402.50000000000017H1512"
+      stroke="#000"
+      stroke-width="2.7738957312183374"
+    />
+    <path
+      d="M0 418.6000000000002H1512"
+      stroke="#000"
+      stroke-width="2.6352009446574205"
+    />
+    <path
+      d="M0 434.7000000000002H1512"
+      stroke="#000"
+      stroke-width="2.5034408974245492"
+    />
+    <path
+      d="M0 450.80000000000024H1512"
+      stroke="#000"
+      stroke-width="2.3782688525533215"
+    />
+    <path
+      d="M0 466.90000000000026H1512"
+      stroke="#000"
+      stroke-width="2.2593554099256554"
+    />
+    <path
+      d="M0 483.0000000000003H1512"
+      stroke="#000"
+      stroke-width="2.1463876394293724"
+    />
+    <path
+      d="M0 499.1000000000003H1512"
+      stroke="#000"
+      stroke-width="2.0390682574579038"
+    />
+    <path
+      d="M0 515.2000000000003H1512"
+      stroke="#000"
+      stroke-width="1.9371148445850084"
+    />
+    <path
+      d="M0 531.3000000000003H1512"
+      stroke="#000"
+      stroke-width="1.840259102355758"
+    />
+    <path
+      d="M0 547.4000000000003H1512"
+      stroke="#000"
+      stroke-width="1.74824614723797"
+    />
+    <path
+      d="M0 563.5000000000003H1512"
+      stroke="#000"
+      stroke-width="1.6608338398760714"
+    />
+    <path
+      d="M0 579.6000000000004H1512"
+      stroke="#000"
+      stroke-width="1.5777921478822676"
+    />
+    <path
+      d="M0 595.7000000000004H1512"
+      stroke="#000"
+      stroke-width="1.4989025404881542"
+    />
+    <path
+      d="M0 611.8000000000004H1512"
+      stroke="#000"
+      stroke-width="1.4239574134637465"
+    />
+    <path
+      d="M0 627.9000000000004H1512"
+      stroke="#000"
+      stroke-width="1.3527595427905592"
+    />
+    <path
+      d="M0 644.0000000000005H1512"
+      stroke="#000"
+      stroke-width="1.285121565651031"
+    />
+    <path
+      d="M0 660.1000000000005H1512"
+      stroke="#000"
+      stroke-width="1.2208654873684794"
+    />
+    <path
+      d="M0 676.2000000000005H1512"
+      stroke="#000"
+      stroke-width="1.1598222130000555"
+    />
+    <path
+      d="M0 692.3000000000005H1512"
+      stroke="#000"
+      stroke-width="1.1018311023500527"
+    />
+    <path
+      d="M0 708.4000000000005H1512"
+      stroke="#000"
+      stroke-width="1.04673954723255"
+    />
+    <path
+      d="M0 724.5000000000006H1512"
+      stroke="#000"
+      stroke-width="0.9944025698709225"
+    />
+    <path
+      d="M0 740.6000000000006H1512"
+      stroke="#000"
+      stroke-width="0.9446824413773763"
+    />
+    <path
+      d="M0 756.7000000000006H1512"
+      stroke="#000"
+      stroke-width="0.8974483193085074"
+    />
+    <path
+      d="M0 772.8000000000006H1512"
+      stroke="#000"
+      stroke-width="0.852575903343082"
+    />
+    <path
+      d="M0 788.9000000000007H1512"
+      stroke="#000"
+      stroke-width="0.8099471081759279"
+    />
+    <path
+      d="M0 805.0000000000007H1512"
+      stroke="#000"
+      stroke-width="0.7694497527671315"
+    />
+    <path
+      d="M0 821.1000000000007H1512"
+      stroke="#000"
+      stroke-width="0.7309772651287748"
+    />
+    <path
+      d="M0 837.2000000000007H1512"
+      stroke="#000"
+      stroke-width="0.694428401872336"
+    />
+    <path
+      d="M0 853.3000000000008H1512"
+      stroke="#000"
+      stroke-width="0.6597069817787192"
+    />
+    <path
+      d="M0 869.4000000000008H1512"
+      stroke="#000"
+      stroke-width="0.6267216326897832"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Horizon > renders correctly with custom height and width 1`] = `
+<div>
+  <svg
+    fill="none"
+    height="500"
+    width="500"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M0 0H1512"
+      stroke="#000"
+      stroke-width="10"
+    />
+    <path
+      d="M0 11.05H1512"
+      stroke="#000"
+      stroke-width="9.5"
+    />
+    <path
+      d="M0 22.1H1512"
+      stroke="#000"
+      stroke-width="9.025"
+    />
+    <path
+      d="M0 33.150000000000006H1512"
+      stroke="#000"
+      stroke-width="8.57375"
+    />
+    <path
+      d="M0 44.2H1512"
+      stroke="#000"
+      stroke-width="8.1450625"
+    />
+    <path
+      d="M0 55.25H1512"
+      stroke="#000"
+      stroke-width="7.737809374999999"
+    />
+    <path
+      d="M0 66.3H1512"
+      stroke="#000"
+      stroke-width="7.3509189062499996"
+    />
+    <path
+      d="M0 77.35H1512"
+      stroke="#000"
+      stroke-width="6.9833729609374995"
+    />
+    <path
+      d="M0 88.39999999999999H1512"
+      stroke="#000"
+      stroke-width="6.634204312890624"
+    />
+    <path
+      d="M0 99.44999999999999H1512"
+      stroke="#000"
+      stroke-width="6.302494097246092"
+    />
+    <path
+      d="M0 110.49999999999999H1512"
+      stroke="#000"
+      stroke-width="5.987369392383788"
+    />
+    <path
+      d="M0 121.54999999999998H1512"
+      stroke="#000"
+      stroke-width="5.688000922764598"
+    />
+    <path
+      d="M0 132.6H1512"
+      stroke="#000"
+      stroke-width="5.403600876626368"
+    />
+    <path
+      d="M0 143.65H1512"
+      stroke="#000"
+      stroke-width="5.133420832795049"
+    />
+    <path
+      d="M0 154.70000000000002H1512"
+      stroke="#000"
+      stroke-width="4.876749791155296"
+    />
+    <path
+      d="M0 165.75000000000003H1512"
+      stroke="#000"
+      stroke-width="4.632912301597531"
+    />
+    <path
+      d="M0 176.80000000000004H1512"
+      stroke="#000"
+      stroke-width="4.401266686517654"
+    />
+    <path
+      d="M0 187.85000000000005H1512"
+      stroke="#000"
+      stroke-width="4.181203352191771"
+    />
+    <path
+      d="M0 198.90000000000006H1512"
+      stroke="#000"
+      stroke-width="3.972143184582182"
+    />
+    <path
+      d="M0 209.95000000000007H1512"
+      stroke="#000"
+      stroke-width="3.7735360253530725"
+    />
+    <path
+      d="M0 221.00000000000009H1512"
+      stroke="#000"
+      stroke-width="3.584859224085419"
+    />
+    <path
+      d="M0 232.0500000000001H1512"
+      stroke="#000"
+      stroke-width="3.4056162628811477"
+    />
+    <path
+      d="M0 243.1000000000001H1512"
+      stroke="#000"
+      stroke-width="3.2353354497370903"
+    />
+    <path
+      d="M0 254.15000000000012H1512"
+      stroke="#000"
+      stroke-width="3.0735686772502357"
+    />
+    <path
+      d="M0 265.2000000000001H1512"
+      stroke="#000"
+      stroke-width="2.919890243387724"
+    />
+    <path
+      d="M0 276.2500000000001H1512"
+      stroke="#000"
+      stroke-width="2.7738957312183374"
+    />
+    <path
+      d="M0 287.3000000000001H1512"
+      stroke="#000"
+      stroke-width="2.6352009446574205"
+    />
+    <path
+      d="M0 298.35000000000014H1512"
+      stroke="#000"
+      stroke-width="2.5034408974245492"
+    />
+    <path
+      d="M0 309.40000000000015H1512"
+      stroke="#000"
+      stroke-width="2.3782688525533215"
+    />
+    <path
+      d="M0 320.45000000000016H1512"
+      stroke="#000"
+      stroke-width="2.2593554099256554"
+    />
+    <path
+      d="M0 331.50000000000017H1512"
+      stroke="#000"
+      stroke-width="2.1463876394293724"
+    />
+    <path
+      d="M0 342.5500000000002H1512"
+      stroke="#000"
+      stroke-width="2.0390682574579038"
+    />
+    <path
+      d="M0 353.6000000000002H1512"
+      stroke="#000"
+      stroke-width="1.9371148445850084"
+    />
+    <path
+      d="M0 364.6500000000002H1512"
+      stroke="#000"
+      stroke-width="1.840259102355758"
+    />
+    <path
+      d="M0 375.7000000000002H1512"
+      stroke="#000"
+      stroke-width="1.74824614723797"
+    />
+    <path
+      d="M0 386.7500000000002H1512"
+      stroke="#000"
+      stroke-width="1.6608338398760714"
+    />
+    <path
+      d="M0 397.80000000000024H1512"
+      stroke="#000"
+      stroke-width="1.5777921478822676"
+    />
+    <path
+      d="M0 408.85000000000025H1512"
+      stroke="#000"
+      stroke-width="1.4989025404881542"
+    />
+    <path
+      d="M0 419.90000000000026H1512"
+      stroke="#000"
+      stroke-width="1.4239574134637465"
+    />
+    <path
+      d="M0 430.9500000000003H1512"
+      stroke="#000"
+      stroke-width="1.3527595427905592"
+    />
+    <path
+      d="M0 442.0000000000003H1512"
+      stroke="#000"
+      stroke-width="1.285121565651031"
+    />
+    <path
+      d="M0 453.0500000000003H1512"
+      stroke="#000"
+      stroke-width="1.2208654873684794"
+    />
+    <path
+      d="M0 464.1000000000003H1512"
+      stroke="#000"
+      stroke-width="1.1598222130000555"
+    />
+    <path
+      d="M0 475.1500000000003H1512"
+      stroke="#000"
+      stroke-width="1.1018311023500527"
+    />
+    <path
+      d="M0 486.20000000000033H1512"
+      stroke="#000"
+      stroke-width="1.04673954723255"
+    />
+    <path
+      d="M0 497.25000000000034H1512"
+      stroke="#000"
+      stroke-width="0.9944025698709225"
+    />
+    <path
+      d="M0 508.30000000000035H1512"
+      stroke="#000"
+      stroke-width="0.9446824413773763"
+    />
+    <path
+      d="M0 519.3500000000004H1512"
+      stroke="#000"
+      stroke-width="0.8974483193085074"
+    />
+    <path
+      d="M0 530.4000000000003H1512"
+      stroke="#000"
+      stroke-width="0.852575903343082"
+    />
+    <path
+      d="M0 541.4500000000003H1512"
+      stroke="#000"
+      stroke-width="0.8099471081759279"
+    />
+    <path
+      d="M0 552.5000000000002H1512"
+      stroke="#000"
+      stroke-width="0.7694497527671315"
+    />
+    <path
+      d="M0 563.5500000000002H1512"
+      stroke="#000"
+      stroke-width="0.7309772651287748"
+    />
+    <path
+      d="M0 574.6000000000001H1512"
+      stroke="#000"
+      stroke-width="0.694428401872336"
+    />
+    <path
+      d="M0 585.6500000000001H1512"
+      stroke="#000"
+      stroke-width="0.6597069817787192"
+    />
+    <path
+      d="M0 596.7H1512"
+      stroke="#000"
+      stroke-width="0.6267216326897832"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Horizon > renders correctly with custom line thickness 1`] = `
+<div>
+  <svg
+    fill="none"
+    height="100"
+    width="100"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M0 0H1512"
+      stroke="#000"
+      stroke-width="20"
+    />
+    <path
+      d="M0 11.05H1512"
+      stroke="#000"
+      stroke-width="19"
+    />
+    <path
+      d="M0 22.1H1512"
+      stroke="#000"
+      stroke-width="18.05"
+    />
+    <path
+      d="M0 33.150000000000006H1512"
+      stroke="#000"
+      stroke-width="17.1475"
+    />
+    <path
+      d="M0 44.2H1512"
+      stroke="#000"
+      stroke-width="16.290125"
+    />
+    <path
+      d="M0 55.25H1512"
+      stroke="#000"
+      stroke-width="15.475618749999999"
+    />
+    <path
+      d="M0 66.3H1512"
+      stroke="#000"
+      stroke-width="14.701837812499999"
+    />
+    <path
+      d="M0 77.35H1512"
+      stroke="#000"
+      stroke-width="13.966745921874999"
+    />
+    <path
+      d="M0 88.39999999999999H1512"
+      stroke="#000"
+      stroke-width="13.268408625781248"
+    />
+    <path
+      d="M0 99.44999999999999H1512"
+      stroke="#000"
+      stroke-width="12.604988194492185"
+    />
+    <path
+      d="M0 110.49999999999999H1512"
+      stroke="#000"
+      stroke-width="11.974738784767576"
+    />
+    <path
+      d="M0 121.54999999999998H1512"
+      stroke="#000"
+      stroke-width="11.376001845529196"
+    />
+    <path
+      d="M0 132.6H1512"
+      stroke="#000"
+      stroke-width="10.807201753252736"
+    />
+    <path
+      d="M0 143.65H1512"
+      stroke="#000"
+      stroke-width="10.266841665590098"
+    />
+    <path
+      d="M0 154.70000000000002H1512"
+      stroke="#000"
+      stroke-width="9.753499582310592"
+    />
+    <path
+      d="M0 165.75000000000003H1512"
+      stroke="#000"
+      stroke-width="9.265824603195062"
+    />
+    <path
+      d="M0 176.80000000000004H1512"
+      stroke="#000"
+      stroke-width="8.802533373035308"
+    />
+    <path
+      d="M0 187.85000000000005H1512"
+      stroke="#000"
+      stroke-width="8.362406704383542"
+    />
+    <path
+      d="M0 198.90000000000006H1512"
+      stroke="#000"
+      stroke-width="7.944286369164364"
+    />
+    <path
+      d="M0 209.95000000000007H1512"
+      stroke="#000"
+      stroke-width="7.547072050706145"
+    />
+    <path
+      d="M0 221.00000000000009H1512"
+      stroke="#000"
+      stroke-width="7.169718448170838"
+    />
+    <path
+      d="M0 232.0500000000001H1512"
+      stroke="#000"
+      stroke-width="6.811232525762295"
+    />
+    <path
+      d="M0 243.1000000000001H1512"
+      stroke="#000"
+      stroke-width="6.470670899474181"
+    />
+    <path
+      d="M0 254.15000000000012H1512"
+      stroke="#000"
+      stroke-width="6.1471373545004715"
+    />
+    <path
+      d="M0 265.2000000000001H1512"
+      stroke="#000"
+      stroke-width="5.839780486775448"
+    />
+    <path
+      d="M0 276.2500000000001H1512"
+      stroke="#000"
+      stroke-width="5.547791462436675"
+    />
+    <path
+      d="M0 287.3000000000001H1512"
+      stroke="#000"
+      stroke-width="5.270401889314841"
+    />
+    <path
+      d="M0 298.35000000000014H1512"
+      stroke="#000"
+      stroke-width="5.0068817948490985"
+    />
+    <path
+      d="M0 309.40000000000015H1512"
+      stroke="#000"
+      stroke-width="4.756537705106643"
+    />
+    <path
+      d="M0 320.45000000000016H1512"
+      stroke="#000"
+      stroke-width="4.518710819851311"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Horizon > renders correctly with custom number of lines 1`] = `
+<div>
+  <svg
+    fill="none"
+    height="100"
+    width="100"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M0 0H1512"
+      stroke="#000"
+      stroke-width="10"
+    />
+    <path
+      d="M0 11.05H1512"
+      stroke="#000"
+      stroke-width="9.5"
+    />
+    <path
+      d="M0 22.1H1512"
+      stroke="#000"
+      stroke-width="9.025"
+    />
+    <path
+      d="M0 33.150000000000006H1512"
+      stroke="#000"
+      stroke-width="8.57375"
+    />
+    <path
+      d="M0 44.2H1512"
+      stroke="#000"
+      stroke-width="8.1450625"
+    />
+    <path
+      d="M0 55.25H1512"
+      stroke="#000"
+      stroke-width="7.737809374999999"
+    />
+    <path
+      d="M0 66.3H1512"
+      stroke="#000"
+      stroke-width="7.3509189062499996"
+    />
+    <path
+      d="M0 77.35H1512"
+      stroke="#000"
+      stroke-width="6.9833729609374995"
+    />
+    <path
+      d="M0 88.39999999999999H1512"
+      stroke="#000"
+      stroke-width="6.634204312890624"
+    />
+    <path
+      d="M0 99.44999999999999H1512"
+      stroke="#000"
+      stroke-width="6.302494097246092"
+    />
+    <path
+      d="M0 110.49999999999999H1512"
+      stroke="#000"
+      stroke-width="5.987369392383788"
+    />
+    <path
+      d="M0 121.54999999999998H1512"
+      stroke="#000"
+      stroke-width="5.688000922764598"
+    />
+    <path
+      d="M0 132.6H1512"
+      stroke="#000"
+      stroke-width="5.403600876626368"
+    />
+    <path
+      d="M0 143.65H1512"
+      stroke="#000"
+      stroke-width="5.133420832795049"
+    />
+    <path
+      d="M0 154.70000000000002H1512"
+      stroke="#000"
+      stroke-width="4.876749791155296"
+    />
+    <path
+      d="M0 165.75000000000003H1512"
+      stroke="#000"
+      stroke-width="4.632912301597531"
+    />
+    <path
+      d="M0 176.80000000000004H1512"
+      stroke="#000"
+      stroke-width="4.401266686517654"
+    />
+    <path
+      d="M0 187.85000000000005H1512"
+      stroke="#000"
+      stroke-width="4.181203352191771"
+    />
+    <path
+      d="M0 198.90000000000006H1512"
+      stroke="#000"
+      stroke-width="3.972143184582182"
+    />
+    <path
+      d="M0 209.95000000000007H1512"
+      stroke="#000"
+      stroke-width="3.7735360253530725"
+    />
+    <path
+      d="M0 221.00000000000009H1512"
+      stroke="#000"
+      stroke-width="3.584859224085419"
+    />
+    <path
+      d="M0 232.0500000000001H1512"
+      stroke="#000"
+      stroke-width="3.4056162628811477"
+    />
+    <path
+      d="M0 243.1000000000001H1512"
+      stroke="#000"
+      stroke-width="3.2353354497370903"
+    />
+    <path
+      d="M0 254.15000000000012H1512"
+      stroke="#000"
+      stroke-width="3.0735686772502357"
+    />
+    <path
+      d="M0 265.2000000000001H1512"
+      stroke="#000"
+      stroke-width="2.919890243387724"
+    />
+    <path
+      d="M0 276.2500000000001H1512"
+      stroke="#000"
+      stroke-width="2.7738957312183374"
+    />
+    <path
+      d="M0 287.3000000000001H1512"
+      stroke="#000"
+      stroke-width="2.6352009446574205"
+    />
+    <path
+      d="M0 298.35000000000014H1512"
+      stroke="#000"
+      stroke-width="2.5034408974245492"
+    />
+    <path
+      d="M0 309.40000000000015H1512"
+      stroke="#000"
+      stroke-width="2.3782688525533215"
+    />
+    <path
+      d="M0 320.45000000000016H1512"
+      stroke="#000"
+      stroke-width="2.2593554099256554"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Horizon > renders correctly with custom thickness decay factor 1`] = `
+<div>
+  <svg
+    fill="none"
+    height="100"
+    width="100"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M0 0H1512"
+      stroke="#000"
+      stroke-width="10"
+    />
+    <path
+      d="M0 11.05H1512"
+      stroke="#000"
+      stroke-width="9"
+    />
+    <path
+      d="M0 22.1H1512"
+      stroke="#000"
+      stroke-width="8.1"
+    />
+    <path
+      d="M0 33.150000000000006H1512"
+      stroke="#000"
+      stroke-width="7.29"
+    />
+    <path
+      d="M0 44.2H1512"
+      stroke="#000"
+      stroke-width="6.561"
+    />
+    <path
+      d="M0 55.25H1512"
+      stroke="#000"
+      stroke-width="5.9049000000000005"
+    />
+    <path
+      d="M0 66.3H1512"
+      stroke="#000"
+      stroke-width="5.3144100000000005"
+    />
+    <path
+      d="M0 77.35H1512"
+      stroke="#000"
+      stroke-width="4.7829690000000005"
+    />
+    <path
+      d="M0 88.39999999999999H1512"
+      stroke="#000"
+      stroke-width="4.3046721"
+    />
+    <path
+      d="M0 99.44999999999999H1512"
+      stroke="#000"
+      stroke-width="3.8742048900000006"
+    />
+    <path
+      d="M0 110.49999999999999H1512"
+      stroke="#000"
+      stroke-width="3.4867844010000004"
+    />
+    <path
+      d="M0 121.54999999999998H1512"
+      stroke="#000"
+      stroke-width="3.1381059609000004"
+    />
+    <path
+      d="M0 132.6H1512"
+      stroke="#000"
+      stroke-width="2.82429536481"
+    />
+    <path
+      d="M0 143.65H1512"
+      stroke="#000"
+      stroke-width="2.541865828329"
+    />
+    <path
+      d="M0 154.70000000000002H1512"
+      stroke="#000"
+      stroke-width="2.2876792454961"
+    />
+    <path
+      d="M0 165.75000000000003H1512"
+      stroke="#000"
+      stroke-width="2.05891132094649"
+    />
+    <path
+      d="M0 176.80000000000004H1512"
+      stroke="#000"
+      stroke-width="1.853020188851841"
+    />
+    <path
+      d="M0 187.85000000000005H1512"
+      stroke="#000"
+      stroke-width="1.6677181699666568"
+    />
+    <path
+      d="M0 198.90000000000006H1512"
+      stroke="#000"
+      stroke-width="1.5009463529699911"
+    />
+    <path
+      d="M0 209.95000000000007H1512"
+      stroke="#000"
+      stroke-width="1.350851717672992"
+    />
+    <path
+      d="M0 221.00000000000009H1512"
+      stroke="#000"
+      stroke-width="1.2157665459056928"
+    />
+    <path
+      d="M0 232.0500000000001H1512"
+      stroke="#000"
+      stroke-width="1.0941898913151236"
+    />
+    <path
+      d="M0 243.1000000000001H1512"
+      stroke="#000"
+      stroke-width="0.9847709021836112"
+    />
+    <path
+      d="M0 254.15000000000012H1512"
+      stroke="#000"
+      stroke-width="0.88629381196525"
+    />
+    <path
+      d="M0 265.2000000000001H1512"
+      stroke="#000"
+      stroke-width="0.7976644307687251"
+    />
+    <path
+      d="M0 276.2500000000001H1512"
+      stroke="#000"
+      stroke-width="0.7178979876918525"
+    />
+    <path
+      d="M0 287.3000000000001H1512"
+      stroke="#000"
+      stroke-width="0.6461081889226673"
+    />
+    <path
+      d="M0 298.35000000000014H1512"
+      stroke="#000"
+      stroke-width="0.5814973700304006"
+    />
+    <path
+      d="M0 309.40000000000015H1512"
+      stroke="#000"
+      stroke-width="0.5233476330273605"
+    />
+    <path
+      d="M0 320.45000000000016H1512"
+      stroke="#000"
+      stroke-width="0.47101286972462447"
+    />
+    <path
+      d="M0 331.50000000000017H1512"
+      stroke="#000"
+      stroke-width="0.423911582752162"
+    />
+    <path
+      d="M0 342.5500000000002H1512"
+      stroke="#000"
+      stroke-width="0.38152042447694584"
+    />
+    <path
+      d="M0 353.6000000000002H1512"
+      stroke="#000"
+      stroke-width="0.34336838202925124"
+    />
+    <path
+      d="M0 364.6500000000002H1512"
+      stroke="#000"
+      stroke-width="0.30903154382632614"
+    />
+    <path
+      d="M0 375.7000000000002H1512"
+      stroke="#000"
+      stroke-width="0.27812838944369356"
+    />
+    <path
+      d="M0 386.7500000000002H1512"
+      stroke="#000"
+      stroke-width="0.2503155504993242"
+    />
+    <path
+      d="M0 397.80000000000024H1512"
+      stroke="#000"
+      stroke-width="0.2252839954493918"
+    />
+    <path
+      d="M0 408.85000000000025H1512"
+      stroke="#000"
+      stroke-width="0.2027555959044526"
+    />
+    <path
+      d="M0 419.90000000000026H1512"
+      stroke="#000"
+      stroke-width="0.18248003631400736"
+    />
+    <path
+      d="M0 430.9500000000003H1512"
+      stroke="#000"
+      stroke-width="0.16423203268260664"
+    />
+    <path
+      d="M0 442.0000000000003H1512"
+      stroke="#000"
+      stroke-width="0.14780882941434598"
+    />
+    <path
+      d="M0 453.0500000000003H1512"
+      stroke="#000"
+      stroke-width="0.13302794647291138"
+    />
+    <path
+      d="M0 464.1000000000003H1512"
+      stroke="#000"
+      stroke-width="0.11972515182562025"
+    />
+    <path
+      d="M0 475.1500000000003H1512"
+      stroke="#000"
+      stroke-width="0.10775263664305823"
+    />
+    <path
+      d="M0 486.20000000000033H1512"
+      stroke="#000"
+      stroke-width="0.0969773729787524"
+    />
+    <path
+      d="M0 497.25000000000034H1512"
+      stroke="#000"
+      stroke-width="0.08727963568087717"
+    />
+    <path
+      d="M0 508.30000000000035H1512"
+      stroke="#000"
+      stroke-width="0.07855167211278945"
+    />
+    <path
+      d="M0 519.3500000000004H1512"
+      stroke="#000"
+      stroke-width="0.0706965049015105"
+    />
+    <path
+      d="M0 530.4000000000003H1512"
+      stroke="#000"
+      stroke-width="0.06362685441135946"
+    />
+    <path
+      d="M0 541.4500000000003H1512"
+      stroke="#000"
+      stroke-width="0.05726416897022351"
+    />
+    <path
+      d="M0 552.5000000000002H1512"
+      stroke="#000"
+      stroke-width="0.05153775207320116"
+    />
+    <path
+      d="M0 563.5500000000002H1512"
+      stroke="#000"
+      stroke-width="0.04638397686588105"
+    />
+    <path
+      d="M0 574.6000000000001H1512"
+      stroke="#000"
+      stroke-width="0.041745579179292946"
+    />
+    <path
+      d="M0 585.6500000000001H1512"
+      stroke="#000"
+      stroke-width="0.037571021261363656"
+    />
+    <path
+      d="M0 596.7H1512"
+      stroke="#000"
+      stroke-width="0.03381391913522729"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Horizon > renders correctly with default props 1`] = `
+<svg
+  fill="none"
+  height="100"
+  width="100"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M0 0H1512"
+    stroke="#000"
+    stroke-width="10"
+  />
+  <path
+    d="M0 11.05H1512"
+    stroke="#000"
+    stroke-width="9.5"
+  />
+  <path
+    d="M0 22.1H1512"
+    stroke="#000"
+    stroke-width="9.025"
+  />
+  <path
+    d="M0 33.150000000000006H1512"
+    stroke="#000"
+    stroke-width="8.57375"
+  />
+  <path
+    d="M0 44.2H1512"
+    stroke="#000"
+    stroke-width="8.1450625"
+  />
+  <path
+    d="M0 55.25H1512"
+    stroke="#000"
+    stroke-width="7.737809374999999"
+  />
+  <path
+    d="M0 66.3H1512"
+    stroke="#000"
+    stroke-width="7.3509189062499996"
+  />
+  <path
+    d="M0 77.35H1512"
+    stroke="#000"
+    stroke-width="6.9833729609374995"
+  />
+  <path
+    d="M0 88.39999999999999H1512"
+    stroke="#000"
+    stroke-width="6.634204312890624"
+  />
+  <path
+    d="M0 99.44999999999999H1512"
+    stroke="#000"
+    stroke-width="6.302494097246092"
+  />
+  <path
+    d="M0 110.49999999999999H1512"
+    stroke="#000"
+    stroke-width="5.987369392383788"
+  />
+  <path
+    d="M0 121.54999999999998H1512"
+    stroke="#000"
+    stroke-width="5.688000922764598"
+  />
+  <path
+    d="M0 132.6H1512"
+    stroke="#000"
+    stroke-width="5.403600876626368"
+  />
+  <path
+    d="M0 143.65H1512"
+    stroke="#000"
+    stroke-width="5.133420832795049"
+  />
+  <path
+    d="M0 154.70000000000002H1512"
+    stroke="#000"
+    stroke-width="4.876749791155296"
+  />
+  <path
+    d="M0 165.75000000000003H1512"
+    stroke="#000"
+    stroke-width="4.632912301597531"
+  />
+  <path
+    d="M0 176.80000000000004H1512"
+    stroke="#000"
+    stroke-width="4.401266686517654"
+  />
+  <path
+    d="M0 187.85000000000005H1512"
+    stroke="#000"
+    stroke-width="4.181203352191771"
+  />
+  <path
+    d="M0 198.90000000000006H1512"
+    stroke="#000"
+    stroke-width="3.972143184582182"
+  />
+  <path
+    d="M0 209.95000000000007H1512"
+    stroke="#000"
+    stroke-width="3.7735360253530725"
+  />
+  <path
+    d="M0 221.00000000000009H1512"
+    stroke="#000"
+    stroke-width="3.584859224085419"
+  />
+  <path
+    d="M0 232.0500000000001H1512"
+    stroke="#000"
+    stroke-width="3.4056162628811477"
+  />
+  <path
+    d="M0 243.1000000000001H1512"
+    stroke="#000"
+    stroke-width="3.2353354497370903"
+  />
+  <path
+    d="M0 254.15000000000012H1512"
+    stroke="#000"
+    stroke-width="3.0735686772502357"
+  />
+  <path
+    d="M0 265.2000000000001H1512"
+    stroke="#000"
+    stroke-width="2.919890243387724"
+  />
+  <path
+    d="M0 276.2500000000001H1512"
+    stroke="#000"
+    stroke-width="2.7738957312183374"
+  />
+  <path
+    d="M0 287.3000000000001H1512"
+    stroke="#000"
+    stroke-width="2.6352009446574205"
+  />
+  <path
+    d="M0 298.35000000000014H1512"
+    stroke="#000"
+    stroke-width="2.5034408974245492"
+  />
+  <path
+    d="M0 309.40000000000015H1512"
+    stroke="#000"
+    stroke-width="2.3782688525533215"
+  />
+  <path
+    d="M0 320.45000000000016H1512"
+    stroke="#000"
+    stroke-width="2.2593554099256554"
+  />
+  <path
+    d="M0 331.50000000000017H1512"
+    stroke="#000"
+    stroke-width="2.1463876394293724"
+  />
+  <path
+    d="M0 342.5500000000002H1512"
+    stroke="#000"
+    stroke-width="2.0390682574579038"
+  />
+  <path
+    d="M0 353.6000000000002H1512"
+    stroke="#000"
+    stroke-width="1.9371148445850084"
+  />
+  <path
+    d="M0 364.6500000000002H1512"
+    stroke="#000"
+    stroke-width="1.840259102355758"
+  />
+  <path
+    d="M0 375.7000000000002H1512"
+    stroke="#000"
+    stroke-width="1.74824614723797"
+  />
+  <path
+    d="M0 386.7500000000002H1512"
+    stroke="#000"
+    stroke-width="1.6608338398760714"
+  />
+  <path
+    d="M0 397.80000000000024H1512"
+    stroke="#000"
+    stroke-width="1.5777921478822676"
+  />
+  <path
+    d="M0 408.85000000000025H1512"
+    stroke="#000"
+    stroke-width="1.4989025404881542"
+  />
+  <path
+    d="M0 419.90000000000026H1512"
+    stroke="#000"
+    stroke-width="1.4239574134637465"
+  />
+  <path
+    d="M0 430.9500000000003H1512"
+    stroke="#000"
+    stroke-width="1.3527595427905592"
+  />
+  <path
+    d="M0 442.0000000000003H1512"
+    stroke="#000"
+    stroke-width="1.285121565651031"
+  />
+  <path
+    d="M0 453.0500000000003H1512"
+    stroke="#000"
+    stroke-width="1.2208654873684794"
+  />
+  <path
+    d="M0 464.1000000000003H1512"
+    stroke="#000"
+    stroke-width="1.1598222130000555"
+  />
+  <path
+    d="M0 475.1500000000003H1512"
+    stroke="#000"
+    stroke-width="1.1018311023500527"
+  />
+  <path
+    d="M0 486.20000000000033H1512"
+    stroke="#000"
+    stroke-width="1.04673954723255"
+  />
+  <path
+    d="M0 497.25000000000034H1512"
+    stroke="#000"
+    stroke-width="0.9944025698709225"
+  />
+  <path
+    d="M0 508.30000000000035H1512"
+    stroke="#000"
+    stroke-width="0.9446824413773763"
+  />
+  <path
+    d="M0 519.3500000000004H1512"
+    stroke="#000"
+    stroke-width="0.8974483193085074"
+  />
+  <path
+    d="M0 530.4000000000003H1512"
+    stroke="#000"
+    stroke-width="0.852575903343082"
+  />
+  <path
+    d="M0 541.4500000000003H1512"
+    stroke="#000"
+    stroke-width="0.8099471081759279"
+  />
+  <path
+    d="M0 552.5000000000002H1512"
+    stroke="#000"
+    stroke-width="0.7694497527671315"
+  />
+  <path
+    d="M0 563.5500000000002H1512"
+    stroke="#000"
+    stroke-width="0.7309772651287748"
+  />
+  <path
+    d="M0 574.6000000000001H1512"
+    stroke="#000"
+    stroke-width="0.694428401872336"
+  />
+  <path
+    d="M0 585.6500000000001H1512"
+    stroke="#000"
+    stroke-width="0.6597069817787192"
+  />
+  <path
+    d="M0 596.7H1512"
+    stroke="#000"
+    stroke-width="0.6267216326897832"
+  />
+</svg>
+`;
+
+exports[`Horizon > renders correctly with inverse prop 1`] = `
+<div>
+  <svg
+    fill="none"
+    height="100"
+    width="100"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M0 596.7H1512"
+      stroke="#000"
+      stroke-width="10"
+    />
+    <path
+      d="M0 585.6500000000001H1512"
+      stroke="#000"
+      stroke-width="9.5"
+    />
+    <path
+      d="M0 574.6000000000001H1512"
+      stroke="#000"
+      stroke-width="9.025"
+    />
+    <path
+      d="M0 563.5500000000002H1512"
+      stroke="#000"
+      stroke-width="8.57375"
+    />
+    <path
+      d="M0 552.5000000000002H1512"
+      stroke="#000"
+      stroke-width="8.1450625"
+    />
+    <path
+      d="M0 541.4500000000003H1512"
+      stroke="#000"
+      stroke-width="7.737809374999999"
+    />
+    <path
+      d="M0 530.4000000000003H1512"
+      stroke="#000"
+      stroke-width="7.3509189062499996"
+    />
+    <path
+      d="M0 519.3500000000004H1512"
+      stroke="#000"
+      stroke-width="6.9833729609374995"
+    />
+    <path
+      d="M0 508.30000000000035H1512"
+      stroke="#000"
+      stroke-width="6.634204312890624"
+    />
+    <path
+      d="M0 497.25000000000034H1512"
+      stroke="#000"
+      stroke-width="6.302494097246092"
+    />
+    <path
+      d="M0 486.20000000000033H1512"
+      stroke="#000"
+      stroke-width="5.987369392383788"
+    />
+    <path
+      d="M0 475.1500000000003H1512"
+      stroke="#000"
+      stroke-width="5.688000922764598"
+    />
+    <path
+      d="M0 464.1000000000003H1512"
+      stroke="#000"
+      stroke-width="5.403600876626368"
+    />
+    <path
+      d="M0 453.0500000000003H1512"
+      stroke="#000"
+      stroke-width="5.133420832795049"
+    />
+    <path
+      d="M0 442.0000000000003H1512"
+      stroke="#000"
+      stroke-width="4.876749791155296"
+    />
+    <path
+      d="M0 430.9500000000003H1512"
+      stroke="#000"
+      stroke-width="4.632912301597531"
+    />
+    <path
+      d="M0 419.90000000000026H1512"
+      stroke="#000"
+      stroke-width="4.401266686517654"
+    />
+    <path
+      d="M0 408.85000000000025H1512"
+      stroke="#000"
+      stroke-width="4.181203352191771"
+    />
+    <path
+      d="M0 397.80000000000024H1512"
+      stroke="#000"
+      stroke-width="3.972143184582182"
+    />
+    <path
+      d="M0 386.7500000000002H1512"
+      stroke="#000"
+      stroke-width="3.7735360253530725"
+    />
+    <path
+      d="M0 375.7000000000002H1512"
+      stroke="#000"
+      stroke-width="3.584859224085419"
+    />
+    <path
+      d="M0 364.6500000000002H1512"
+      stroke="#000"
+      stroke-width="3.4056162628811477"
+    />
+    <path
+      d="M0 353.6000000000002H1512"
+      stroke="#000"
+      stroke-width="3.2353354497370903"
+    />
+    <path
+      d="M0 342.5500000000002H1512"
+      stroke="#000"
+      stroke-width="3.0735686772502357"
+    />
+    <path
+      d="M0 331.50000000000017H1512"
+      stroke="#000"
+      stroke-width="2.919890243387724"
+    />
+    <path
+      d="M0 320.45000000000016H1512"
+      stroke="#000"
+      stroke-width="2.7738957312183374"
+    />
+    <path
+      d="M0 309.40000000000015H1512"
+      stroke="#000"
+      stroke-width="2.6352009446574205"
+    />
+    <path
+      d="M0 298.35000000000014H1512"
+      stroke="#000"
+      stroke-width="2.5034408974245492"
+    />
+    <path
+      d="M0 287.3000000000001H1512"
+      stroke="#000"
+      stroke-width="2.3782688525533215"
+    />
+    <path
+      d="M0 276.2500000000001H1512"
+      stroke="#000"
+      stroke-width="2.2593554099256554"
+    />
+    <path
+      d="M0 265.2000000000001H1512"
+      stroke="#000"
+      stroke-width="2.1463876394293724"
+    />
+    <path
+      d="M0 254.1500000000001H1512"
+      stroke="#000"
+      stroke-width="2.0390682574579038"
+    />
+    <path
+      d="M0 243.10000000000008H1512"
+      stroke="#000"
+      stroke-width="1.9371148445850084"
+    />
+    <path
+      d="M0 232.05000000000007H1512"
+      stroke="#000"
+      stroke-width="1.840259102355758"
+    />
+    <path
+      d="M0 221.00000000000006H1512"
+      stroke="#000"
+      stroke-width="1.74824614723797"
+    />
+    <path
+      d="M0 209.95000000000005H1512"
+      stroke="#000"
+      stroke-width="1.6608338398760714"
+    />
+    <path
+      d="M0 198.90000000000003H1512"
+      stroke="#000"
+      stroke-width="1.5777921478822676"
+    />
+    <path
+      d="M0 187.85000000000002H1512"
+      stroke="#000"
+      stroke-width="1.4989025404881542"
+    />
+    <path
+      d="M0 176.8H1512"
+      stroke="#000"
+      stroke-width="1.4239574134637465"
+    />
+    <path
+      d="M0 165.75H1512"
+      stroke="#000"
+      stroke-width="1.3527595427905592"
+    />
+    <path
+      d="M0 154.7H1512"
+      stroke="#000"
+      stroke-width="1.285121565651031"
+    />
+    <path
+      d="M0 143.64999999999998H1512"
+      stroke="#000"
+      stroke-width="1.2208654873684794"
+    />
+    <path
+      d="M0 132.59999999999997H1512"
+      stroke="#000"
+      stroke-width="1.1598222130000555"
+    />
+    <path
+      d="M0 121.54999999999997H1512"
+      stroke="#000"
+      stroke-width="1.1018311023500527"
+    />
+    <path
+      d="M0 110.49999999999997H1512"
+      stroke="#000"
+      stroke-width="1.04673954723255"
+    />
+    <path
+      d="M0 99.44999999999997H1512"
+      stroke="#000"
+      stroke-width="0.9944025698709225"
+    />
+    <path
+      d="M0 88.39999999999998H1512"
+      stroke="#000"
+      stroke-width="0.9446824413773763"
+    />
+    <path
+      d="M0 77.34999999999998H1512"
+      stroke="#000"
+      stroke-width="0.8974483193085074"
+    />
+    <path
+      d="M0 66.29999999999998H1512"
+      stroke="#000"
+      stroke-width="0.852575903343082"
+    />
+    <path
+      d="M0 55.249999999999986H1512"
+      stroke="#000"
+      stroke-width="0.8099471081759279"
+    />
+    <path
+      d="M0 44.19999999999999H1512"
+      stroke="#000"
+      stroke-width="0.7694497527671315"
+    />
+    <path
+      d="M0 33.14999999999999H1512"
+      stroke="#000"
+      stroke-width="0.7309772651287748"
+    />
+    <path
+      d="M0 22.09999999999999H1512"
+      stroke="#000"
+      stroke-width="0.694428401872336"
+    />
+    <path
+      d="M0 11.04999999999999H1512"
+      stroke="#000"
+      stroke-width="0.6597069817787192"
+    />
+    <path
+      d="M0 -1.0658141036401503e-14H1512"
+      stroke="#000"
+      stroke-width="0.6267216326897832"
+    />
+  </svg>
+</div>
+`;

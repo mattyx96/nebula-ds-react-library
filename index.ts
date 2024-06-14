@@ -7,4 +7,6 @@ export * from './src/components/button/Button';
 export * from './src/components/button/IconButton.tsx';
 export * from './src/components/icon/Icon.tsx';
 export * from './src/components/panel/Panel.tsx';
+export * from './src/components/horizon/Horizon.tsx';
+export * from './src/components/frameConnector/FrameConnector.tsx';
 
