@@ -41,7 +41,7 @@
     "release": "sh ./.scripts/release.sh"
   },
   "dependencies": {
-    "nebula-ds-tokens": "0.1.20"
+    "nebula-ds-tokens": "0.2.0"
   },
   "peerDependencies": {
     "@heroicons/react": "^2.1.3",

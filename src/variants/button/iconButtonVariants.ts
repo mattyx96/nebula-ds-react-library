@@ -1,13 +1,13 @@
-import { cva } from 'class-variance-authority';
+import {cva} from 'class-variance-authority';
 
 export const iconButtonVariantsExtendsButton = cva(
   `relative flex !px-0 !py-0`, //todo fix: tailwind merge config
   {
     variants: {
       size: {
-        L: 'h-button-lg w-button-lg',
-        M: 'h-button-md w-button-md',
-        S: 'h-button-sm w-button-sm',
+        L: 'min-h-button-lg min-w-button-lg',
+        M: 'min-h-button-md min-w-button-md',
+        S: 'min-h-button-sm min-w-button-sm',
       },
     },
     defaultVariants: {
