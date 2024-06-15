@@ -48,6 +48,12 @@ describe('FrameConnector', () => {
     expect(container.querySelector('svg')).toBeNull();
   });
 
+  it('renders correctly with vertical prop', () => {
+    const {container} = render(<FrameConnector vertical/>);
+    expect(container.firstChild).toMatchSnapshot();
+    expect(container.querySelector('svg')).toBeInTheDocument();
+  });
+
   it('renders correctly with all props mixed', () => {
     const props = {
       className: 'custom-class',

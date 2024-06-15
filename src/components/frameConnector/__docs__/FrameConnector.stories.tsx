@@ -62,6 +62,12 @@ export const DividerOnly: Story = {
   },
 };
 
+export const Vertical: Story = {
+  args: {
+    vertical: true,
+  },
+};
+
 export const HiddenNodes: Story = {
   args: {
     firstNode: {

@@ -20,6 +20,10 @@ export const FrameConnectorPage = () => {
         <Button className="w-60" size="M" variant="standard" rounded="R" text="zoom"
                 rightIcon={<MagnifyingGlassPlusIcon/>}/>
       </div>
+
+      <div className="h-[45rem] w-full flex justify-end">
+        <FrameConnector className="scale-[-1]" vertical/>
+      </div>
     </div>
   )
 }
