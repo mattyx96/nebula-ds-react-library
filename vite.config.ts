@@ -31,7 +31,10 @@ export default defineConfig({
   },
   plugins: [
     react(),
-    dts(),
+    dts({
+      insertTypesEntry: true,
+      outDir: 'dist/types',
+    }),
   ],
   css: {
     postcss: {
