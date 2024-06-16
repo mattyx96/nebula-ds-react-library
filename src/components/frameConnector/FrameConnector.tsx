@@ -23,11 +23,11 @@ export const FrameConnector = (props: Props) => {
   return (
     <div className={`flex ${props.vertical ? 'flex-col w-fit' : 'items-end flex-1'} ${props.className}`}>
       {props.firstNode?.hidden || props.divider ? <></> :
-        <Node fill={props.firstNode?.fill || lightJsTokens.nbBackgroundAccent200}
+        <Node fill={props.firstNode?.fill || lightJsTokens.nbFrameBackgroundPrimary}
               className={`${props.vertical ? 'rotate-90 origin-center' : ''} scale-x-[-1] ${props.firstNode?.className}`}/>}
       <Bridge className={props.bridge?.className} vertical={!!props.vertical}/>
       {props.secondNode?.hidden || props.divider ? <></> :
-        <Node fill={props.secondNode?.fill || lightJsTokens.nbBackgroundAccent200}
+        <Node fill={props.secondNode?.fill || lightJsTokens.nbFrameBackgroundPrimary}
               className={`${props.vertical ? 'rotate-90 origin-center' : ''} ${props.secondNode?.className}`}/>}
     </div>
   )
@@ -45,5 +45,5 @@ const Node = (props: { fill: string; className?: string }) => (
 
 const Bridge = (props: { className?: string, vertical: boolean }) => (
   <div
-    className={`${props.vertical ? 'h-full w-[6px]' : 'w-full h-[6px]'} bg-background-accent-200 ${props.className}`}/>
+    className={`${props.vertical ? 'h-full w-[6px]' : 'w-full h-[6px]'} bg-frame-background-primaryu ${props.className}`}/>
 );
