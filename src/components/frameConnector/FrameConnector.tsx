@@ -45,5 +45,5 @@ const Node = (props: { fill: string; className?: string }) => (
 
 const Bridge = (props: { className?: string, vertical: boolean }) => (
   <div
-    className={`${props.vertical ? 'h-full w-[6px]' : 'w-full h-[6px]'} bg-frame-background-primaryu ${props.className}`}/>
+    className={`${props.vertical ? 'h-full w-[6px]' : 'w-full h-[6px]'} bg-frame-background-primary ${props.className}`}/>
 );
