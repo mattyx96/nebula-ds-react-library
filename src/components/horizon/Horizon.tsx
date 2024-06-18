@@ -1,4 +1,4 @@
-import {useEffect, useRef} from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 type Props = {
   color?: string;
@@ -25,6 +25,7 @@ export const Horizon = ({
                           ...props
                         }: Props) => {
   const svgRef = useRef<SVGSVGElement>(null);
+  const [svgWidth, setSvgWidth] = useState(1512); // default width
 
   const generatePaths = () => {
     const paths = [];
@@ -42,7 +43,7 @@ export const Horizon = ({
       paths.push(
         <path
           key={i}
-          d={`M0 ${yOffset}H1512`}
+          d={`M0 ${yOffset}H${svgWidth}`}
           stroke={color}
           strokeWidth={currentThickness}
         />
@@ -77,22 +78,22 @@ export const Horizon = ({
         });
 
         const svgHeight = height || (maxY - minY);
-        const svgWidth = width || (maxX - minX);
+        const currentSvgWidth = width || svgRef.current.clientWidth || (maxX - minX);
 
         if (svgRef.current) {
           svgRef.current.setAttribute('height', `${svgHeight}`);
-          svgRef.current.setAttribute('width', `${svgWidth}`);
+          svgRef.current.setAttribute('width', `${currentSvgWidth}`);
         }
+
+        setSvgWidth(currentSvgWidth); // Update state with the current SVG width
       }
     }
   };
 
   useEffect(() => {
-    window.addEventListener('load', fitSvgPathElements);
     window.addEventListener('resize', fitSvgPathElements);
 
     return () => {
-      window.removeEventListener('load', fitSvgPathElements);
       window.removeEventListener('resize', fitSvgPathElements);
     };
   }, []);
@@ -100,6 +101,10 @@ export const Horizon = ({
   useEffect(() => {
     fitSvgPathElements();
   }, [color, numLines, lineThickness, distance, distanceGrowthFactor, thicknessDecayFactor]);
+
+  useEffect(() => {
+    fitSvgPathElements(); // Initial call on load
+  }, []);
 
   return (
     <svg
