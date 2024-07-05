@@ -1,5 +1,5 @@
-import { create } from '@storybook/theming/create';
-import { lightJsTokens } from 'nebula-ds-tokens';
+import {create} from '@storybook/theming/create';
+import {lightJsTokens} from 'nebula-ds-tokens';
 
 export const theme: ReturnType<typeof create> = create({
   base: 'light',
@@ -38,6 +38,6 @@ export const theme: ReturnType<typeof create> = create({
   ),
 
   brandTitle: 'Nebula-DS React UI',
-  /*brandUrl: 'https://example.com',
-  brandImage: 'https://placehold.it/350x150',*/
+  /*brandUrl: 'https://example.com'*/
+  brandImage: '/nebula_logo_type.png',
 });
