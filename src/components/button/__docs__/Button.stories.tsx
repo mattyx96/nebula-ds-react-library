@@ -7,7 +7,7 @@ import {PlusIcon} from '@heroicons/react/24/solid'; // More on how to set up sto
 const meta = {
   title: 'Components/Button',
   component: Button,
-  tags: ['autodocs'],
+  tags: ['autodocs', '!dev'],
   argTypes: {
     size: {
       control: {type: 'inline-radio'},

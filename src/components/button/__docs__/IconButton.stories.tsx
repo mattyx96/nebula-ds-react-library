@@ -10,7 +10,7 @@ import { PlusIcon } from '@heroicons/react/24/solid';
 const meta = {
   title: 'Components/IconButton',
   component: IconButton,
-  tags: ['autodocs'],
+  tags: ['autodocs', '!dev'],
   argTypes: {
     icon: {
       control: { disable: true },

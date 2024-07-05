@@ -5,7 +5,7 @@ import {Horizon} from '../Horizon';
 const meta = {
   title: 'Components/Horizon',
   component: Horizon,
-  tags: ['autodocs'],
+  tags: ['autodocs', '!dev'],
   argTypes: {
     color: {
       control: 'color',

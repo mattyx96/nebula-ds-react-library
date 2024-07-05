@@ -1,12 +1,11 @@
 import type {Meta, StoryObj} from '@storybook/react';
 import {FrameConnector} from '../FrameConnector';
-import {lightJsTokens} from 'nebula-ds-tokens';
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 const meta = {
   title: 'Components/FrameConnector',
   component: FrameConnector,
-  tags: ['autodocs'],
+  tags: ['autodocs', '!dev'],
   argTypes: {
     divider: {
       control: 'boolean',
@@ -35,12 +34,10 @@ const meta = {
       className: '',
     },
     firstNode: {
-      fill: lightJsTokens.nbBackgroundAccent200,
       className: '',
       hidden: false,
     },
     secondNode: {
-      fill: lightJsTokens.nbBackgroundAccent200,
       className: '',
       hidden: false,
     },

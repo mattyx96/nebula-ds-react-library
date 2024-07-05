@@ -23,7 +23,7 @@ const content = (content = 'Content here') => (
 const meta = {
   title: 'Components/Paper',
   component: Paper,
-  tags: ['autodocs'],
+  tags: ['autodocs', '!dev'],
   parameters: {
     layout: 'centered',
   },
