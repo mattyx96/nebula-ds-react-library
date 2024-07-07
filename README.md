@@ -2,9 +2,15 @@
 
 React implementation of Nebula Design System 
 
-Tokens: https://github.com/mattyx96/nebula-ds-tokens
+Storybook: https://nebula-ds-react-library.irongalaxy.space
+
+Tokens repository: https://github.com/mattyx96/nebula-ds-tokens
  
 ### Roadmap:
-- document tokens
-- document typography
+- [ ] document tokens
+- [X] document typography
+- [X] improve typography (adding ad-hoc component)
+- [ ] improve customization:
+  - [ ] add twMerge (and configure it properly)
+- [ ] add dark theme + theme provider
 - ...
