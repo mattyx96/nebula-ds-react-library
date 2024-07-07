@@ -1,64 +1,74 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
-/*h1 {
+.display1 {
   color: var(--nb-background-contrast-primary-500);
   font: var(--nb-display1);
 }
 
-h2 {
+.display2 {
   color: var(--nb-background-contrast-primary-500);
   font: var(--nb-display2);
 }
 
-h3 {
+.header1 {
   color: var(--nb-background-contrast-primary-500);
   font: var(--nb-header1);
 }
 
-h4 {
+.header2 {
   color: var(--nb-background-contrast-primary-500);
   font: var(--nb-header2);
 }
 
-h5 {
+.header3 {
   color: var(--nb-background-contrast-primary-500);
   font: var(--nb-header3);
 }
 
-h6 {
+.header4 {
   color: var(--nb-background-contrast-primary-500);
   font: var(--nb-header4);
 }
 
-p {
+.header5 {
+  color: var(--nb-background-contrast-primary-500);
+  font: var(--nb-header5);
+}
+
+.header6 {
+  color: var(--nb-background-contrast-primary-500);
+  font: var(--nb-header6);
+}
+
+.body1 {
   color: var(--nb-background-contrast-primary-500);
   font: var(--nb-body1);
 }
 
-p.small {
+.body2 {
   color: var(--nb-background-contrast-primary-500);
   font: var(--nb-body2);
 }
 
-span {
+.body3 {
   color: var(--nb-background-contrast-primary-500);
   font: var(--nb-body3);
 }
 
-small {
+.body4 {
   color: var(--nb-background-contrast-primary-500);
   font: var(--nb-body4);
 }
 
-button {
+.body5 {
+  color: var(--nb-background-contrast-primary-500);
+  font: var(--nb-body5);
+}
+
+.button {
   color: var(--nb-background-contrast-primary-500);
   font: var(--nb-button);
 }
 
-caption {
+.caption {
   color: var(--nb-background-contrast-primary-500);
   font: var(--nb-caption);
-}*/
+}

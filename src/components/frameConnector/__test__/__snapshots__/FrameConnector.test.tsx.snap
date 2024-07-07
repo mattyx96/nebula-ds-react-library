@@ -5,7 +5,7 @@ exports[`FrameConnector > handles divider prop correctly 1`] = `
   class="flex items-end flex-1 undefined"
 >
   <div
-    class="w-full h-[6px] bg-frame-background-primaryu undefined"
+    class="w-full h-[6px] bg-frame-background-primary undefined"
   />
 </div>
 `;
@@ -15,7 +15,7 @@ exports[`FrameConnector > hides nodes correctly with hidden prop 1`] = `
   class="flex items-end flex-1 undefined"
 >
   <div
-    class="w-full h-[6px] bg-frame-background-primaryu undefined"
+    class="w-full h-[6px] bg-frame-background-primary undefined"
   />
 </div>
 `;
@@ -42,7 +42,7 @@ exports[`FrameConnector > renders correctly 1`] = `
     </svg>
   </div>
   <div
-    class="w-full h-[6px] bg-frame-background-primaryu undefined"
+    class="w-full h-[6px] bg-frame-background-primary undefined"
   />
   <div
     class="flex items-center justify-center  undefined"
@@ -86,7 +86,7 @@ exports[`FrameConnector > renders correctly with all props mixed 1`] = `
     </svg>
   </div>
   <div
-    class="w-full h-[6px] bg-frame-background-primaryu bridge-class"
+    class="w-full h-[6px] bg-frame-background-primary bridge-class"
   />
   <div
     class="flex items-center justify-center  second-node-class"
@@ -130,7 +130,7 @@ exports[`FrameConnector > renders correctly with bridge className prop 1`] = `
     </svg>
   </div>
   <div
-    class="w-full h-[6px] bg-frame-background-primaryu bridge-class"
+    class="w-full h-[6px] bg-frame-background-primary bridge-class"
   />
   <div
     class="flex items-center justify-center  undefined"
@@ -175,7 +175,7 @@ exports[`FrameConnector > renders correctly with className prop 1`] = `
       </svg>
     </div>
     <div
-      class="w-full h-[6px] bg-frame-background-primaryu undefined"
+      class="w-full h-[6px] bg-frame-background-primary undefined"
     />
     <div
       class="flex items-center justify-center  undefined"
@@ -220,7 +220,7 @@ exports[`FrameConnector > renders correctly with firstNode props 1`] = `
     </svg>
   </div>
   <div
-    class="w-full h-[6px] bg-frame-background-primaryu undefined"
+    class="w-full h-[6px] bg-frame-background-primary undefined"
   />
   <div
     class="flex items-center justify-center  undefined"
@@ -264,7 +264,7 @@ exports[`FrameConnector > renders correctly with secondNode props 1`] = `
     </svg>
   </div>
   <div
-    class="w-full h-[6px] bg-frame-background-primaryu undefined"
+    class="w-full h-[6px] bg-frame-background-primary undefined"
   />
   <div
     class="flex items-center justify-center  second-node-class"
@@ -308,7 +308,7 @@ exports[`FrameConnector > renders correctly with vertical prop 1`] = `
     </svg>
   </div>
   <div
-    class="h-full w-[6px] bg-frame-background-primaryu undefined"
+    class="h-full w-[6px] bg-frame-background-primary undefined"
   />
   <div
     class="flex items-center justify-center rotate-90 origin-center undefined"

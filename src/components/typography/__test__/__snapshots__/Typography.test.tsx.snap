@@ -1,0 +1,253 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Text > renders correctly 1`] = `
+<p
+  class=""
+>
+  Sample Text
+</p>
+`;
+
+exports[`Text > renders correctly with different components 1`] = `
+<p
+  class=""
+>
+  Text as p
+</p>
+`;
+
+exports[`Text > renders correctly with different components 2`] = `
+<span
+  class=""
+>
+  Text as span
+</span>
+`;
+
+exports[`Text > renders correctly with different components 3`] = `
+<h1
+  class=""
+>
+  Text as h1
+</h1>
+`;
+
+exports[`Text > renders correctly with different components 4`] = `
+<h2
+  class=""
+>
+  Text as h2
+</h2>
+`;
+
+exports[`Text > renders correctly with different components 5`] = `
+<h3
+  class=""
+>
+  Text as h3
+</h3>
+`;
+
+exports[`Text > renders correctly with different components 6`] = `
+<h4
+  class=""
+>
+  Text as h4
+</h4>
+`;
+
+exports[`Text > renders correctly with different components 7`] = `
+<h5
+  class=""
+>
+  Text as h5
+</h5>
+`;
+
+exports[`Text > renders correctly with different components 8`] = `
+<h6
+  class=""
+>
+  Text as h6
+</h6>
+`;
+
+exports[`Text > renders correctly with different variants 1`] = `
+<p
+  class="display1"
+  variant="display1"
+>
+  Text with display1
+</p>
+`;
+
+exports[`Text > renders correctly with different variants 2`] = `
+<p
+  class="display2"
+  variant="display2"
+>
+  Text with display2
+</p>
+`;
+
+exports[`Text > renders correctly with different variants 3`] = `
+<p
+  class="header1"
+  variant="header1"
+>
+  Text with header1
+</p>
+`;
+
+exports[`Text > renders correctly with different variants 4`] = `
+<p
+  class="header2"
+  variant="header2"
+>
+  Text with header2
+</p>
+`;
+
+exports[`Text > renders correctly with different variants 5`] = `
+<p
+  class="header3"
+  variant="header3"
+>
+  Text with header3
+</p>
+`;
+
+exports[`Text > renders correctly with different variants 6`] = `
+<p
+  class="header4"
+  variant="header4"
+>
+  Text with header4
+</p>
+`;
+
+exports[`Text > renders correctly with different variants 7`] = `
+<p
+  class="header5"
+  variant="header5"
+>
+  Text with header5
+</p>
+`;
+
+exports[`Text > renders correctly with different variants 8`] = `
+<p
+  class="header6"
+  variant="header6"
+>
+  Text with header6
+</p>
+`;
+
+exports[`Text > renders correctly with different variants 9`] = `
+<p
+  class="body1"
+  variant="body1"
+>
+  Text with body1
+</p>
+`;
+
+exports[`Text > renders correctly with different variants 10`] = `
+<p
+  class="body2"
+  variant="body2"
+>
+  Text with body2
+</p>
+`;
+
+exports[`Text > renders correctly with different variants 11`] = `
+<p
+  class="body3"
+  variant="body3"
+>
+  Text with body3
+</p>
+`;
+
+exports[`Text > renders correctly with different variants 12`] = `
+<p
+  class="body4"
+  variant="body4"
+>
+  Text with body4
+</p>
+`;
+
+exports[`Text > renders correctly with different variants 13`] = `
+<p
+  class="body5"
+  variant="body5"
+>
+  Text with body5
+</p>
+`;
+
+exports[`Text > renders correctly with different variants 14`] = `
+<p
+  class="button"
+  variant="button"
+>
+  Text with button
+</p>
+`;
+
+exports[`Text > renders correctly with different variants 15`] = `
+<p
+  class="caption"
+  variant="caption"
+>
+  Text with caption
+</p>
+`;
+
+exports[`Text > renders correctly with different weights 1`] = `
+<p
+  class=""
+  weight="default"
+>
+  Text with weight default
+</p>
+`;
+
+exports[`Text > renders correctly with different weights 2`] = `
+<p
+  class="font-light"
+  weight="light"
+>
+  Text with weight light
+</p>
+`;
+
+exports[`Text > renders correctly with different weights 3`] = `
+<p
+  class="font-normal"
+  weight="normal"
+>
+  Text with weight normal
+</p>
+`;
+
+exports[`Text > renders correctly with different weights 4`] = `
+<p
+  class="font-bold"
+  weight="bold"
+>
+  Text with weight bold
+</p>
+`;
+
+exports[`Text > renders correctly with different weights 5`] = `
+<p
+  class="font-extrabold"
+  weight="bolder"
+>
+  Text with weight bolder
+</p>
+`;
