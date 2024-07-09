@@ -1,13 +1,12 @@
 import {
   typographyComponentVariants,
   typographyVariantVariants,
-  typographyWeightVariants
 } from "../../../variants/typography";
 import {Text} from "../Typography";
 import {Meta, StoryObj} from "@storybook/react";
 
 const meta = {
-  title: 'Components/Typography',
+  title: 'Foundations/Typography',
   component: Text,
   tags: ['autodocs', '!dev'],
   argTypes: {
@@ -29,21 +28,11 @@ const meta = {
         },
       },
     },
-    weight: {
-      control: {type: 'inline-radio'},
-      options: typographyWeightVariants,
-      table: {
-        defaultValue: {
-          summary: 'default',
-        },
-      },
-    },
   },
   args: {
-    text: 'Sample Text',
+    text: 'Live long and prosper.',
     variant: 'header1',
     component: 'p',
-    weight: 'default',
   },
 } satisfies Meta<typeof Text>;
 
@@ -53,7 +42,7 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    text: 'Sample Text',
+    text: 'Live long and prosper.',
   },
 };
 
@@ -78,33 +67,3 @@ export const AllVariants: Story = {
     </div>
   ),
 };
-
-/*export const WithComponents: Story = {
-  render: () => (
-    <div className="flex flex-col gap-2">
-      {typographyComponentVariants.map((component) => (
-        <Text key={component} text={`Text as ${component}`} component={component}/>
-      ))}
-    </div>
-  ),
-};
-
-export const BoldText: Story = {
-  render: () => (
-    <div className="flex flex-col gap-2">
-      {typographyVariantVariants.map((variant) => (
-        <Text key={variant} text={`Bold ${variant}`} variant={variant} weight="bold"/>
-      ))}
-    </div>
-  ),
-};
-
-export const LightText: Story = {
-  render: () => (
-    <div className="flex flex-col gap-2">
-      {typographyVariantVariants.map((variant) => (
-        <Text key={variant} text={`Light ${variant}`} variant={variant} weight="light"/>
-      ))}
-    </div>
-  ),
-};*/
