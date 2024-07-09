@@ -28,7 +28,6 @@ export const Text = <T extends Tags = 'p'>(props: TypographyProps<T>) => {
       className: clsxMerge(
         typographyVariants({
           variant: props.variant,
-          weight: props.weight,
         }),
         className
       )

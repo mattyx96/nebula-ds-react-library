@@ -21,15 +21,6 @@ export const typographyVariants = cva(
         button: 'button',
         caption: 'caption',
       },
-      weight: {
-        default: '',
-        light: 'font-light',
-        bold: 'font-bold',
-        bolder: 'font-extrabold',
-      },
-    },
-    defaultVariants: {
-      weight: 'default',
-    },
+    }
   }
 );

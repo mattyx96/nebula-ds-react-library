@@ -27,3 +27,4 @@ dist-ssr
 
 storybook-static
 *.mjs
+public/design-tokens.source.json

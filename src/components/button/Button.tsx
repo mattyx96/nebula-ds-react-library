@@ -3,6 +3,7 @@ import {clsxMerge} from '../../common/utils/classNameUtils';
 import {Icon} from '../icon/Icon.tsx';
 import {buttonVariants} from '../../variants';
 import {ButtonVariants} from "../../variants/button";
+import {Text} from "../typography/Typography.tsx";
 
 type ButtonElementProps = ComponentPropsWithRef<'button'>;
 
@@ -36,7 +37,7 @@ export const Button = (props: ButtonProps) => {
       {...rest}
     >
       {Boolean(leftIcon) && <Icon size={props.size}>{leftIcon}</Icon>}
-      {Boolean(text) && text}
+      {Boolean(text) && <Text component="span" variant="button">{text}</Text>}
       {Boolean(children) && children}
       {Boolean(rightIcon) && <Icon size={props.size}>{rightIcon}</Icon>}
     </button>

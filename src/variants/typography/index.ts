@@ -22,13 +22,6 @@ export const typographyVariantVariants = [
   'caption'
 ] as const satisfies Omit<TypographyVariants['variant'], 'null' | 'undefined'>
 
-export const typographyWeightVariants = [
-  'default',
-  'light',
-  'bold',
-  'bolder',
-] as const satisfies Omit<TypographyVariants['weight'], 'null' | 'undefined'>
-
 export const typographyComponentVariants = [
   'h1',
   'h2',

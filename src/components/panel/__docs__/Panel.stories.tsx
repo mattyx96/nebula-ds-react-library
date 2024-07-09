@@ -1,6 +1,7 @@
 import type {Meta, StoryObj} from '@storybook/react';
 import {Button} from '../../button/Button';
 import {Paper} from "../Panel.tsx";
+import {Text} from "../../typography/Typography";
 import {panelOutlineVariants, panelRoundVariants} from "../../../variants/panel";
 
 const actions = (
@@ -11,12 +12,12 @@ const actions = (
 );
 
 const title = (title = 'Title card') => (
-  <h6>{title}</h6>
+  <Text component="h6" variant="header6">{title}</Text>
 );
 
 const content = (content = 'Content here') => (
   <div className="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md">
-    <span>{content}</span>
+    <Text component="span" variant="body1">{content}</Text>
   </div>
 );
 

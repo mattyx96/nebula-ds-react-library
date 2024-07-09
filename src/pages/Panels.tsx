@@ -1,6 +1,7 @@
 import {Paper} from "../components/panel/Panel.tsx";
 import {Button} from "../components/button/Button.tsx";
 import {panelOutlineVariants, panelRoundVariants} from "../variants/panel";
+import {Text} from "../components/typography/Typography";
 
 export const Panels = () => {
   const actions = (
@@ -11,12 +12,12 @@ export const Panels = () => {
   )
 
   const title = (title = 'Title card') => (
-    <h6>{title}</h6>
+    <Text component="h6" variant="header6">{title}</Text>
   )
 
   const content = (content = 'Content here') => (
     <div className="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md">
-      <span>{content}</span>
+      <Text component="span" variant="body1">{content}</Text>
     </div>
   )
 
@@ -25,7 +26,7 @@ export const Panels = () => {
       {
         panelRoundVariants.map((round) =>
           <div key={round}>
-            <h3>{`Round: ${round}`}</h3>
+            <Text component="h3" variant="header3">{`Round: ${round}`}</Text>
             {panelOutlineVariants.map((outline) => {
               return (
                 <Paper

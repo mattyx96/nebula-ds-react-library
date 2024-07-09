@@ -2,15 +2,16 @@ import {buttonRoundedVariants, buttonSizeVariants, buttonVariantVariants} from "
 import {Button} from "../components/button/Button.tsx";
 import {PlusIcon} from "@heroicons/react/24/solid";
 import {IconButton} from "../components/button/IconButton.tsx";
+import {Text} from "../components/typography/Typography.tsx";
 
 export const Buttons = () => {
   return (
     <>
       {buttonVariantVariants.map((variant) => (
         <div key={variant} className="mb-10">
-          <h2 className="text-2xl mb-4">
+          <Text component="h2" variant="header2" className="mb-4">
             {variant.charAt(0).toUpperCase() + variant.slice(1)} Variant
-          </h2>
+          </Text>
           <div className="flex flex-wrap gap-4">
             {buttonSizeVariants.map((size) =>
               buttonRoundedVariants.map((round) => (

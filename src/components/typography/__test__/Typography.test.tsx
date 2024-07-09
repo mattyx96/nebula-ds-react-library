@@ -1,7 +1,7 @@
 import {render} from '@testing-library/react';
 import {Tags, Text} from '../Typography.tsx';
 import {describe, expect, it} from 'vitest';
-import {typographyVariantVariants, typographyWeightVariants} from "../../../variants/typography";
+import {typographyVariantVariants} from "../../../variants/typography";
 
 describe('Text', () => {
   it('renders correctly', () => {
@@ -20,13 +20,6 @@ describe('Text', () => {
     const components: Tags[] = ['p', 'span', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
     components.forEach((component) => {
       const {container} = render(<Text text={`Text as ${component}`} component={component}/>);
-      expect(container.firstChild).toMatchSnapshot();
-    });
-  });
-
-  it('renders correctly with different weights', () => {
-    typographyWeightVariants.forEach((weight) => {
-      const {container} = render(<Text text={`Text with weight ${weight}`} weight={weight}/>);
       expect(container.firstChild).toMatchSnapshot();
     });
   });
