@@ -7,14 +7,31 @@ import {Text} from "../components/typography/Typography.tsx";
 export const FrameConnectorPage = () => {
   return (
     <div className="w-full flex flex-col gap-10">
+
+
+      <div className="flex flex-1 gap-4 items-end">
+        <IconButton icon={<ArrowLeftIcon/>} size="L" variant="standard" rounded="LTop"/>
+        <Text component="h1" variant="header1" className="!leading-0">Metal OX</Text>
+        <FrameConnector size="L"/>
+        <Button size="L" rounded="R" text="cosmiq" rightIcon={<StarIcon/>}/>
+      </div>
+
       <div className="flex flex-1 gap-4 items-end">
         <IconButton icon={<ArrowLeftIcon/>} size="M" variant="standard" rounded="LTop"/>
-        <Text component="h1" variant="header2">Metal OX</Text>
-        <FrameConnector/>
+        <Text component="h1" variant="header2" className="!leading-0">Metal OX</Text>
+        <FrameConnector size="M"/>
         <Button size="M" rounded="R" text="cosmiq" rightIcon={<StarIcon/>}/>
       </div>
 
+      <div className="flex flex-1 gap-4 items-end">
+        <IconButton icon={<ArrowLeftIcon/>} size="S" variant="standard" rounded="LTop"/>
+        <Text component="h1" variant="header4">Metal OX</Text>
+        <FrameConnector size="S"/>
+        <Button size="S" rounded="R" text="cosmiq" rightIcon={<StarIcon/>}/>
+      </div>
+
       <FrameConnector divider/>
+      <FrameConnector firstNode={{hidden: true}}/>
 
       <div className="flex flex-1 gap-4 items-end">
         <FrameConnector firstNode={{hidden: true}} className="scale-y-[-1]"/>
