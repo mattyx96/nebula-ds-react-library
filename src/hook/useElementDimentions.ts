@@ -26,7 +26,7 @@ const useElementDimensions = () => {
   })
 
   const refresh = useCallback(() => {
-    const domRect = (ref.current as unknown as Element).getBoundingClientRect()
+    const domRect = (ref.current as unknown as Element)?.getBoundingClientRect()
 
     if (domRect) {
       setDimensions(domRect)

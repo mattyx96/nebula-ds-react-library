@@ -420,7 +420,7 @@ exports[`FrameConnector > renders correctly with size props 3`] = `
 
 exports[`FrameConnector > renders correctly with vertical prop 1`] = `
 <div
-  class="flex flex-col w-fit h-full undefined"
+  class="flex flex-col w-fit undefined"
 >
   <div
     class="flex items-center justify-center rotate-90 origin-center scale-x-[-1] undefined"
@@ -440,7 +440,7 @@ exports[`FrameConnector > renders correctly with vertical prop 1`] = `
     </svg>
   </div>
   <div
-    class="h-full w-[6px] bg-frame-background-primary undefined"
+    class="h-full flex-1 w-[6px] bg-frame-background-primary undefined"
   />
   <div
     class="flex items-center justify-center rotate-90 origin-center undefined"
