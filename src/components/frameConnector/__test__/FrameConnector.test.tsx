@@ -1,6 +1,6 @@
 import {describe, expect} from 'vitest';
 import {it} from 'vitest';
-import {FrameConnector} from '../FrameConnector';
+import {FrameConnector, Props} from '../FrameConnector';
 import {render} from "@testing-library/react";
 
 describe('FrameConnector', () => {
@@ -54,13 +54,22 @@ describe('FrameConnector', () => {
     expect(container.querySelector('svg')).toBeInTheDocument();
   });
 
+  it('renders correctly with size props', () => {
+    ['M', 'L', 'S'].forEach((size) => {
+      const {container} = render(<FrameConnector size={size as Props['size']}/>);
+      expect(container.firstChild).toMatchSnapshot();
+      expect(container.querySelector('svg')).toBeInTheDocument();
+    });
+  });
+
   it('renders correctly with all props mixed', () => {
     const props = {
       className: 'custom-class',
       bridge: {className: 'bridge-class'},
       firstNode: {fill: 'red', className: 'first-node-class'},
       secondNode: {fill: 'blue', className: 'second-node-class'},
-    };
+      size: 'S',
+    } satisfies Props;
     const {container} = render(<FrameConnector {...props} />);
     expect(container.firstChild).toMatchSnapshot();
     expect(container.querySelector('.custom-class')).toBeInTheDocument();

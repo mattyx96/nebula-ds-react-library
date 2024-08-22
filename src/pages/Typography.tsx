@@ -8,7 +8,6 @@ export const TypographyPage = () => {
   return (
     <div className="flex flex-col gap-20 items-start max-w-full pb-20">
       <Text component="h1" variant="display1">display1: {displayText}</Text>
-      <Text component="h1" variant="display1" text={displayText}/>
       <Text component="h2" variant="display2">display2: {displayText}</Text>
       <Text component="h1" variant="header1">header1: {headerText}</Text>
       <Text component="h2" variant="header2">header2: {headerText}</Text>

@@ -1,41 +1,49 @@
 .display1 {
   color: var(--nb-background-contrast-primary-500);
   font: var(--nb-display1);
+  font-size: clamp(var(--nb-font-size-11), -3.375rem + 14vw, var(--nb-font-size-12));
 }
 
 .display2 {
   color: var(--nb-background-contrast-primary-500);
   font: var(--nb-display2);
+  font-size: clamp(var(--nb-font-size-10), -3.375rem + 14vw, var(--nb-font-size-11));
 }
 
 .header1 {
   color: var(--nb-background-contrast-primary-500);
   font: var(--nb-header1);
+  font-size: clamp(var(--nb-font-size-8), -3.375rem + 14vw, var(--nb-font-size-10));
 }
 
 .header2 {
   color: var(--nb-background-contrast-primary-500);
   font: var(--nb-header2);
+  font-size: clamp(var(--nb-font-size-7), -3.375rem + 14vw, var(--nb-font-size-9));
 }
 
 .header3 {
   color: var(--nb-background-contrast-primary-500);
   font: var(--nb-header3);
+  font-size: clamp(var(--nb-font-size-6), -3.375rem + 14vw, var(--nb-font-size-8));
 }
 
 .header4 {
   color: var(--nb-background-contrast-primary-500);
   font: var(--nb-header4);
+  font-size: clamp(var(--nb-font-size-5), -3.375rem + 14vw, var(--nb-font-size-7));
 }
 
 .header5 {
   color: var(--nb-background-contrast-primary-500);
   font: var(--nb-header5);
+  font-size: clamp(var(--nb-font-size-4), -3.375rem + 14vw, var(--nb-font-size-6));
 }
 
 .header6 {
   color: var(--nb-background-contrast-primary-500);
   font: var(--nb-header6);
+  font-size: clamp(var(--nb-font-size-3), -3.375rem + 14vw, var(--nb-font-size-5));
 }
 
 .body1 {

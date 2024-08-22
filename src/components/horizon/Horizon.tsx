@@ -15,11 +15,11 @@ type Props = {
 
 export const Horizon = ({
                           color = '#000',
-                          numLines = 55,
-                          lineThickness = 10,
-                          distance = 10,
-                          distanceGrowthFactor = 1.05,
-                          thicknessDecayFactor = 0.95,
+                          numLines = 15,
+                          lineThickness = 13,
+                          distance = 15,
+                          distanceGrowthFactor = 1.2,
+                          thicknessDecayFactor = 0.9,
                           height,
                           width,
                           ...props

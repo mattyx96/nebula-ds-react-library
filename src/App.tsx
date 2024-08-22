@@ -5,15 +5,16 @@ import {Button} from "./components/button/Button.tsx";
 import {TypographyPage} from "./pages/Typography.tsx";
 import {FrameConnectorPage} from "./pages/FrameConnectorPage.tsx";
 import {HorizonPage} from "./pages/HorizonPage.tsx";
+import {FramePanelPage} from "./pages/FramePanelPage.tsx";
 
-const Pages = ['buttons', 'panels', 'typography', 'frameConnector', 'horizon'] as const
+const Pages = ['buttons', 'panels', 'typography', 'frameConnector', 'horizon', 'framePanel'] as const
 
 export default function App() {
   const [page, setPage] = useState<typeof Pages[number]>('buttons');
   // console.log(tw.generateTailwindCompatibleTheme())
   return (
     <div className="bg-background-primary">
-      <div className="flex items-center gap-3 p-5">
+      <div className="flex items-center gap-3 p-5 flex-wrap">
         {Pages.map((_page) => (
           <Button
             key={_page}
@@ -26,11 +27,12 @@ export default function App() {
         ))}
       </div>
       <div
-        className="reflative w-3/4 mx-auto min-h-screen min-w-screen gap-5 flex flex-col justify-center items-center pt-10">
+        className="reflative container mx-auto min-h-screen min-w-screen gap-5 flex flex-col justify-center items-center pt-10">
         {page === 'buttons' && <Buttons/>}
         {page === 'panels' && <Panels/>}
         {page === 'typography' && <TypographyPage/>}
         {page === 'frameConnector' && <FrameConnectorPage/>}
+        {page === 'framePanel' && <FramePanelPage/>}
         {page === 'horizon' && <HorizonPage/>}
       </div>
     </div>
