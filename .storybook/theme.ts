@@ -6,7 +6,7 @@ export const theme: ReturnType<typeof create> = create({
 
   // Brand
   colorPrimary: lightJsTokens.nbCore3500,
-  colorSecondary: lightJsTokens.nbBackgroundAccent500,
+  colorSecondary: lightJsTokens.nbCore3500,
   buttonBg: 'transparent',
   buttonBorder: lightJsTokens.nbBackgroundAccent500,
 
@@ -19,6 +19,7 @@ export const theme: ReturnType<typeof create> = create({
   // Typography
   fontBase: lightJsTokens.nbFontFamiliesOrbitron,
   fontCode: lightJsTokens.nbFontFamiliesRobotoMono,
+
 
   // Text colors
   textColor: lightJsTokens.nbBackgroundContrastPrimary500,
