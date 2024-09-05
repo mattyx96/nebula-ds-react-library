@@ -5,11 +5,11 @@ export const panelVariants = cva(
   `
     relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
     border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
+    rounded-br-border-radius-default
   `,
   {
     variants: {
-      round: {                   //todo: sync with button variant rounded name
+      round: {                                  //todo: sync with button variant rounded name
         no: 'rounded-bl-border-radius-default', //todo: add rounded button variant into figma
         xs: 'rounded-bl-paper-border-radius-md',
         lg: 'rounded-bl-paper-border-radius-big',

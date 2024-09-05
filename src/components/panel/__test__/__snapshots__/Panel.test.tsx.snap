@@ -3,33 +3,36 @@
 exports[`Paper > renders correctly with round: lg, outline: 50, with actions and title 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-paper-border-radius-big border-background-contrast-primary-50 shadow-[0_1px_6px_rgb(0,0,0,0.07)] mt-20"
-    outline="50"
-    round="lg"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
+      class="pb-4"
     >
       <h6>
         lg-50
       </h6>
     </div>
     <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-paper-border-radius-big border-background-contrast-primary-50 shadow-[0_1px_6px_rgb(0,0,0,0.07)]"
+      outline="50"
+      round="lg"
     >
-      <span>
-        lg-50-actions & title
-      </span>
-    </div>
-    <div
-      class="grid grid-cols-5 gap-4 items-center"
-    >
-      <button
-        class="
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          lg-50-actions & title
+        </span>
+      </div>
+      <div
+        class="grid grid-cols-5 gap-4 items-center"
+      >
+        <button
+          class="
     flex flex-row items-center justify-center gap-3
     font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
     ring-border-1
@@ -41,13 +44,13 @@ exports[`Paper > renders correctly with round: lg, outline: 50, with actions and
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
    ring-background-accent-200 px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default w-full col-span-3"
-        type="button"
-        variant="standard"
-      >
-        Cancel
-      </button>
-      <button
-        class="
+          type="button"
+          variant="standard"
+        >
+          Cancel
+        </button>
+        <button
+          class="
     flex flex-row items-center justify-center gap-3
     font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
     ring-border-1
@@ -59,12 +62,13 @@ exports[`Paper > renders correctly with round: lg, outline: 50, with actions and
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
    bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big w-full col-span-2"
-        rounded="R"
-        type="button"
-        variant="filled"
-      >
-        Do it
-      </button>
+          rounded="R"
+          type="button"
+          variant="filled"
+        >
+          Do it
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -73,23 +77,24 @@ exports[`Paper > renders correctly with round: lg, outline: 50, with actions and
 exports[`Paper > renders correctly with round: lg, outline: 50, with content only 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-paper-border-radius-big border-background-contrast-primary-50 shadow-[0_1px_6px_rgb(0,0,0,0.07)] mt-20"
-    outline="50"
-    round="lg"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
-    />
-    <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-paper-border-radius-big border-background-contrast-primary-50 shadow-[0_1px_6px_rgb(0,0,0,0.07)]"
+      outline="50"
+      round="lg"
     >
-      <span>
-        lg-50-content only
-      </span>
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          lg-50-content only
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -98,27 +103,31 @@ exports[`Paper > renders correctly with round: lg, outline: 50, with content onl
 exports[`Paper > renders correctly with round: lg, outline: 50, with title only 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-paper-border-radius-big border-background-contrast-primary-50 shadow-[0_1px_6px_rgb(0,0,0,0.07)] mt-20"
-    outline="50"
-    round="lg"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
+      class="pb-4"
     >
       <h6>
         lg-50-no actions
       </h6>
     </div>
     <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-paper-border-radius-big border-background-contrast-primary-50 shadow-[0_1px_6px_rgb(0,0,0,0.07)]"
+      outline="50"
+      round="lg"
     >
-      <span>
-        lg-50-title only
-      </span>
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          lg-50-title only
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -127,33 +136,36 @@ exports[`Paper > renders correctly with round: lg, outline: 50, with title only 
 exports[`Paper > renders correctly with round: lg, outline: 200, with actions and title 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-paper-border-radius-big border-background-accent-200 mt-20"
-    outline="200"
-    round="lg"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
+      class="pb-4"
     >
       <h6>
         lg-200
       </h6>
     </div>
     <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-paper-border-radius-big border-background-accent-200"
+      outline="200"
+      round="lg"
     >
-      <span>
-        lg-200-actions & title
-      </span>
-    </div>
-    <div
-      class="grid grid-cols-5 gap-4 items-center"
-    >
-      <button
-        class="
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          lg-200-actions & title
+        </span>
+      </div>
+      <div
+        class="grid grid-cols-5 gap-4 items-center"
+      >
+        <button
+          class="
     flex flex-row items-center justify-center gap-3
     font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
     ring-border-1
@@ -165,13 +177,13 @@ exports[`Paper > renders correctly with round: lg, outline: 200, with actions an
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
    ring-background-accent-200 px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default w-full col-span-3"
-        type="button"
-        variant="standard"
-      >
-        Cancel
-      </button>
-      <button
-        class="
+          type="button"
+          variant="standard"
+        >
+          Cancel
+        </button>
+        <button
+          class="
     flex flex-row items-center justify-center gap-3
     font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
     ring-border-1
@@ -183,12 +195,13 @@ exports[`Paper > renders correctly with round: lg, outline: 200, with actions an
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
    bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big w-full col-span-2"
-        rounded="R"
-        type="button"
-        variant="filled"
-      >
-        Do it
-      </button>
+          rounded="R"
+          type="button"
+          variant="filled"
+        >
+          Do it
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -197,23 +210,24 @@ exports[`Paper > renders correctly with round: lg, outline: 200, with actions an
 exports[`Paper > renders correctly with round: lg, outline: 200, with content only 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-paper-border-radius-big border-background-accent-200 mt-20"
-    outline="200"
-    round="lg"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
-    />
-    <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-paper-border-radius-big border-background-accent-200"
+      outline="200"
+      round="lg"
     >
-      <span>
-        lg-200-content only
-      </span>
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          lg-200-content only
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -222,27 +236,31 @@ exports[`Paper > renders correctly with round: lg, outline: 200, with content on
 exports[`Paper > renders correctly with round: lg, outline: 200, with title only 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-paper-border-radius-big border-background-accent-200 mt-20"
-    outline="200"
-    round="lg"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
+      class="pb-4"
     >
       <h6>
         lg-200-no actions
       </h6>
     </div>
     <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-paper-border-radius-big border-background-accent-200"
+      outline="200"
+      round="lg"
     >
-      <span>
-        lg-200-title only
-      </span>
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          lg-200-title only
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -251,33 +269,36 @@ exports[`Paper > renders correctly with round: lg, outline: 200, with title only
 exports[`Paper > renders correctly with round: lg, outline: 500, with actions and title 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-paper-border-radius-big border-background-accent-500 mt-20"
-    outline="500"
-    round="lg"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
+      class="pb-4"
     >
       <h6>
         lg-500
       </h6>
     </div>
     <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-paper-border-radius-big border-background-accent-500"
+      outline="500"
+      round="lg"
     >
-      <span>
-        lg-500-actions & title
-      </span>
-    </div>
-    <div
-      class="grid grid-cols-5 gap-4 items-center"
-    >
-      <button
-        class="
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          lg-500-actions & title
+        </span>
+      </div>
+      <div
+        class="grid grid-cols-5 gap-4 items-center"
+      >
+        <button
+          class="
     flex flex-row items-center justify-center gap-3
     font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
     ring-border-1
@@ -289,13 +310,13 @@ exports[`Paper > renders correctly with round: lg, outline: 500, with actions an
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
    ring-background-accent-200 px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default w-full col-span-3"
-        type="button"
-        variant="standard"
-      >
-        Cancel
-      </button>
-      <button
-        class="
+          type="button"
+          variant="standard"
+        >
+          Cancel
+        </button>
+        <button
+          class="
     flex flex-row items-center justify-center gap-3
     font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
     ring-border-1
@@ -307,12 +328,13 @@ exports[`Paper > renders correctly with round: lg, outline: 500, with actions an
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
    bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big w-full col-span-2"
-        rounded="R"
-        type="button"
-        variant="filled"
-      >
-        Do it
-      </button>
+          rounded="R"
+          type="button"
+          variant="filled"
+        >
+          Do it
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -321,23 +343,24 @@ exports[`Paper > renders correctly with round: lg, outline: 500, with actions an
 exports[`Paper > renders correctly with round: lg, outline: 500, with content only 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-paper-border-radius-big border-background-accent-500 mt-20"
-    outline="500"
-    round="lg"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
-    />
-    <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-paper-border-radius-big border-background-accent-500"
+      outline="500"
+      round="lg"
     >
-      <span>
-        lg-500-content only
-      </span>
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          lg-500-content only
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -346,27 +369,31 @@ exports[`Paper > renders correctly with round: lg, outline: 500, with content on
 exports[`Paper > renders correctly with round: lg, outline: 500, with title only 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-paper-border-radius-big border-background-accent-500 mt-20"
-    outline="500"
-    round="lg"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
+      class="pb-4"
     >
       <h6>
         lg-500-no actions
       </h6>
     </div>
     <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-paper-border-radius-big border-background-accent-500"
+      outline="500"
+      round="lg"
     >
-      <span>
-        lg-500-title only
-      </span>
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          lg-500-title only
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -375,33 +402,36 @@ exports[`Paper > renders correctly with round: lg, outline: 500, with title only
 exports[`Paper > renders correctly with round: lg, outline: 700, with actions and title 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-paper-border-radius-big border-background-contrast-primary-200 mt-20"
-    outline="700"
-    round="lg"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
+      class="pb-4"
     >
       <h6>
         lg-700
       </h6>
     </div>
     <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-paper-border-radius-big border-background-contrast-primary-200"
+      outline="700"
+      round="lg"
     >
-      <span>
-        lg-700-actions & title
-      </span>
-    </div>
-    <div
-      class="grid grid-cols-5 gap-4 items-center"
-    >
-      <button
-        class="
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          lg-700-actions & title
+        </span>
+      </div>
+      <div
+        class="grid grid-cols-5 gap-4 items-center"
+      >
+        <button
+          class="
     flex flex-row items-center justify-center gap-3
     font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
     ring-border-1
@@ -413,13 +443,13 @@ exports[`Paper > renders correctly with round: lg, outline: 700, with actions an
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
    ring-background-accent-200 px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default w-full col-span-3"
-        type="button"
-        variant="standard"
-      >
-        Cancel
-      </button>
-      <button
-        class="
+          type="button"
+          variant="standard"
+        >
+          Cancel
+        </button>
+        <button
+          class="
     flex flex-row items-center justify-center gap-3
     font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
     ring-border-1
@@ -431,12 +461,13 @@ exports[`Paper > renders correctly with round: lg, outline: 700, with actions an
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
    bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big w-full col-span-2"
-        rounded="R"
-        type="button"
-        variant="filled"
-      >
-        Do it
-      </button>
+          rounded="R"
+          type="button"
+          variant="filled"
+        >
+          Do it
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -445,23 +476,24 @@ exports[`Paper > renders correctly with round: lg, outline: 700, with actions an
 exports[`Paper > renders correctly with round: lg, outline: 700, with content only 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-paper-border-radius-big border-background-contrast-primary-200 mt-20"
-    outline="700"
-    round="lg"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
-    />
-    <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-paper-border-radius-big border-background-contrast-primary-200"
+      outline="700"
+      round="lg"
     >
-      <span>
-        lg-700-content only
-      </span>
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          lg-700-content only
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -470,27 +502,31 @@ exports[`Paper > renders correctly with round: lg, outline: 700, with content on
 exports[`Paper > renders correctly with round: lg, outline: 700, with title only 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-paper-border-radius-big border-background-contrast-primary-200 mt-20"
-    outline="700"
-    round="lg"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
+      class="pb-4"
     >
       <h6>
         lg-700-no actions
       </h6>
     </div>
     <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-paper-border-radius-big border-background-contrast-primary-200"
+      outline="700"
+      round="lg"
     >
-      <span>
-        lg-700-title only
-      </span>
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          lg-700-title only
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -499,33 +535,36 @@ exports[`Paper > renders correctly with round: lg, outline: 700, with title only
 exports[`Paper > renders correctly with round: no, outline: 50, with actions and title 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-border-radius-default border-background-contrast-primary-50 shadow-[0_1px_6px_rgb(0,0,0,0.07)] mt-20"
-    outline="50"
-    round="no"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
+      class="pb-4"
     >
       <h6>
         no-50
       </h6>
     </div>
     <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-border-radius-default border-background-contrast-primary-50 shadow-[0_1px_6px_rgb(0,0,0,0.07)]"
+      outline="50"
+      round="no"
     >
-      <span>
-        no-50-actions & title
-      </span>
-    </div>
-    <div
-      class="grid grid-cols-5 gap-4 items-center"
-    >
-      <button
-        class="
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          no-50-actions & title
+        </span>
+      </div>
+      <div
+        class="grid grid-cols-5 gap-4 items-center"
+      >
+        <button
+          class="
     flex flex-row items-center justify-center gap-3
     font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
     ring-border-1
@@ -537,13 +576,13 @@ exports[`Paper > renders correctly with round: no, outline: 50, with actions and
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
    ring-background-accent-200 px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default w-full col-span-3"
-        type="button"
-        variant="standard"
-      >
-        Cancel
-      </button>
-      <button
-        class="
+          type="button"
+          variant="standard"
+        >
+          Cancel
+        </button>
+        <button
+          class="
     flex flex-row items-center justify-center gap-3
     font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
     ring-border-1
@@ -555,12 +594,13 @@ exports[`Paper > renders correctly with round: no, outline: 50, with actions and
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
    bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big w-full col-span-2"
-        rounded="R"
-        type="button"
-        variant="filled"
-      >
-        Do it
-      </button>
+          rounded="R"
+          type="button"
+          variant="filled"
+        >
+          Do it
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -569,23 +609,24 @@ exports[`Paper > renders correctly with round: no, outline: 50, with actions and
 exports[`Paper > renders correctly with round: no, outline: 50, with content only 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-border-radius-default border-background-contrast-primary-50 shadow-[0_1px_6px_rgb(0,0,0,0.07)] mt-20"
-    outline="50"
-    round="no"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
-    />
-    <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-border-radius-default border-background-contrast-primary-50 shadow-[0_1px_6px_rgb(0,0,0,0.07)]"
+      outline="50"
+      round="no"
     >
-      <span>
-        no-50-content only
-      </span>
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          no-50-content only
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -594,27 +635,31 @@ exports[`Paper > renders correctly with round: no, outline: 50, with content onl
 exports[`Paper > renders correctly with round: no, outline: 50, with title only 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-border-radius-default border-background-contrast-primary-50 shadow-[0_1px_6px_rgb(0,0,0,0.07)] mt-20"
-    outline="50"
-    round="no"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
+      class="pb-4"
     >
       <h6>
         no-50-no actions
       </h6>
     </div>
     <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-border-radius-default border-background-contrast-primary-50 shadow-[0_1px_6px_rgb(0,0,0,0.07)]"
+      outline="50"
+      round="no"
     >
-      <span>
-        no-50-title only
-      </span>
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          no-50-title only
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -623,33 +668,36 @@ exports[`Paper > renders correctly with round: no, outline: 50, with title only 
 exports[`Paper > renders correctly with round: no, outline: 200, with actions and title 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-border-radius-default border-background-accent-200 mt-20"
-    outline="200"
-    round="no"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
+      class="pb-4"
     >
       <h6>
         no-200
       </h6>
     </div>
     <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-border-radius-default border-background-accent-200"
+      outline="200"
+      round="no"
     >
-      <span>
-        no-200-actions & title
-      </span>
-    </div>
-    <div
-      class="grid grid-cols-5 gap-4 items-center"
-    >
-      <button
-        class="
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          no-200-actions & title
+        </span>
+      </div>
+      <div
+        class="grid grid-cols-5 gap-4 items-center"
+      >
+        <button
+          class="
     flex flex-row items-center justify-center gap-3
     font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
     ring-border-1
@@ -661,13 +709,13 @@ exports[`Paper > renders correctly with round: no, outline: 200, with actions an
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
    ring-background-accent-200 px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default w-full col-span-3"
-        type="button"
-        variant="standard"
-      >
-        Cancel
-      </button>
-      <button
-        class="
+          type="button"
+          variant="standard"
+        >
+          Cancel
+        </button>
+        <button
+          class="
     flex flex-row items-center justify-center gap-3
     font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
     ring-border-1
@@ -679,12 +727,13 @@ exports[`Paper > renders correctly with round: no, outline: 200, with actions an
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
    bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big w-full col-span-2"
-        rounded="R"
-        type="button"
-        variant="filled"
-      >
-        Do it
-      </button>
+          rounded="R"
+          type="button"
+          variant="filled"
+        >
+          Do it
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -693,23 +742,24 @@ exports[`Paper > renders correctly with round: no, outline: 200, with actions an
 exports[`Paper > renders correctly with round: no, outline: 200, with content only 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-border-radius-default border-background-accent-200 mt-20"
-    outline="200"
-    round="no"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
-    />
-    <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-border-radius-default border-background-accent-200"
+      outline="200"
+      round="no"
     >
-      <span>
-        no-200-content only
-      </span>
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          no-200-content only
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -718,27 +768,31 @@ exports[`Paper > renders correctly with round: no, outline: 200, with content on
 exports[`Paper > renders correctly with round: no, outline: 200, with title only 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-border-radius-default border-background-accent-200 mt-20"
-    outline="200"
-    round="no"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
+      class="pb-4"
     >
       <h6>
         no-200-no actions
       </h6>
     </div>
     <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-border-radius-default border-background-accent-200"
+      outline="200"
+      round="no"
     >
-      <span>
-        no-200-title only
-      </span>
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          no-200-title only
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -747,33 +801,36 @@ exports[`Paper > renders correctly with round: no, outline: 200, with title only
 exports[`Paper > renders correctly with round: no, outline: 500, with actions and title 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-border-radius-default border-background-accent-500 mt-20"
-    outline="500"
-    round="no"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
+      class="pb-4"
     >
       <h6>
         no-500
       </h6>
     </div>
     <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-border-radius-default border-background-accent-500"
+      outline="500"
+      round="no"
     >
-      <span>
-        no-500-actions & title
-      </span>
-    </div>
-    <div
-      class="grid grid-cols-5 gap-4 items-center"
-    >
-      <button
-        class="
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          no-500-actions & title
+        </span>
+      </div>
+      <div
+        class="grid grid-cols-5 gap-4 items-center"
+      >
+        <button
+          class="
     flex flex-row items-center justify-center gap-3
     font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
     ring-border-1
@@ -785,13 +842,13 @@ exports[`Paper > renders correctly with round: no, outline: 500, with actions an
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
    ring-background-accent-200 px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default w-full col-span-3"
-        type="button"
-        variant="standard"
-      >
-        Cancel
-      </button>
-      <button
-        class="
+          type="button"
+          variant="standard"
+        >
+          Cancel
+        </button>
+        <button
+          class="
     flex flex-row items-center justify-center gap-3
     font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
     ring-border-1
@@ -803,12 +860,13 @@ exports[`Paper > renders correctly with round: no, outline: 500, with actions an
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
    bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big w-full col-span-2"
-        rounded="R"
-        type="button"
-        variant="filled"
-      >
-        Do it
-      </button>
+          rounded="R"
+          type="button"
+          variant="filled"
+        >
+          Do it
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -817,23 +875,24 @@ exports[`Paper > renders correctly with round: no, outline: 500, with actions an
 exports[`Paper > renders correctly with round: no, outline: 500, with content only 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-border-radius-default border-background-accent-500 mt-20"
-    outline="500"
-    round="no"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
-    />
-    <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-border-radius-default border-background-accent-500"
+      outline="500"
+      round="no"
     >
-      <span>
-        no-500-content only
-      </span>
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          no-500-content only
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -842,27 +901,31 @@ exports[`Paper > renders correctly with round: no, outline: 500, with content on
 exports[`Paper > renders correctly with round: no, outline: 500, with title only 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-border-radius-default border-background-accent-500 mt-20"
-    outline="500"
-    round="no"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
+      class="pb-4"
     >
       <h6>
         no-500-no actions
       </h6>
     </div>
     <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-border-radius-default border-background-accent-500"
+      outline="500"
+      round="no"
     >
-      <span>
-        no-500-title only
-      </span>
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          no-500-title only
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -871,33 +934,36 @@ exports[`Paper > renders correctly with round: no, outline: 500, with title only
 exports[`Paper > renders correctly with round: no, outline: 700, with actions and title 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-border-radius-default border-background-contrast-primary-200 mt-20"
-    outline="700"
-    round="no"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
+      class="pb-4"
     >
       <h6>
         no-700
       </h6>
     </div>
     <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-border-radius-default border-background-contrast-primary-200"
+      outline="700"
+      round="no"
     >
-      <span>
-        no-700-actions & title
-      </span>
-    </div>
-    <div
-      class="grid grid-cols-5 gap-4 items-center"
-    >
-      <button
-        class="
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          no-700-actions & title
+        </span>
+      </div>
+      <div
+        class="grid grid-cols-5 gap-4 items-center"
+      >
+        <button
+          class="
     flex flex-row items-center justify-center gap-3
     font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
     ring-border-1
@@ -909,13 +975,13 @@ exports[`Paper > renders correctly with round: no, outline: 700, with actions an
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
    ring-background-accent-200 px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default w-full col-span-3"
-        type="button"
-        variant="standard"
-      >
-        Cancel
-      </button>
-      <button
-        class="
+          type="button"
+          variant="standard"
+        >
+          Cancel
+        </button>
+        <button
+          class="
     flex flex-row items-center justify-center gap-3
     font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
     ring-border-1
@@ -927,12 +993,13 @@ exports[`Paper > renders correctly with round: no, outline: 700, with actions an
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
    bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big w-full col-span-2"
-        rounded="R"
-        type="button"
-        variant="filled"
-      >
-        Do it
-      </button>
+          rounded="R"
+          type="button"
+          variant="filled"
+        >
+          Do it
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -941,23 +1008,24 @@ exports[`Paper > renders correctly with round: no, outline: 700, with actions an
 exports[`Paper > renders correctly with round: no, outline: 700, with content only 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-border-radius-default border-background-contrast-primary-200 mt-20"
-    outline="700"
-    round="no"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
-    />
-    <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-border-radius-default border-background-contrast-primary-200"
+      outline="700"
+      round="no"
     >
-      <span>
-        no-700-content only
-      </span>
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          no-700-content only
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -966,27 +1034,31 @@ exports[`Paper > renders correctly with round: no, outline: 700, with content on
 exports[`Paper > renders correctly with round: no, outline: 700, with title only 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-border-radius-default border-background-contrast-primary-200 mt-20"
-    outline="700"
-    round="no"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
+      class="pb-4"
     >
       <h6>
         no-700-no actions
       </h6>
     </div>
     <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-border-radius-default border-background-contrast-primary-200"
+      outline="700"
+      round="no"
     >
-      <span>
-        no-700-title only
-      </span>
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          no-700-title only
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -995,33 +1067,36 @@ exports[`Paper > renders correctly with round: no, outline: 700, with title only
 exports[`Paper > renders correctly with round: xs, outline: 50, with actions and title 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-paper-border-radius-md border-background-contrast-primary-50 shadow-[0_1px_6px_rgb(0,0,0,0.07)] mt-20"
-    outline="50"
-    round="xs"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
+      class="pb-4"
     >
       <h6>
         xs-50
       </h6>
     </div>
     <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-paper-border-radius-md border-background-contrast-primary-50 shadow-[0_1px_6px_rgb(0,0,0,0.07)]"
+      outline="50"
+      round="xs"
     >
-      <span>
-        xs-50-actions & title
-      </span>
-    </div>
-    <div
-      class="grid grid-cols-5 gap-4 items-center"
-    >
-      <button
-        class="
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          xs-50-actions & title
+        </span>
+      </div>
+      <div
+        class="grid grid-cols-5 gap-4 items-center"
+      >
+        <button
+          class="
     flex flex-row items-center justify-center gap-3
     font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
     ring-border-1
@@ -1033,13 +1108,13 @@ exports[`Paper > renders correctly with round: xs, outline: 50, with actions and
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
    ring-background-accent-200 px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default w-full col-span-3"
-        type="button"
-        variant="standard"
-      >
-        Cancel
-      </button>
-      <button
-        class="
+          type="button"
+          variant="standard"
+        >
+          Cancel
+        </button>
+        <button
+          class="
     flex flex-row items-center justify-center gap-3
     font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
     ring-border-1
@@ -1051,12 +1126,13 @@ exports[`Paper > renders correctly with round: xs, outline: 50, with actions and
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
    bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big w-full col-span-2"
-        rounded="R"
-        type="button"
-        variant="filled"
-      >
-        Do it
-      </button>
+          rounded="R"
+          type="button"
+          variant="filled"
+        >
+          Do it
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -1065,23 +1141,24 @@ exports[`Paper > renders correctly with round: xs, outline: 50, with actions and
 exports[`Paper > renders correctly with round: xs, outline: 50, with content only 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-paper-border-radius-md border-background-contrast-primary-50 shadow-[0_1px_6px_rgb(0,0,0,0.07)] mt-20"
-    outline="50"
-    round="xs"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
-    />
-    <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-paper-border-radius-md border-background-contrast-primary-50 shadow-[0_1px_6px_rgb(0,0,0,0.07)]"
+      outline="50"
+      round="xs"
     >
-      <span>
-        xs-50-content only
-      </span>
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          xs-50-content only
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -1090,27 +1167,31 @@ exports[`Paper > renders correctly with round: xs, outline: 50, with content onl
 exports[`Paper > renders correctly with round: xs, outline: 50, with title only 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-paper-border-radius-md border-background-contrast-primary-50 shadow-[0_1px_6px_rgb(0,0,0,0.07)] mt-20"
-    outline="50"
-    round="xs"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
+      class="pb-4"
     >
       <h6>
         xs-50-no actions
       </h6>
     </div>
     <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-paper-border-radius-md border-background-contrast-primary-50 shadow-[0_1px_6px_rgb(0,0,0,0.07)]"
+      outline="50"
+      round="xs"
     >
-      <span>
-        xs-50-title only
-      </span>
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          xs-50-title only
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -1119,33 +1200,36 @@ exports[`Paper > renders correctly with round: xs, outline: 50, with title only 
 exports[`Paper > renders correctly with round: xs, outline: 200, with actions and title 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-paper-border-radius-md border-background-accent-200 mt-20"
-    outline="200"
-    round="xs"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
+      class="pb-4"
     >
       <h6>
         xs-200
       </h6>
     </div>
     <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-paper-border-radius-md border-background-accent-200"
+      outline="200"
+      round="xs"
     >
-      <span>
-        xs-200-actions & title
-      </span>
-    </div>
-    <div
-      class="grid grid-cols-5 gap-4 items-center"
-    >
-      <button
-        class="
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          xs-200-actions & title
+        </span>
+      </div>
+      <div
+        class="grid grid-cols-5 gap-4 items-center"
+      >
+        <button
+          class="
     flex flex-row items-center justify-center gap-3
     font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
     ring-border-1
@@ -1157,13 +1241,13 @@ exports[`Paper > renders correctly with round: xs, outline: 200, with actions an
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
    ring-background-accent-200 px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default w-full col-span-3"
-        type="button"
-        variant="standard"
-      >
-        Cancel
-      </button>
-      <button
-        class="
+          type="button"
+          variant="standard"
+        >
+          Cancel
+        </button>
+        <button
+          class="
     flex flex-row items-center justify-center gap-3
     font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
     ring-border-1
@@ -1175,12 +1259,13 @@ exports[`Paper > renders correctly with round: xs, outline: 200, with actions an
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
    bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big w-full col-span-2"
-        rounded="R"
-        type="button"
-        variant="filled"
-      >
-        Do it
-      </button>
+          rounded="R"
+          type="button"
+          variant="filled"
+        >
+          Do it
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -1189,23 +1274,24 @@ exports[`Paper > renders correctly with round: xs, outline: 200, with actions an
 exports[`Paper > renders correctly with round: xs, outline: 200, with content only 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-paper-border-radius-md border-background-accent-200 mt-20"
-    outline="200"
-    round="xs"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
-    />
-    <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-paper-border-radius-md border-background-accent-200"
+      outline="200"
+      round="xs"
     >
-      <span>
-        xs-200-content only
-      </span>
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          xs-200-content only
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -1214,27 +1300,31 @@ exports[`Paper > renders correctly with round: xs, outline: 200, with content on
 exports[`Paper > renders correctly with round: xs, outline: 200, with title only 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-paper-border-radius-md border-background-accent-200 mt-20"
-    outline="200"
-    round="xs"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
+      class="pb-4"
     >
       <h6>
         xs-200-no actions
       </h6>
     </div>
     <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-paper-border-radius-md border-background-accent-200"
+      outline="200"
+      round="xs"
     >
-      <span>
-        xs-200-title only
-      </span>
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          xs-200-title only
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -1243,33 +1333,36 @@ exports[`Paper > renders correctly with round: xs, outline: 200, with title only
 exports[`Paper > renders correctly with round: xs, outline: 500, with actions and title 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-paper-border-radius-md border-background-accent-500 mt-20"
-    outline="500"
-    round="xs"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
+      class="pb-4"
     >
       <h6>
         xs-500
       </h6>
     </div>
     <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-paper-border-radius-md border-background-accent-500"
+      outline="500"
+      round="xs"
     >
-      <span>
-        xs-500-actions & title
-      </span>
-    </div>
-    <div
-      class="grid grid-cols-5 gap-4 items-center"
-    >
-      <button
-        class="
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          xs-500-actions & title
+        </span>
+      </div>
+      <div
+        class="grid grid-cols-5 gap-4 items-center"
+      >
+        <button
+          class="
     flex flex-row items-center justify-center gap-3
     font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
     ring-border-1
@@ -1281,13 +1374,13 @@ exports[`Paper > renders correctly with round: xs, outline: 500, with actions an
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
    ring-background-accent-200 px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default w-full col-span-3"
-        type="button"
-        variant="standard"
-      >
-        Cancel
-      </button>
-      <button
-        class="
+          type="button"
+          variant="standard"
+        >
+          Cancel
+        </button>
+        <button
+          class="
     flex flex-row items-center justify-center gap-3
     font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
     ring-border-1
@@ -1299,12 +1392,13 @@ exports[`Paper > renders correctly with round: xs, outline: 500, with actions an
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
    bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big w-full col-span-2"
-        rounded="R"
-        type="button"
-        variant="filled"
-      >
-        Do it
-      </button>
+          rounded="R"
+          type="button"
+          variant="filled"
+        >
+          Do it
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -1313,23 +1407,24 @@ exports[`Paper > renders correctly with round: xs, outline: 500, with actions an
 exports[`Paper > renders correctly with round: xs, outline: 500, with content only 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-paper-border-radius-md border-background-accent-500 mt-20"
-    outline="500"
-    round="xs"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
-    />
-    <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-paper-border-radius-md border-background-accent-500"
+      outline="500"
+      round="xs"
     >
-      <span>
-        xs-500-content only
-      </span>
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          xs-500-content only
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -1338,27 +1433,31 @@ exports[`Paper > renders correctly with round: xs, outline: 500, with content on
 exports[`Paper > renders correctly with round: xs, outline: 500, with title only 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-paper-border-radius-md border-background-accent-500 mt-20"
-    outline="500"
-    round="xs"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
+      class="pb-4"
     >
       <h6>
         xs-500-no actions
       </h6>
     </div>
     <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-paper-border-radius-md border-background-accent-500"
+      outline="500"
+      round="xs"
     >
-      <span>
-        xs-500-title only
-      </span>
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          xs-500-title only
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -1367,33 +1466,36 @@ exports[`Paper > renders correctly with round: xs, outline: 500, with title only
 exports[`Paper > renders correctly with round: xs, outline: 700, with actions and title 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-paper-border-radius-md border-background-contrast-primary-200 mt-20"
-    outline="700"
-    round="xs"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
+      class="pb-4"
     >
       <h6>
         xs-700
       </h6>
     </div>
     <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-paper-border-radius-md border-background-contrast-primary-200"
+      outline="700"
+      round="xs"
     >
-      <span>
-        xs-700-actions & title
-      </span>
-    </div>
-    <div
-      class="grid grid-cols-5 gap-4 items-center"
-    >
-      <button
-        class="
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          xs-700-actions & title
+        </span>
+      </div>
+      <div
+        class="grid grid-cols-5 gap-4 items-center"
+      >
+        <button
+          class="
     flex flex-row items-center justify-center gap-3
     font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
     ring-border-1
@@ -1405,13 +1507,13 @@ exports[`Paper > renders correctly with round: xs, outline: 700, with actions an
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
    ring-background-accent-200 px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default w-full col-span-3"
-        type="button"
-        variant="standard"
-      >
-        Cancel
-      </button>
-      <button
-        class="
+          type="button"
+          variant="standard"
+        >
+          Cancel
+        </button>
+        <button
+          class="
     flex flex-row items-center justify-center gap-3
     font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
     ring-border-1
@@ -1423,12 +1525,13 @@ exports[`Paper > renders correctly with round: xs, outline: 700, with actions an
     disabled:cursor-not-allowed
     disabled:opacity-button-opacity-disabled
    bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big w-full col-span-2"
-        rounded="R"
-        type="button"
-        variant="filled"
-      >
-        Do it
-      </button>
+          rounded="R"
+          type="button"
+          variant="filled"
+        >
+          Do it
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -1437,23 +1540,24 @@ exports[`Paper > renders correctly with round: xs, outline: 700, with actions an
 exports[`Paper > renders correctly with round: xs, outline: 700, with content only 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-paper-border-radius-md border-background-contrast-primary-200 mt-20"
-    outline="700"
-    round="xs"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
-    />
-    <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-paper-border-radius-md border-background-contrast-primary-200"
+      outline="700"
+      round="xs"
     >
-      <span>
-        xs-700-content only
-      </span>
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          xs-700-content only
+        </span>
+      </div>
     </div>
   </div>
 </div>
@@ -1462,27 +1566,31 @@ exports[`Paper > renders correctly with round: xs, outline: 700, with content on
 exports[`Paper > renders correctly with round: xs, outline: 700, with title only 1`] = `
 <div>
   <div
-    class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default mt-10
-   rounded-bl-paper-border-radius-md border-background-contrast-primary-200 mt-20"
-    outline="700"
-    round="xs"
+    class="mt-20"
   >
     <div
-      class="absolute left-0 top-0 translate-y-full-plus-var-spacing"
+      class="pb-4"
     >
       <h6>
         xs-700-no actions
       </h6>
     </div>
     <div
-      class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      class="
+    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
+    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
+    rounded-br-border-radius-default
+   rounded-bl-paper-border-radius-md border-background-contrast-primary-200"
+      outline="700"
+      round="xs"
     >
-      <span>
-        xs-700-title only
-      </span>
+      <div
+        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+      >
+        <span>
+          xs-700-title only
+        </span>
+      </div>
     </div>
   </div>
 </div>

@@ -14,30 +14,44 @@ interface PaperPropsBase
 export interface PaperProps extends PaperPropsBase {
   renderTitle?: React.ReactNode
   renderActions?: React.ReactNode
+  panelClassName?: string
 }
 
 //todo: rename to Panel
 export const Paper = (props: PaperProps) => {
-  const {children, renderActions, renderTitle, className, ...rest} = props;
+  const {
+    children,
+    renderActions,
+    renderTitle,
+    panelClassName,
+    className,
+    ...rest
+  } = props;
+
   return (
-    <div
-      className={clsxMerge(
-        panelVariants({
-          round: props.round,
-          outline: props.outline,
-        }),
-        className
+    <div className={clsxMerge([], className)}>
+      {Boolean(renderTitle) && (
+        <div className="pb-4">
+          {renderTitle}
+        </div>
       )}
-      onClick={(event) => {
-        event.stopPropagation()
-        props.onClick?.(event)
-      }}
-      {...rest}
-    >
       <div
-        className="absolute left-0 top-0 translate-y-full-plus-var-spacing">{Boolean(renderTitle) && renderTitle}</div>
-      {Boolean(children) && children}
-      {Boolean(renderActions) && renderActions}
+        className={clsxMerge(
+          panelVariants({
+            round: props.round,
+            outline: props.outline,
+          }),
+          panelClassName
+        )}
+        onClick={(event) => {
+          event.stopPropagation()
+          props.onClick?.(event)
+        }}
+        {...rest}
+      >
+        {Boolean(children) && children}
+        {Boolean(renderActions) && renderActions}
+      </div>
     </div>
   );
 }
