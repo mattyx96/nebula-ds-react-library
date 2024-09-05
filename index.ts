@@ -11,4 +11,5 @@ export * from './src/components/horizon/Horizon.tsx';
 export * from './src/components/frameConnector/FrameConnector.tsx';
 export * from './src/components/framePanel/FramePanel.tsx';
 export * from './src/components/typography/Typography.tsx';
+export {useBreakpoint} from './src/hook/useBreakpoint.ts';
 
