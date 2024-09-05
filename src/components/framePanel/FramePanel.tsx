@@ -133,9 +133,10 @@ export const FramePanel = (props: Props) => {
               {props.children}
             </div>
             {/* footer */}
-            <div className="flex flex-1 gap-4">
+            <div className="flex items-end gap-4 h-fit">
               {props.inverse && props.renderFooter}
               <FrameConnector
+                className="h-fit"
                 size={frameConnectorSize}
                 {...(props.inverse
                     ? {
