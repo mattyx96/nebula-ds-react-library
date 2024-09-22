@@ -46,7 +46,7 @@ export const FramePanel = (props: Props) => {
       if (isHeaderFrameConnectorOneNodeWidth()) {
         return {hideFirstNode: true, hideSecondNode: true}
       } else {
-        return {hideFirstNode: false, hideSecondNode: true}
+        return {hideFirstNode: true, hideSecondNode: false}
       }
     }
   }
@@ -67,8 +67,8 @@ export const FramePanel = (props: Props) => {
               {!isHeaderFrameConnectorHidden() &&
                 <FrameConnector
                   size={frameConnectorSize}
-                  firstNode={{hidden: manageHeaderFrameConnector().hideFirstNode}}
-                  secondNode={{hidden: manageHeaderFrameConnector().hideSecondNode}}
+                  firstNode={{hidden: manageHeaderFrameConnector().hideSecondNode}}
+                  secondNode={{hidden: manageHeaderFrameConnector().hideFirstNode}}
                 />
               }
             </div>
@@ -87,7 +87,8 @@ export const FramePanel = (props: Props) => {
               {!isHeaderFrameConnectorHidden() &&
                 <FrameConnector
                   size={frameConnectorSize}
-                  secondNode={{hidden: isHeaderFrameConnectorOneNodeWidth() || !props.renderHeader}}
+                  firstNode={{hidden: manageHeaderFrameConnector().hideFirstNode}}
+                  secondNode={{hidden: manageHeaderFrameConnector().hideSecondNode}}
                 />
               }
             </div>
