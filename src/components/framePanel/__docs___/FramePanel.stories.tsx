@@ -173,20 +173,18 @@ export const InverseLayout: Story = {
   },
 };
 
-export const WithoutFooter: Story = {
+export const WithoutHeaderAndFooter: Story = {
   render: (args) => {
-    const breakpoint = useBreakpoint();
     return (
-      <FramePanel {...args} renderHeader={actions(breakpoint.isDesktop ? 'M' : 'S')}
-                  renderFooter={renderFooter(breakpoint.isDesktop ? 'M' : 'S')}/>
+      <FramePanel {...args} />
     )
   },
   args: {
-    title: 'No footer',
-    children: content('No footer Content'),
+    title: 'No header and footer',
+    children: content('No header and footer Content'),
     inverse: true,
     renderFooter: undefined,
-    renderHeader: actions('M'),
+    renderHeader: undefined,
   },
 };
 
