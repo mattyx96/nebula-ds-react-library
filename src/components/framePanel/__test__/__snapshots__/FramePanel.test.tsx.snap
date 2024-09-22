@@ -84,10 +84,10 @@ exports[`FramePanel with mocked useBreakpoint > renders correctly on desktop 1`]
           </div>
         </div>
         <div
-          class=" flex flex-1 flex-col gap-4 pt-4"
+          class=" flex flex-1 flex-col gap-4"
         >
           <div
-            class=" flex flex-1 px-4"
+            class=" flex flex-1 p-4"
           >
             <div
               class="h-96 bg-background-contrast-primary-500 w-full rounded-lg"
@@ -198,10 +198,10 @@ exports[`FramePanel with mocked useBreakpoint > renders correctly on mobile 1`] 
           </div>
         </div>
         <div
-          class=" flex flex-1 flex-col gap-4 pt-4"
+          class=" flex flex-1 flex-col gap-4"
         >
           <div
-            class=" flex flex-1 px-4"
+            class=" flex flex-1 p-4"
           >
             <div
               class="h-96 bg-background-contrast-primary-500 w-full rounded-lg"
@@ -329,10 +329,10 @@ exports[`FramePanel with mocked useBreakpoint > renders correctly on tablet 1`] 
           </div>
         </div>
         <div
-          class=" flex flex-1 flex-col gap-4 pt-4"
+          class=" flex flex-1 flex-col gap-4"
         >
           <div
-            class=" flex flex-1 px-4"
+            class=" flex flex-1 p-4"
           >
             <div
               class="h-96 bg-background-contrast-primary-500 w-full rounded-lg"
