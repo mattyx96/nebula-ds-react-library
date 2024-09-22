@@ -8,12 +8,10 @@ import {lightJsTokens} from "nebula-ds-tokens";
 type Props = ({ title: string; renderTitle?: undefined } | { renderTitle: ReactNode; title?: undefined }) & {
   className?: string
   children: ReactNode
-  renderHeader: ReactNode
+  renderHeader?: ReactNode
   renderFooter?: ReactNode
   renderSide?: ReactNode
   inverse?: boolean
-  //add renderFooter
-  //add renderSide
 }
 
 export const FramePanel = (props: Props) => {
@@ -23,9 +21,9 @@ export const FramePanel = (props: Props) => {
   const frameConnectorSize = breakpoint.isDesktop ? 'M' : 'S';
   const isHeaderFrameConnectorOneNodeWidth = () => {
     if (breakpoint.isDesktop) {
-      return dimensions.width <= 130
+      return dimensions.width <= 140
     } else {
-      return dimensions.width <= 90
+      return dimensions.width <= 150
     }
   }
 
@@ -37,6 +35,22 @@ export const FramePanel = (props: Props) => {
     }
   }
 
+  const manageHeaderFrameConnector = (): { hideFirstNode: boolean; hideSecondNode: boolean } => {
+    if (props.renderHeader) {
+      if (isHeaderFrameConnectorOneNodeWidth()) {
+        return {hideFirstNode: true, hideSecondNode: false}
+      } else {
+        return {hideFirstNode: false, hideSecondNode: false}
+      }
+    } else {
+      if (isHeaderFrameConnectorOneNodeWidth()) {
+        return {hideFirstNode: true, hideSecondNode: true}
+      } else {
+        return {hideFirstNode: false, hideSecondNode: true}
+      }
+    }
+  }
+
   return (
     <div className={`w-full flex flex-col ${props.className}`}>
 
@@ -44,18 +58,22 @@ export const FramePanel = (props: Props) => {
       <div className="flex w-full gap-4 justify-between items-center">
         {props.inverse && (
           <>
-            <div className="flex gap-4 items-center">
-              {props.renderHeader}
-            </div>
+            {props.renderHeader &&
+              <div className="flex gap-4 items-center">
+                {props.renderHeader}
+              </div>
+            }
             <div ref={ref} className="w-full flex flex-1 scale-[-1]">
               {!isHeaderFrameConnectorHidden() &&
                 <FrameConnector
                   size={frameConnectorSize}
-                  firstNode={{hidden: isHeaderFrameConnectorOneNodeWidth()}}
+                  firstNode={{hidden: manageHeaderFrameConnector().hideFirstNode}}
+                  secondNode={{hidden: manageHeaderFrameConnector().hideSecondNode}}
                 />
               }
             </div>
-          </>)}
+          </>
+        )}
 
         {props.renderTitle
           ? props.renderTitle
@@ -69,13 +87,15 @@ export const FramePanel = (props: Props) => {
               {!isHeaderFrameConnectorHidden() &&
                 <FrameConnector
                   size={frameConnectorSize}
-                  secondNode={{hidden: isHeaderFrameConnectorOneNodeWidth()}}
+                  secondNode={{hidden: isHeaderFrameConnectorOneNodeWidth() || !props.renderHeader}}
                 />
               }
             </div>
-            <div className="flex gap-4 items-center">
-              {props.renderHeader}
-            </div>
+            {props.renderHeader &&
+              <div className="flex gap-4 items-center">
+                {props.renderHeader}
+              </div>
+            }
           </>)}
       </div>
       {/* end header */}
@@ -128,8 +148,8 @@ export const FramePanel = (props: Props) => {
           }
 
           {/* body */}
-          <div className=" flex flex-1 flex-col gap-4 pt-4">
-            <div className=" flex flex-1 px-4">
+          <div className=" flex flex-1 flex-col gap-4">
+            <div className=" flex flex-1 p-4">
               {props.children}
             </div>
             {/* footer */}

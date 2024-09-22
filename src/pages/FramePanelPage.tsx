@@ -62,6 +62,14 @@ export const FramePanelPage = () => {
         <div className="h-96 bg-background-contrast-primary-500 w-full rounded-lg"/>
       </FramePanel>
 
+      <FramePanel
+        title="Nebula Design System"
+        renderSide={sideActions}
+        inverse
+      >
+        <div className="h-96 bg-background-contrast-primary-500 w-full rounded-lg"/>
+      </FramePanel>
+
       <div className="grid grid-cols-2">
         <FramePanel
           className="col-span-1"
