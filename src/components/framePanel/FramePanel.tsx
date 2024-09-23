@@ -115,12 +115,14 @@ export const FramePanel = (props: Props) => {
       <div className={`flex flex-1 flex-col ${props.bodyContainerClassName || ''}`}>
 
         {/* main vertical container (used for mobile side actions )*/}
-        {breakpoint.isMobile && props.renderSide &&
-          <div className={`flex flex-1 flex-col ${props.inverse ? 'items-end' : 'items-start'}`}>
+        {breakpoint.isMobile &&
+          <div className={`flex flex-col ${props.inverse ? 'items-end' : 'items-start'}`}>
 
-            <div className={`flex flex-1 gap-4 mb-4`}>
-              {breakpoint.isMobile && props.renderSide}
-            </div>
+            {props.renderSide &&
+              <div className={`flex flex-1 gap-4 mb-4`}>
+                {breakpoint.isMobile && props.renderSide}
+              </div>
+            }
 
             {
               breakpoint.isMobile && (
