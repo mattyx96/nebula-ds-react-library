@@ -1,23 +1,19 @@
-import { cva, VariantProps } from 'class-variance-authority';
-import { clsxMerge } from '../../common/utils/classNameUtils.ts';
-import type { ComponentPropsWithRef } from 'react';
+import {cva, VariantProps} from 'class-variance-authority';
+import {clsxMerge} from '../../common/utils/classNameUtils.ts';
+import type {ComponentPropsWithRef} from 'react';
 
 type Props = VariantProps<typeof iconStyles> & ComponentPropsWithRef<'div'>;
 
 export const Icon = (props: Props) => {
   return (
-    <div
-      className={clsxMerge(iconStyles({ size: props.size }), props.className)}
-    >
+    <div className={clsxMerge(iconStyles({size: props.size}), props.className)}>
       {props.children}
     </div>
   );
 };
 
 const iconStyles = cva(
-  `
-    flex justify-center items-center 
-  `,
+  ``,
   {
     variants: {
       size: {

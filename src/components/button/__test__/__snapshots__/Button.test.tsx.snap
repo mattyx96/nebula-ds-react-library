@@ -460,9 +460,7 @@ exports[`Button > renders correctly with left icon 1`] = `
     type="button"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-6 h-6"
+      class="w-6 h-6"
     >
       <span>
         👈
@@ -492,9 +490,7 @@ exports[`Button > renders correctly with right icon 1`] = `
   >
     Click Me
     <div
-      class="
-    flex justify-center items-center 
-   w-6 h-6"
+      class="w-6 h-6"
     >
       <span>
         👉
@@ -524,9 +520,7 @@ exports[`Button > should render correctly with all props mix and handle click 1`
     variant="filled"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-7 h-7"
+      class="w-7 h-7"
     >
       <svg
         aria-hidden="true"
@@ -567,9 +561,7 @@ exports[`Button > should render correctly with all props mix and handle click 2`
     variant="filled"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-7 h-7"
+      class="w-7 h-7"
     >
       <svg
         aria-hidden="true"
@@ -616,9 +608,7 @@ exports[`Button > should render correctly with all props mix and handle click 3`
     variant="filled"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-7 h-7"
+      class="w-7 h-7"
     >
       <svg
         aria-hidden="true"
@@ -665,9 +655,7 @@ exports[`Button > should render correctly with all props mix and handle click 4`
     variant="filled"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-7 h-7"
+      class="w-7 h-7"
     >
       <svg
         aria-hidden="true"
@@ -708,9 +696,7 @@ exports[`Button > should render correctly with all props mix and handle click 5`
     variant="filled"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-7 h-7"
+      class="w-7 h-7"
     >
       <svg
         aria-hidden="true"
@@ -757,9 +743,7 @@ exports[`Button > should render correctly with all props mix and handle click 6`
     variant="filled"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-7 h-7"
+      class="w-7 h-7"
     >
       <svg
         aria-hidden="true"
@@ -806,9 +790,7 @@ exports[`Button > should render correctly with all props mix and handle click 7`
     variant="filled"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-7 h-7"
+      class="w-7 h-7"
     >
       <svg
         aria-hidden="true"
@@ -849,9 +831,7 @@ exports[`Button > should render correctly with all props mix and handle click 8`
     variant="filled"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-6 h-6"
+      class="w-6 h-6"
     >
       <svg
         aria-hidden="true"
@@ -892,9 +872,7 @@ exports[`Button > should render correctly with all props mix and handle click 9`
     variant="filled"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-6 h-6"
+      class="w-6 h-6"
     >
       <svg
         aria-hidden="true"
@@ -941,9 +919,7 @@ exports[`Button > should render correctly with all props mix and handle click 10
     variant="filled"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-6 h-6"
+      class="w-6 h-6"
     >
       <svg
         aria-hidden="true"
@@ -990,9 +966,7 @@ exports[`Button > should render correctly with all props mix and handle click 11
     variant="filled"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-6 h-6"
+      class="w-6 h-6"
     >
       <svg
         aria-hidden="true"
@@ -1033,9 +1007,7 @@ exports[`Button > should render correctly with all props mix and handle click 12
     variant="filled"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-6 h-6"
+      class="w-6 h-6"
     >
       <svg
         aria-hidden="true"
@@ -1082,9 +1054,7 @@ exports[`Button > should render correctly with all props mix and handle click 13
     variant="filled"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-6 h-6"
+      class="w-6 h-6"
     >
       <svg
         aria-hidden="true"
@@ -1131,9 +1101,7 @@ exports[`Button > should render correctly with all props mix and handle click 14
     variant="filled"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-6 h-6"
+      class="w-6 h-6"
     >
       <svg
         aria-hidden="true"
@@ -1174,9 +1142,7 @@ exports[`Button > should render correctly with all props mix and handle click 15
     variant="filled"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-5 h-5"
+      class="w-5 h-5"
     >
       <svg
         aria-hidden="true"
@@ -1217,9 +1183,7 @@ exports[`Button > should render correctly with all props mix and handle click 16
     variant="filled"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-5 h-5"
+      class="w-5 h-5"
     >
       <svg
         aria-hidden="true"
@@ -1266,9 +1230,7 @@ exports[`Button > should render correctly with all props mix and handle click 17
     variant="filled"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-5 h-5"
+      class="w-5 h-5"
     >
       <svg
         aria-hidden="true"
@@ -1315,9 +1277,7 @@ exports[`Button > should render correctly with all props mix and handle click 18
     variant="filled"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-5 h-5"
+      class="w-5 h-5"
     >
       <svg
         aria-hidden="true"
@@ -1358,9 +1318,7 @@ exports[`Button > should render correctly with all props mix and handle click 19
     variant="filled"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-5 h-5"
+      class="w-5 h-5"
     >
       <svg
         aria-hidden="true"
@@ -1407,9 +1365,7 @@ exports[`Button > should render correctly with all props mix and handle click 20
     variant="filled"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-5 h-5"
+      class="w-5 h-5"
     >
       <svg
         aria-hidden="true"
@@ -1456,9 +1412,7 @@ exports[`Button > should render correctly with all props mix and handle click 21
     variant="filled"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-5 h-5"
+      class="w-5 h-5"
     >
       <svg
         aria-hidden="true"
@@ -1499,9 +1453,7 @@ exports[`Button > should render correctly with all props mix and handle click 22
     variant="outlined"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-7 h-7"
+      class="w-7 h-7"
     >
       <svg
         aria-hidden="true"
@@ -1542,9 +1494,7 @@ exports[`Button > should render correctly with all props mix and handle click 23
     variant="outlined"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-7 h-7"
+      class="w-7 h-7"
     >
       <svg
         aria-hidden="true"
@@ -1591,9 +1541,7 @@ exports[`Button > should render correctly with all props mix and handle click 24
     variant="outlined"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-7 h-7"
+      class="w-7 h-7"
     >
       <svg
         aria-hidden="true"
@@ -1640,9 +1588,7 @@ exports[`Button > should render correctly with all props mix and handle click 25
     variant="outlined"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-7 h-7"
+      class="w-7 h-7"
     >
       <svg
         aria-hidden="true"
@@ -1683,9 +1629,7 @@ exports[`Button > should render correctly with all props mix and handle click 26
     variant="outlined"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-7 h-7"
+      class="w-7 h-7"
     >
       <svg
         aria-hidden="true"
@@ -1732,9 +1676,7 @@ exports[`Button > should render correctly with all props mix and handle click 27
     variant="outlined"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-7 h-7"
+      class="w-7 h-7"
     >
       <svg
         aria-hidden="true"
@@ -1781,9 +1723,7 @@ exports[`Button > should render correctly with all props mix and handle click 28
     variant="outlined"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-7 h-7"
+      class="w-7 h-7"
     >
       <svg
         aria-hidden="true"
@@ -1824,9 +1764,7 @@ exports[`Button > should render correctly with all props mix and handle click 29
     variant="outlined"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-6 h-6"
+      class="w-6 h-6"
     >
       <svg
         aria-hidden="true"
@@ -1867,9 +1805,7 @@ exports[`Button > should render correctly with all props mix and handle click 30
     variant="outlined"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-6 h-6"
+      class="w-6 h-6"
     >
       <svg
         aria-hidden="true"
@@ -1916,9 +1852,7 @@ exports[`Button > should render correctly with all props mix and handle click 31
     variant="outlined"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-6 h-6"
+      class="w-6 h-6"
     >
       <svg
         aria-hidden="true"
@@ -1965,9 +1899,7 @@ exports[`Button > should render correctly with all props mix and handle click 32
     variant="outlined"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-6 h-6"
+      class="w-6 h-6"
     >
       <svg
         aria-hidden="true"
@@ -2008,9 +1940,7 @@ exports[`Button > should render correctly with all props mix and handle click 33
     variant="outlined"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-6 h-6"
+      class="w-6 h-6"
     >
       <svg
         aria-hidden="true"
@@ -2057,9 +1987,7 @@ exports[`Button > should render correctly with all props mix and handle click 34
     variant="outlined"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-6 h-6"
+      class="w-6 h-6"
     >
       <svg
         aria-hidden="true"
@@ -2106,9 +2034,7 @@ exports[`Button > should render correctly with all props mix and handle click 35
     variant="outlined"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-6 h-6"
+      class="w-6 h-6"
     >
       <svg
         aria-hidden="true"
@@ -2149,9 +2075,7 @@ exports[`Button > should render correctly with all props mix and handle click 36
     variant="outlined"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-5 h-5"
+      class="w-5 h-5"
     >
       <svg
         aria-hidden="true"
@@ -2192,9 +2116,7 @@ exports[`Button > should render correctly with all props mix and handle click 37
     variant="outlined"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-5 h-5"
+      class="w-5 h-5"
     >
       <svg
         aria-hidden="true"
@@ -2241,9 +2163,7 @@ exports[`Button > should render correctly with all props mix and handle click 38
     variant="outlined"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-5 h-5"
+      class="w-5 h-5"
     >
       <svg
         aria-hidden="true"
@@ -2290,9 +2210,7 @@ exports[`Button > should render correctly with all props mix and handle click 39
     variant="outlined"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-5 h-5"
+      class="w-5 h-5"
     >
       <svg
         aria-hidden="true"
@@ -2333,9 +2251,7 @@ exports[`Button > should render correctly with all props mix and handle click 40
     variant="outlined"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-5 h-5"
+      class="w-5 h-5"
     >
       <svg
         aria-hidden="true"
@@ -2382,9 +2298,7 @@ exports[`Button > should render correctly with all props mix and handle click 41
     variant="outlined"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-5 h-5"
+      class="w-5 h-5"
     >
       <svg
         aria-hidden="true"
@@ -2431,9 +2345,7 @@ exports[`Button > should render correctly with all props mix and handle click 42
     variant="outlined"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-5 h-5"
+      class="w-5 h-5"
     >
       <svg
         aria-hidden="true"
@@ -2474,9 +2386,7 @@ exports[`Button > should render correctly with all props mix and handle click 43
     variant="standard"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-7 h-7"
+      class="w-7 h-7"
     >
       <svg
         aria-hidden="true"
@@ -2517,9 +2427,7 @@ exports[`Button > should render correctly with all props mix and handle click 44
     variant="standard"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-7 h-7"
+      class="w-7 h-7"
     >
       <svg
         aria-hidden="true"
@@ -2566,9 +2474,7 @@ exports[`Button > should render correctly with all props mix and handle click 45
     variant="standard"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-7 h-7"
+      class="w-7 h-7"
     >
       <svg
         aria-hidden="true"
@@ -2615,9 +2521,7 @@ exports[`Button > should render correctly with all props mix and handle click 46
     variant="standard"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-7 h-7"
+      class="w-7 h-7"
     >
       <svg
         aria-hidden="true"
@@ -2658,9 +2562,7 @@ exports[`Button > should render correctly with all props mix and handle click 47
     variant="standard"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-7 h-7"
+      class="w-7 h-7"
     >
       <svg
         aria-hidden="true"
@@ -2707,9 +2609,7 @@ exports[`Button > should render correctly with all props mix and handle click 48
     variant="standard"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-7 h-7"
+      class="w-7 h-7"
     >
       <svg
         aria-hidden="true"
@@ -2756,9 +2656,7 @@ exports[`Button > should render correctly with all props mix and handle click 49
     variant="standard"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-7 h-7"
+      class="w-7 h-7"
     >
       <svg
         aria-hidden="true"
@@ -2799,9 +2697,7 @@ exports[`Button > should render correctly with all props mix and handle click 50
     variant="standard"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-6 h-6"
+      class="w-6 h-6"
     >
       <svg
         aria-hidden="true"
@@ -2842,9 +2738,7 @@ exports[`Button > should render correctly with all props mix and handle click 51
     variant="standard"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-6 h-6"
+      class="w-6 h-6"
     >
       <svg
         aria-hidden="true"
@@ -2891,9 +2785,7 @@ exports[`Button > should render correctly with all props mix and handle click 52
     variant="standard"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-6 h-6"
+      class="w-6 h-6"
     >
       <svg
         aria-hidden="true"
@@ -2940,9 +2832,7 @@ exports[`Button > should render correctly with all props mix and handle click 53
     variant="standard"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-6 h-6"
+      class="w-6 h-6"
     >
       <svg
         aria-hidden="true"
@@ -2983,9 +2873,7 @@ exports[`Button > should render correctly with all props mix and handle click 54
     variant="standard"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-6 h-6"
+      class="w-6 h-6"
     >
       <svg
         aria-hidden="true"
@@ -3032,9 +2920,7 @@ exports[`Button > should render correctly with all props mix and handle click 55
     variant="standard"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-6 h-6"
+      class="w-6 h-6"
     >
       <svg
         aria-hidden="true"
@@ -3081,9 +2967,7 @@ exports[`Button > should render correctly with all props mix and handle click 56
     variant="standard"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-6 h-6"
+      class="w-6 h-6"
     >
       <svg
         aria-hidden="true"
@@ -3124,9 +3008,7 @@ exports[`Button > should render correctly with all props mix and handle click 57
     variant="standard"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-5 h-5"
+      class="w-5 h-5"
     >
       <svg
         aria-hidden="true"
@@ -3167,9 +3049,7 @@ exports[`Button > should render correctly with all props mix and handle click 58
     variant="standard"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-5 h-5"
+      class="w-5 h-5"
     >
       <svg
         aria-hidden="true"
@@ -3216,9 +3096,7 @@ exports[`Button > should render correctly with all props mix and handle click 59
     variant="standard"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-5 h-5"
+      class="w-5 h-5"
     >
       <svg
         aria-hidden="true"
@@ -3265,9 +3143,7 @@ exports[`Button > should render correctly with all props mix and handle click 60
     variant="standard"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-5 h-5"
+      class="w-5 h-5"
     >
       <svg
         aria-hidden="true"
@@ -3308,9 +3184,7 @@ exports[`Button > should render correctly with all props mix and handle click 61
     variant="standard"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-5 h-5"
+      class="w-5 h-5"
     >
       <svg
         aria-hidden="true"
@@ -3357,9 +3231,7 @@ exports[`Button > should render correctly with all props mix and handle click 62
     variant="standard"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-5 h-5"
+      class="w-5 h-5"
     >
       <svg
         aria-hidden="true"
@@ -3406,9 +3278,7 @@ exports[`Button > should render correctly with all props mix and handle click 63
     variant="standard"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-5 h-5"
+      class="w-5 h-5"
     >
       <svg
         aria-hidden="true"
@@ -3449,9 +3319,7 @@ exports[`Button > should render correctly with all props mix and handle click 64
     variant="text"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-7 h-7"
+      class="w-7 h-7"
     >
       <svg
         aria-hidden="true"
@@ -3492,9 +3360,7 @@ exports[`Button > should render correctly with all props mix and handle click 65
     variant="text"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-7 h-7"
+      class="w-7 h-7"
     >
       <svg
         aria-hidden="true"
@@ -3541,9 +3407,7 @@ exports[`Button > should render correctly with all props mix and handle click 66
     variant="text"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-7 h-7"
+      class="w-7 h-7"
     >
       <svg
         aria-hidden="true"
@@ -3590,9 +3454,7 @@ exports[`Button > should render correctly with all props mix and handle click 67
     variant="text"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-7 h-7"
+      class="w-7 h-7"
     >
       <svg
         aria-hidden="true"
@@ -3633,9 +3495,7 @@ exports[`Button > should render correctly with all props mix and handle click 68
     variant="text"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-7 h-7"
+      class="w-7 h-7"
     >
       <svg
         aria-hidden="true"
@@ -3682,9 +3542,7 @@ exports[`Button > should render correctly with all props mix and handle click 69
     variant="text"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-7 h-7"
+      class="w-7 h-7"
     >
       <svg
         aria-hidden="true"
@@ -3731,9 +3589,7 @@ exports[`Button > should render correctly with all props mix and handle click 70
     variant="text"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-7 h-7"
+      class="w-7 h-7"
     >
       <svg
         aria-hidden="true"
@@ -3774,9 +3630,7 @@ exports[`Button > should render correctly with all props mix and handle click 71
     variant="text"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-6 h-6"
+      class="w-6 h-6"
     >
       <svg
         aria-hidden="true"
@@ -3817,9 +3671,7 @@ exports[`Button > should render correctly with all props mix and handle click 72
     variant="text"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-6 h-6"
+      class="w-6 h-6"
     >
       <svg
         aria-hidden="true"
@@ -3866,9 +3718,7 @@ exports[`Button > should render correctly with all props mix and handle click 73
     variant="text"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-6 h-6"
+      class="w-6 h-6"
     >
       <svg
         aria-hidden="true"
@@ -3915,9 +3765,7 @@ exports[`Button > should render correctly with all props mix and handle click 74
     variant="text"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-6 h-6"
+      class="w-6 h-6"
     >
       <svg
         aria-hidden="true"
@@ -3958,9 +3806,7 @@ exports[`Button > should render correctly with all props mix and handle click 75
     variant="text"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-6 h-6"
+      class="w-6 h-6"
     >
       <svg
         aria-hidden="true"
@@ -4007,9 +3853,7 @@ exports[`Button > should render correctly with all props mix and handle click 76
     variant="text"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-6 h-6"
+      class="w-6 h-6"
     >
       <svg
         aria-hidden="true"
@@ -4056,9 +3900,7 @@ exports[`Button > should render correctly with all props mix and handle click 77
     variant="text"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-6 h-6"
+      class="w-6 h-6"
     >
       <svg
         aria-hidden="true"
@@ -4099,9 +3941,7 @@ exports[`Button > should render correctly with all props mix and handle click 78
     variant="text"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-5 h-5"
+      class="w-5 h-5"
     >
       <svg
         aria-hidden="true"
@@ -4142,9 +3982,7 @@ exports[`Button > should render correctly with all props mix and handle click 79
     variant="text"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-5 h-5"
+      class="w-5 h-5"
     >
       <svg
         aria-hidden="true"
@@ -4191,9 +4029,7 @@ exports[`Button > should render correctly with all props mix and handle click 80
     variant="text"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-5 h-5"
+      class="w-5 h-5"
     >
       <svg
         aria-hidden="true"
@@ -4240,9 +4076,7 @@ exports[`Button > should render correctly with all props mix and handle click 81
     variant="text"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-5 h-5"
+      class="w-5 h-5"
     >
       <svg
         aria-hidden="true"
@@ -4283,9 +4117,7 @@ exports[`Button > should render correctly with all props mix and handle click 82
     variant="text"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-5 h-5"
+      class="w-5 h-5"
     >
       <svg
         aria-hidden="true"
@@ -4332,9 +4164,7 @@ exports[`Button > should render correctly with all props mix and handle click 83
     variant="text"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-5 h-5"
+      class="w-5 h-5"
     >
       <svg
         aria-hidden="true"
@@ -4381,9 +4211,7 @@ exports[`Button > should render correctly with all props mix and handle click 84
     variant="text"
   >
     <div
-      class="
-    flex justify-center items-center 
-   w-5 h-5"
+      class="w-5 h-5"
     >
       <svg
         aria-hidden="true"
