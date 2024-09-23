@@ -7,8 +7,9 @@ import {FrameConnectorPage} from "./pages/FrameConnectorPage.tsx";
 import {HorizonPage} from "./pages/HorizonPage.tsx";
 import {FramePanelPage} from "./pages/FramePanelPage.tsx";
 import {TokensPage} from "./pages/Tokens.tsx";
+import {FramePanelFullPage} from "./pages/FramePanelFullPage.tsx";
 
-const Pages = ['tokens', 'buttons', 'panels', 'typography', 'frameConnector', 'horizon', 'framePanel'] as const
+const Pages = ['tokens', 'buttons', 'panels', 'typography', 'frameConnector', 'horizon', 'framePanel', "framePanelFullPage"] as const
 
 export default function App() {
   const [page, setPage] = useState<typeof Pages[number]>('buttons');
@@ -34,6 +35,7 @@ export default function App() {
         {page === 'typography' && <TypographyPage/>}
         {page === 'frameConnector' && <FrameConnectorPage/>}
         {page === 'framePanel' && <FramePanelPage/>}
+        {page === 'framePanelFullPage' && <FramePanelFullPage/>}
         {page === 'horizon' && <HorizonPage/>}
         {page === 'tokens' && <TokensPage/>}
       </div>

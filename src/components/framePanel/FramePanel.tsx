@@ -7,7 +7,13 @@ import {lightJsTokens} from "nebula-ds-tokens";
 
 type Props = ({ title: string; renderTitle?: undefined } | { renderTitle: ReactNode; title?: undefined }) & {
   className?: string
+  headerClassName?: string
+  footerClassName?: string
+  verticalFrameConnectorContainerClassName?: string
+  bodyContainerClassName?: string
+  sideClassName?: string
   children: ReactNode
+  renderSideHeader?: ReactNode
   renderHeader?: ReactNode
   renderFooter?: ReactNode
   renderSide?: ReactNode
@@ -52,10 +58,10 @@ export const FramePanel = (props: Props) => {
   }
 
   return (
-    <div className={`w-full flex flex-col ${props.className}`}>
+    <div className={`w-full flex gap-4 flex-col ${props.className || ''}`}>
 
       {/* header */}
-      <div className="flex w-full gap-4 justify-between items-center">
+      <div className={`flex w-full gap-4 justify-between items-center ${props.headerClassName || ''}`}>
         {props.inverse && (
           <>
             {props.renderHeader &&
@@ -75,11 +81,15 @@ export const FramePanel = (props: Props) => {
           </>
         )}
 
+        {!props.inverse && props.renderSideHeader && props.renderSideHeader}
+
         {props.renderTitle
           ? props.renderTitle
           : <Text component="h1" variant="header1"
                   className="!text-2xl md:!text-3xl xl:!text-5xl !leading-0">{props.title}</Text>
         }
+
+        {props.inverse && props.renderSideHeader && props.renderSideHeader}
 
         {!props.inverse && (
           <>
@@ -102,39 +112,41 @@ export const FramePanel = (props: Props) => {
       {/* end header */}
 
       {/* body container */}
-      <div className={`flex flex-1 flex-col`}>
+      <div className={`flex flex-1 flex-col ${props.bodyContainerClassName || ''}`}>
 
         {/* main vertical container (used for mobile side actions )*/}
-        <div className={`flex flex-1 flex-col ${props.inverse ? 'items-end' : 'items-start'}`}>
+        {breakpoint.isMobile && props.renderSide &&
+          <div className={`flex flex-1 flex-col ${props.inverse ? 'items-end' : 'items-start'}`}>
 
-          <div className={`flex flex-1 gap-4 mb-4`}>
-            {breakpoint.isMobile && props.renderSide}
+            <div className={`flex flex-1 gap-4 mb-4`}>
+              {breakpoint.isMobile && props.renderSide}
+            </div>
+
+            {
+              breakpoint.isMobile && (
+                <>
+                  {
+                    props.inverse
+                      ? <FrameConnectorNode
+                        size={frameConnectorSize}
+                        className="!inline !rotate-[270deg] !origin-center !h-[44px]"
+                        fill={lightJsTokens.nbFrameBackgroundPrimary}
+                      />
+                      : <FrameConnectorNode
+                        size={frameConnectorSize}
+                        className="!inline !w-fit !scale-x-[-1] !rotate-90 !origin-center"
+                        fill={lightJsTokens.nbFrameBackgroundPrimary}
+                      />
+                  }
+                </>
+              )
+            }
           </div>
-
-          {
-            breakpoint.isMobile && (
-              <>
-                {
-                  props.inverse
-                    ? <FrameConnectorNode
-                      size={frameConnectorSize}
-                      className="!inline !rotate-[270deg] !origin-center !h-[44px]"
-                      fill={lightJsTokens.nbFrameBackgroundPrimary}
-                    />
-                    : <FrameConnectorNode
-                      size={frameConnectorSize}
-                      className="!inline !w-fit !scale-x-[-1] !rotate-90 !origin-center"
-                      fill={lightJsTokens.nbFrameBackgroundPrimary}
-                    />
-                }
-              </>
-            )
-          }
-        </div>
+        }
         {/*end main vertical container (used for mobile side actions )*/}
 
         {/* level 2 - body here */}
-        <div className=" flex h-full items-stretch">
+        <div className={`flex h-full flex-grow items-stretch ${props.verticalFrameConnectorContainerClassName || ''}`}>
           {/* non-inverse side actions and connector */}
           {!props.inverse &&
             <div className="flex flex-col justify-items-stretch gap-4">
@@ -149,12 +161,13 @@ export const FramePanel = (props: Props) => {
           }
 
           {/* body */}
-          <div className=" flex flex-1 flex-col gap-4">
-            <div className=" flex flex-1 p-4">
+          <div className={`flex flex-1 flex-col flex-grow gap-4`}>
+            <div className={`flex flex-1 px-4 ${props.bodyContainerClassName || ''}`}>
               {props.children}
             </div>
+
             {/* footer */}
-            <div className="flex items-end gap-4 h-fit">
+            <div className={`flex items-end gap-4 h-fit ${props.footerClassName || ''}`}>
               {props.inverse && props.renderFooter}
               <FrameConnector
                 className="h-fit"
