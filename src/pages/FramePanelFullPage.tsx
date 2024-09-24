@@ -1,10 +1,13 @@
 import {FramePanel} from "../components/framePanel/FramePanel.tsx";
 import {IconButton} from "../components/button/IconButton.tsx";
-import {ArrowRightIcon, CodeBracketIcon} from "@heroicons/react/16/solid";
+import {ArrowRightIcon, CodeBracketIcon, SwatchIcon} from "@heroicons/react/16/solid";
 import {Button} from "../components/button/Button.tsx";
 import {useBreakpoint} from "../hook/useBreakpoint.ts";
+import {useState} from "react";
 
 export const FramePanelFullPage = () => {
+
+  const [inverse, setInverse] = useState(false);
 
   const breakpoint = useBreakpoint();
 
@@ -37,10 +40,11 @@ export const FramePanelFullPage = () => {
             size={breakpoint.isDesktop ? 'M' : 'S'}
             rounded="LTop"
             variant="standard"
-            icon={<CodeBracketIcon/>}
+            icon={<SwatchIcon/>}
+            onClick={() => setInverse(!inverse)}
           />}
         title="Welcome"
-        inverse={false}
+        inverse={inverse}
       >
         <div className="flex flex-col flex-grow bg-background-accent-200 w-full rounded-lg"/>
       </FramePanel>

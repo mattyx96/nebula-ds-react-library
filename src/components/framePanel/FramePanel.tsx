@@ -22,22 +22,30 @@ type Props = ({ title: string; renderTitle?: undefined } | { renderTitle: ReactN
 
 export const FramePanel = (props: Props) => {
   const breakpoint = useBreakpoint();
-  const {dimensions, ref} = useElementDimensions();
+  const {dimensions: headerFrameConnectorDimensions, ref: headerFrameConnectorRef} = useElementDimensions();
+  const {dimensions: footerFrameConnectorDimensions, ref: footerFrameConnectorRef} = useElementDimensions();
 
   const frameConnectorSize = breakpoint.isDesktop ? 'M' : 'S';
   const isHeaderFrameConnectorOneNodeWidth = () => {
     if (breakpoint.isDesktop) {
-      return dimensions.width <= 140
+      return headerFrameConnectorDimensions.width <= 140
     } else {
-      return dimensions.width <= 150
+      return headerFrameConnectorDimensions.width <= 150
+    }
+  }
+  const isFooterFrameConnectorHiddenNode = () => {
+    if (breakpoint.isDesktop) {
+      return footerFrameConnectorDimensions.width <= 240
+    } else {
+      return footerFrameConnectorDimensions.width <= 103
     }
   }
 
   const isHeaderFrameConnectorHidden = () => {
     if (breakpoint.isDesktop) {
-      return dimensions.width <= 70
+      return headerFrameConnectorDimensions.width <= 70
     } else {
-      return dimensions.width <= 50
+      return headerFrameConnectorDimensions.width <= 50
     }
   }
 
@@ -69,7 +77,7 @@ export const FramePanel = (props: Props) => {
                 {props.renderHeader}
               </div>
             }
-            <div ref={ref} className="w-full flex flex-1 scale-[-1]">
+            <div ref={headerFrameConnectorRef} className="w-full flex flex-1 scale-[-1]">
               {!isHeaderFrameConnectorHidden() &&
                 <FrameConnector
                   size={frameConnectorSize}
@@ -93,7 +101,7 @@ export const FramePanel = (props: Props) => {
 
         {!props.inverse && (
           <>
-            <div ref={ref} className="w-full flex flex-1 scale-[-1]">
+            <div ref={headerFrameConnectorRef} className="w-full flex flex-1 scale-[-1]">
               {!isHeaderFrameConnectorHidden() &&
                 <FrameConnector
                   size={frameConnectorSize}
@@ -156,7 +164,7 @@ export const FramePanel = (props: Props) => {
               <FrameConnector
                 size={frameConnectorSize}
                 className="flex flex-1 items-stretch"
-                divider={breakpoint.isMobile}
+                firstNode={{hidden: true}}
                 vertical
               />
             </div>
@@ -171,20 +179,22 @@ export const FramePanel = (props: Props) => {
             {/* footer */}
             <div className={`flex items-end gap-4 h-fit ${props.footerClassName || ''}`}>
               {props.inverse && props.renderFooter}
-              <FrameConnector
-                className="h-fit"
-                size={frameConnectorSize}
-                {...(props.inverse
-                    ? {
-                      secondNode: {hidden: true},
-                      firstNode: {hidden: !props.renderFooter}
-                    }
-                    : {
-                      firstNode: {hidden: true},
-                      secondNode: {hidden: !props.renderFooter}
-                    }
-                )}
-              />
+              <div ref={footerFrameConnectorRef} className="w-full flex flex-1 h-fit">
+                <FrameConnector
+                  className="h-fit"
+                  size={frameConnectorSize}
+                  {...(props.inverse
+                      ? {
+                        secondNode: {hidden: true},
+                        firstNode: {hidden: !props.renderFooter || isFooterFrameConnectorHiddenNode()}
+                      }
+                      : {
+                        firstNode: {hidden: true},
+                        secondNode: {hidden: !props.renderFooter || isFooterFrameConnectorHiddenNode()}
+                      }
+                  )}
+                />
+              </div>
               {!props.inverse && props.renderFooter}
             </div>
             {/* end footer */}
@@ -198,7 +208,7 @@ export const FramePanel = (props: Props) => {
               <FrameConnector
                 size={frameConnectorSize}
                 className="flex flex-1 items-stretch scale-[-1]"
-                divider={breakpoint.isMobile}
+                secondNode={{hidden: true}}
                 vertical
               />
             </div>

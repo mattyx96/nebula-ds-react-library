@@ -38,23 +38,6 @@ exports[`FramePanel with mocked useBreakpoint > renders correctly on desktop 1`]
             class="flex flex-col w-fit flex flex-1 items-stretch"
           >
             <div
-              class="flex items-center justify-center rotate-90 origin-center scale-x-[-1] undefined"
-            >
-              <svg
-                fill="none"
-                viewBox="0 0 44 43"
-                width="44"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  clip-rule="evenodd"
-                  d="M43.5 1.63276C43.5 0.731013 42.769 0 41.8672 0C30.896 0 22.002 8.89396 22.002 19.8652V21.7336C22.002 22.0226 21.9614 22.3108 21.8742 22.5863C19.2457 30.8903 12.2732 37.2627 3.62405 39.0358C3.43745 39.0741 3.2468 39.0918 3.05632 39.0918H0.599918C0.544689 39.0918 0.49992 39.1366 0.49992 39.1918V42.9C0.49992 42.9553 0.544693 43 0.599918 43H35.358C35.3867 43 35.415 42.9907 35.4437 42.9907H40.5C42.1569 42.9907 43.5 41.6476 43.5 39.9907V1.63276ZM22.002 38.9958C22.002 39.0488 21.9591 39.0918 21.9061 39.0918H21.8997C21.8047 39.0918 21.7655 38.96 21.8406 38.9017C21.9048 38.8517 22.002 38.8962 22.002 38.9776V38.9958Z"
-                  fill="#DEDED3"
-                  fill-rule="evenodd"
-                />
-              </svg>
-            </div>
-            <div
               class="h-full flex-1 w-[4px] bg-frame-background-primary undefined"
             />
             <div
@@ -90,27 +73,14 @@ exports[`FramePanel with mocked useBreakpoint > renders correctly on desktop 1`]
             class="flex items-end gap-4 h-fit "
           >
             <div
-              class="flex items-end flex-1 h-fit"
+              class="w-full flex flex-1 h-fit"
             >
               <div
-                class="w-full h-[4px] bg-frame-background-primary undefined"
-              />
-              <div
-                class="flex items-center justify-center  undefined"
+                class="flex items-end flex-1 h-fit"
               >
-                <svg
-                  fill="none"
-                  viewBox="0 0 44 43"
-                  width="44"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    clip-rule="evenodd"
-                    d="M43.5 1.63276C43.5 0.731013 42.769 0 41.8672 0C30.896 0 22.002 8.89396 22.002 19.8652V21.7336C22.002 22.0226 21.9614 22.3108 21.8742 22.5863C19.2457 30.8903 12.2732 37.2627 3.62405 39.0358C3.43745 39.0741 3.2468 39.0918 3.05632 39.0918H0.599918C0.544689 39.0918 0.49992 39.1366 0.49992 39.1918V42.9C0.49992 42.9553 0.544693 43 0.599918 43H35.358C35.3867 43 35.415 42.9907 35.4437 42.9907H40.5C42.1569 42.9907 43.5 41.6476 43.5 39.9907V1.63276ZM22.002 38.9958C22.002 39.0488 21.9591 39.0918 21.9061 39.0918H21.8997C21.8047 39.0918 21.7655 38.96 21.8406 38.9017C21.9048 38.8517 22.002 38.8962 22.002 38.9776V38.9958Z"
-                    fill="#DEDED3"
-                    fill-rule="evenodd"
-                  />
-                </svg>
+                <div
+                  class="w-full h-[4px] bg-frame-background-primary undefined"
+                />
               </div>
             </div>
             <div>
@@ -185,6 +155,23 @@ exports[`FramePanel with mocked useBreakpoint > renders correctly on mobile 1`] 
             <div
               class="h-full flex-1 w-[4px] bg-frame-background-primary undefined"
             />
+            <div
+              class="flex items-center justify-center rotate-90 origin-center undefined"
+            >
+              <svg
+                fill="none"
+                viewBox="0 0 44 43"
+                width="44"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  clip-rule="evenodd"
+                  d="M43.5 1.63276C43.5 0.731013 42.769 0 41.8672 0C30.896 0 22.002 8.89396 22.002 19.8652V21.7336C22.002 22.0226 21.9614 22.3108 21.8742 22.5863C19.2457 30.8903 12.2732 37.2627 3.62405 39.0358C3.43745 39.0741 3.2468 39.0918 3.05632 39.0918H0.599918C0.544689 39.0918 0.49992 39.1366 0.49992 39.1918V42.9C0.49992 42.9553 0.544693 43 0.599918 43H35.358C35.3867 43 35.415 42.9907 35.4437 42.9907H40.5C42.1569 42.9907 43.5 41.6476 43.5 39.9907V1.63276ZM22.002 38.9958C22.002 39.0488 21.9591 39.0918 21.9061 39.0918H21.8997C21.8047 39.0918 21.7655 38.96 21.8406 38.9017C21.9048 38.8517 22.002 38.8962 22.002 38.9776V38.9958Z"
+                  fill="#DEDED3"
+                  fill-rule="evenodd"
+                />
+              </svg>
+            </div>
           </div>
         </div>
         <div
@@ -201,27 +188,14 @@ exports[`FramePanel with mocked useBreakpoint > renders correctly on mobile 1`] 
             class="flex items-end gap-4 h-fit "
           >
             <div
-              class="flex items-end flex-1 h-fit"
+              class="w-full flex flex-1 h-fit"
             >
               <div
-                class="w-full h-[4px] bg-frame-background-primary undefined"
-              />
-              <div
-                class="flex items-center justify-center  undefined"
+                class="flex items-end flex-1 h-fit"
               >
-                <svg
-                  fill="none"
-                  viewBox="0 0 44 43"
-                  width="44"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    clip-rule="evenodd"
-                    d="M43.5 1.63276C43.5 0.731013 42.769 0 41.8672 0C30.896 0 22.002 8.89396 22.002 19.8652V21.7336C22.002 22.0226 21.9614 22.3108 21.8742 22.5863C19.2457 30.8903 12.2732 37.2627 3.62405 39.0358C3.43745 39.0741 3.2468 39.0918 3.05632 39.0918H0.599918C0.544689 39.0918 0.49992 39.1366 0.49992 39.1918V42.9C0.49992 42.9553 0.544693 43 0.599918 43H35.358C35.3867 43 35.415 42.9907 35.4437 42.9907H40.5C42.1569 42.9907 43.5 41.6476 43.5 39.9907V1.63276ZM22.002 38.9958C22.002 39.0488 21.9591 39.0918 21.9061 39.0918H21.8997C21.8047 39.0918 21.7655 38.96 21.8406 38.9017C21.9048 38.8517 22.002 38.8962 22.002 38.9776V38.9958Z"
-                    fill="#DEDED3"
-                    fill-rule="evenodd"
-                  />
-                </svg>
+                <div
+                  class="w-full h-[4px] bg-frame-background-primary undefined"
+                />
               </div>
             </div>
             <div>
@@ -273,23 +247,6 @@ exports[`FramePanel with mocked useBreakpoint > renders correctly on tablet 1`] 
             class="flex flex-col w-fit flex flex-1 items-stretch"
           >
             <div
-              class="flex items-center justify-center rotate-90 origin-center scale-x-[-1] undefined"
-            >
-              <svg
-                fill="none"
-                viewBox="0 0 44 43"
-                width="44"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  clip-rule="evenodd"
-                  d="M43.5 1.63276C43.5 0.731013 42.769 0 41.8672 0C30.896 0 22.002 8.89396 22.002 19.8652V21.7336C22.002 22.0226 21.9614 22.3108 21.8742 22.5863C19.2457 30.8903 12.2732 37.2627 3.62405 39.0358C3.43745 39.0741 3.2468 39.0918 3.05632 39.0918H0.599918C0.544689 39.0918 0.49992 39.1366 0.49992 39.1918V42.9C0.49992 42.9553 0.544693 43 0.599918 43H35.358C35.3867 43 35.415 42.9907 35.4437 42.9907H40.5C42.1569 42.9907 43.5 41.6476 43.5 39.9907V1.63276ZM22.002 38.9958C22.002 39.0488 21.9591 39.0918 21.9061 39.0918H21.8997C21.8047 39.0918 21.7655 38.96 21.8406 38.9017C21.9048 38.8517 22.002 38.8962 22.002 38.9776V38.9958Z"
-                  fill="#DEDED3"
-                  fill-rule="evenodd"
-                />
-              </svg>
-            </div>
-            <div
               class="h-full flex-1 w-[4px] bg-frame-background-primary undefined"
             />
             <div
@@ -325,27 +282,14 @@ exports[`FramePanel with mocked useBreakpoint > renders correctly on tablet 1`] 
             class="flex items-end gap-4 h-fit "
           >
             <div
-              class="flex items-end flex-1 h-fit"
+              class="w-full flex flex-1 h-fit"
             >
               <div
-                class="w-full h-[4px] bg-frame-background-primary undefined"
-              />
-              <div
-                class="flex items-center justify-center  undefined"
+                class="flex items-end flex-1 h-fit"
               >
-                <svg
-                  fill="none"
-                  viewBox="0 0 44 43"
-                  width="44"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    clip-rule="evenodd"
-                    d="M43.5 1.63276C43.5 0.731013 42.769 0 41.8672 0C30.896 0 22.002 8.89396 22.002 19.8652V21.7336C22.002 22.0226 21.9614 22.3108 21.8742 22.5863C19.2457 30.8903 12.2732 37.2627 3.62405 39.0358C3.43745 39.0741 3.2468 39.0918 3.05632 39.0918H0.599918C0.544689 39.0918 0.49992 39.1366 0.49992 39.1918V42.9C0.49992 42.9553 0.544693 43 0.599918 43H35.358C35.3867 43 35.415 42.9907 35.4437 42.9907H40.5C42.1569 42.9907 43.5 41.6476 43.5 39.9907V1.63276ZM22.002 38.9958C22.002 39.0488 21.9591 39.0918 21.9061 39.0918H21.8997C21.8047 39.0918 21.7655 38.96 21.8406 38.9017C21.9048 38.8517 22.002 38.8962 22.002 38.9776V38.9958Z"
-                    fill="#DEDED3"
-                    fill-rule="evenodd"
-                  />
-                </svg>
+                <div
+                  class="w-full h-[4px] bg-frame-background-primary undefined"
+                />
               </div>
             </div>
             <div>
