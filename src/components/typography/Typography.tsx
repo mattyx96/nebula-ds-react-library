@@ -5,7 +5,7 @@ import {typographyVariants} from "../../variants/typography/typographyVariants";
 
 import '../../variants/typography/index.css'
 
-export type Tags = 'p' | 'span' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
+export type Tags = 'p' | 'span' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'label';
 
 type TypographyElementProps<T extends Tags> = ComponentPropsWithRef<T>;
 
