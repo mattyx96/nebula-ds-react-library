@@ -24,6 +24,7 @@ export const FramePanel = (props: Props) => {
   const breakpoint = useBreakpoint();
   const {dimensions: headerFrameConnectorDimensions, ref: headerFrameConnectorRef} = useElementDimensions();
   const {dimensions: footerFrameConnectorDimensions, ref: footerFrameConnectorRef} = useElementDimensions();
+  const {dimensions: sideFrameConnectorDimensions, ref: sideFrameConnectorRef} = useElementDimensions();
 
   const frameConnectorSize = breakpoint.isDesktop ? 'M' : 'S';
   const isHeaderFrameConnectorOneNodeWidth = () => {
@@ -33,11 +34,20 @@ export const FramePanel = (props: Props) => {
       return headerFrameConnectorDimensions.width <= 150
     }
   }
+
   const isFooterFrameConnectorHiddenNode = () => {
     if (breakpoint.isDesktop) {
       return footerFrameConnectorDimensions.width <= 240
     } else {
       return footerFrameConnectorDimensions.width <= 103
+    }
+  }
+
+  const isSideFrameConnectorHiddenNode = () => {
+    if (breakpoint.isDesktop) {
+      return sideFrameConnectorDimensions.height <= 200
+    } else {
+      return sideFrameConnectorDimensions.height <= 160
     }
   }
 
@@ -127,7 +137,7 @@ export const FramePanel = (props: Props) => {
           <div className={`flex flex-col ${props.inverse ? 'items-end' : 'items-start'}`}>
 
             {props.renderSide &&
-              <div className={`flex flex-1 gap-4 mb-4`}>
+              <div className={`flex flex-1 flex-wrap gap-4 mb-4`}>
                 {breakpoint.isMobile && props.renderSide}
               </div>
             }
@@ -156,65 +166,82 @@ export const FramePanel = (props: Props) => {
         {/*end main vertical container (used for mobile side actions )*/}
 
         {/* level 2 - body here */}
-        <div className={`flex h-full flex-grow items-stretch ${props.verticalFrameConnectorContainerClassName || ''}`}>
+        <div
+          className={`flex h-full flex-grow items-stretch ${props.verticalFrameConnectorContainerClassName || ''}`}>
           {/* non-inverse side actions and connector */}
           {!props.inverse &&
             <div className="flex flex-col justify-items-stretch gap-4">
               {!breakpoint.isMobile && props.renderSide}
-              <FrameConnector
-                size={frameConnectorSize}
-                className="flex flex-1 items-stretch"
-                firstNode={{hidden: true}}
-                vertical
-              />
+              <div ref={sideFrameConnectorRef} className="flex flex-col flex-1">
+                <FrameConnector
+                  size={frameConnectorSize}
+                  className="flex flex-1 items-stretch "
+                  firstNode={{hidden: breakpoint.isMobile || isSideFrameConnectorHiddenNode()}}
+                  secondNode={{hidden: true}}
+                  vertical
+                />
+              </div>
             </div>
           }
 
           {/* body */}
-          <div className={`flex flex-1 flex-col flex-grow gap-4`}>
-            <div className={`flex flex-1 px-4 ${props.bodyContainerClassName || ''}`}>
-              {props.children}
-            </div>
-
-            {/* footer */}
-            <div className={`flex items-end gap-4 h-fit ${props.footerClassName || ''}`}>
-              {props.inverse && props.renderFooter}
-              <div ref={footerFrameConnectorRef} className="w-full flex flex-1 h-fit">
-                <FrameConnector
-                  className="h-fit"
-                  size={frameConnectorSize}
-                  {...(props.inverse
-                      ? {
-                        secondNode: {hidden: true},
-                        firstNode: {hidden: !props.renderFooter || isFooterFrameConnectorHiddenNode()}
-                      }
-                      : {
-                        firstNode: {hidden: true},
-                        secondNode: {hidden: !props.renderFooter || isFooterFrameConnectorHiddenNode()}
-                      }
-                  )}
-                />
-              </div>
-              {!props.inverse && props.renderFooter}
-            </div>
-            {/* end footer */}
+          <div
+            className={`flex flex-1 pb-4 ${props.inverse ? breakpoint.isMobile ? 'pr-2' : 'pr-4' : breakpoint.isMobile ? 'pl-2' : 'pl-4'} ${props.bodyContainerClassName || ''}`}>
+            {props.children}
           </div>
           {/* end body */}
 
           {/* inverse side actions and connector */}
           {props.inverse &&
-            <div className="flex flex-col justify-items-stretch gap-4">
+            <div ref={sideFrameConnectorRef} className="flex flex-col justify-items-stretch gap-4">
               {!breakpoint.isMobile && props.renderSide}
               <FrameConnector
                 size={frameConnectorSize}
                 className="flex flex-1 items-stretch scale-[-1]"
-                secondNode={{hidden: true}}
+                secondNode={{hidden: breakpoint.isMobile || isSideFrameConnectorHiddenNode()}}
+                firstNode={{hidden: true}}
                 vertical
               />
             </div>
           }
         </div>
         {/* end level 2 - body here */}
+
+        {/* footer */}
+        <div className={`flex items-end gap-4 h-fit ${props.footerClassName || ''}`}>
+          {props.inverse && props.renderFooter}
+          <div ref={footerFrameConnectorRef} className="w-full flex flex-1 h-full items-end">
+            {!props.inverse && <FrameConnector
+              size={frameConnectorSize}
+              bridge={{className: 'hidden'}}
+              firstNode={{hidden: true}}
+              vertical
+            />}
+            <FrameConnector
+              className="h-fit"
+              size={frameConnectorSize}
+              {...(props.inverse
+                  ? {
+                    secondNode: {hidden: true},
+                    firstNode: {hidden: !props.renderFooter || isFooterFrameConnectorHiddenNode()}
+                  }
+                  : {
+                    firstNode: {hidden: true},
+                    secondNode: {hidden: !props.renderFooter || isFooterFrameConnectorHiddenNode()}
+                  }
+              )}
+            />
+            {props.inverse && <FrameConnector
+              size={frameConnectorSize}
+              className="scale-x-[-1]"
+              bridge={{className: 'hidden'}}
+              firstNode={{hidden: true}}
+              vertical
+            />}
+          </div>
+          {!props.inverse && props.renderFooter}
+        </div>
+        {/* end footer */}
 
       </div>
       {/* end body container */}

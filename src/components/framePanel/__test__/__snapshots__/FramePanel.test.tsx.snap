@@ -35,10 +35,36 @@ exports[`FramePanel with mocked useBreakpoint > renders correctly on desktop 1`]
           class="flex flex-col justify-items-stretch gap-4"
         >
           <div
-            class="flex flex-col w-fit flex flex-1 items-stretch"
+            class="flex flex-col flex-1"
           >
             <div
-              class="h-full flex-1 w-[4px] bg-frame-background-primary undefined"
+              class="flex flex-col w-fit flex flex-1 items-stretch "
+            >
+              <div
+                class="h-full flex-1 w-[4px] bg-frame-background-primary undefined"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-1 pb-4 pl-4 "
+        >
+          <div
+            class="h-96 bg-background-contrast-primary-500 w-full rounded-lg"
+          />
+        </div>
+      </div>
+      <div
+        class="flex items-end gap-4 h-fit "
+      >
+        <div
+          class="w-full flex flex-1 h-full items-end"
+        >
+          <div
+            class="flex flex-col w-fit undefined"
+          >
+            <div
+              class="h-full flex-1 w-[4px] bg-frame-background-primary hidden"
             />
             <div
               class="flex items-center justify-center rotate-90 origin-center undefined"
@@ -58,35 +84,16 @@ exports[`FramePanel with mocked useBreakpoint > renders correctly on desktop 1`]
               </svg>
             </div>
           </div>
-        </div>
-        <div
-          class="flex flex-1 flex-col flex-grow gap-4"
-        >
           <div
-            class="flex flex-1 px-4 "
+            class="flex items-end flex-1 h-fit"
           >
             <div
-              class="h-96 bg-background-contrast-primary-500 w-full rounded-lg"
+              class="w-full h-[4px] bg-frame-background-primary undefined"
             />
           </div>
-          <div
-            class="flex items-end gap-4 h-fit "
-          >
-            <div
-              class="w-full flex flex-1 h-fit"
-            >
-              <div
-                class="flex items-end flex-1 h-fit"
-              >
-                <div
-                  class="w-full h-[4px] bg-frame-background-primary undefined"
-                />
-              </div>
-            </div>
-            <div>
-              Footer
-            </div>
-          </div>
+        </div>
+        <div>
+          Footer
         </div>
       </div>
     </div>
@@ -150,10 +157,36 @@ exports[`FramePanel with mocked useBreakpoint > renders correctly on mobile 1`] 
           class="flex flex-col justify-items-stretch gap-4"
         >
           <div
-            class="flex flex-col w-fit flex flex-1 items-stretch"
+            class="flex flex-col flex-1"
           >
             <div
-              class="h-full flex-1 w-[4px] bg-frame-background-primary undefined"
+              class="flex flex-col w-fit flex flex-1 items-stretch "
+            >
+              <div
+                class="h-full flex-1 w-[4px] bg-frame-background-primary undefined"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-1 pb-4 pl-2 "
+        >
+          <div
+            class="h-96 bg-background-contrast-primary-500 w-full rounded-lg"
+          />
+        </div>
+      </div>
+      <div
+        class="flex items-end gap-4 h-fit "
+      >
+        <div
+          class="w-full flex flex-1 h-full items-end"
+        >
+          <div
+            class="flex flex-col w-fit undefined"
+          >
+            <div
+              class="h-full flex-1 w-[4px] bg-frame-background-primary hidden"
             />
             <div
               class="flex items-center justify-center rotate-90 origin-center undefined"
@@ -173,35 +206,16 @@ exports[`FramePanel with mocked useBreakpoint > renders correctly on mobile 1`] 
               </svg>
             </div>
           </div>
-        </div>
-        <div
-          class="flex flex-1 flex-col flex-grow gap-4"
-        >
           <div
-            class="flex flex-1 px-4 "
+            class="flex items-end flex-1 h-fit"
           >
             <div
-              class="h-96 bg-background-contrast-primary-500 w-full rounded-lg"
+              class="w-full h-[4px] bg-frame-background-primary undefined"
             />
           </div>
-          <div
-            class="flex items-end gap-4 h-fit "
-          >
-            <div
-              class="w-full flex flex-1 h-fit"
-            >
-              <div
-                class="flex items-end flex-1 h-fit"
-              >
-                <div
-                  class="w-full h-[4px] bg-frame-background-primary undefined"
-                />
-              </div>
-            </div>
-            <div>
-              Footer
-            </div>
-          </div>
+        </div>
+        <div>
+          Footer
         </div>
       </div>
     </div>
@@ -244,10 +258,36 @@ exports[`FramePanel with mocked useBreakpoint > renders correctly on tablet 1`] 
           class="flex flex-col justify-items-stretch gap-4"
         >
           <div
-            class="flex flex-col w-fit flex flex-1 items-stretch"
+            class="flex flex-col flex-1"
           >
             <div
-              class="h-full flex-1 w-[4px] bg-frame-background-primary undefined"
+              class="flex flex-col w-fit flex flex-1 items-stretch "
+            >
+              <div
+                class="h-full flex-1 w-[4px] bg-frame-background-primary undefined"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-1 pb-4 pl-4 "
+        >
+          <div
+            class="h-96 bg-background-contrast-primary-500 w-full rounded-lg"
+          />
+        </div>
+      </div>
+      <div
+        class="flex items-end gap-4 h-fit "
+      >
+        <div
+          class="w-full flex flex-1 h-full items-end"
+        >
+          <div
+            class="flex flex-col w-fit undefined"
+          >
+            <div
+              class="h-full flex-1 w-[4px] bg-frame-background-primary hidden"
             />
             <div
               class="flex items-center justify-center rotate-90 origin-center undefined"
@@ -267,35 +307,16 @@ exports[`FramePanel with mocked useBreakpoint > renders correctly on tablet 1`] 
               </svg>
             </div>
           </div>
-        </div>
-        <div
-          class="flex flex-1 flex-col flex-grow gap-4"
-        >
           <div
-            class="flex flex-1 px-4 "
+            class="flex items-end flex-1 h-fit"
           >
             <div
-              class="h-96 bg-background-contrast-primary-500 w-full rounded-lg"
+              class="w-full h-[4px] bg-frame-background-primary undefined"
             />
           </div>
-          <div
-            class="flex items-end gap-4 h-fit "
-          >
-            <div
-              class="w-full flex flex-1 h-fit"
-            >
-              <div
-                class="flex items-end flex-1 h-fit"
-              >
-                <div
-                  class="w-full h-[4px] bg-frame-background-primary undefined"
-                />
-              </div>
-            </div>
-            <div>
-              Footer
-            </div>
-          </div>
+        </div>
+        <div>
+          Footer
         </div>
       </div>
     </div>
