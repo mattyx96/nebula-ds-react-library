@@ -18,11 +18,19 @@ export const FramePanelFullPage = () => {
 
   const actionsFooter = <>
     <IconButton size={breakpoint.isDesktop ? 'M' : 'S'} variant="standard" icon={<CodeBracketIcon/>}/>
-    <Button size={breakpoint.isDesktop ? 'M' : 'S'} rounded="R" variant="outlined" text="Open"
+    <Button size={breakpoint.isDesktop ? 'M' : 'S'} className={breakpoint.isDesktop ? 'ml-2' : 'ml-1 w-full'}
+            rounded="R"
+            variant="outlined" text="Open"
             rightIcon={<ArrowRightIcon/>}/>
   </>
 
   const sideActions = <>
+    <IconButton size={breakpoint.isDesktop ? 'M' : 'S'} variant="standard" icon={<CodeBracketIcon/>}/>
+    <IconButton size={breakpoint.isDesktop ? 'M' : 'S'} variant="standard" icon={<CodeBracketIcon/>}/>
+    <IconButton size={breakpoint.isDesktop ? 'M' : 'S'} variant="standard" icon={<CodeBracketIcon/>}/>
+    <IconButton size={breakpoint.isDesktop ? 'M' : 'S'} variant="standard" icon={<CodeBracketIcon/>}/>
+    <IconButton size={breakpoint.isDesktop ? 'M' : 'S'} variant="standard" icon={<CodeBracketIcon/>}/>
+    <IconButton size={breakpoint.isDesktop ? 'M' : 'S'} variant="standard" icon={<CodeBracketIcon/>}/>
     <IconButton size={breakpoint.isDesktop ? 'M' : 'S'} variant="standard" icon={<CodeBracketIcon/>}/>
     <IconButton size={breakpoint.isDesktop ? 'M' : 'S'} variant="standard" icon={<CodeBracketIcon/>}/>
   </>
