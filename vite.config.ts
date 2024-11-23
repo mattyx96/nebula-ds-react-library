@@ -32,8 +32,9 @@ export default defineConfig({
   plugins: [
     react(),
     dts({
-      insertTypesEntry: true,
+      include: ['src/**/*.ts', 'src/**/*.tsx'],
       outDir: 'dist/types',
+      insertTypesEntry: true,
     }),
   ],
   css: {
