@@ -1,5 +1,5 @@
 /// <reference types="vitest" />
-import {defineConfig} from 'vitest/config';
+import { defineConfig } from 'vitest/config';
 import dts from 'vite-plugin-dts';
 import react from '@vitejs/plugin-react';
 import path from 'path';
@@ -18,11 +18,11 @@ export default defineConfig({
       fileName: (format) => `index.${format}.js`,
     },
     rollupOptions: {
-      external: ["react", "react-dom", "react/jsx-runtime"],
+      external: ['react', 'react-dom', 'react/jsx-runtime'],
       output: {
         globals: {
-          react: "React",
-          "react-dom": "ReactDOM",
+          react: 'React',
+          'react-dom': 'ReactDOM',
         },
       },
     },
@@ -32,16 +32,20 @@ export default defineConfig({
   plugins: [
     react(),
     dts({
-      include: ['src/**/*.ts', 'src/**/*.tsx'],
+      include: ['index.ts', 'src/**/*.ts', 'src/**/*.tsx'],
+      exclude: [
+        'src/**/*.test.ts',
+        'src/**/*.test.tsx',
+        'src/**/*.stories.ts',
+        'src/**/*.stories.tsx',
+      ],
       outDir: 'dist/types',
       insertTypesEntry: true,
     }),
   ],
   css: {
     postcss: {
-      plugins: [
-        tailwindcss('./tailwind.config.mjs'),
-      ],
+      plugins: [tailwindcss('./tailwind.config.mjs')],
     },
   },
   test: {
