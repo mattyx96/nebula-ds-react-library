@@ -1,5 +1,4 @@
 import {clsxMerge} from "../../common/utils/classNameUtils";
-import {lightJsTokens} from "nebula-ds-tokens"
 import './FrameConnector.css'
 
 type Size = 'M' | 'L' | 'S'
@@ -40,7 +39,7 @@ export const FrameConnector = (props: Props) => {
         ? <></>
         : <FrameConnectorNode
           size={props.firstNode?.size || size}
-          fill={props.firstNode?.fill || lightJsTokens.nbFrameBackgroundPrimary}
+          fill={props.firstNode?.fill || 'var(--nb-frame-background-primary)'}
           className={clsxMerge(
             'nb-frame-connector__node--flip',
             props.vertical && 'nb-frame-connector__node--vertical',
@@ -55,7 +54,7 @@ export const FrameConnector = (props: Props) => {
         ? <></>
         : <FrameConnectorNode
           size={props.secondNode?.size || size}
-          fill={props.secondNode?.fill || lightJsTokens.nbFrameBackgroundPrimary}
+          fill={props.secondNode?.fill || 'var(--nb-frame-background-primary)'}
           className={clsxMerge(
             props.vertical && 'nb-frame-connector__node--vertical',
             props.secondNode?.className

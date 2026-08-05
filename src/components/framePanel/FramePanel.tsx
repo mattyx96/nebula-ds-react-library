@@ -3,7 +3,6 @@ import {FrameConnector, FrameConnectorNode} from "../frameConnector/FrameConnect
 import {Text} from "../typography/Typography";
 import {useBreakpoint} from "../../hook/useBreakpoint.ts";
 import useElementDimensions from "../../hook/useElementDimentions.ts";
-import {lightJsTokens} from "nebula-ds-tokens";
 import './FramePanel.css'
 
 type Props = ({ title: string; renderTitle?: undefined } | { renderTitle: ReactNode; title?: undefined }) & {
@@ -155,12 +154,12 @@ export const FramePanel = (props: Props) => {
                       ? <FrameConnectorNode
                         size={frameConnectorSize}
                         className="nb-frame-panel__mobile-node--inverse"
-                        fill={lightJsTokens.nbFrameBackgroundPrimary}
+                        fill="var(--nb-frame-background-primary)"
                       />
                       : <FrameConnectorNode
                         size={frameConnectorSize}
                         className="nb-frame-panel__mobile-node"
-                        fill={lightJsTokens.nbFrameBackgroundPrimary}
+                        fill="var(--nb-frame-background-primary)"
                       />
                   }
                 </>
