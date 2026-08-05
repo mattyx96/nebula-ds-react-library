@@ -46,4 +46,5 @@ Nested providers are supported (an inner `ThemeProvider` themes only its own sub
 - [X] theming infrastructure (light/dark CSS scaffolding)
 - [X] remove Tailwind (plain CSS)
 - [X] add theme provider
+- [X] FramePanel responsive rework (CSS Grid + container queries)
 - ...

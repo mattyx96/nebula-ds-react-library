@@ -231,7 +231,13 @@ Also exports the standalone `FrameConnectorNode` component (the SVG node shape a
 
 ### 4.8 `FramePanel`
 
-High-level layout component that assembles a full "LCARS page frame": a header row with connectors + optional header actions, a body with optional side actions + vertical connector, and a footer with connector + footer actions. Reacts to breakpoints (desktop vs mobile) and can be mirrored with `inverse`.
+High-level layout component that assembles a full "LCARS page frame": a header row with connectors + optional header actions, a body with optional side actions + vertical connector, and a footer with connector + footer actions.
+
+The layout is **declarative CSS** (no JS measurement):
+- Root is a CSS Grid with rows `[header] [body] [footer]`; the body is a flex row `[side | main]`.
+- `inverse` is applied via a `[data-inverse]` attribute + `.nb-frame-panel--inverse` (CSS flips direction with `row-reverse`/transforms) — no mirrored JSX branches.
+- Responsiveness uses **container queries** (`@container`): the header/footer/side slots are size containers and the `FrameConnector` nodes collapse (two → one → none) as the slot shrinks; the side actions move above the body on narrow containers. Container-query baseline: Chrome/Edge 105+, Safari 16+, Firefox 110+.
+- `useBreakpoint` is retained only to pick the connector size (`M` desktop / `S` otherwise).
 
 Props:
 
@@ -242,12 +248,10 @@ Props:
 | `renderHeader` | `ReactNode` | Actions on the header row (opposite side from title) |
 | `renderSideHeader` | `ReactNode` | Extra header-side element |
 | `renderFooter` | `ReactNode` | Actions in the footer |
-| `renderSide` | `ReactNode` | Side action stack (hidden on mobile → moved into the top area) |
+| `renderSide` | `ReactNode` | Side action stack (moves above the body on narrow containers) |
 | `inverse` | `boolean` | Mirrors the whole frame layout |
 | `className` / `headerClassName` / `footerClassName` / `verticalFrameConnectorContainerClassName` / `bodyContainerClassName` / `sideClassName` | `string` | Layout class overrides |
 | `children` | `ReactNode` | Main body content |
-
-Internal responsive heuristics (dimension thresholds that toggle connector node visibility) differ between desktop and mobile and are keyed off `useBreakpoint` + `useElementDimensions`.
 
 ### 4.9 `ThemeProvider` / `useTheme`
 
@@ -261,9 +265,10 @@ Scopes a theme to a subtree by rendering a wrapper `<div data-nb-theme={theme} c
 
 ### 4.10 Hooks
 
-- **`useBreakpoint`** (public) — returns `{ current, isDesktop, isMobile, isTablet }`. Breakpoints: `xs <640`, `sm 640–767`, `md 768–1023`, `lg 1024–1279`, `xl 1280–1535`, `2xl ≥1536`. **Note:** `isDesktop`/`isMobile` currently check for breakpoint names (`xxl`, `xxxl`, `xxs`) that are never produced by `getCurrentBreakpoints()` — effectively `isDesktop === (lg | xl)`, `isMobile === (xs | sm)`, and `2xl` matches neither. (`isDesktop` does not include `2xl`.)
-- **`useElementDimensions`** (internal) — measures a `ref`-attached element's `getBoundingClientRect()`; refreshes on `resize` and `scroll` (capture). Returns `{ dimensions, ref, refresh }`.
+- **`useBreakpoint`** (public) — returns `{ current, isDesktop, isMobile, isTablet }`. Breakpoints: `xs <640`, `sm 640–767`, `md 768–1023`, `lg 1024–1279`, `xl 1280–1535`, `2xl ≥1536`. Mapping: `isDesktop = lg | xl | 2xl`, `isMobile = xs | sm`, `isTablet = md`. Used only where a genuine JS viewport signal is needed (e.g. `FramePanel` connector size).
 - **`useEventListener`** (internal) — attaches a `window` event listener, runs it once on mount, and cleans up on unmount.
+
+(`useElementDimensions` was removed in REWORK-004 — no longer needed now that `FramePanel` is CSS/container-query driven.)
 
 ---
 
@@ -414,7 +419,7 @@ Note the mismatch: scripts use `pnpm`, but Vercel's `installCommand` uses `npm i
 - [x] theming infrastructure (light/dark CSS scaffolding)
 - [x] remove Tailwind (plain CSS)
 - [x] add theme provider (REWORK-003)
-- [ ] FramePanel responsive rework (REWORK-004)
+- [x] FramePanel responsive rework — CSS Grid + container queries, `useBreakpoint` fix (REWORK-004)
 - [ ] update Storybook & libraries (REWORK-005)
 - [ ] …
 
@@ -427,7 +432,6 @@ Note the mismatch: scripts use `pnpm`, but Vercel's `installCommand` uses `npm i
 - `index.ts` exports `Icon`, `Paper`, `Text`, `FrameConnector`, `FramePanel`, `Horizon` with `.tsx` extensions, but `Button`, `IconButton`, and the `useBreakpoint` hook without — inconsistent import style.
 - `FramePanel`'s stories live in `__docs___` (three underscores) instead of `__docs__`.
 - `Panel.tsx` exports a component named `Paper` with a TODO to rename.
-- `useBreakpoint.isDesktop`/`isMobile` reference breakpoint names (`xxl`, `xxxl`, `xxs`) that `getCurrentBreakpoints()` never returns; `2xl` is treated as neither desktop nor mobile.
 - `tsconfig.json` includes a `theme.ts` file that does not exist.
 - `.storybook/manager.js` exists but its purpose/usage was not confirmed.
 - `vercel.json` uses `npm install` while all local tooling uses pnpm.

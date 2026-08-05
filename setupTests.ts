@@ -1,6 +1,6 @@
 import * as matchers from '@testing-library/jest-dom/matchers';
 import '@testing-library/jest-dom/vitest';
-import {expect, vi} from 'vitest';
+import {expect} from 'vitest';
 import {TestingLibraryMatchers} from '@testing-library/jest-dom/matchers';
 
 declare module 'vitest' {
@@ -10,9 +10,5 @@ declare module 'vitest' {
       TestingLibraryMatchers<T, void> {
   }
 }
-
-vi.mock('./src/hook/useBreakpoint.ts', () => ({
-  useBreakpoint: vi.fn(),
-}));
 
 expect.extend(matchers);

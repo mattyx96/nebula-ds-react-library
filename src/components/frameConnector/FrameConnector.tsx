@@ -56,6 +56,7 @@ export const FrameConnector = (props: Props) => {
           size={props.secondNode?.size || size}
           fill={props.secondNode?.fill || 'var(--nb-frame-background-primary)'}
           className={clsxMerge(
+            'nb-frame-connector__node--second',
             props.vertical && 'nb-frame-connector__node--vertical',
             props.secondNode?.className
           )}

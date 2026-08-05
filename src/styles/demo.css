@@ -278,3 +278,15 @@
   width: 100%;
   border-radius: 8px;
 }
+
+/* resizable container to exercise FramePanel container queries */
+.nb-demo-resizable {
+  resize: both;
+  overflow: auto;
+  border: 2px solid var(--nb-background-accent-500);
+  padding: var(--nb-4);
+  min-width: 280px;
+  min-height: 240px;
+  max-width: 100%;
+  display: flex;
+}

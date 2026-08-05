@@ -239,3 +239,21 @@ export const ChainedSections: Story = {
     children: content(),
   },
 };
+
+export const ResizableContainer: Story = {
+  render: () => {
+    const breakpoint = useBreakpoint();
+    return (
+      <div className="nb-demo-resizable">
+        <FramePanel
+          renderHeader={actions(breakpoint.isDesktop ? 'M' : 'S')}
+          renderFooter={renderFooter(breakpoint.isDesktop ? 'M' : 'S')}
+          renderSide={sideActions(breakpoint.isDesktop ? 'M' : 'S')}
+          title="Resize me"
+        >
+          {content('Drag the bottom-right corner to reflow via container queries')}
+        </FramePanel>
+      </div>
+    )
+  },
+};

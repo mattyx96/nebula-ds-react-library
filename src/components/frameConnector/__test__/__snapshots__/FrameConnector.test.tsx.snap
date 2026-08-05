@@ -45,7 +45,7 @@ exports[`FrameConnector > renders correctly 1`] = `
     class="nb-frame-connector__bridge nb-frame-connector__bridge--horizontal nb-frame-connector--size-m"
   />
   <div
-    class="nb-frame-connector__node"
+    class="nb-frame-connector__node nb-frame-connector__node--second"
   >
     <svg
       fill="none"
@@ -89,7 +89,7 @@ exports[`FrameConnector > renders correctly with all props mixed 1`] = `
     class="nb-frame-connector__bridge nb-frame-connector__bridge--horizontal nb-frame-connector--size-s bridge-class"
   />
   <div
-    class="nb-frame-connector__node second-node-class"
+    class="nb-frame-connector__node nb-frame-connector__node--second second-node-class"
   >
     <svg
       fill="none"
@@ -133,7 +133,7 @@ exports[`FrameConnector > renders correctly with bridge className prop 1`] = `
     class="nb-frame-connector__bridge nb-frame-connector__bridge--horizontal nb-frame-connector--size-m bridge-class"
   />
   <div
-    class="nb-frame-connector__node"
+    class="nb-frame-connector__node nb-frame-connector__node--second"
   >
     <svg
       fill="none"
@@ -178,7 +178,7 @@ exports[`FrameConnector > renders correctly with className prop 1`] = `
       class="nb-frame-connector__bridge nb-frame-connector__bridge--horizontal nb-frame-connector--size-m"
     />
     <div
-      class="nb-frame-connector__node"
+      class="nb-frame-connector__node nb-frame-connector__node--second"
     >
       <svg
         fill="none"
@@ -223,7 +223,7 @@ exports[`FrameConnector > renders correctly with firstNode props 1`] = `
     class="nb-frame-connector__bridge nb-frame-connector__bridge--horizontal nb-frame-connector--size-m"
   />
   <div
-    class="nb-frame-connector__node"
+    class="nb-frame-connector__node nb-frame-connector__node--second"
   >
     <svg
       fill="none"
@@ -267,7 +267,7 @@ exports[`FrameConnector > renders correctly with secondNode props 1`] = `
     class="nb-frame-connector__bridge nb-frame-connector__bridge--horizontal nb-frame-connector--size-m"
   />
   <div
-    class="nb-frame-connector__node second-node-class"
+    class="nb-frame-connector__node nb-frame-connector__node--second second-node-class"
   >
     <svg
       fill="none"
@@ -311,7 +311,7 @@ exports[`FrameConnector > renders correctly with size props 1`] = `
     class="nb-frame-connector__bridge nb-frame-connector__bridge--horizontal nb-frame-connector--size-m"
   />
   <div
-    class="nb-frame-connector__node"
+    class="nb-frame-connector__node nb-frame-connector__node--second"
   >
     <svg
       fill="none"
@@ -355,7 +355,7 @@ exports[`FrameConnector > renders correctly with size props 2`] = `
     class="nb-frame-connector__bridge nb-frame-connector__bridge--horizontal nb-frame-connector--size-l"
   />
   <div
-    class="nb-frame-connector__node"
+    class="nb-frame-connector__node nb-frame-connector__node--second"
   >
     <svg
       fill="none"
@@ -399,7 +399,7 @@ exports[`FrameConnector > renders correctly with size props 3`] = `
     class="nb-frame-connector__bridge nb-frame-connector__bridge--horizontal nb-frame-connector--size-s"
   />
   <div
-    class="nb-frame-connector__node"
+    class="nb-frame-connector__node nb-frame-connector__node--second"
   >
     <svg
       fill="none"
@@ -443,7 +443,7 @@ exports[`FrameConnector > renders correctly with vertical prop 1`] = `
     class="nb-frame-connector__bridge nb-frame-connector__bridge--vertical nb-frame-connector--size-m"
   />
   <div
-    class="nb-frame-connector__node nb-frame-connector__node--vertical"
+    class="nb-frame-connector__node nb-frame-connector__node--second nb-frame-connector__node--vertical"
   >
     <svg
       fill="none"
