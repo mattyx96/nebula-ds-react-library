@@ -1,5 +1,4 @@
 import './src/styles/index.css'
-import './src/nebula.css'
 
 export * as config from 'nebula-ds-tokens'
 

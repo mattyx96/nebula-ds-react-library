@@ -20,7 +20,7 @@ describe('FramePanel with mocked useBreakpoint', () => {
         renderHeader={<div>Header</div>}
         renderFooter={<div>Footer</div>}
       >
-        <div className="h-96 bg-background-contrast-primary-500 w-full rounded-lg"/>
+        <div className="nb-demo-fill"/>
       </FramePanel>
     );
     expect(container).toMatchSnapshot();
@@ -42,7 +42,7 @@ describe('FramePanel with mocked useBreakpoint', () => {
         renderHeader={<div>Header</div>}
         renderFooter={<div>Footer</div>}
       >
-        <div className="h-96 bg-background-contrast-primary-500 w-full rounded-lg"/>
+        <div className="nb-demo-fill"/>
       </FramePanel>
     );
     expect(container).toMatchSnapshot();
@@ -63,7 +63,7 @@ describe('FramePanel with mocked useBreakpoint', () => {
         renderHeader={<div>Header</div>}
         renderFooter={<div>Footer</div>}
       >
-        <div className="h-96 bg-background-contrast-primary-500 w-full rounded-lg"/>
+        <div className="nb-demo-fill"/>
       </FramePanel>
     );
     expect(container).toMatchSnapshot();

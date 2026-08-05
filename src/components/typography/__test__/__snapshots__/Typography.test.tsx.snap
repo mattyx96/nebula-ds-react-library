@@ -2,7 +2,7 @@
 
 exports[`Text > renders correctly 1`] = `
 <p
-  class=""
+  class="nb-text"
 >
   Sample Text
 </p>
@@ -10,7 +10,7 @@ exports[`Text > renders correctly 1`] = `
 
 exports[`Text > renders correctly with different components 1`] = `
 <p
-  class=""
+  class="nb-text"
 >
   Text as p
 </p>
@@ -18,7 +18,7 @@ exports[`Text > renders correctly with different components 1`] = `
 
 exports[`Text > renders correctly with different components 2`] = `
 <span
-  class=""
+  class="nb-text"
 >
   Text as span
 </span>
@@ -26,7 +26,7 @@ exports[`Text > renders correctly with different components 2`] = `
 
 exports[`Text > renders correctly with different components 3`] = `
 <h1
-  class=""
+  class="nb-text"
 >
   Text as h1
 </h1>
@@ -34,7 +34,7 @@ exports[`Text > renders correctly with different components 3`] = `
 
 exports[`Text > renders correctly with different components 4`] = `
 <h2
-  class=""
+  class="nb-text"
 >
   Text as h2
 </h2>
@@ -42,7 +42,7 @@ exports[`Text > renders correctly with different components 4`] = `
 
 exports[`Text > renders correctly with different components 5`] = `
 <h3
-  class=""
+  class="nb-text"
 >
   Text as h3
 </h3>
@@ -50,7 +50,7 @@ exports[`Text > renders correctly with different components 5`] = `
 
 exports[`Text > renders correctly with different components 6`] = `
 <h4
-  class=""
+  class="nb-text"
 >
   Text as h4
 </h4>
@@ -58,7 +58,7 @@ exports[`Text > renders correctly with different components 6`] = `
 
 exports[`Text > renders correctly with different components 7`] = `
 <h5
-  class=""
+  class="nb-text"
 >
   Text as h5
 </h5>
@@ -66,7 +66,7 @@ exports[`Text > renders correctly with different components 7`] = `
 
 exports[`Text > renders correctly with different components 8`] = `
 <h6
-  class=""
+  class="nb-text"
 >
   Text as h6
 </h6>
@@ -74,7 +74,7 @@ exports[`Text > renders correctly with different components 8`] = `
 
 exports[`Text > renders correctly with different variants 1`] = `
 <p
-  class="display1"
+  class="nb-text nb-text--display1"
   variant="display1"
 >
   Text with display1
@@ -83,7 +83,7 @@ exports[`Text > renders correctly with different variants 1`] = `
 
 exports[`Text > renders correctly with different variants 2`] = `
 <p
-  class="display2"
+  class="nb-text nb-text--display2"
   variant="display2"
 >
   Text with display2
@@ -92,7 +92,7 @@ exports[`Text > renders correctly with different variants 2`] = `
 
 exports[`Text > renders correctly with different variants 3`] = `
 <p
-  class="header1"
+  class="nb-text nb-text--header1"
   variant="header1"
 >
   Text with header1
@@ -101,7 +101,7 @@ exports[`Text > renders correctly with different variants 3`] = `
 
 exports[`Text > renders correctly with different variants 4`] = `
 <p
-  class="header2"
+  class="nb-text nb-text--header2"
   variant="header2"
 >
   Text with header2
@@ -110,7 +110,7 @@ exports[`Text > renders correctly with different variants 4`] = `
 
 exports[`Text > renders correctly with different variants 5`] = `
 <p
-  class="header3"
+  class="nb-text nb-text--header3"
   variant="header3"
 >
   Text with header3
@@ -119,7 +119,7 @@ exports[`Text > renders correctly with different variants 5`] = `
 
 exports[`Text > renders correctly with different variants 6`] = `
 <p
-  class="header4"
+  class="nb-text nb-text--header4"
   variant="header4"
 >
   Text with header4
@@ -128,7 +128,7 @@ exports[`Text > renders correctly with different variants 6`] = `
 
 exports[`Text > renders correctly with different variants 7`] = `
 <p
-  class="header5"
+  class="nb-text nb-text--header5"
   variant="header5"
 >
   Text with header5
@@ -137,7 +137,7 @@ exports[`Text > renders correctly with different variants 7`] = `
 
 exports[`Text > renders correctly with different variants 8`] = `
 <p
-  class="header6"
+  class="nb-text nb-text--header6"
   variant="header6"
 >
   Text with header6
@@ -146,7 +146,7 @@ exports[`Text > renders correctly with different variants 8`] = `
 
 exports[`Text > renders correctly with different variants 9`] = `
 <p
-  class="body1"
+  class="nb-text nb-text--body1"
   variant="body1"
 >
   Text with body1
@@ -155,7 +155,7 @@ exports[`Text > renders correctly with different variants 9`] = `
 
 exports[`Text > renders correctly with different variants 10`] = `
 <p
-  class="body2"
+  class="nb-text nb-text--body2"
   variant="body2"
 >
   Text with body2
@@ -164,7 +164,7 @@ exports[`Text > renders correctly with different variants 10`] = `
 
 exports[`Text > renders correctly with different variants 11`] = `
 <p
-  class="body3"
+  class="nb-text nb-text--body3"
   variant="body3"
 >
   Text with body3
@@ -173,7 +173,7 @@ exports[`Text > renders correctly with different variants 11`] = `
 
 exports[`Text > renders correctly with different variants 12`] = `
 <p
-  class="body4"
+  class="nb-text nb-text--body4"
   variant="body4"
 >
   Text with body4
@@ -182,7 +182,7 @@ exports[`Text > renders correctly with different variants 12`] = `
 
 exports[`Text > renders correctly with different variants 13`] = `
 <p
-  class="body5"
+  class="nb-text nb-text--body5"
   variant="body5"
 >
   Text with body5
@@ -191,7 +191,7 @@ exports[`Text > renders correctly with different variants 13`] = `
 
 exports[`Text > renders correctly with different variants 14`] = `
 <p
-  class="button"
+  class="nb-text nb-text--button"
   variant="button"
 >
   Text with button
@@ -200,7 +200,7 @@ exports[`Text > renders correctly with different variants 14`] = `
 
 exports[`Text > renders correctly with different variants 15`] = `
 <p
-  class="caption"
+  class="nb-text nb-text--caption"
   variant="caption"
 >
   Text with caption

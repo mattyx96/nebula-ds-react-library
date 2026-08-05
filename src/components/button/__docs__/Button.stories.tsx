@@ -68,7 +68,7 @@ export const Default: Story = {
 
 export const Filled: Story = {
   render: () => (
-    <div className="flex gap-5">
+    <div className="nb-demo-row">
       {buttonRoundedVariants.map((rounded) => (
         <Button
           key={rounded}
@@ -83,7 +83,7 @@ export const Filled: Story = {
 
 export const Outlined: Story = {
   render: () => (
-    <div className="flex gap-5">
+    <div className="nb-demo-row">
       {buttonRoundedVariants.map((rounded) => (
         <Button
           key={rounded}
@@ -98,7 +98,7 @@ export const Outlined: Story = {
 
 export const Standard: Story = {
   render: () => (
-    <div className="flex gap-5">
+    <div className="nb-demo-row">
       {buttonRoundedVariants.map((rounded) => (
         <Button
           key={rounded}
@@ -113,7 +113,7 @@ export const Standard: Story = {
 
 export const Text: Story = {
   render: () => (
-    <div className="flex gap-5">
+    <div className="nb-demo-row">
       {buttonRoundedVariants.map((rounded) => (
         <Button key={rounded} text="Button" variant="text" rounded={rounded}/>
       ))}
@@ -123,7 +123,7 @@ export const Text: Story = {
 
 export const Large: Story = {
   render: () => (
-    <div className="flex gap-5">
+    <div className="nb-demo-row">
       {buttonRoundedVariants.map((rounded) => (
         <Button
           key={rounded}
@@ -139,7 +139,7 @@ export const Large: Story = {
 
 export const Small: Story = {
   render: () => (
-    <div className="flex gap-5">
+    <div className="nb-demo-row">
       {buttonRoundedVariants.map((rounded) => (
         <Button
           key={rounded}

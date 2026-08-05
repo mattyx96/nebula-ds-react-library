@@ -7,7 +7,7 @@ import {ArrowRightIcon, CodeBracketIcon, ArrowLeftIcon} from "@heroicons/react/1
 import {useBreakpoint} from "../../../hook/useBreakpoint.ts";
 
 const content = (content = 'Content Here') => (
-  <div className="w-full h-52 bg-background-accent-200 flex justify-center items-center rounded-md">
+  <div className="nb-demo-block nb-demo-block--tall">
     <Text component="span" variant="body1">{content}</Text>
   </div>
 );
@@ -209,7 +209,7 @@ export const ChainedSections: Story = {
   render: () => {
     const breakpoint = useBreakpoint();
     return (
-      <div className="flex flex-col gap-4">
+      <div className="nb-demo-col">
         <FramePanel
           renderHeader={actions(breakpoint.isDesktop ? 'M' : 'S')}
           renderFooter={renderFooter(breakpoint.isDesktop ? 'M' : 'S')}

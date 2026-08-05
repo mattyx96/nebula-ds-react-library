@@ -8,11 +8,11 @@ export const Buttons = () => {
   return (
     <>
       {buttonVariantVariants.map((variant) => (
-        <div key={variant} className="mb-10">
-          <Text component="h2" variant="header2" className="mb-4">
+        <section key={variant} className="nb-demo-buttons__section">
+          <Text component="h2" variant="header2" className="nb-demo-buttons__title">
             {variant.charAt(0).toUpperCase() + variant.slice(1)} Variant
           </Text>
-          <div className="flex flex-wrap gap-4">
+          <div className="nb-demo-buttons__row">
             {buttonSizeVariants.map((size) =>
               buttonRoundedVariants.map((round) => (
                 <Button
@@ -37,7 +37,7 @@ export const Buttons = () => {
               ))
             )}
           </div>
-        </div>
+        </section>
       ))}
     </>
   );

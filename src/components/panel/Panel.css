@@ -1,0 +1,50 @@
+/* Nebula Panel (Paper) — plain CSS (was Tailwind utilities). */
+
+.nb-panel {
+  display: block;
+}
+
+.nb-panel__title {
+  padding-bottom: var(--nb-4);
+}
+
+.nb-panel__inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--nb-5);
+  padding: var(--nb-5);
+
+  background-color: var(--nb-background-primary);
+  border: var(--nb-border-1) solid transparent;
+  border-radius: var(--nb-border-radius-default);
+}
+
+.nb-panel--round-no {
+  border-bottom-left-radius: var(--nb-border-radius-default);
+}
+
+.nb-panel--round-xs {
+  border-bottom-left-radius: var(--nb-paper-border-radius-md);
+}
+
+.nb-panel--round-lg {
+  border-bottom-left-radius: var(--nb-paper-border-radius-big);
+}
+
+.nb-panel--outline-700 {
+  border-color: var(--nb-background-contrast-primary-200);
+}
+
+.nb-panel--outline-500 {
+  border-color: var(--nb-background-accent-500);
+}
+
+.nb-panel--outline-200 {
+  border-color: var(--nb-background-accent-200);
+}
+
+.nb-panel--outline-50 {
+  border-color: var(--nb-background-contrast-primary-50);
+  box-shadow: 0 1px 6px rgb(0 0 0 / 0.07);
+}

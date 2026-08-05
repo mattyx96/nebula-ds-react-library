@@ -5,9 +5,9 @@ import {Text} from "../../typography/Typography";
 import {panelOutlineVariants, panelRoundVariants} from "../../../variants/panel";
 
 const actions = (
-  <div className="grid grid-cols-5 gap-4 items-center">
-    <Button className="w-full col-span-3" size="S" variant="standard" text="Cancel"/>
-    <Button className="w-full col-span-2" rounded="R" size="S" variant="filled" text="Do it"/>
+  <div className="nb-demo-actions">
+    <Button className="nb-demo-w-full nb-demo-span-3" size="S" variant="standard" text="Cancel"/>
+    <Button className="nb-demo-w-full nb-demo-span-2" rounded="R" size="S" variant="filled" text="Do it"/>
   </div>
 );
 
@@ -16,7 +16,7 @@ const title = (title = 'Title card') => (
 );
 
 const content = (content = 'Content here') => (
-  <div className="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md">
+  <div className="nb-demo-block">
     <Text component="span" variant="body1">{content}</Text>
   </div>
 );
@@ -106,7 +106,7 @@ export const Default: Story = {
 
 export const WithActionsAndTitle: Story = {
   render: () => (
-    <div className="flex flex-wrap gap-10">
+    <div className="nb-demo-row--lg">
       {panelRoundVariants.map((round) =>
         panelOutlineVariants.map((outline) => (
           <Paper
@@ -126,7 +126,7 @@ export const WithActionsAndTitle: Story = {
 
 export const WithTitleOnly: Story = {
   render: () => (
-    <div className="flex flex-wrap gap-10">
+    <div className="nb-demo-row--lg">
       {panelRoundVariants.map((round) =>
         panelOutlineVariants.map((outline) => (
           <Paper
@@ -145,7 +145,7 @@ export const WithTitleOnly: Story = {
 
 export const WithContentOnly: Story = {
   render: () => (
-    <div className="flex flex-wrap gap-10">
+    <div className="nb-demo-row--lg">
       {panelRoundVariants.map((round) =>
         panelOutlineVariants.map((outline) => (
           <Paper

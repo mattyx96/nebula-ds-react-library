@@ -119,9 +119,8 @@ describe('IconButton', () => {
     );
 
     expect(containerDisabled).toMatchSnapshot();
-    expect(containerDisabled.firstChild).toHaveClass(
-      'disabled:cursor-not-allowed'
-    );
+    expect(containerDisabled.firstChild).toHaveClass('nb-icon-button');
+    expect(containerDisabled.firstChild).toHaveProperty('disabled', true);
 
     const buttonElement = getByRole(containerDisabled, 'button');
     fireEvent.click(buttonElement);

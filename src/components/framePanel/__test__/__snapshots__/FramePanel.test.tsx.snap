@@ -3,22 +3,22 @@
 exports[`FramePanel with mocked useBreakpoint > renders correctly on desktop 1`] = `
 <div>
   <div
-    class="w-full flex gap-4 flex-col "
+    class="nb-frame-panel "
   >
     <div
-      class="flex w-full gap-4 justify-between items-center "
+      class="nb-frame-panel__header "
     >
       <h1
-        class="header1 !text-2xl md:!text-3xl xl:!text-5xl !leading-0"
+        class="nb-text nb-text--header1 nb-frame-panel__title-text"
         variant="header1"
       >
         Desktop Test
       </h1>
       <div
-        class="w-full flex flex-1 scale-[-1]"
+        class="nb-frame-panel__header-connector"
       />
       <div
-        class="flex gap-4 items-center"
+        class="nb-frame-panel__header-actions"
       >
         <div>
           Header
@@ -26,48 +26,48 @@ exports[`FramePanel with mocked useBreakpoint > renders correctly on desktop 1`]
       </div>
     </div>
     <div
-      class="flex flex-1 flex-col "
+      class="nb-frame-panel__body "
     >
       <div
-        class="flex h-full flex-grow items-stretch "
+        class="nb-frame-panel__level2 "
       >
         <div
-          class="flex flex-col justify-items-stretch gap-4"
+          class="nb-frame-panel__side-col"
         >
           <div
-            class="flex flex-col flex-1"
+            class="nb-frame-panel__side-connector"
           >
             <div
-              class="flex flex-col w-fit flex flex-1 items-stretch "
+              class="nb-frame-connector nb-frame-connector--vertical nb-frame-connector--size-s nb-frame-panel__connector-stretch"
             >
               <div
-                class="h-full flex-1 w-[4px] bg-frame-background-primary undefined"
+                class="nb-frame-connector__bridge nb-frame-connector__bridge--vertical nb-frame-connector--size-s"
               />
             </div>
           </div>
         </div>
         <div
-          class="flex flex-1 pb-4 pl-4 "
+          class="nb-frame-panel__body-inner nb-frame-panel__body-inner--pad-left "
         >
           <div
-            class="h-96 bg-background-contrast-primary-500 w-full rounded-lg"
+            class="nb-demo-fill"
           />
         </div>
       </div>
       <div
-        class="flex items-end gap-4 h-fit "
+        class="nb-frame-panel__footer "
       >
         <div
-          class="w-full flex flex-1 h-full items-end"
+          class="nb-frame-panel__footer-connector"
         >
           <div
-            class="flex flex-col w-fit undefined"
+            class="nb-frame-connector nb-frame-connector--vertical nb-frame-connector--size-s"
           >
             <div
-              class="h-full flex-1 w-[4px] bg-frame-background-primary hidden"
+              class="nb-frame-connector__bridge nb-frame-connector__bridge--vertical nb-frame-connector--size-s nb-frame-panel__bridge-hidden"
             />
             <div
-              class="flex items-center justify-center rotate-90 origin-center undefined"
+              class="nb-frame-connector__node nb-frame-connector__node--vertical"
             >
               <svg
                 fill="none"
@@ -85,10 +85,10 @@ exports[`FramePanel with mocked useBreakpoint > renders correctly on desktop 1`]
             </div>
           </div>
           <div
-            class="flex items-end flex-1 h-fit"
+            class="nb-frame-connector nb-frame-connector--horizontal nb-frame-connector--size-s nb-frame-panel__connector-fit"
           >
             <div
-              class="w-full h-[4px] bg-frame-background-primary undefined"
+              class="nb-frame-connector__bridge nb-frame-connector__bridge--horizontal nb-frame-connector--size-s"
             />
           </div>
         </div>
@@ -104,22 +104,22 @@ exports[`FramePanel with mocked useBreakpoint > renders correctly on desktop 1`]
 exports[`FramePanel with mocked useBreakpoint > renders correctly on mobile 1`] = `
 <div>
   <div
-    class="w-full flex gap-4 flex-col "
+    class="nb-frame-panel "
   >
     <div
-      class="flex w-full gap-4 justify-between items-center "
+      class="nb-frame-panel__header "
     >
       <h1
-        class="header1 !text-2xl md:!text-3xl xl:!text-5xl !leading-0"
+        class="nb-text nb-text--header1 nb-frame-panel__title-text"
         variant="header1"
       >
         Mobile Test
       </h1>
       <div
-        class="w-full flex flex-1 scale-[-1]"
+        class="nb-frame-panel__header-connector"
       />
       <div
-        class="flex gap-4 items-center"
+        class="nb-frame-panel__header-actions"
       >
         <div>
           Header
@@ -127,13 +127,13 @@ exports[`FramePanel with mocked useBreakpoint > renders correctly on mobile 1`] 
       </div>
     </div>
     <div
-      class="flex flex-1 flex-col "
+      class="nb-frame-panel__body "
     >
       <div
-        class="flex flex-col items-start"
+        class="nb-frame-panel__mobile-side nb-frame-panel__mobile-side--start"
       >
         <div
-          class="flex items-center justify-center !inline !w-fit !scale-x-[-1] !rotate-90 !origin-center"
+          class="nb-frame-connector__node nb-frame-panel__mobile-node"
         >
           <svg
             fill="none"
@@ -151,45 +151,45 @@ exports[`FramePanel with mocked useBreakpoint > renders correctly on mobile 1`] 
         </div>
       </div>
       <div
-        class="flex h-full flex-grow items-stretch "
+        class="nb-frame-panel__level2 "
       >
         <div
-          class="flex flex-col justify-items-stretch gap-4"
+          class="nb-frame-panel__side-col"
         >
           <div
-            class="flex flex-col flex-1"
+            class="nb-frame-panel__side-connector"
           >
             <div
-              class="flex flex-col w-fit flex flex-1 items-stretch "
+              class="nb-frame-connector nb-frame-connector--vertical nb-frame-connector--size-s nb-frame-panel__connector-stretch"
             >
               <div
-                class="h-full flex-1 w-[4px] bg-frame-background-primary undefined"
+                class="nb-frame-connector__bridge nb-frame-connector__bridge--vertical nb-frame-connector--size-s"
               />
             </div>
           </div>
         </div>
         <div
-          class="flex flex-1 pb-4 pl-2 "
+          class="nb-frame-panel__body-inner nb-frame-panel__body-inner--pad-left-sm "
         >
           <div
-            class="h-96 bg-background-contrast-primary-500 w-full rounded-lg"
+            class="nb-demo-fill"
           />
         </div>
       </div>
       <div
-        class="flex items-end gap-4 h-fit "
+        class="nb-frame-panel__footer "
       >
         <div
-          class="w-full flex flex-1 h-full items-end"
+          class="nb-frame-panel__footer-connector"
         >
           <div
-            class="flex flex-col w-fit undefined"
+            class="nb-frame-connector nb-frame-connector--vertical nb-frame-connector--size-s"
           >
             <div
-              class="h-full flex-1 w-[4px] bg-frame-background-primary hidden"
+              class="nb-frame-connector__bridge nb-frame-connector__bridge--vertical nb-frame-connector--size-s nb-frame-panel__bridge-hidden"
             />
             <div
-              class="flex items-center justify-center rotate-90 origin-center undefined"
+              class="nb-frame-connector__node nb-frame-connector__node--vertical"
             >
               <svg
                 fill="none"
@@ -207,10 +207,10 @@ exports[`FramePanel with mocked useBreakpoint > renders correctly on mobile 1`] 
             </div>
           </div>
           <div
-            class="flex items-end flex-1 h-fit"
+            class="nb-frame-connector nb-frame-connector--horizontal nb-frame-connector--size-s nb-frame-panel__connector-fit"
           >
             <div
-              class="w-full h-[4px] bg-frame-background-primary undefined"
+              class="nb-frame-connector__bridge nb-frame-connector__bridge--horizontal nb-frame-connector--size-s"
             />
           </div>
         </div>
@@ -226,22 +226,22 @@ exports[`FramePanel with mocked useBreakpoint > renders correctly on mobile 1`] 
 exports[`FramePanel with mocked useBreakpoint > renders correctly on tablet 1`] = `
 <div>
   <div
-    class="w-full flex gap-4 flex-col "
+    class="nb-frame-panel "
   >
     <div
-      class="flex w-full gap-4 justify-between items-center "
+      class="nb-frame-panel__header "
     >
       <h1
-        class="header1 !text-2xl md:!text-3xl xl:!text-5xl !leading-0"
+        class="nb-text nb-text--header1 nb-frame-panel__title-text"
         variant="header1"
       >
         Tablet Test
       </h1>
       <div
-        class="w-full flex flex-1 scale-[-1]"
+        class="nb-frame-panel__header-connector"
       />
       <div
-        class="flex gap-4 items-center"
+        class="nb-frame-panel__header-actions"
       >
         <div>
           Header
@@ -249,48 +249,48 @@ exports[`FramePanel with mocked useBreakpoint > renders correctly on tablet 1`] 
       </div>
     </div>
     <div
-      class="flex flex-1 flex-col "
+      class="nb-frame-panel__body "
     >
       <div
-        class="flex h-full flex-grow items-stretch "
+        class="nb-frame-panel__level2 "
       >
         <div
-          class="flex flex-col justify-items-stretch gap-4"
+          class="nb-frame-panel__side-col"
         >
           <div
-            class="flex flex-col flex-1"
+            class="nb-frame-panel__side-connector"
           >
             <div
-              class="flex flex-col w-fit flex flex-1 items-stretch "
+              class="nb-frame-connector nb-frame-connector--vertical nb-frame-connector--size-s nb-frame-panel__connector-stretch"
             >
               <div
-                class="h-full flex-1 w-[4px] bg-frame-background-primary undefined"
+                class="nb-frame-connector__bridge nb-frame-connector__bridge--vertical nb-frame-connector--size-s"
               />
             </div>
           </div>
         </div>
         <div
-          class="flex flex-1 pb-4 pl-4 "
+          class="nb-frame-panel__body-inner nb-frame-panel__body-inner--pad-left "
         >
           <div
-            class="h-96 bg-background-contrast-primary-500 w-full rounded-lg"
+            class="nb-demo-fill"
           />
         </div>
       </div>
       <div
-        class="flex items-end gap-4 h-fit "
+        class="nb-frame-panel__footer "
       >
         <div
-          class="w-full flex flex-1 h-full items-end"
+          class="nb-frame-panel__footer-connector"
         >
           <div
-            class="flex flex-col w-fit undefined"
+            class="nb-frame-connector nb-frame-connector--vertical nb-frame-connector--size-s"
           >
             <div
-              class="h-full flex-1 w-[4px] bg-frame-background-primary hidden"
+              class="nb-frame-connector__bridge nb-frame-connector__bridge--vertical nb-frame-connector--size-s nb-frame-panel__bridge-hidden"
             />
             <div
-              class="flex items-center justify-center rotate-90 origin-center undefined"
+              class="nb-frame-connector__node nb-frame-connector__node--vertical"
             >
               <svg
                 fill="none"
@@ -308,10 +308,10 @@ exports[`FramePanel with mocked useBreakpoint > renders correctly on tablet 1`] 
             </div>
           </div>
           <div
-            class="flex items-end flex-1 h-fit"
+            class="nb-frame-connector nb-frame-connector--horizontal nb-frame-connector--size-s nb-frame-panel__connector-fit"
           >
             <div
-              class="w-full h-[4px] bg-frame-background-primary undefined"
+              class="nb-frame-connector__bridge nb-frame-connector__bridge--horizontal nb-frame-connector--size-s"
             />
           </div>
         </div>

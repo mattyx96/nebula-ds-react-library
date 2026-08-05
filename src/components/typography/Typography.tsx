@@ -3,7 +3,7 @@ import {clsxMerge} from '../../common/utils/classNameUtils';
 import {TypographyVariants} from "../../variants/typography";
 import {typographyVariants} from "../../variants/typography/typographyVariants";
 
-import '../../variants/typography/index.css'
+import './Typography.css'
 
 export type Tags = 'p' | 'span' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'label';
 
@@ -34,4 +34,3 @@ export const Text = <T extends Tags = 'p'>(props: TypographyProps<T>) => {
     }, ...rest
   }, children || text);
 }
-

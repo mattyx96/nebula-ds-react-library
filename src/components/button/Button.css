@@ -1,0 +1,117 @@
+/* Nebula Button — plain CSS (was Tailwind utilities). */
+
+.nb-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--nb-3);
+
+  font-family: var(--nb-font-families-orbitron);
+  font-weight: var(--nb-font-weights-orbitron-3);
+  font-size: var(--nb-font-size-2);
+  line-height: var(--nb-line-heights-2);
+  color: var(--nb-button-text-color-default);
+
+  box-shadow: 0 0 0 var(--nb-border-1) var(--nb-button-background-primary);
+}
+
+.nb-button:hover:not(:disabled) {
+  box-shadow: 0 0 0 var(--nb-border-2) var(--nb-background-contrast-primary-500);
+}
+
+.nb-button:active:not(:disabled) {
+  box-shadow: 0 0 0 var(--nb-border-2) var(--nb-button-background-secondary);
+  background-color: var(--nb-button-background-pressed);
+}
+
+.nb-button:focus-visible {
+  outline: 0;
+  box-shadow: 0 0 0 var(--nb-border-2) var(--nb-background-contrast-primary-500);
+}
+
+.nb-button:disabled {
+  cursor: not-allowed;
+  opacity: var(--nb-button-opacity-disabled);
+}
+
+/* Variants */
+.nb-button--filled {
+  background-color: var(--nb-button-background-primary);
+  color: var(--nb-button-text-color-primary);
+  box-shadow: 0 0 0 var(--nb-border-1) var(--nb-button-background-primary);
+}
+
+.nb-button--standard {
+  box-shadow: 0 0 0 var(--nb-border-1) var(--nb-background-accent-200);
+}
+
+.nb-button--text {
+  box-shadow: 0 0 0 var(--nb-border-1) transparent;
+}
+
+.nb-button--outlined {
+  box-shadow: 0 0 0 var(--nb-border-1) var(--nb-button-background-primary);
+}
+
+.nb-button--outlined:hover:not(:disabled) {
+  box-shadow: 0 0 0 var(--nb-border-1) var(--nb-button-background-primary);
+}
+
+/* Sizes — define per-size radius + compensation custom props */
+.nb-button--size-s {
+  padding: var(--nb-button-spacing-xs-v-default) var(--nb-button-spacing-xs-h-default);
+  height: var(--nb-button-sm);
+  --nb-btn-radius: var(--nb-button-border-radius-xs-default);
+  --nb-btn-radius-big: var(--nb-button-border-radius-xs-big);
+  --nb-btn-compensation: var(--nb-button-spacing-xs-compensation);
+}
+
+.nb-button--size-m {
+  padding: var(--nb-button-spacing-md-v-default) var(--nb-button-spacing-md-h-default);
+  height: var(--nb-button-md);
+  --nb-btn-radius: var(--nb-button-border-radius-md-lg-default);
+  --nb-btn-radius-big: var(--nb-button-border-radius-md-big);
+  --nb-btn-compensation: var(--nb-button-spacing-md-compensation);
+}
+
+.nb-button--size-l {
+  padding: var(--nb-button-spacing-lg-v-default) var(--nb-button-spacing-lg-h-default);
+  height: var(--nb-button-lg);
+  --nb-btn-radius: var(--nb-button-border-radius-md-lg-default);
+  --nb-btn-radius-big: var(--nb-button-border-radius-lg-big);
+  --nb-btn-compensation: var(--nb-button-spacing-lg-compensation);
+}
+
+/* Rounded corners (LCARS style — one corner fully rounded) */
+.nb-button--rounded-default {
+  border-radius: var(--nb-btn-radius);
+}
+
+.nb-button--rounded-r {
+  border-radius: var(--nb-btn-radius) var(--nb-btn-radius-big) var(--nb-btn-radius-big) var(--nb-btn-radius);
+}
+
+.nb-button--rounded-l {
+  border-radius: var(--nb-btn-radius-big) var(--nb-btn-radius) var(--nb-btn-radius) var(--nb-btn-radius-big);
+}
+
+.nb-button--rounded-rtop {
+  border-radius: var(--nb-btn-radius) var(--nb-btn-radius-big) var(--nb-btn-radius) var(--nb-btn-radius);
+  padding-right: var(--nb-btn-compensation);
+}
+
+.nb-button--rounded-rbottom {
+  border-radius: var(--nb-btn-radius) var(--nb-btn-radius) var(--nb-btn-radius-big) var(--nb-btn-radius);
+  padding-left: var(--nb-btn-compensation);
+}
+
+.nb-button--rounded-ltop {
+  border-radius: var(--nb-btn-radius-big) var(--nb-btn-radius) var(--nb-btn-radius) var(--nb-btn-radius);
+  padding-left: var(--nb-btn-compensation);
+}
+
+.nb-button--rounded-lbottom {
+  border-radius: var(--nb-btn-radius) var(--nb-btn-radius) var(--nb-btn-radius) var(--nb-btn-radius-big);
+  padding-right: var(--nb-btn-compensation);
+}

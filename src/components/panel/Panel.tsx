@@ -1,7 +1,7 @@
 import React, {type ComponentPropsWithRef} from 'react';
 import {type VariantProps} from 'class-variance-authority';
 import {clsxMerge} from '../../common/utils/classNameUtils';
-import '../../variants/panel/panel.css'
+import './Panel.css'
 import {panelVariants} from '../../variants/panel/paper';
 
 type DivElementProps = ComponentPropsWithRef<'div'>;
@@ -29,9 +29,9 @@ export const Paper = (props: PaperProps) => {
   } = props;
 
   return (
-    <div className={clsxMerge([], className)}>
+    <div className={clsxMerge('nb-panel', className)}>
       {Boolean(renderTitle) && (
-        <div className="pb-4">
+        <div className="nb-panel__title">
           {renderTitle}
         </div>
       )}

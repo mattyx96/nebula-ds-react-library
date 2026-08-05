@@ -3,7 +3,6 @@ import { defineConfig } from 'vitest/config';
 import dts from 'vite-plugin-dts';
 import react from '@vitejs/plugin-react';
 import path from 'path';
-import tailwindcss from 'tailwindcss';
 
 export default defineConfig({
   server: {
@@ -43,11 +42,7 @@ export default defineConfig({
       insertTypesEntry: true,
     }),
   ],
-  css: {
-    postcss: {
-      plugins: [tailwindcss('./tailwind.config.mjs')],
-    },
-  },
+  css: {},
   test: {
     globals: true,
     environment: 'jsdom',

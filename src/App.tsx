@@ -15,8 +15,8 @@ export default function App() {
   const [page, setPage] = useState<typeof Pages[number]>('buttons');
   // console.log(tw.generateTailwindCompatibleTheme())
   return (
-    <div className="bg-background-primary">
-      <div className="flex items-center gap-3 p-5 flex-wrap">
+    <div className="nb-app">
+      <nav className="nb-app__nav">
         {Pages.map((_page) => (
           <Button
             key={_page}
@@ -27,9 +27,8 @@ export default function App() {
             text={_page.charAt(0).toUpperCase() + _page.slice(1)}
           />
         ))}
-      </div>
-      <div
-        className="reflative container mx-auto min-h-screen min-w-screen gap-5 flex flex-col justify-center items-center pt-10">
+      </nav>
+      <main className="nb-app__main">
         {page === 'buttons' && <Buttons/>}
         {page === 'panels' && <Panels/>}
         {page === 'typography' && <TypographyPage/>}
@@ -38,7 +37,7 @@ export default function App() {
         {page === 'framePanelFullPage' && <FramePanelFullPage/>}
         {page === 'horizon' && <HorizonPage/>}
         {page === 'tokens' && <TokensPage/>}
-      </div>
+      </main>
     </div>
   )
 }

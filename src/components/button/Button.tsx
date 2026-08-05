@@ -3,6 +3,7 @@ import {clsxMerge} from '../../common/utils/classNameUtils';
 import {Icon} from '../icon/Icon.tsx';
 import {buttonVariants} from '../../variants';
 import {ButtonVariants} from "../../variants/button";
+import './Button.css';
 
 type ButtonElementProps = ComponentPropsWithRef<'button'>;
 

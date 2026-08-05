@@ -38,18 +38,18 @@ export const FramePanelPage = () => {
 
 
   return (
-    <div className="w-full flex flex-col gap-10 px-1 py-32">
+    <div className="nb-demo-frame-panel">
       <FramePanel
         renderHeader={actions}
         renderFooter={actionsFooter}
         renderSide={sideActions}
         renderTitle={
-          <Text variant="header1" component="h3" className="!text-5 !font-orbitron-0 md:!text-5 xl:!text-8 !leading-0">
+          <Text variant="header1" component="h3" className="nb-demo-frame-panel__title">
             Nebula Design System
           </Text>
         }
       >
-        <div className="h-96 bg-background-contrast-primary-500 w-full rounded-lg"/>
+        <div className="nb-demo-fill"/>
       </FramePanel>
 
       <FramePanel
@@ -59,7 +59,7 @@ export const FramePanelPage = () => {
         renderSide={sideActions}
         inverse
       >
-        <div className="h-96 bg-background-contrast-primary-500 w-full rounded-lg"/>
+        <div className="nb-demo-fill"/>
       </FramePanel>
 
       <FramePanel
@@ -67,19 +67,18 @@ export const FramePanelPage = () => {
         renderSide={sideActions}
         inverse
       >
-        <div className="h-96 bg-background-contrast-primary-500 w-full rounded-lg"/>
+        <div className="nb-demo-fill"/>
       </FramePanel>
 
-      <div className="grid grid-cols-2">
+      <div className="nb-demo-frame-panel__grid">
         <FramePanel
-          className="col-span-1"
           title="Nebula Design System"
           renderHeader={actionsInverse}
           renderFooter={actionsFooterInverse}
           renderSide={sideActions}
           inverse
         >
-          <div className="h-96 bg-background-contrast-primary-500 w-full rounded-lg"/>
+          <div className="nb-demo-fill"/>
         </FramePanel>
       </div>
 

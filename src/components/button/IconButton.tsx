@@ -1,12 +1,12 @@
 import React, {type ComponentPropsWithRef} from 'react';
 import {clsxMerge} from '../../common/utils/classNameUtils';
-import '../../variants/button/button.css';
 import {
   buttonIconIconVariants,
   iconButtonVariantsExtendsButton,
 } from '../../variants/button/iconButtonVariants.ts';
 import {buttonVariants} from '../../variants';
 import {ButtonVariants, IconButtonVariants} from "../../variants/button";
+import './IconButton.css';
 
 type ButtonElementProps = ComponentPropsWithRef<'button'>;
 

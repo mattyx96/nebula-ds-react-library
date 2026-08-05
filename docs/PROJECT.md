@@ -26,9 +26,9 @@ Currently the library ships **7 public components**, **1 hook**, plus the tokens
 | Framework | React 18 (`^18.2.0`, peer dep) |
 | Language | TypeScript 5.4 (strict) |
 | Bundler | Vite 5 (library mode) |
-| Styling | Tailwind CSS 3.4 + CSS custom properties (tokens) |
-| Variants | class-variance-authority (CVA) |
-| Class merge | `clsx` (twMerge disabled — see §7) |
+| Styling | Plain CSS + CSS custom properties (tokens). No Tailwind. |
+| Variants | class-variance-authority (CVA) → class-name mapping |
+| Class merge | `clsx` |
 | Icons (peer) | `@heroicons/react` `^2.1.3` |
 | Testing | Vitest 1.6 + @testing-library/react + jest-dom, jsdom env |
 | Docs | Storybook 8 + MDX + autodocs, themed with `@storybook/theming` |
@@ -40,7 +40,7 @@ Currently the library ships **7 public components**, **1 hook**, plus the tokens
 ### Dependencies
 
 - **runtime**: `nebula-ds-tokens` `0.2.0`
-- **peer** (must be provided by the consumer): `@heroicons/react`, `class-variance-authority`, `clsx`, `react`, `react-dom`, `tailwind-merge`
+- **peer** (must be provided by the consumer): `@heroicons/react`, `class-variance-authority`, `clsx`, `react`, `react-dom`
 
 ---
 
@@ -57,23 +57,21 @@ Currently the library ships **7 public components**, **1 hook**, plus the tokens
 ├── public/                 # favicons, logo, design-tokens.source.json (gitignored)
 ├── src/
 │   ├── App.tsx             # demo app page switcher (used by `pnpm dev`)
-│   ├── index.css           # @tailwind base/components/utilities (build input)
+│   ├── index.css           # demo app styles entry (library + demo.css)
 │   ├── main.tsx            # demo app entry
 │   ├── common/
-│   │   └── utils/classNameUtils.ts    # clsxMerge()
-│   ├── components/         # each component: impl + __docs__ (stories) + __test__
+│   │   └── utils/classNameUtils.ts    # clsxMerge() (clsx wrapper)
+│   ├── components/         # each component: impl + own .css + __docs__ + __test__
 │   ├── hook/               # useBreakpoint, useElementDimensions, useEventListener
 │   ├── pages/              # demo pages shown in the dev app / Tokens MDX
 │   ├── stories/            # MDX docs: Introduction, Tokens, Getting started
-│   ├── tailwindMergeConfig.ts  # extended twMerge config (currently unused)
-│   └── variants/           # CVA variants + css per component
+│   ├── styles/             # base.css, demo.css, tokens/ and themes/ (see §5)
+│   └── variants/           # CVA variant maps (plain class names), no CSS
 ├── index.ts                # library entry / public exports
 ├── index.html              # demo app shell (loads Orbitron + Roboto Mono fonts)
-├── tailwind.config.mjs     # theme extended from tokens
 ├── vite.config.ts          # lib build + vitest config
 ├── tsconfig.json / tsconfig.node.json
 ├── eslint.config.js
-├── postcss.config.js
 ├── prettier.config.cjs
 ├── vercel.json             # Storybook deploy config
 └── setupTests.ts           # vitest setup + jest-dom matchers + useBreakpoint mock
@@ -291,29 +289,21 @@ All visual values come from the companion package **`nebula-ds-tokens` `0.2.0`**
 ## 6. Styling System
 
 1. **Tokens → CSS variables.** Split by theme: primitives on `:root`, semantic tokens scoped under `[data-nb-theme="…"]` (see §5). Two themes ship: light (default) and dark. Setting `data-nb-theme` on a wrapper switches every descendant.
-2. **Tokens → Tailwind theme** (via `tw.generateTailwindCompatibleTheme()` in `tailwind.config.mjs`). Note that Tailwind 3 + this config relies on the token class names actually being present in the compiled CSS, which is guaranteed by Tailwind's content scanner (`./index.html`, `./src/**/*.{js,ts,jsx,tsx}`).
-3. **CVA variants** per component under `src/variants/<component>/`, producing class strings composed of token-driven utilities.
-4. **Hand-written CSS** for things utilities can't express:
-   - `src/variants/typography/index.css` — font shorthand + fluid `clamp()` sizing per typography variant.
-   - `src/variants/button/button.css` — `translate-*` compensation classes for icon centering on rounded corners.
-5. **Class composition** via `clsxMerge()` in `src/common/utils/classNameUtils.ts`.
-
-### 7. (Known) — see next section
-
----
+2. **Co-located plain CSS per component.** Each component owns a `.css` file next to it (e.g. `src/components/button/Button.css`) with namespaced classes (`nb-button`, `nb-button--filled`, `nb-button__icon`, …). Components import their own CSS.
+3. **CVA as class-name map.** `src/variants/**` only maps variant prop values to the plain class names (no utilities). CSS handles compound combinations via per-size custom properties.
+4. **Base + demo styles.** `src/styles/base.css` is a minimal reset; `src/styles/demo.css` holds layout helpers used only by the dev app pages and Storybook stories (not shipped).
+5. **Class composition** via `clsxMerge()` in `src/common/utils/classNameUtils.ts` (a thin `clsx` wrapper).
 
 ## 7. Class Merging & `clsxMerge`
 
-`clsxMerge` is the central class-composition helper used by every component. Currently it is a thin `clsx` wrapper — **`tailwind-merge` is intentionally disabled**:
+`clsxMerge` is the central class-composition helper used by every component:
 
 ```ts
 export const clsxMerge = (...classes: ClassValue[]): string =>
-  // twMerge(
   clsx(...classes);
-// );
 ```
 
-A prepared-but-unused `tailwindMergeConfig.ts` exists that extends tailwind-merge with the token-generated theme and a custom `font-size` group (`font-orbitron`, `font-orbitron-3`). Enabling it is on the roadmap (§10). Caution: it currently contains a `window.console.log` at module top level, which is a `no-console` lint violation and would break SSR/Node contexts if imported — it needs cleanup before being wired in.
+`tailwind-merge` is **not used** — plain class names don't conflict, so a merge isn't needed. The previous `tailwindMergeConfig.ts` has been deleted.
 
 ---
 
@@ -324,14 +314,14 @@ A prepared-but-unused `tailwindMergeConfig.ts` exists that extends tailwind-merg
 `pnpm run build` runs:
 
 1. `tsc` — type-checks and emits declarations to `dist/types` (`emitDeclarationOnly`, `declarationDir: ./dist/types`).
-2. `pnpm build-tailwind` — `NODE_ENV=production` Tailwind CLI compiles `src/index.css` → `src/nebula.css` (minified, via postcss + cssnano).
-3. `vite build` — bundles library:
-   - Entry: `index.ts` (imports token CSS + `./src/nebula.css`).
+2. `vite build` — bundles library:
+   - Entry: `index.ts` (imports `./src/styles/index.css`).
    - Formats: `es` (`index.es.js`), `cjs`, `umd` (`index.umd.js`). Name: `nebula-ds-react-library`.
    - Externals: `react`, `react-dom`, `react/jsx-runtime`.
    - `vite-plugin-dts` generates `dist/types` (excludes tests/stories), `insertTypesEntry: true`.
    - CSS extracted to `dist/style.css`, sourcemaps on, `copyPublicDir: false`, `emptyOutDir: true`.
-4. `rm src/nebula.css` — deletes the generated source CSS after bundling (it lives only to be inlined into the package CSS).
+
+No Tailwind/PostCSS step; component CSS is authored directly and imported by the components.
 
 ### Published package (from `package.json`)
 
@@ -357,11 +347,12 @@ Consumers import styling via `import 'nebula-ds-react-library/style';` (document
 | --- | --- |
 | `pnpm dev` | Vite dev server (port 3000) — runs the internal demo app (`src/App.tsx`). |
 | `pnpm test` | Vitest (watch). |
-| `pnpm run build` | Full library build (tsc → tailwind → vite → cleanup). |
+| `pnpm run build` | Full library build (tsc → vite). |
 | `pnpm run lint` | ESLint over `src` with `--report-unused-disable-directives --max-warnings 0`. |
 | `pnpm run lint-fix` | ESLint autofix. |
 | `pnpm storybook` | Builds the library first, then starts Storybook dev on 6006. |
 | `pnpm build-storybook` | Builds library, then `storybook build` → `storybook-static/`. |
+| `pnpm run generate-themes` | Regenerates `src/styles/tokens` + `src/styles/themes` from the upstream token CSS. |
 | `pnpm run release` | `.scripts/release.sh`: patch-bump version (no git tag), build, `npm publish --access public`, commit `new release vX.Y.Z`, push `origin main`. |
 | `prepare` | `husky install` (pre-commit hook runs lint). |
 
@@ -411,12 +402,11 @@ Note the mismatch: scripts use `pnpm`, but Vercel's `installCommand` uses `npm i
 - [x] document typography
 - [x] improve typography (adding ad-hoc component)
 - [x] theming infrastructure (light/dark CSS scaffolding)
-- [ ] improve customization:
-  - [ ] add twMerge (and configure it properly)
-- [ ] add dark theme + theme provider
+- [x] remove Tailwind (plain CSS)
+- [ ] add theme provider (REWORK-003)
+- [ ] FramePanel responsive rework (REWORK-004)
+- [ ] update Storybook & libraries (REWORK-005)
 - [ ] …
-
-Note: dark is now implemented at the CSS level (semantic tokens under `[data-nb-theme="dark"]`); what remains is the React `<ThemeProvider>` (REWORK-003).
 
 ---
 
@@ -428,7 +418,6 @@ Note: dark is now implemented at the CSS level (semantic tokens under `[data-nb-
 - `FramePanel`'s stories live in `__docs___` (three underscores) instead of `__docs__`.
 - `Panel.tsx` exports a component named `Paper` with a TODO to rename.
 - `useBreakpoint.isDesktop`/`isMobile` reference breakpoint names (`xxl`, `xxxl`, `xxs`) that `getCurrentBreakpoints()` never returns; `2xl` is treated as neither desktop nor mobile.
-- `tailwindMergeConfig.ts` logs to the console at import time (violates the `no-console` lint rule) and uses `window` at module scope, making it non-portable.
 - `tsconfig.json` includes a `theme.ts` file that does not exist.
 - `.storybook/manager.js` exists but its purpose/usage was not confirmed.
 - `vercel.json` uses `npm install` while all local tooling uses pnpm.

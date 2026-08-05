@@ -151,9 +151,8 @@ describe('Button', () => {
     );
 
     expect(containerDisabled).toMatchSnapshot();
-    expect(containerDisabled.firstChild).toHaveClass(
-      'disabled:cursor-not-allowed'
-    );
+    expect(containerDisabled.firstChild).toHaveClass('nb-button');
+    expect(containerDisabled.firstChild).toHaveProperty('disabled', true);
 
     const buttonElement = getByText(containerDisabled, 'Disabled button');
     fireEvent.click(buttonElement);

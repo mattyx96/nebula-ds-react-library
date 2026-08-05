@@ -2,6 +2,8 @@ import {cva, VariantProps} from 'class-variance-authority';
 import {clsxMerge} from '../../common/utils/classNameUtils.ts';
 import type {ComponentPropsWithRef} from 'react';
 
+import './Icon.css';
+
 type Props = VariantProps<typeof iconStyles> & ComponentPropsWithRef<'div'>;
 
 export const Icon = (props: Props) => {
@@ -13,13 +15,13 @@ export const Icon = (props: Props) => {
 };
 
 const iconStyles = cva(
-  ``,
+  'nb-icon',
   {
     variants: {
       size: {
-        M: 'w-6 h-6',
-        L: 'w-7 h-7',
-        S: 'w-5 h-5',
+        M: 'nb-icon--size-m',
+        L: 'nb-icon--size-l',
+        S: 'nb-icon--size-s',
       },
     },
     defaultVariants: {

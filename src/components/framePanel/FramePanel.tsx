@@ -4,6 +4,7 @@ import {Text} from "../typography/Typography";
 import {useBreakpoint} from "../../hook/useBreakpoint.ts";
 import useElementDimensions from "../../hook/useElementDimentions.ts";
 import {lightJsTokens} from "nebula-ds-tokens";
+import './FramePanel.css'
 
 type Props = ({ title: string; renderTitle?: undefined } | { renderTitle: ReactNode; title?: undefined }) & {
   className?: string
@@ -75,19 +76,23 @@ export const FramePanel = (props: Props) => {
     }
   }
 
+  const bodySideClass = props.inverse
+    ? breakpoint.isMobile ? 'nb-frame-panel__body-inner--pad-right-sm' : 'nb-frame-panel__body-inner--pad-right'
+    : breakpoint.isMobile ? 'nb-frame-panel__body-inner--pad-left-sm' : 'nb-frame-panel__body-inner--pad-left'
+
   return (
-    <div className={`w-full flex gap-4 flex-col ${props.className || ''}`}>
+    <div className={`nb-frame-panel ${props.className || ''}`}>
 
       {/* header */}
-      <div className={`flex w-full gap-4 justify-between items-center ${props.headerClassName || ''}`}>
+      <div className={`nb-frame-panel__header ${props.headerClassName || ''}`}>
         {props.inverse && (
           <>
             {props.renderHeader &&
-              <div className="flex gap-4 items-center">
+              <div className="nb-frame-panel__header-actions">
                 {props.renderHeader}
               </div>
             }
-            <div ref={headerFrameConnectorRef} className="w-full flex flex-1 scale-[-1]">
+            <div ref={headerFrameConnectorRef} className="nb-frame-panel__header-connector">
               {!isHeaderFrameConnectorHidden() &&
                 <FrameConnector
                   size={frameConnectorSize}
@@ -104,14 +109,14 @@ export const FramePanel = (props: Props) => {
         {props.renderTitle
           ? props.renderTitle
           : <Text component="h1" variant="header1"
-                  className="!text-2xl md:!text-3xl xl:!text-5xl !leading-0">{props.title}</Text>
+                  className="nb-frame-panel__title-text">{props.title}</Text>
         }
 
         {props.inverse && props.renderSideHeader && props.renderSideHeader}
 
         {!props.inverse && (
           <>
-            <div ref={headerFrameConnectorRef} className="w-full flex flex-1 scale-[-1]">
+            <div ref={headerFrameConnectorRef} className="nb-frame-panel__header-connector">
               {!isHeaderFrameConnectorHidden() &&
                 <FrameConnector
                   size={frameConnectorSize}
@@ -121,7 +126,7 @@ export const FramePanel = (props: Props) => {
               }
             </div>
             {props.renderHeader &&
-              <div className="flex gap-4 items-center">
+              <div className="nb-frame-panel__header-actions">
                 {props.renderHeader}
               </div>
             }
@@ -130,14 +135,14 @@ export const FramePanel = (props: Props) => {
       {/* end header */}
 
       {/* body container */}
-      <div className={`flex flex-1 flex-col ${props.bodyContainerClassName || ''}`}>
+      <div className={`nb-frame-panel__body ${props.bodyContainerClassName || ''}`}>
 
         {/* main vertical container (used for mobile side actions )*/}
         {breakpoint.isMobile &&
-          <div className={`flex flex-col ${props.inverse ? 'items-end' : 'items-start'}`}>
+          <div className={`nb-frame-panel__mobile-side ${props.inverse ? 'nb-frame-panel__mobile-side--end' : 'nb-frame-panel__mobile-side--start'}`}>
 
             {props.renderSide &&
-              <div className={`flex flex-1 flex-wrap gap-4 mb-4`}>
+              <div className="nb-frame-panel__mobile-side-inner">
                 {breakpoint.isMobile && props.renderSide}
               </div>
             }
@@ -149,12 +154,12 @@ export const FramePanel = (props: Props) => {
                     props.inverse
                       ? <FrameConnectorNode
                         size={frameConnectorSize}
-                        className="!inline !rotate-[270deg] !origin-center !h-[44px]"
+                        className="nb-frame-panel__mobile-node--inverse"
                         fill={lightJsTokens.nbFrameBackgroundPrimary}
                       />
                       : <FrameConnectorNode
                         size={frameConnectorSize}
-                        className="!inline !w-fit !scale-x-[-1] !rotate-90 !origin-center"
+                        className="nb-frame-panel__mobile-node"
                         fill={lightJsTokens.nbFrameBackgroundPrimary}
                       />
                   }
@@ -167,15 +172,15 @@ export const FramePanel = (props: Props) => {
 
         {/* level 2 - body here */}
         <div
-          className={`flex h-full flex-grow items-stretch ${props.verticalFrameConnectorContainerClassName || ''}`}>
+          className={`nb-frame-panel__level2 ${props.verticalFrameConnectorContainerClassName || ''}`}>
           {/* non-inverse side actions and connector */}
           {!props.inverse &&
-            <div className="flex flex-col justify-items-stretch gap-4">
+            <div className="nb-frame-panel__side-col">
               {!breakpoint.isMobile && props.renderSide}
-              <div ref={sideFrameConnectorRef} className="flex flex-col flex-1">
+              <div ref={sideFrameConnectorRef} className="nb-frame-panel__side-connector">
                 <FrameConnector
                   size={frameConnectorSize}
-                  className="flex flex-1 items-stretch "
+                  className="nb-frame-panel__connector-stretch"
                   firstNode={{hidden: breakpoint.isMobile || isSideFrameConnectorHiddenNode()}}
                   secondNode={{hidden: true}}
                   vertical
@@ -186,18 +191,18 @@ export const FramePanel = (props: Props) => {
 
           {/* body */}
           <div
-            className={`flex flex-1 pb-4 ${props.inverse ? breakpoint.isMobile ? 'pr-2' : 'pr-4' : breakpoint.isMobile ? 'pl-2' : 'pl-4'} ${props.bodyContainerClassName || ''}`}>
+            className={`nb-frame-panel__body-inner ${bodySideClass} ${props.bodyContainerClassName || ''}`}>
             {props.children}
           </div>
           {/* end body */}
 
           {/* inverse side actions and connector */}
           {props.inverse &&
-            <div ref={sideFrameConnectorRef} className="flex flex-col justify-items-stretch gap-4">
+            <div ref={sideFrameConnectorRef} className="nb-frame-panel__side-col">
               {!breakpoint.isMobile && props.renderSide}
               <FrameConnector
                 size={frameConnectorSize}
-                className="flex flex-1 items-stretch scale-[-1]"
+                className="nb-frame-panel__connector-stretch nb-frame-panel__connector-inverse"
                 secondNode={{hidden: breakpoint.isMobile || isSideFrameConnectorHiddenNode()}}
                 firstNode={{hidden: true}}
                 vertical
@@ -208,17 +213,17 @@ export const FramePanel = (props: Props) => {
         {/* end level 2 - body here */}
 
         {/* footer */}
-        <div className={`flex items-end gap-4 h-fit ${props.footerClassName || ''}`}>
+        <div className={`nb-frame-panel__footer ${props.footerClassName || ''}`}>
           {props.inverse && props.renderFooter}
-          <div ref={footerFrameConnectorRef} className="w-full flex flex-1 h-full items-end">
+          <div ref={footerFrameConnectorRef} className="nb-frame-panel__footer-connector">
             {!props.inverse && <FrameConnector
               size={frameConnectorSize}
-              bridge={{className: 'hidden'}}
+              bridge={{className: 'nb-frame-panel__bridge-hidden'}}
               firstNode={{hidden: true}}
               vertical
             />}
             <FrameConnector
-              className="h-fit"
+              className="nb-frame-panel__connector-fit"
               size={frameConnectorSize}
               {...(props.inverse
                   ? {
@@ -233,8 +238,8 @@ export const FramePanel = (props: Props) => {
             />
             {props.inverse && <FrameConnector
               size={frameConnectorSize}
-              className="scale-x-[-1]"
-              bridge={{className: 'hidden'}}
+              className="nb-frame-panel__connector-flip-x"
+              bridge={{className: 'nb-frame-panel__bridge-hidden'}}
               firstNode={{hidden: true}}
               vertical
             />}

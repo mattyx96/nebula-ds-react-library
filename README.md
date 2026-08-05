@@ -27,7 +27,6 @@ A React `<ThemeProvider>` that manages this attribute is on the roadmap. Generat
 - [X] document typography
 - [X] improve typography (adding ad-hoc component)
 - [X] theming infrastructure (light/dark CSS scaffolding)
-- [ ] improve customization:
-  - [ ] add twMerge (and configure it properly)
-- [ ] add dark theme + theme provider
+- [X] remove Tailwind (plain CSS)
+- [ ] add theme provider
 - ...
