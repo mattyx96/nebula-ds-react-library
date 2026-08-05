@@ -1,0 +1,38 @@
+/*
+ * Auto-generated from nebula-ds-tokens dark semantic tokens
+ * Do not edit directly; run `pnpm generate-themes`.
+ */
+
+:where([data-nb-theme="dark"]), :root[data-nb-theme="dark"] {
+  --nb-background-accent-200: #898989;
+  --nb-background-accent-500: #575757;
+  --nb-background-contrast-primary-200: #898989;
+  --nb-background-contrast-primary-50: #3E3E3D;
+  --nb-background-contrast-primary-500: #E9E9E1;
+  --nb-background-contrast-secondary: #FFFFFF;
+  --nb-background-primary: #3E3E3D;
+  --nb-background-secondary-default: #575757;
+  --nb-button-background-pressed: #898989;
+  --nb-button-border-default: 2px solid #898989;
+  --nb-button-border-primary-filled-hover: 3px solid #E9E9E1;
+  --nb-button-text-color-default: #E9E9E1;
+  --nb-button-text-color-primary: #000000;
+  --nb-button-text-color-secondary: #FFFFFF;
+  --nb-checkbox-border-default: 2px  #E9E9E1;
+  --nb-clickable-outline-500: #E9E9E1;
+  --nb-frame-background-primary: #575757;
+  --nb-input-border-default: 2px solid #575757;
+  --nb-input-border-primary-filled-hover: 3px solid #E9E9E1;
+  --nb-input-label-text-color-placeholder: #575757;
+  --nb-input-label-text-color-secondary: #898989;
+  --nb-paper-background-pressed: #898989;
+  --nb-paper-background-primary: #575757;
+  --nb-paper-border-clickable: 1px  #E9E9E1;
+  --nb-paper-border-dark: 2px  #898989;
+  --nb-paper-border-default: 2px  #575757;
+  --nb-paper-border-hover: 3px  #E9E9E1;
+  --nb-paper-border-light: 2px  #898989;
+  --nb-paper-border-lighter: 2px  #3E3E3D;
+  --nb-primary-300: #E6873E;
+  --nb-secondary-300: #E35A3D;
+}

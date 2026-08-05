@@ -1,0 +1,7 @@
+/* Nebula Design System — styles entry.
+ * Primitives are theme-invariant and always applied on :root.
+ * Theme files scope semantic tokens under [data-nb-theme].
+ */
+@import './tokens/primitives.css';
+@import './themes/light.css';
+@import './themes/dark.css';

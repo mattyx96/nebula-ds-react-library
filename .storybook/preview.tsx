@@ -2,6 +2,7 @@ import type { Preview } from '@storybook/react';
 
 import { theme } from './theme';
 
+import '../src/styles/index.css';
 import '../dist/style.css';
 
 const preview: Preview = {

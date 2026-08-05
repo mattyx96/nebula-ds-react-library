@@ -29,6 +29,7 @@
   },
   "scripts": {
     "dev": "vite",
+    "generate-themes": "node .scripts/generate-themes.mjs",
     "build": "tsc && pnpm build-tailwind && vite build && rm src/nebula.css",
     "build-tailwind": "NODE_ENV=production npx tailwindcss -i ./src/index.css -o ./src/nebula.css --postcss --minify",
     "preview": "vite preview",

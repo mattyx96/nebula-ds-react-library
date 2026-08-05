@@ -1,4 +1,4 @@
-import 'nebula-ds-tokens/build/light-variables.css'
+import './src/styles/index.css'
 import './src/nebula.css'
 
 export * as config from 'nebula-ds-tokens'

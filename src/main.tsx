@@ -2,7 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
-import 'nebula-ds-tokens/build/light-variables.css'
+import './styles/index.css'
+
+document.documentElement.setAttribute('data-nb-theme', 'light')
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
