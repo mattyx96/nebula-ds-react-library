@@ -54,10 +54,6 @@
   box-shadow: 0 0 0 var(--nb-border-1) var(--nb-button-background-primary);
 }
 
-.nb-button--outlined:hover:not(:disabled) {
-  box-shadow: 0 0 0 var(--nb-border-1) var(--nb-button-background-primary);
-}
-
 /* Sizes — define per-size radius + compensation custom props */
 .nb-button--size-s {
   padding: var(--nb-button-spacing-xs-v-default) var(--nb-button-spacing-xs-h-default);
