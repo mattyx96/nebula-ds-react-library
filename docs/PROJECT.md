@@ -15,7 +15,7 @@ Comprehensive project documentation for the `nebula-ds-react-library` repository
 
 The aesthetic is "retro-futuristic": inspired by 1970s space-age design, Bauhaus geometry, and Star Trek's **LCARS** interface. Its signature elements are the *frame connector* graphics (curved "LCARS-style" node SVG shapes connected by bridges) used to build the `FrameConnector` and `FramePanel` components, and the **Orbitron / Roboto Mono** font pairing.
 
-Currently the library ships **7 public components**, **1 hook**, plus the tokens re-exported under a `config` namespace.
+Currently the library ships **8 public components**, **2 hooks** (`useBreakpoint`, `useTheme`), plus the tokens re-exported under a `config` namespace.
 
 ---
 
@@ -249,7 +249,17 @@ Props:
 
 Internal responsive heuristics (dimension thresholds that toggle connector node visibility) differ between desktop and mobile and are keyed off `useBreakpoint` + `useElementDimensions`.
 
-### 4.9 Hooks
+### 4.9 `ThemeProvider` / `useTheme`
+
+Scopes a theme to a subtree by rendering a wrapper `<div data-nb-theme={theme} className="nb-theme-provider">`. Semantic token CSS (`src/styles/themes/*.css`, see §5) reacts to the attribute, so every Nebula component below the wrapper switches theme. Nested providers override only their own subtree.
+
+- `ThemeProvider` props: `theme?: 'light' | 'dark'` (default `'light'`, controlled), `className?`, `children?`.
+- `useTheme()` (from `themeContext.ts`) returns `{ theme, setTheme, themes }`; safe to call outside a provider (returns a light default).
+- `themes` registry (`['light', 'dark'] as const`) + `Theme` type exported.
+- Files: `src/components/themeProvider/ThemeProvider.tsx` (component), `themeContext.ts` (context/hook/registry), `ThemeProvider.css`, `__docs__` (stories incl. side-by-side nested + interactive toggle), `__test__`.
+- Storybook wraps every story in `<ThemeProvider>` and adds a **Theme** toolbar toggle (light/dark) via `globalTypes`.
+
+### 4.10 Hooks
 
 - **`useBreakpoint`** (public) — returns `{ current, isDesktop, isMobile, isTablet }`. Breakpoints: `xs <640`, `sm 640–767`, `md 768–1023`, `lg 1024–1279`, `xl 1280–1535`, `2xl ≥1536`. **Note:** `isDesktop`/`isMobile` currently check for breakpoint names (`xxl`, `xxxl`, `xxs`) that are never produced by `getCurrentBreakpoints()` — effectively `isDesktop === (lg | xl)`, `isMobile === (xs | sm)`, and `2xl` matches neither. (`isDesktop` does not include `2xl`.)
 - **`useElementDimensions`** (internal) — measures a `ref`-attached element's `getBoundingClientRect()`; refreshes on `resize` and `scroll` (capture). Returns `{ dimensions, ref, refresh }`.
@@ -403,7 +413,7 @@ Note the mismatch: scripts use `pnpm`, but Vercel's `installCommand` uses `npm i
 - [x] improve typography (adding ad-hoc component)
 - [x] theming infrastructure (light/dark CSS scaffolding)
 - [x] remove Tailwind (plain CSS)
-- [ ] add theme provider (REWORK-003)
+- [x] add theme provider (REWORK-003)
 - [ ] FramePanel responsive rework (REWORK-004)
 - [ ] update Storybook & libraries (REWORK-005)
 - [ ] …

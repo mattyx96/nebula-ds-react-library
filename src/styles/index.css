@@ -13,3 +13,4 @@
 @import '../components/typography/Typography.css';
 @import '../components/frameConnector/FrameConnector.css';
 @import '../components/framePanel/FramePanel.css';
+@import '../components/themeProvider/ThemeProvider.css';

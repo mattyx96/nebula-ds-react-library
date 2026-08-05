@@ -8,11 +8,13 @@ import {HorizonPage} from "./pages/HorizonPage.tsx";
 import {FramePanelPage} from "./pages/FramePanelPage.tsx";
 import {TokensPage} from "./pages/Tokens.tsx";
 import {FramePanelFullPage} from "./pages/FramePanelFullPage.tsx";
+import {useTheme} from "./components/themeProvider/themeContext.ts";
 
 const Pages = ['tokens', 'buttons', 'panels', 'typography', 'frameConnector', 'horizon', 'framePanel', "framePanelFullPage"] as const
 
 export default function App() {
   const [page, setPage] = useState<typeof Pages[number]>('buttons');
+  const {theme, setTheme} = useTheme();
   // console.log(tw.generateTailwindCompatibleTheme())
   return (
     <div className="nb-app">
@@ -27,6 +29,12 @@ export default function App() {
             text={_page.charAt(0).toUpperCase() + _page.slice(1)}
           />
         ))}
+        <Button
+          variant="outlined"
+          size="S"
+          text={theme === 'light' ? 'Dark' : 'Light'}
+          onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+        />
       </nav>
       <main className="nb-app__main">
         {page === 'buttons' && <Buttons/>}
