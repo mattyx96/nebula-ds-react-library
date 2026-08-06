@@ -42,6 +42,10 @@
   transform-origin: center;
 }
 
+.nb-frame-connector__node--flip.nb-frame-connector__node--vertical {
+  transform: rotate(90deg) scaleX(-1);
+}
+
 .nb-frame-connector__bridge {
   background-color: var(--nb-frame-background-primary);
 }

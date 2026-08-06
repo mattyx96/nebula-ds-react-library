@@ -231,13 +231,11 @@ Also exports the standalone `FrameConnectorNode` component (the SVG node shape a
 
 ### 4.8 `FramePanel`
 
-High-level layout component that assembles a full "LCARS page frame": a header row with connectors + optional header actions, a body with optional side actions + vertical connector, and a footer with connector + footer actions.
+High-level layout component that assembles a full "LCARS page frame": a header row with connectors + optional header actions, a body with optional side actions + vertical connector, and a footer with connector + footer actions. Can be mirrored with `inverse`.
 
-The layout is **declarative CSS** (no JS measurement):
-- Root is a CSS Grid with rows `[header] [body] [footer]`; the body is a flex row `[side | main]`.
-- `inverse` is applied via a `[data-inverse]` attribute + `.nb-frame-panel--inverse` (CSS flips direction with `row-reverse`/transforms) — no mirrored JSX branches.
-- Responsiveness uses **container queries** (`@container`): the header/footer/side slots are size containers and the `FrameConnector` nodes collapse (two → one → none) as the slot shrinks; the side actions move above the body on narrow containers. Container-query baseline: Chrome/Edge 105+, Safari 16+, Firefox 110+.
-- `useBreakpoint` is retained only to pick the connector size (`M` desktop / `S` otherwise).
+Responsiveness is **breakpoint-driven** (`useBreakpoint`), with JS-measurement thresholds (`useElementDimensions`) deciding when the header/footer/side connector nodes collapse. On mobile (`isMobile`), the side actions move into a top block with a decorative rotated node, and the side column is reduced to a thin vertical connector. `inverse` mirrors the layout via separate JSX branches.
+
+> Note: REWORK-004's container-query rewrite of `FramePanel` was reverted (visual regressions); this is the original working plain-CSS version.
 
 Props:
 
@@ -248,7 +246,7 @@ Props:
 | `renderHeader` | `ReactNode` | Actions on the header row (opposite side from title) |
 | `renderSideHeader` | `ReactNode` | Extra header-side element |
 | `renderFooter` | `ReactNode` | Actions in the footer |
-| `renderSide` | `ReactNode` | Side action stack (moves above the body on narrow containers) |
+| `renderSide` | `ReactNode` | Side action stack (moves into the top block on mobile) |
 | `inverse` | `boolean` | Mirrors the whole frame layout |
 | `className` / `headerClassName` / `footerClassName` / `verticalFrameConnectorContainerClassName` / `bodyContainerClassName` / `sideClassName` | `string` | Layout class overrides |
 | `children` | `ReactNode` | Main body content |
@@ -265,10 +263,9 @@ Scopes a theme to a subtree by rendering a wrapper `<div data-nb-theme={theme} c
 
 ### 4.10 Hooks
 
-- **`useBreakpoint`** (public) — returns `{ current, isDesktop, isMobile, isTablet }`. Breakpoints: `xs <640`, `sm 640–767`, `md 768–1023`, `lg 1024–1279`, `xl 1280–1535`, `2xl ≥1536`. Mapping: `isDesktop = lg | xl | 2xl`, `isMobile = xs | sm`, `isTablet = md`. Used only where a genuine JS viewport signal is needed (e.g. `FramePanel` connector size).
+- **`useBreakpoint`** (public) — returns `{ current, isDesktop, isMobile, isTablet }`. Breakpoints: `xs <640`, `sm 640–767`, `md 768–1023`, `lg 1024–1279`, `xl 1280–1535`, `2xl ≥1536`. Mapping: `isDesktop = lg | xl | 2xl`, `isMobile = xs | sm`, `isTablet = md`.
+- **`useElementDimensions`** (internal) — measures a `ref`-attached element's `getBoundingClientRect()`; refreshes on `resize` and `scroll` (capture). Returns `{ dimensions, ref, refresh }`. Used by `FramePanel` for connector node collapse thresholds.
 - **`useEventListener`** (internal) — attaches a `window` event listener, runs it once on mount, and cleans up on unmount.
-
-(`useElementDimensions` was removed in REWORK-004 — no longer needed now that `FramePanel` is CSS/container-query driven.)
 
 ---
 
@@ -417,7 +414,7 @@ Live at https://nebula-ds-react-library.irongalaxy.space
 - [x] theming infrastructure (light/dark CSS scaffolding)
 - [x] remove Tailwind (plain CSS)
 - [x] add theme provider (REWORK-003)
-- [x] FramePanel responsive rework — CSS Grid + container queries, `useBreakpoint` fix (REWORK-004)
+- [x] FramePanel responsive rework — **reverted**: container-query rewrite caused visual regressions; restored the original working breakpoint/measurement-based version (`useBreakpoint` still fixed)
 - [x] update Storybook (8.6) & libraries (Vite 6, Vitest 2, TS 5.9, ESLint 9, Husky 9) (REWORK-005)
 - [ ] …
 
