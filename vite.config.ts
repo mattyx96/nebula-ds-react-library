@@ -15,6 +15,7 @@ export default defineConfig({
       name: 'nebula-ds-react-library',
       formats: ['es', 'cjs', 'umd'],
       fileName: (format) => `index.${format}.js`,
+      cssFileName: 'style',
     },
     rollupOptions: {
       external: ['react', 'react-dom', 'react/jsx-runtime'],

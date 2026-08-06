@@ -24,17 +24,17 @@ Currently the library ships **8 public components**, **2 hooks** (`useBreakpoint
 | Layer | Technology |
 | --- | --- |
 | Framework | React 18 (`^18.2.0`, peer dep) |
-| Language | TypeScript 5.4 (strict) |
-| Bundler | Vite 5 (library mode) |
+| Language | TypeScript 5.9 (strict) |
+| Bundler | Vite 6 (library mode) |
 | Styling | Plain CSS + CSS custom properties (tokens). No Tailwind. |
 | Variants | class-variance-authority (CVA) → class-name mapping |
 | Class merge | `clsx` |
 | Icons (peer) | `@heroicons/react` `^2.1.3` |
-| Testing | Vitest 1.6 + @testing-library/react + jest-dom, jsdom env |
-| Docs | Storybook 8 + MDX + autodocs, themed with `@storybook/theming` |
-| Lint/Format | ESLint 8 (flat config) + Prettier (via eslint-plugin-prettier) |
+| Testing | Vitest 2.1 + @testing-library/react + jest-dom, jsdom 26 |
+| Docs | Storybook 8.6 + MDX + autodocs, themed with `@storybook/theming` |
+| Lint/Format | ESLint 9 (flat config) + Prettier (via eslint-plugin-prettier) |
 | Package manager | pnpm (lockfile committed) |
-| Hooks | Husky 8 + lint-staged (pre-commit runs `pnpm run lint`) |
+| Hooks | Husky 9 + lint-staged (pre-commit runs `pnpm run lint`) |
 | Deploy | Vercel (Storybook static build) |
 
 ### Dependencies
@@ -369,7 +369,7 @@ Consumers import styling via `import 'nebula-ds-react-library/style';` (document
 | `pnpm build-storybook` | Builds library, then `storybook build` → `storybook-static/`. |
 | `pnpm run generate-themes` | Regenerates `src/styles/tokens` + `src/styles/themes` from the upstream token CSS. |
 | `pnpm run release` | `.scripts/release.sh`: patch-bump version (no git tag), build, `npm publish --access public`, commit `new release vX.Y.Z`, push `origin main`. |
-| `prepare` | `husky install` (pre-commit hook runs lint). |
+| `prepare` | `husky` (husky 9 init; pre-commit hook runs lint). |
 
 ### Tests
 
@@ -387,7 +387,7 @@ Consumers import styling via `import 'nebula-ds-react-library/style';` (document
 
 ### Linting
 
-Flat config (`eslint.config.js`): `@eslint/js` recommended + `typescript-eslint` recommended + React recommended (via `fixupConfigRules`) + prettier plugin + react-refresh. Custom rules: `react-refresh/only-export-components` (warn), `react/react-in-jsx-scope: off`, `no-console: error`. Note: large parts of the config (airbnb presets, `@typescript-eslint/parser`, react-hooks recommended) are present but commented out.
+Flat config (`eslint.config.js`): `@eslint/js` recommended + `typescript-eslint@8` recommended + React recommended (via `fixupConfigRules`) + prettier plugin + react-refresh + storybook. Custom rules: `react-refresh/only-export-components` (warn), `react/react-in-jsx-scope: off`, `no-console: error`. (ESLint 9 flat config; legacy airbnb presets removed in REWORK-005.)
 
 ### Demo app pages (`src/pages/`)
 
@@ -399,15 +399,13 @@ Internal showcase pages, switched from `src/App.tsx`: `Buttons`, `Panels`, `Typo
 
 `vercel.json` deploys the **Storybook** instance:
 
-- `buildCommand`: `npm run build-storybook`
-- `devCommand`: `npm run storybook`
-- `installCommand`: `npm install`
+- `buildCommand`: `pnpm run build-storybook`
+- `devCommand`: `pnpm run storybook`
+- `installCommand`: `pnpm install`
 - `outputDirectory`: `./storybook-static`
 - `framework: null`
 
 Live at https://nebula-ds-react-library.irongalaxy.space
-
-Note the mismatch: scripts use `pnpm`, but Vercel's `installCommand` uses `npm install` (it will use the repo's `package-lock.json` if present, otherwise resolves versions loosely).
 
 ---
 
@@ -420,7 +418,7 @@ Note the mismatch: scripts use `pnpm`, but Vercel's `installCommand` uses `npm i
 - [x] remove Tailwind (plain CSS)
 - [x] add theme provider (REWORK-003)
 - [x] FramePanel responsive rework — CSS Grid + container queries, `useBreakpoint` fix (REWORK-004)
-- [ ] update Storybook & libraries (REWORK-005)
+- [x] update Storybook (8.6) & libraries (Vite 6, Vitest 2, TS 5.9, ESLint 9, Husky 9) (REWORK-005)
 - [ ] …
 
 ---
@@ -433,5 +431,4 @@ Note the mismatch: scripts use `pnpm`, but Vercel's `installCommand` uses `npm i
 - `FramePanel`'s stories live in `__docs___` (three underscores) instead of `__docs__`.
 - `Panel.tsx` exports a component named `Paper` with a TODO to rename.
 - `tsconfig.json` includes a `theme.ts` file that does not exist.
-- `.storybook/manager.js` exists but its purpose/usage was not confirmed.
-- `vercel.json` uses `npm install` while all local tooling uses pnpm.
+- `vercel.json` uses `pnpm install` while all local tooling uses pnpm.

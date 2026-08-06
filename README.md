@@ -47,4 +47,5 @@ Nested providers are supported (an inner `ThemeProvider` themes only its own sub
 - [X] remove Tailwind (plain CSS)
 - [X] add theme provider
 - [X] FramePanel responsive rework (CSS Grid + container queries)
+- [X] update Storybook & libraries (Vite 6, Vitest 2, TS 5.9, ESLint 9, Husky 9)
 - ...
