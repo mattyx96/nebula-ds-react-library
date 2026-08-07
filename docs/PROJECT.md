@@ -256,7 +256,7 @@ Props:
 Scopes a theme to a subtree by rendering a wrapper `<div data-nb-theme={theme} className="nb-theme-provider">`. Semantic token CSS (`src/styles/themes/*.css`, see §5) reacts to the attribute, so every Nebula component below the wrapper switches theme. Nested providers override only their own subtree.
 
 - `ThemeProvider` props: `theme?: 'light' | 'dark'` (default `'light'`, controlled), `className?`, `children?`.
-- The wrapper (`<div data-nb-theme={theme} className="nb-theme-provider">`) also applies the theme's background/text colors (`var(--nb-background-primary)` / `--nb-background-contrast-primary-500`), so surrounding surfaces (e.g. the Storybook canvas) follow the theme too.
+- The wrapper (`<div data-nb-theme={theme} className="nb-theme-provider">`) carries only the theme attribute; it does not force its own background, so it doesn't dictate the page/canvas background. In Storybook, the decorator also reflects the theme on `<html data-nb-theme>` and the canvas (`body`/`.docs-story`) is themed via CSS variables.
 - `useTheme()` (from `themeContext.ts`) returns `{ theme, setTheme, themes }`; safe to call outside a provider (returns a light default).
 - `themes` registry (`['light', 'dark'] as const`) + `Theme` type exported.
 - Files: `src/components/themeProvider/ThemeProvider.tsx` (component), `themeContext.ts` (context/hook/registry), `ThemeProvider.css`, `__docs__` (stories incl. side-by-side nested + interactive toggle), `__test__`.

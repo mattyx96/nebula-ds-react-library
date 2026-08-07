@@ -10,9 +10,10 @@
     accent-color: #E35A3D;
   }
 
-  /* The theme is reflected on <html data-nb-theme>, so the canvas
-     background follows the light/dark toggle. */
-  body {
+  /* The theme is reflected on <html data-nb-theme>, so the Storybook
+     canvas (docs-story + plain preview) follows the light/dark toggle. */
+  body,
+  .docs-story {
     background-color: var(--nb-background-primary) !important;
     color: var(--nb-background-contrast-primary-500) !important;
   }

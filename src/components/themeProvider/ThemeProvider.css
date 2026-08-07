@@ -1,5 +1,3 @@
 .nb-theme-provider {
   display: block;
-  background-color: var(--nb-background-primary);
-  color: var(--nb-background-contrast-primary-500);
 }
