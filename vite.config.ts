@@ -11,7 +11,7 @@ export default defineConfig({
   build: {
     copyPublicDir: false,
     lib: {
-      entry: path.resolve(__dirname, 'index.ts'),
+      entry: path.resolve(import.meta.dirname, 'index.ts'),
       name: 'nebula-ds-react-library',
       formats: ['es', 'cjs', 'umd'],
       fileName: (format) => `index.${format}.js`,

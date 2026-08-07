@@ -1,4 +1,4 @@
-import {create} from '@storybook/theming/create';
+import {create} from 'storybook/theming/create';
 import {lightJsTokens} from 'nebula-ds-tokens';
 
 export const theme: ReturnType<typeof create> = create({

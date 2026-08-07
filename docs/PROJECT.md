@@ -23,15 +23,15 @@ Currently the library ships **8 public components**, **2 hooks** (`useBreakpoint
 
 | Layer | Technology |
 | --- | --- |
-| Framework | React 18 (`^18.2.0`, peer dep) |
-| Language | TypeScript 5.9 (strict) |
-| Bundler | Vite 6 (library mode) |
+| Framework | React 19 (`^19.0.0`, peer dep) |
+| Language | TypeScript 6.0 (strict) |
+| Bundler | Vite 8 (library mode) |
 | Styling | Plain CSS + CSS custom properties (tokens). No Tailwind. |
 | Variants | class-variance-authority (CVA) → class-name mapping |
 | Class merge | `clsx` |
 | Icons (peer) | `@heroicons/react` `^2.1.3` |
-| Testing | Vitest 2.1 + @testing-library/react + jest-dom, jsdom 26 |
-| Docs | Storybook 8.6 + MDX + autodocs, themed with `@storybook/theming` |
+| Testing | Vitest 4.1 + @testing-library/react 16 + jest-dom 7, jsdom 30 |
+| Docs | Storybook 10 + MDX + autodocs, themed with `storybook/theming` |
 | Lint/Format | ESLint 9 (flat config) + Prettier (via eslint-plugin-prettier) |
 | Package manager | pnpm (lockfile committed) |
 | Hooks | Husky 9 + lint-staged (pre-commit runs `pnpm run lint`) |
@@ -40,7 +40,7 @@ Currently the library ships **8 public components**, **2 hooks** (`useBreakpoint
 ### Dependencies
 
 - **runtime**: `nebula-ds-tokens` `0.2.0`
-- **peer** (must be provided by the consumer): `@heroicons/react`, `class-variance-authority`, `clsx`, `react`, `react-dom`
+- **peer** (must be provided by the consumer): `@heroicons/react`, `class-variance-authority`, `clsx`, `react` (19), `react-dom` (19)
 
 ---
 
@@ -415,7 +415,8 @@ Live at https://nebula-ds-react-library.irongalaxy.space
 - [x] remove Tailwind (plain CSS)
 - [x] add theme provider (REWORK-003)
 - [x] FramePanel responsive rework — **reverted**: container-query rewrite caused visual regressions; restored the original working breakpoint/measurement-based version (`useBreakpoint` still fixed)
-- [x] update Storybook (8.6) & libraries (Vite 6, Vitest 2, TS 5.9, ESLint 9, Husky 9) (REWORK-005)
+- [x] update Storybook & libraries (REWORK-005)
+- [x] update everything to latest majors — Storybook 10, React 19, Vite 8, Vitest 4, TS 6, ESLint 9
 - [ ] …
 
 ---
