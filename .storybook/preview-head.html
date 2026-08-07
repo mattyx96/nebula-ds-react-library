@@ -5,8 +5,23 @@
       rel="stylesheet">
 
 <style>
-  input[type='radio'] {
+  input[type='radio'],
+  input[type='checkbox'] {
     accent-color: #E35A3D;
+  }
+
+  a:not(.sb-anchor, .sb-unstyled, .sb-unstyled a) {
+    color: #E6873E !important;
+    text-decoration: underline;
+  }
+
+  a:not(.sb-anchor, .sb-unstyled, .sb-unstyled a):hover {
+    color: #b45b17 !important;
+  }
+
+  code:not(.sb-anchor, .sb-unstyled, .sb-unstyled code),
+  pre:not(.sb-anchor, .sb-unstyled, .sb-unstyled pre) {
+    font-family: var(--nb-font-families-roboto-mono) !important;
   }
 
   * :where(p:not(.sb-anchor, .sb-unstyled, .sb-unstyled p)),
