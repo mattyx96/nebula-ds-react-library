@@ -10,6 +10,13 @@
     accent-color: #E35A3D;
   }
 
+  /* The theme is reflected on <html data-nb-theme>, so the canvas
+     background follows the light/dark toggle. */
+  body {
+    background-color: var(--nb-background-primary) !important;
+    color: var(--nb-background-contrast-primary-500) !important;
+  }
+
   a:not(.sb-anchor, .sb-unstyled, .sb-unstyled a) {
     color: #E6873E !important;
     text-decoration: underline;
