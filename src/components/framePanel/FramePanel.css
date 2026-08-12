@@ -1,0 +1,167 @@
+/* Nebula FramePanel — plain CSS (was Tailwind utilities).
+ * Note: full responsive rewrite (container queries) is tracked in REWORK-004.
+ */
+
+.nb-frame-panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--nb-4);
+  width: 100%;
+}
+
+.nb-frame-panel__header {
+  display: flex;
+  width: 100%;
+  gap: var(--nb-4);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nb-frame-panel__header-actions {
+  display: flex;
+  gap: var(--nb-4);
+  align-items: center;
+}
+
+.nb-frame-panel__header-connector {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  transform: scale(-1);
+}
+
+.nb-frame-panel__header .nb-frame-panel__title-text {
+  font-size: 24px;
+  line-height: 0;
+}
+
+@media (min-width: 768px) {
+  .nb-frame-panel__header .nb-frame-panel__title-text {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .nb-frame-panel__header .nb-frame-panel__title-text {
+    font-size: 48px;
+  }
+}
+
+.nb-frame-panel__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.nb-frame-panel__mobile-side {
+  display: flex;
+  flex-direction: column;
+}
+
+.nb-frame-panel__mobile-side--start {
+  align-items: flex-start;
+}
+
+.nb-frame-panel__mobile-side--end {
+  align-items: flex-end;
+}
+
+.nb-frame-panel__mobile-side-inner {
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: var(--nb-4);
+  margin-bottom: var(--nb-4);
+}
+
+.nb-frame-panel__mobile-node {
+  display: inline;
+  width: fit-content;
+  transform: scaleX(-1) rotate(90deg);
+  transform-origin: center;
+}
+
+.nb-frame-panel__mobile-node--inverse {
+  display: inline;
+  height: 44px;
+  transform: rotate(270deg);
+  transform-origin: center;
+}
+
+.nb-frame-panel__level2 {
+  display: flex;
+  height: 100%;
+  flex-grow: 1;
+  align-items: stretch;
+}
+
+.nb-frame-panel__side-col {
+  display: flex;
+  flex-direction: column;
+  justify-items: stretch;
+  gap: var(--nb-4);
+}
+
+.nb-frame-panel__side-connector {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.nb-frame-panel__connector-stretch {
+  flex: 1;
+  align-items: stretch;
+}
+
+.nb-frame-panel__connector-inverse {
+  transform: scale(-1);
+}
+
+.nb-frame-panel__body-inner {
+  display: flex;
+  flex: 1;
+  padding-bottom: var(--nb-4);
+}
+
+.nb-frame-panel__body-inner--pad-left {
+  padding-left: var(--nb-4);
+}
+
+.nb-frame-panel__body-inner--pad-left-sm {
+  padding-left: var(--nb-3);
+}
+
+.nb-frame-panel__body-inner--pad-right {
+  padding-right: var(--nb-4);
+}
+
+.nb-frame-panel__body-inner--pad-right-sm {
+  padding-right: var(--nb-3);
+}
+
+.nb-frame-panel__footer {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--nb-4);
+  height: fit-content;
+}
+
+.nb-frame-panel__footer-connector {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  align-items: flex-end;
+}
+
+.nb-frame-panel__connector-fit {
+  height: fit-content;
+}
+
+.nb-frame-panel__connector-flip-x {
+  transform: scaleX(-1);
+}
+
+.nb-frame-panel__bridge-hidden {
+  display: none;
+}

@@ -1,4 +1,5 @@
-import {lightJsTokens} from "nebula-ds-tokens"
+import {clsxMerge} from "../../common/utils/classNameUtils";
+import './FrameConnector.css'
 
 type Size = 'M' | 'L' | 'S'
 
@@ -28,13 +29,22 @@ export const FrameConnector = (props: Props) => {
   const size = props.size || 'M'
 
   return (
-    <div className={`flex ${props.vertical ? 'flex-col w-fit' : 'items-end flex-1'} ${props.className}`}>
+    <div className={clsxMerge(
+      'nb-frame-connector',
+      props.vertical ? 'nb-frame-connector--vertical' : 'nb-frame-connector--horizontal',
+      `nb-frame-connector--size-${size.toLowerCase()}`,
+      props.className
+    )}>
       {props.firstNode?.hidden || props.divider
         ? <></>
         : <FrameConnectorNode
           size={props.firstNode?.size || size}
-          fill={props.firstNode?.fill || lightJsTokens.nbFrameBackgroundPrimary}
-          className={`${props.vertical ? 'rotate-90 origin-center' : ''} scale-x-[-1] ${props.firstNode?.className}`}
+          fill={props.firstNode?.fill || 'var(--nb-frame-background-primary)'}
+          className={clsxMerge(
+            'nb-frame-connector__node--flip',
+            props.vertical && 'nb-frame-connector__node--vertical',
+            props.firstNode?.className
+          )}
         />
       }
 
@@ -44,15 +54,19 @@ export const FrameConnector = (props: Props) => {
         ? <></>
         : <FrameConnectorNode
           size={props.secondNode?.size || size}
-          fill={props.secondNode?.fill || lightJsTokens.nbFrameBackgroundPrimary}
-          className={`${props.vertical ? 'rotate-90 origin-center' : ''} ${props.secondNode?.className}`}
+          fill={props.secondNode?.fill || 'var(--nb-frame-background-primary)'}
+          className={clsxMerge(
+            'nb-frame-connector__node--second',
+            props.vertical && 'nb-frame-connector__node--vertical',
+            props.secondNode?.className
+          )}
         />}
     </div>
   )
 }
 
 export const FrameConnectorNode = (props: NodeProps) => (
-  <div className={`flex items-center justify-center ` + props.className}>
+  <div className={clsxMerge('nb-frame-connector__node', props.className)}>
     {props.size === 'M' && <svg width="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path fillRule="evenodd" clipRule="evenodd"
             d="M60 3.78963C60 1.56987 58.1925 -0.257305 55.9914 0.0298035C43.1529 1.70443 32.8081 11.3131 30.0386 23.7742C30.0336 23.7966 30 23.7935 30 23.7705V23.7705V23.7705C30 23.8917 29.9864 24.0125 29.9615 24.1312C29.5844 25.9293 29.3647 27.7853 29.3174 29.6841C29.3088 30.029 29.2729 30.374 29.1934 30.7097C26.0622 43.9325 14.18 53.7705 -2.67029e-05 53.7705H0.0999985C0.0447693 53.7705 0 53.8152 0 53.8705V59.6705C0 59.7257 0.0447731 59.7705 0.0999985 59.7705H52.9C52.9013 59.7705 52.9025 59.7704 52.9037 59.7704H55C57.7614 59.7704 60 57.5318 60 54.7704V3.78963Z"
@@ -79,19 +93,14 @@ export const FrameConnectorNode = (props: NodeProps) => (
 
 const FrameConnectorBridge = (props: BridgeProps & { vertical?: boolean; size?: Size }) => {
   const size = props.size || 'M'
-  const classesW: Record<Size, string> = {
-    S: 'w-[4px]',
-    M: 'w-[6px]',
-    L: 'w-[7px]',
-  }
-  const classesH: Record<Size, string> = {
-    S: 'h-[4px]',
-    M: 'h-[6px]',
-    L: 'h-[7px]',
-  }
   return (
     <div
-      className={`${props.vertical ? `h-full flex-1 ${classesW[size]}` : `w-full ${classesH[size]}`} bg-frame-background-primary ${props.className}`}
+      className={clsxMerge(
+        'nb-frame-connector__bridge',
+        props.vertical ? 'nb-frame-connector__bridge--vertical' : 'nb-frame-connector__bridge--horizontal',
+        `nb-frame-connector--size-${size.toLowerCase()}`,
+        props.className
+      )}
     />
   )
 };

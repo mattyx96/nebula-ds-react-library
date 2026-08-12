@@ -28,8 +28,8 @@ export const useBreakpoint = () => {
 
   return {
     current: breakpoint,
-    isDesktop: ['lg', 'xl', 'xxl', 'xxxl'].includes(breakpoint),
-    isMobile: ['sm', 'xs', 'xxs'].includes(breakpoint),
+    isDesktop: ['lg', 'xl', '2xl'].includes(breakpoint),
+    isMobile: ['xs', 'sm'].includes(breakpoint),
     isTablet: breakpoint === 'md',
   };
 };

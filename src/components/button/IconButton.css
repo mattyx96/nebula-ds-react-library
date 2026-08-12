@@ -1,0 +1,75 @@
+/* Nebula IconButton — plain CSS (was Tailwind utilities). */
+
+.nb-icon-button {
+  position: relative;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.nb-icon-button--size-s {
+  min-width: var(--nb-button-sm);
+  min-height: var(--nb-button-sm);
+  --nb-btn-comp: var(--nb-button-spacing-xs-compensation);
+  --nb-btn-hdef: var(--nb-button-spacing-xs-h-default);
+  --nb-btn-tweak: 1.5px;
+}
+
+.nb-icon-button--size-m {
+  min-width: var(--nb-button-md);
+  min-height: var(--nb-button-md);
+  --nb-btn-comp: var(--nb-button-spacing-md-compensation);
+  --nb-btn-hdef: var(--nb-button-spacing-md-h-default);
+  --nb-btn-tweak: 2.5px;
+}
+
+.nb-icon-button--size-l {
+  min-width: var(--nb-button-lg);
+  min-height: var(--nb-button-lg);
+  --nb-btn-comp: var(--nb-button-spacing-lg-compensation);
+  --nb-btn-hdef: var(--nb-button-spacing-lg-h-default);
+  --nb-btn-tweak: 0px;
+}
+
+.nb-icon-button__icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.nb-icon-button__icon > svg {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.nb-icon-button__icon--size-s {
+  width: 20px;
+  height: 20px;
+}
+
+.nb-icon-button__icon--size-m {
+  width: 24px;
+  height: 24px;
+}
+
+.nb-icon-button__icon--size-l {
+  width: 28px;
+  height: 28px;
+}
+
+/* Icon centering compensation when one side is fully rounded */
+.nb-icon-button.nb-button--rounded-r .nb-icon-button__icon,
+.nb-icon-button.nb-button--rounded-rtop .nb-icon-button__icon,
+.nb-icon-button.nb-button--rounded-rbottom .nb-icon-button__icon {
+  transform: translateX(calc(var(--nb-btn-comp) - var(--nb-btn-hdef) + var(--nb-btn-tweak)));
+}
+
+.nb-icon-button.nb-button--rounded-l .nb-icon-button__icon,
+.nb-icon-button.nb-button--rounded-ltop .nb-icon-button__icon,
+.nb-icon-button.nb-button--rounded-lbottom .nb-icon-button__icon {
+  transform: translateX(calc(var(--nb-btn-hdef) - var(--nb-btn-comp) - var(--nb-btn-tweak)));
+}

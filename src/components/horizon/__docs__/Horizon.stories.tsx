@@ -80,7 +80,7 @@ const meta = {
     distance: 10,
     distanceGrowthFactor: 1.05,
     thicknessDecayFactor: 0.95,
-    className: 'w-full',
+    className: 'nb-demo-w-full',
     inverse: false,
   },
 } satisfies Meta<typeof Horizon>;

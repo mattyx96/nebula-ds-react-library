@@ -3,7 +3,6 @@ import { defineConfig } from 'vitest/config';
 import dts from 'vite-plugin-dts';
 import react from '@vitejs/plugin-react';
 import path from 'path';
-import tailwindcss from 'tailwindcss';
 
 export default defineConfig({
   server: {
@@ -12,10 +11,11 @@ export default defineConfig({
   build: {
     copyPublicDir: false,
     lib: {
-      entry: path.resolve(__dirname, 'index.ts'),
+      entry: path.resolve(import.meta.dirname, 'index.ts'),
       name: 'nebula-ds-react-library',
       formats: ['es', 'cjs', 'umd'],
       fileName: (format) => `index.${format}.js`,
+      cssFileName: 'style',
     },
     rollupOptions: {
       external: ['react', 'react-dom', 'react/jsx-runtime'],
@@ -38,16 +38,14 @@ export default defineConfig({
         'src/**/*.test.tsx',
         'src/**/*.stories.ts',
         'src/**/*.stories.tsx',
+        'src/App.tsx',
+        'src/main.tsx',
+        'src/pages/**',
+        'src/stories/**',
       ],
-      outDir: 'dist/types',
-      insertTypesEntry: true,
     }),
   ],
-  css: {
-    postcss: {
-      plugins: [tailwindcss('./tailwind.config.mjs')],
-    },
-  },
+  css: {},
   test: {
     globals: true,
     environment: 'jsdom',

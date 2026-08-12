@@ -18,7 +18,7 @@ export const FramePanelFullPage = () => {
 
   const actionsFooter = <>
     <IconButton size={breakpoint.isDesktop ? 'M' : 'S'} variant="standard" icon={<CodeBracketIcon/>}/>
-    <Button size={breakpoint.isDesktop ? 'M' : 'S'} className={breakpoint.isDesktop ? 'ml-2' : 'ml-1 w-full'}
+    <Button size={breakpoint.isDesktop ? 'M' : 'S'} className={breakpoint.isDesktop ? 'nb-demo-ml-2' : 'nb-demo-ml-1 nb-demo-w-full'}
             rounded="R"
             variant="outlined" text="Open"
             rightIcon={<ArrowRightIcon/>}/>
@@ -37,9 +37,9 @@ export const FramePanelFullPage = () => {
 
 
   return (
-    <div className="absolute inset-0 flex flex-col p-5 bg-background-primary h-screen w-screen">
+    <div className="nb-demo-full">
       <FramePanel
-        className="flex flex-col flex-grow"
+        className="nb-demo-flex-grow"
         renderHeader={actions}
         renderFooter={actionsFooter}
         renderSide={sideActions}
@@ -54,7 +54,7 @@ export const FramePanelFullPage = () => {
         title="Welcome"
         inverse={inverse}
       >
-        <div className="flex flex-col flex-grow bg-background-accent-200 w-full rounded-lg"/>
+        <div className="nb-demo-full__content"/>
       </FramePanel>
     </div>
   )

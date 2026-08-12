@@ -6,14 +6,13 @@ import {useState} from "react";
 export const HorizonPage = () => {
   const [inverse, setInverse] = useState(false);
   return (
-    <div className={`absolute left-0 right-0 ${inverse ? 'bottom-0' : 'top-20'}`}>
+    <div className={`nb-demo-horizon ${inverse ? 'nb-demo-horizon--bottom' : 'nb-demo-horizon--top'}`}>
       <Button size="S" variant="standard" text="invert" onClick={() => setInverse(!inverse)}/>
-      {!inverse && <div className="h-[30rem] w-full bg-background-contrast-primary-500"/>}
+      {!inverse && <div className="nb-demo-horizon__fill"/>}
       <Horizon color={lightJsTokens.nbBackgroundContrastPrimary500} numLines={19} lineThickness={10} distance={7}
                distanceGrowthFactor={1}
-               thicknessDecayFactor={0.9} className="w-full" inverse={inverse}/>
-      {inverse && <div className="h-[30rem] w-full bg-background-contrast-primary-500"/>}
+               thicknessDecayFactor={0.9} className="nb-demo-w-full" inverse={inverse}/>
+      {inverse && <div className="nb-demo-horizon__fill"/>}
     </div>
   )
 }
-

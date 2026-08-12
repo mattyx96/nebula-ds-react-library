@@ -1,0 +1,292 @@
+/* Nebula Design System — demo layout styles.
+ * Used only by the internal dev app (src/pages) and Storybook stories.
+ * NOT part of the published library CSS.
+ */
+
+/* ---- shared demo/story primitives ---- */
+.nb-demo-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.nb-demo-row--lg {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.nb-demo-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--nb-4);
+}
+
+.nb-demo-w-full {
+  width: 100%;
+}
+
+.nb-demo-leading-0 {
+  line-height: 0;
+}
+
+.nb-demo-flex-grow {
+  flex-grow: 1;
+}
+
+.nb-demo-ml-1 {
+  margin-left: 4px;
+}
+
+.nb-demo-ml-2 {
+  margin-left: 8px;
+}
+
+.nb-demo-span-2 {
+  grid-column: span 2 / span 2;
+}
+
+.nb-demo-span-3 {
+  grid-column: span 3 / span 3;
+}
+
+.nb-demo-actions {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--nb-4);
+  align-items: center;
+}
+
+.nb-demo-block {
+  height: 160px;
+  min-width: 240px;
+  width: 100%;
+  background-color: var(--nb-background-accent-200);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.nb-demo-block--tall {
+  height: 208px;
+}
+
+/* ---- App / nav ---- */
+.nb-app {
+  background-color: var(--nb-background-primary);
+  min-height: 100vh;
+}
+
+.nb-app__nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--nb-3);
+  padding: 20px;
+}
+
+.nb-app__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+/* ---- Buttons page ---- */
+.nb-demo-buttons__section {
+  margin-bottom: 40px;
+}
+
+.nb-demo-buttons__title {
+  margin-bottom: var(--nb-4);
+}
+
+.nb-demo-buttons__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--nb-4);
+}
+
+/* ---- Panels page ---- */
+.nb-demo-panels {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.nb-demo-panels__group-title {
+  margin-bottom: 20px;
+}
+
+.nb-demo-panels__panel {
+  margin-top: 80px;
+}
+
+/* ---- Typography page ---- */
+.nb-demo-typography {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: flex-start;
+  max-width: 100%;
+  padding-bottom: 80px;
+}
+
+/* ---- Tokens page ---- */
+.nb-demo-tokens {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--nb-3);
+  width: 100%;
+}
+
+.nb-demo-tokens__item {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.nb-demo-tokens__col {
+  grid-column: span 1 / span 1;
+}
+
+.nb-demo-tokens__preview {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.nb-demo-tokens__preview-inner {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 3px;
+  padding: 8px 0;
+}
+
+/* ---- FrameConnector page ---- */
+.nb-demo-frame-connector {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+}
+
+.nb-demo-frame-connector__row {
+  display: flex;
+  flex: 1;
+  gap: var(--nb-4);
+  align-items: flex-end;
+}
+
+.nb-demo-frame-connector__flip {
+  transform: scaleY(-1);
+}
+
+.nb-demo-frame-connector__vertical {
+  height: 720px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* ---- Horizon page ---- */
+.nb-demo-horizon {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.nb-demo-horizon--top {
+  top: 80px;
+}
+
+.nb-demo-horizon--bottom {
+  bottom: 0;
+}
+
+.nb-demo-horizon__fill {
+  height: 480px;
+  width: 100%;
+  background-color: var(--nb-background-contrast-primary-500);
+}
+
+/* ---- FramePanel page ---- */
+.nb-demo-frame-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  padding: 0 4px 128px;
+}
+
+.nb-demo-frame-panel__title {
+  font-size: var(--nb-font-size-5);
+  font-weight: var(--nb-font-weights-orbitron-0);
+  line-height: 0;
+}
+
+@media (min-width: 1280px) {
+  .nb-demo-frame-panel__title {
+    font-size: var(--nb-font-size-8);
+  }
+}
+
+.nb-demo-frame-panel__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.nb-demo-fill {
+  height: 384px;
+  width: 100%;
+  background-color: var(--nb-background-contrast-primary-500);
+  border-radius: 8px;
+}
+
+/* ---- FramePanelFullPage ---- */
+.nb-demo-full {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: var(--nb-background-primary);
+  height: 100vh;
+  width: 100vw;
+}
+
+.nb-demo-full__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background-color: var(--nb-background-accent-200);
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* resizable container to exercise FramePanel container queries */
+.nb-demo-resizable {
+  resize: both;
+  overflow: auto;
+  border: 2px solid var(--nb-background-accent-500);
+  padding: var(--nb-4);
+  min-width: 280px;
+  min-height: 240px;
+  max-width: 100%;
+  display: flex;
+}

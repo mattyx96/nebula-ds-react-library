@@ -27,4 +27,5 @@ dist-ssr
 
 storybook-static
 *.mjs
+!.scripts/generate-themes.mjs
 public/design-tokens.source.json

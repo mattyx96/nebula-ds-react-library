@@ -1,16 +1,20 @@
 import {render, screen} from '@testing-library/react';
-import {describe, it, expect, vi, beforeEach, Mock} from 'vitest';
+import {describe, it, expect, vi, beforeEach} from 'vitest';
 import {useBreakpoint} from '../../../hook/useBreakpoint';
 import {FramePanel} from "../FramePanel.tsx";
 
+vi.mock('../../../hook/useBreakpoint', () => ({
+  useBreakpoint: vi.fn(),
+}));
+
 describe('FramePanel with mocked useBreakpoint', () => {
   beforeEach(() => {
-    (useBreakpoint as Mock).mockReturnValue(() => ({
-      current: 'sm',
-      isDesktop: false,
+    vi.mocked(useBreakpoint).mockReturnValue({
+      current: 'lg',
+      isDesktop: true,
       isMobile: false,
       isTablet: false,
-    }));
+    });
   });
 
   it('renders correctly on desktop', () => {
@@ -20,7 +24,7 @@ describe('FramePanel with mocked useBreakpoint', () => {
         renderHeader={<div>Header</div>}
         renderFooter={<div>Footer</div>}
       >
-        <div className="h-96 bg-background-contrast-primary-500 w-full rounded-lg"/>
+        <div className="nb-demo-fill"/>
       </FramePanel>
     );
     expect(container).toMatchSnapshot();
@@ -42,7 +46,7 @@ describe('FramePanel with mocked useBreakpoint', () => {
         renderHeader={<div>Header</div>}
         renderFooter={<div>Footer</div>}
       >
-        <div className="h-96 bg-background-contrast-primary-500 w-full rounded-lg"/>
+        <div className="nb-demo-fill"/>
       </FramePanel>
     );
     expect(container).toMatchSnapshot();
@@ -63,7 +67,7 @@ describe('FramePanel with mocked useBreakpoint', () => {
         renderHeader={<div>Header</div>}
         renderFooter={<div>Footer</div>}
       >
-        <div className="h-96 bg-background-contrast-primary-500 w-full rounded-lg"/>
+        <div className="nb-demo-fill"/>
       </FramePanel>
     );
     expect(container).toMatchSnapshot();

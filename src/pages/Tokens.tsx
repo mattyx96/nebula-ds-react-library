@@ -7,7 +7,7 @@ type TailwindTokenKeys = keyof ReturnType<typeof tw.generateTailwindCompatibleTh
 
 export const TokensPage = () => {
   return (
-    <div className="flex w-full flex-col items-start gap-3">
+    <div className="nb-demo-tokens">
       {Object.entries(tw.generateTailwindCompatibleTheme()).map(([containerKey, containerValue]) => (
         <>
           <Text component="h3" variant="header3">
@@ -15,16 +15,16 @@ export const TokensPage = () => {
           </Text>
           {Object.entries(containerValue).map(([tokenKey, tokenValue]) => (
             <Paper
-              className="w-full"
+              className="nb-demo-w-full"
               outline="50"
               round="xs"
               key={tokenKey}
             >
-              <div className="w-full h-full items-center grid grid-cols-3">
-                <Text component="h5" variant="header5" className="col-span-1">
+              <div className="nb-demo-tokens__item">
+                <Text component="h5" variant="header5" className="nb-demo-tokens__col">
                   {tokenKey}
                 </Text>
-                <Text component="p" variant="body1" className="col-span-1">
+                <Text component="p" variant="body1" className="nb-demo-tokens__col">
                   {tokenValue?.toString()}
                 </Text>
                 <TokenPreview
@@ -99,8 +99,8 @@ const TokenPreview = (props: { tokenType: TailwindTokenKeys, tokenKey: string, t
   }
 
   return (
-    <div className="overflow-hidden rounded-md w-full" style={containerStyle}>
-      <div className="h-full w-full col-span-1 flex justify-center items-center overflow-hidden rounded-sm py-2"
+    <div className="nb-demo-tokens__preview" style={containerStyle}>
+      <div className="nb-demo-tokens__preview-inner"
            style={style}>
         <Text style={textStyle} variant="body3">{tokenType === 'letterSpacing' ? 'Token' : tokenKey}</Text>
       </div>

@@ -1,3 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Demo app styles entry (dev app + Storybook).
+ * Library styles come first; demo layout helpers on top.
+ */
+@import './styles/index.css';
+@import './styles/demo.css';

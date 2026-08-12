@@ -1,0 +1,62 @@
+/* Nebula FrameConnector — plain CSS (was Tailwind utilities). */
+
+.nb-frame-connector {
+  display: flex;
+  --nb-fc-thickness: 6px;
+}
+
+.nb-frame-connector--size-s {
+  --nb-fc-thickness: 4px;
+}
+
+.nb-frame-connector--size-m {
+  --nb-fc-thickness: 6px;
+}
+
+.nb-frame-connector--size-l {
+  --nb-fc-thickness: 7px;
+}
+
+.nb-frame-connector--horizontal {
+  align-items: flex-end;
+  flex: 1;
+}
+
+.nb-frame-connector--vertical {
+  flex-direction: column;
+  width: fit-content;
+}
+
+.nb-frame-connector__node {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nb-frame-connector__node--flip {
+  transform: scaleX(-1);
+}
+
+.nb-frame-connector__node--vertical {
+  transform: rotate(90deg);
+  transform-origin: center;
+}
+
+.nb-frame-connector__node--flip.nb-frame-connector__node--vertical {
+  transform: rotate(90deg) scaleX(-1);
+}
+
+.nb-frame-connector__bridge {
+  background-color: var(--nb-frame-background-primary);
+}
+
+.nb-frame-connector__bridge--horizontal {
+  width: 100%;
+  height: var(--nb-fc-thickness);
+}
+
+.nb-frame-connector__bridge--vertical {
+  height: 100%;
+  flex: 1;
+  width: var(--nb-fc-thickness);
+}

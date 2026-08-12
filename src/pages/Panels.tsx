@@ -5,9 +5,9 @@ import {Text} from "../components/typography/Typography";
 
 export const Panels = () => {
   const actions = (
-    <div className="grid grid-cols-5 gap-4 items-center">
-      <Button className="w-full col-span-3" size="S" variant="standard" text="Cancel"/>
-      <Button className="w-full col-span-2" rounded="R" size="S" variant="filled" text="Do it"/>
+    <div className="nb-demo-actions">
+      <Button className="nb-demo-w-full nb-demo-span-3" size="S" variant="standard" text="Cancel"/>
+      <Button className="nb-demo-w-full nb-demo-span-2" rounded="R" size="S" variant="filled" text="Do it"/>
     </div>
   )
 
@@ -16,22 +16,22 @@ export const Panels = () => {
   )
 
   const content = (content = 'Content here') => (
-    <div className="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md">
+    <div className="nb-demo-block">
       <Text component="span" variant="body1">{content}</Text>
     </div>
   )
 
   return (
-    <div className="flex items-center justify-center gap-10 flex-wrap">
+    <div className="nb-demo-panels">
       {
         panelRoundVariants.map((round) =>
           <div key={round}>
-            <Text component="h3" variant="header3">{`Round: ${round}`}</Text>
+            <Text component="h3" variant="header3" className="nb-demo-panels__group-title">{`Round: ${round}`}</Text>
             {panelOutlineVariants.map((outline) => {
               return (
                 <Paper
                   key={`${round}-${outline}`}
-                  className="mt-20"
+                  className="nb-demo-panels__panel"
                   round={round}
                   outline={outline}
                   renderTitle={title(round + '-' + outline)}
@@ -47,7 +47,7 @@ export const Panels = () => {
               return (
                 <Paper
                   key={`${round}-${outline}-no-actions`}
-                  className="mt-20"
+                  className="nb-demo-panels__panel"
                   round={round}
                   outline={outline}
                   renderTitle={title(round + '-' + outline + '-no actions')}
@@ -62,7 +62,7 @@ export const Panels = () => {
               return (
                 <Paper
                   key={`${round}-${outline}-no`}
-                  className="mt-20"
+                  className="nb-demo-panels__panel"
                   round={round}
                   outline={outline}
                 >

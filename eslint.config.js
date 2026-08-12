@@ -37,6 +37,14 @@ export default [
   // Fix configuration rules for React plugin compatibility
   ...fixupConfigRules(pluginReactConfig),
 
+  {
+    settings: {
+      react: {
+        version: '19.0',
+      },
+    },
+  },
+
   // Merge custom ESLint rules here if needed
 
   // Custom rules from .eslintrc.cjs

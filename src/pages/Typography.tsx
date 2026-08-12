@@ -6,7 +6,7 @@ const text = `Lorem ipsum dolor sit amet consectetur adipiscing elit sociis hime
 
 export const TypographyPage = () => {
   return (
-    <div className="flex flex-col gap-20 items-start max-w-full pb-20">
+    <div className="nb-demo-typography">
       <Text component="h1" variant="display1">display1: {displayText}</Text>
       <Text component="h2" variant="display2">display2: {displayText}</Text>
       <Text component="h1" variant="header1">header1: {headerText}</Text>

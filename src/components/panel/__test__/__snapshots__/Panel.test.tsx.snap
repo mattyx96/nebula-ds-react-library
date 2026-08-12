@@ -3,65 +3,39 @@
 exports[`Paper > renders correctly with round: lg, outline: 50, with actions and title 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="pb-4"
+      class="nb-panel__title"
     >
       <h6>
         lg-50
       </h6>
     </div>
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-paper-border-radius-big border-background-contrast-primary-50 shadow-[0_1px_6px_rgb(0,0,0,0.07)]"
+      class="nb-panel__inner nb-panel--round-lg nb-panel--outline-50"
       outline="50"
       round="lg"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           lg-50-actions & title
         </span>
       </div>
       <div
-        class="grid grid-cols-5 gap-4 items-center"
+        class="nb-demo-actions"
       >
         <button
-          class="
-    flex flex-row items-center justify-center gap-3
-    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
-    ring-border-1
-    hover:ring-background-contrast-primary-500
-    hover:ring-border-2
-    active:ring-button-background-secondary 
-    active:bg-button-background-pressed 
-    focus:outline-0 focus:ring-background-contrast-primary-500 
-    disabled:cursor-not-allowed
-    disabled:opacity-button-opacity-disabled
-   ring-background-accent-200 px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default w-full col-span-3"
+          class="nb-button nb-button--standard nb-button--size-s nb-button--rounded-default nb-demo-w-full nb-demo-span-3"
           type="button"
           variant="standard"
         >
           Cancel
         </button>
         <button
-          class="
-    flex flex-row items-center justify-center gap-3
-    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
-    ring-border-1
-    hover:ring-background-contrast-primary-500
-    hover:ring-border-2
-    active:ring-button-background-secondary 
-    active:bg-button-background-pressed 
-    focus:outline-0 focus:ring-background-contrast-primary-500 
-    disabled:cursor-not-allowed
-    disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big w-full col-span-2"
+          class="nb-button nb-button--filled nb-button--size-s nb-button--rounded-r nb-demo-w-full nb-demo-span-2"
           rounded="R"
           type="button"
           variant="filled"
@@ -77,19 +51,15 @@ exports[`Paper > renders correctly with round: lg, outline: 50, with actions and
 exports[`Paper > renders correctly with round: lg, outline: 50, with content only 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-paper-border-radius-big border-background-contrast-primary-50 shadow-[0_1px_6px_rgb(0,0,0,0.07)]"
+      class="nb-panel__inner nb-panel--round-lg nb-panel--outline-50"
       outline="50"
       round="lg"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           lg-50-content only
@@ -103,26 +73,22 @@ exports[`Paper > renders correctly with round: lg, outline: 50, with content onl
 exports[`Paper > renders correctly with round: lg, outline: 50, with title only 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="pb-4"
+      class="nb-panel__title"
     >
       <h6>
         lg-50-no actions
       </h6>
     </div>
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-paper-border-radius-big border-background-contrast-primary-50 shadow-[0_1px_6px_rgb(0,0,0,0.07)]"
+      class="nb-panel__inner nb-panel--round-lg nb-panel--outline-50"
       outline="50"
       round="lg"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           lg-50-title only
@@ -136,65 +102,39 @@ exports[`Paper > renders correctly with round: lg, outline: 50, with title only 
 exports[`Paper > renders correctly with round: lg, outline: 200, with actions and title 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="pb-4"
+      class="nb-panel__title"
     >
       <h6>
         lg-200
       </h6>
     </div>
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-paper-border-radius-big border-background-accent-200"
+      class="nb-panel__inner nb-panel--round-lg nb-panel--outline-200"
       outline="200"
       round="lg"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           lg-200-actions & title
         </span>
       </div>
       <div
-        class="grid grid-cols-5 gap-4 items-center"
+        class="nb-demo-actions"
       >
         <button
-          class="
-    flex flex-row items-center justify-center gap-3
-    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
-    ring-border-1
-    hover:ring-background-contrast-primary-500
-    hover:ring-border-2
-    active:ring-button-background-secondary 
-    active:bg-button-background-pressed 
-    focus:outline-0 focus:ring-background-contrast-primary-500 
-    disabled:cursor-not-allowed
-    disabled:opacity-button-opacity-disabled
-   ring-background-accent-200 px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default w-full col-span-3"
+          class="nb-button nb-button--standard nb-button--size-s nb-button--rounded-default nb-demo-w-full nb-demo-span-3"
           type="button"
           variant="standard"
         >
           Cancel
         </button>
         <button
-          class="
-    flex flex-row items-center justify-center gap-3
-    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
-    ring-border-1
-    hover:ring-background-contrast-primary-500
-    hover:ring-border-2
-    active:ring-button-background-secondary 
-    active:bg-button-background-pressed 
-    focus:outline-0 focus:ring-background-contrast-primary-500 
-    disabled:cursor-not-allowed
-    disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big w-full col-span-2"
+          class="nb-button nb-button--filled nb-button--size-s nb-button--rounded-r nb-demo-w-full nb-demo-span-2"
           rounded="R"
           type="button"
           variant="filled"
@@ -210,19 +150,15 @@ exports[`Paper > renders correctly with round: lg, outline: 200, with actions an
 exports[`Paper > renders correctly with round: lg, outline: 200, with content only 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-paper-border-radius-big border-background-accent-200"
+      class="nb-panel__inner nb-panel--round-lg nb-panel--outline-200"
       outline="200"
       round="lg"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           lg-200-content only
@@ -236,26 +172,22 @@ exports[`Paper > renders correctly with round: lg, outline: 200, with content on
 exports[`Paper > renders correctly with round: lg, outline: 200, with title only 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="pb-4"
+      class="nb-panel__title"
     >
       <h6>
         lg-200-no actions
       </h6>
     </div>
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-paper-border-radius-big border-background-accent-200"
+      class="nb-panel__inner nb-panel--round-lg nb-panel--outline-200"
       outline="200"
       round="lg"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           lg-200-title only
@@ -269,65 +201,39 @@ exports[`Paper > renders correctly with round: lg, outline: 200, with title only
 exports[`Paper > renders correctly with round: lg, outline: 500, with actions and title 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="pb-4"
+      class="nb-panel__title"
     >
       <h6>
         lg-500
       </h6>
     </div>
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-paper-border-radius-big border-background-accent-500"
+      class="nb-panel__inner nb-panel--round-lg nb-panel--outline-500"
       outline="500"
       round="lg"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           lg-500-actions & title
         </span>
       </div>
       <div
-        class="grid grid-cols-5 gap-4 items-center"
+        class="nb-demo-actions"
       >
         <button
-          class="
-    flex flex-row items-center justify-center gap-3
-    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
-    ring-border-1
-    hover:ring-background-contrast-primary-500
-    hover:ring-border-2
-    active:ring-button-background-secondary 
-    active:bg-button-background-pressed 
-    focus:outline-0 focus:ring-background-contrast-primary-500 
-    disabled:cursor-not-allowed
-    disabled:opacity-button-opacity-disabled
-   ring-background-accent-200 px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default w-full col-span-3"
+          class="nb-button nb-button--standard nb-button--size-s nb-button--rounded-default nb-demo-w-full nb-demo-span-3"
           type="button"
           variant="standard"
         >
           Cancel
         </button>
         <button
-          class="
-    flex flex-row items-center justify-center gap-3
-    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
-    ring-border-1
-    hover:ring-background-contrast-primary-500
-    hover:ring-border-2
-    active:ring-button-background-secondary 
-    active:bg-button-background-pressed 
-    focus:outline-0 focus:ring-background-contrast-primary-500 
-    disabled:cursor-not-allowed
-    disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big w-full col-span-2"
+          class="nb-button nb-button--filled nb-button--size-s nb-button--rounded-r nb-demo-w-full nb-demo-span-2"
           rounded="R"
           type="button"
           variant="filled"
@@ -343,19 +249,15 @@ exports[`Paper > renders correctly with round: lg, outline: 500, with actions an
 exports[`Paper > renders correctly with round: lg, outline: 500, with content only 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-paper-border-radius-big border-background-accent-500"
+      class="nb-panel__inner nb-panel--round-lg nb-panel--outline-500"
       outline="500"
       round="lg"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           lg-500-content only
@@ -369,26 +271,22 @@ exports[`Paper > renders correctly with round: lg, outline: 500, with content on
 exports[`Paper > renders correctly with round: lg, outline: 500, with title only 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="pb-4"
+      class="nb-panel__title"
     >
       <h6>
         lg-500-no actions
       </h6>
     </div>
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-paper-border-radius-big border-background-accent-500"
+      class="nb-panel__inner nb-panel--round-lg nb-panel--outline-500"
       outline="500"
       round="lg"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           lg-500-title only
@@ -402,65 +300,39 @@ exports[`Paper > renders correctly with round: lg, outline: 500, with title only
 exports[`Paper > renders correctly with round: lg, outline: 700, with actions and title 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="pb-4"
+      class="nb-panel__title"
     >
       <h6>
         lg-700
       </h6>
     </div>
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-paper-border-radius-big border-background-contrast-primary-200"
+      class="nb-panel__inner nb-panel--round-lg nb-panel--outline-700"
       outline="700"
       round="lg"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           lg-700-actions & title
         </span>
       </div>
       <div
-        class="grid grid-cols-5 gap-4 items-center"
+        class="nb-demo-actions"
       >
         <button
-          class="
-    flex flex-row items-center justify-center gap-3
-    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
-    ring-border-1
-    hover:ring-background-contrast-primary-500
-    hover:ring-border-2
-    active:ring-button-background-secondary 
-    active:bg-button-background-pressed 
-    focus:outline-0 focus:ring-background-contrast-primary-500 
-    disabled:cursor-not-allowed
-    disabled:opacity-button-opacity-disabled
-   ring-background-accent-200 px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default w-full col-span-3"
+          class="nb-button nb-button--standard nb-button--size-s nb-button--rounded-default nb-demo-w-full nb-demo-span-3"
           type="button"
           variant="standard"
         >
           Cancel
         </button>
         <button
-          class="
-    flex flex-row items-center justify-center gap-3
-    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
-    ring-border-1
-    hover:ring-background-contrast-primary-500
-    hover:ring-border-2
-    active:ring-button-background-secondary 
-    active:bg-button-background-pressed 
-    focus:outline-0 focus:ring-background-contrast-primary-500 
-    disabled:cursor-not-allowed
-    disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big w-full col-span-2"
+          class="nb-button nb-button--filled nb-button--size-s nb-button--rounded-r nb-demo-w-full nb-demo-span-2"
           rounded="R"
           type="button"
           variant="filled"
@@ -476,19 +348,15 @@ exports[`Paper > renders correctly with round: lg, outline: 700, with actions an
 exports[`Paper > renders correctly with round: lg, outline: 700, with content only 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-paper-border-radius-big border-background-contrast-primary-200"
+      class="nb-panel__inner nb-panel--round-lg nb-panel--outline-700"
       outline="700"
       round="lg"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           lg-700-content only
@@ -502,26 +370,22 @@ exports[`Paper > renders correctly with round: lg, outline: 700, with content on
 exports[`Paper > renders correctly with round: lg, outline: 700, with title only 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="pb-4"
+      class="nb-panel__title"
     >
       <h6>
         lg-700-no actions
       </h6>
     </div>
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-paper-border-radius-big border-background-contrast-primary-200"
+      class="nb-panel__inner nb-panel--round-lg nb-panel--outline-700"
       outline="700"
       round="lg"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           lg-700-title only
@@ -535,65 +399,39 @@ exports[`Paper > renders correctly with round: lg, outline: 700, with title only
 exports[`Paper > renders correctly with round: no, outline: 50, with actions and title 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="pb-4"
+      class="nb-panel__title"
     >
       <h6>
         no-50
       </h6>
     </div>
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-border-radius-default border-background-contrast-primary-50 shadow-[0_1px_6px_rgb(0,0,0,0.07)]"
+      class="nb-panel__inner nb-panel--round-no nb-panel--outline-50"
       outline="50"
       round="no"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           no-50-actions & title
         </span>
       </div>
       <div
-        class="grid grid-cols-5 gap-4 items-center"
+        class="nb-demo-actions"
       >
         <button
-          class="
-    flex flex-row items-center justify-center gap-3
-    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
-    ring-border-1
-    hover:ring-background-contrast-primary-500
-    hover:ring-border-2
-    active:ring-button-background-secondary 
-    active:bg-button-background-pressed 
-    focus:outline-0 focus:ring-background-contrast-primary-500 
-    disabled:cursor-not-allowed
-    disabled:opacity-button-opacity-disabled
-   ring-background-accent-200 px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default w-full col-span-3"
+          class="nb-button nb-button--standard nb-button--size-s nb-button--rounded-default nb-demo-w-full nb-demo-span-3"
           type="button"
           variant="standard"
         >
           Cancel
         </button>
         <button
-          class="
-    flex flex-row items-center justify-center gap-3
-    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
-    ring-border-1
-    hover:ring-background-contrast-primary-500
-    hover:ring-border-2
-    active:ring-button-background-secondary 
-    active:bg-button-background-pressed 
-    focus:outline-0 focus:ring-background-contrast-primary-500 
-    disabled:cursor-not-allowed
-    disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big w-full col-span-2"
+          class="nb-button nb-button--filled nb-button--size-s nb-button--rounded-r nb-demo-w-full nb-demo-span-2"
           rounded="R"
           type="button"
           variant="filled"
@@ -609,19 +447,15 @@ exports[`Paper > renders correctly with round: no, outline: 50, with actions and
 exports[`Paper > renders correctly with round: no, outline: 50, with content only 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-border-radius-default border-background-contrast-primary-50 shadow-[0_1px_6px_rgb(0,0,0,0.07)]"
+      class="nb-panel__inner nb-panel--round-no nb-panel--outline-50"
       outline="50"
       round="no"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           no-50-content only
@@ -635,26 +469,22 @@ exports[`Paper > renders correctly with round: no, outline: 50, with content onl
 exports[`Paper > renders correctly with round: no, outline: 50, with title only 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="pb-4"
+      class="nb-panel__title"
     >
       <h6>
         no-50-no actions
       </h6>
     </div>
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-border-radius-default border-background-contrast-primary-50 shadow-[0_1px_6px_rgb(0,0,0,0.07)]"
+      class="nb-panel__inner nb-panel--round-no nb-panel--outline-50"
       outline="50"
       round="no"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           no-50-title only
@@ -668,65 +498,39 @@ exports[`Paper > renders correctly with round: no, outline: 50, with title only 
 exports[`Paper > renders correctly with round: no, outline: 200, with actions and title 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="pb-4"
+      class="nb-panel__title"
     >
       <h6>
         no-200
       </h6>
     </div>
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-border-radius-default border-background-accent-200"
+      class="nb-panel__inner nb-panel--round-no nb-panel--outline-200"
       outline="200"
       round="no"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           no-200-actions & title
         </span>
       </div>
       <div
-        class="grid grid-cols-5 gap-4 items-center"
+        class="nb-demo-actions"
       >
         <button
-          class="
-    flex flex-row items-center justify-center gap-3
-    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
-    ring-border-1
-    hover:ring-background-contrast-primary-500
-    hover:ring-border-2
-    active:ring-button-background-secondary 
-    active:bg-button-background-pressed 
-    focus:outline-0 focus:ring-background-contrast-primary-500 
-    disabled:cursor-not-allowed
-    disabled:opacity-button-opacity-disabled
-   ring-background-accent-200 px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default w-full col-span-3"
+          class="nb-button nb-button--standard nb-button--size-s nb-button--rounded-default nb-demo-w-full nb-demo-span-3"
           type="button"
           variant="standard"
         >
           Cancel
         </button>
         <button
-          class="
-    flex flex-row items-center justify-center gap-3
-    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
-    ring-border-1
-    hover:ring-background-contrast-primary-500
-    hover:ring-border-2
-    active:ring-button-background-secondary 
-    active:bg-button-background-pressed 
-    focus:outline-0 focus:ring-background-contrast-primary-500 
-    disabled:cursor-not-allowed
-    disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big w-full col-span-2"
+          class="nb-button nb-button--filled nb-button--size-s nb-button--rounded-r nb-demo-w-full nb-demo-span-2"
           rounded="R"
           type="button"
           variant="filled"
@@ -742,19 +546,15 @@ exports[`Paper > renders correctly with round: no, outline: 200, with actions an
 exports[`Paper > renders correctly with round: no, outline: 200, with content only 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-border-radius-default border-background-accent-200"
+      class="nb-panel__inner nb-panel--round-no nb-panel--outline-200"
       outline="200"
       round="no"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           no-200-content only
@@ -768,26 +568,22 @@ exports[`Paper > renders correctly with round: no, outline: 200, with content on
 exports[`Paper > renders correctly with round: no, outline: 200, with title only 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="pb-4"
+      class="nb-panel__title"
     >
       <h6>
         no-200-no actions
       </h6>
     </div>
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-border-radius-default border-background-accent-200"
+      class="nb-panel__inner nb-panel--round-no nb-panel--outline-200"
       outline="200"
       round="no"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           no-200-title only
@@ -801,65 +597,39 @@ exports[`Paper > renders correctly with round: no, outline: 200, with title only
 exports[`Paper > renders correctly with round: no, outline: 500, with actions and title 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="pb-4"
+      class="nb-panel__title"
     >
       <h6>
         no-500
       </h6>
     </div>
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-border-radius-default border-background-accent-500"
+      class="nb-panel__inner nb-panel--round-no nb-panel--outline-500"
       outline="500"
       round="no"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           no-500-actions & title
         </span>
       </div>
       <div
-        class="grid grid-cols-5 gap-4 items-center"
+        class="nb-demo-actions"
       >
         <button
-          class="
-    flex flex-row items-center justify-center gap-3
-    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
-    ring-border-1
-    hover:ring-background-contrast-primary-500
-    hover:ring-border-2
-    active:ring-button-background-secondary 
-    active:bg-button-background-pressed 
-    focus:outline-0 focus:ring-background-contrast-primary-500 
-    disabled:cursor-not-allowed
-    disabled:opacity-button-opacity-disabled
-   ring-background-accent-200 px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default w-full col-span-3"
+          class="nb-button nb-button--standard nb-button--size-s nb-button--rounded-default nb-demo-w-full nb-demo-span-3"
           type="button"
           variant="standard"
         >
           Cancel
         </button>
         <button
-          class="
-    flex flex-row items-center justify-center gap-3
-    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
-    ring-border-1
-    hover:ring-background-contrast-primary-500
-    hover:ring-border-2
-    active:ring-button-background-secondary 
-    active:bg-button-background-pressed 
-    focus:outline-0 focus:ring-background-contrast-primary-500 
-    disabled:cursor-not-allowed
-    disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big w-full col-span-2"
+          class="nb-button nb-button--filled nb-button--size-s nb-button--rounded-r nb-demo-w-full nb-demo-span-2"
           rounded="R"
           type="button"
           variant="filled"
@@ -875,19 +645,15 @@ exports[`Paper > renders correctly with round: no, outline: 500, with actions an
 exports[`Paper > renders correctly with round: no, outline: 500, with content only 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-border-radius-default border-background-accent-500"
+      class="nb-panel__inner nb-panel--round-no nb-panel--outline-500"
       outline="500"
       round="no"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           no-500-content only
@@ -901,26 +667,22 @@ exports[`Paper > renders correctly with round: no, outline: 500, with content on
 exports[`Paper > renders correctly with round: no, outline: 500, with title only 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="pb-4"
+      class="nb-panel__title"
     >
       <h6>
         no-500-no actions
       </h6>
     </div>
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-border-radius-default border-background-accent-500"
+      class="nb-panel__inner nb-panel--round-no nb-panel--outline-500"
       outline="500"
       round="no"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           no-500-title only
@@ -934,65 +696,39 @@ exports[`Paper > renders correctly with round: no, outline: 500, with title only
 exports[`Paper > renders correctly with round: no, outline: 700, with actions and title 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="pb-4"
+      class="nb-panel__title"
     >
       <h6>
         no-700
       </h6>
     </div>
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-border-radius-default border-background-contrast-primary-200"
+      class="nb-panel__inner nb-panel--round-no nb-panel--outline-700"
       outline="700"
       round="no"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           no-700-actions & title
         </span>
       </div>
       <div
-        class="grid grid-cols-5 gap-4 items-center"
+        class="nb-demo-actions"
       >
         <button
-          class="
-    flex flex-row items-center justify-center gap-3
-    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
-    ring-border-1
-    hover:ring-background-contrast-primary-500
-    hover:ring-border-2
-    active:ring-button-background-secondary 
-    active:bg-button-background-pressed 
-    focus:outline-0 focus:ring-background-contrast-primary-500 
-    disabled:cursor-not-allowed
-    disabled:opacity-button-opacity-disabled
-   ring-background-accent-200 px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default w-full col-span-3"
+          class="nb-button nb-button--standard nb-button--size-s nb-button--rounded-default nb-demo-w-full nb-demo-span-3"
           type="button"
           variant="standard"
         >
           Cancel
         </button>
         <button
-          class="
-    flex flex-row items-center justify-center gap-3
-    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
-    ring-border-1
-    hover:ring-background-contrast-primary-500
-    hover:ring-border-2
-    active:ring-button-background-secondary 
-    active:bg-button-background-pressed 
-    focus:outline-0 focus:ring-background-contrast-primary-500 
-    disabled:cursor-not-allowed
-    disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big w-full col-span-2"
+          class="nb-button nb-button--filled nb-button--size-s nb-button--rounded-r nb-demo-w-full nb-demo-span-2"
           rounded="R"
           type="button"
           variant="filled"
@@ -1008,19 +744,15 @@ exports[`Paper > renders correctly with round: no, outline: 700, with actions an
 exports[`Paper > renders correctly with round: no, outline: 700, with content only 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-border-radius-default border-background-contrast-primary-200"
+      class="nb-panel__inner nb-panel--round-no nb-panel--outline-700"
       outline="700"
       round="no"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           no-700-content only
@@ -1034,26 +766,22 @@ exports[`Paper > renders correctly with round: no, outline: 700, with content on
 exports[`Paper > renders correctly with round: no, outline: 700, with title only 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="pb-4"
+      class="nb-panel__title"
     >
       <h6>
         no-700-no actions
       </h6>
     </div>
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-border-radius-default border-background-contrast-primary-200"
+      class="nb-panel__inner nb-panel--round-no nb-panel--outline-700"
       outline="700"
       round="no"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           no-700-title only
@@ -1067,65 +795,39 @@ exports[`Paper > renders correctly with round: no, outline: 700, with title only
 exports[`Paper > renders correctly with round: xs, outline: 50, with actions and title 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="pb-4"
+      class="nb-panel__title"
     >
       <h6>
         xs-50
       </h6>
     </div>
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-paper-border-radius-md border-background-contrast-primary-50 shadow-[0_1px_6px_rgb(0,0,0,0.07)]"
+      class="nb-panel__inner nb-panel--round-xs nb-panel--outline-50"
       outline="50"
       round="xs"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           xs-50-actions & title
         </span>
       </div>
       <div
-        class="grid grid-cols-5 gap-4 items-center"
+        class="nb-demo-actions"
       >
         <button
-          class="
-    flex flex-row items-center justify-center gap-3
-    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
-    ring-border-1
-    hover:ring-background-contrast-primary-500
-    hover:ring-border-2
-    active:ring-button-background-secondary 
-    active:bg-button-background-pressed 
-    focus:outline-0 focus:ring-background-contrast-primary-500 
-    disabled:cursor-not-allowed
-    disabled:opacity-button-opacity-disabled
-   ring-background-accent-200 px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default w-full col-span-3"
+          class="nb-button nb-button--standard nb-button--size-s nb-button--rounded-default nb-demo-w-full nb-demo-span-3"
           type="button"
           variant="standard"
         >
           Cancel
         </button>
         <button
-          class="
-    flex flex-row items-center justify-center gap-3
-    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
-    ring-border-1
-    hover:ring-background-contrast-primary-500
-    hover:ring-border-2
-    active:ring-button-background-secondary 
-    active:bg-button-background-pressed 
-    focus:outline-0 focus:ring-background-contrast-primary-500 
-    disabled:cursor-not-allowed
-    disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big w-full col-span-2"
+          class="nb-button nb-button--filled nb-button--size-s nb-button--rounded-r nb-demo-w-full nb-demo-span-2"
           rounded="R"
           type="button"
           variant="filled"
@@ -1141,19 +843,15 @@ exports[`Paper > renders correctly with round: xs, outline: 50, with actions and
 exports[`Paper > renders correctly with round: xs, outline: 50, with content only 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-paper-border-radius-md border-background-contrast-primary-50 shadow-[0_1px_6px_rgb(0,0,0,0.07)]"
+      class="nb-panel__inner nb-panel--round-xs nb-panel--outline-50"
       outline="50"
       round="xs"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           xs-50-content only
@@ -1167,26 +865,22 @@ exports[`Paper > renders correctly with round: xs, outline: 50, with content onl
 exports[`Paper > renders correctly with round: xs, outline: 50, with title only 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="pb-4"
+      class="nb-panel__title"
     >
       <h6>
         xs-50-no actions
       </h6>
     </div>
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-paper-border-radius-md border-background-contrast-primary-50 shadow-[0_1px_6px_rgb(0,0,0,0.07)]"
+      class="nb-panel__inner nb-panel--round-xs nb-panel--outline-50"
       outline="50"
       round="xs"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           xs-50-title only
@@ -1200,65 +894,39 @@ exports[`Paper > renders correctly with round: xs, outline: 50, with title only 
 exports[`Paper > renders correctly with round: xs, outline: 200, with actions and title 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="pb-4"
+      class="nb-panel__title"
     >
       <h6>
         xs-200
       </h6>
     </div>
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-paper-border-radius-md border-background-accent-200"
+      class="nb-panel__inner nb-panel--round-xs nb-panel--outline-200"
       outline="200"
       round="xs"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           xs-200-actions & title
         </span>
       </div>
       <div
-        class="grid grid-cols-5 gap-4 items-center"
+        class="nb-demo-actions"
       >
         <button
-          class="
-    flex flex-row items-center justify-center gap-3
-    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
-    ring-border-1
-    hover:ring-background-contrast-primary-500
-    hover:ring-border-2
-    active:ring-button-background-secondary 
-    active:bg-button-background-pressed 
-    focus:outline-0 focus:ring-background-contrast-primary-500 
-    disabled:cursor-not-allowed
-    disabled:opacity-button-opacity-disabled
-   ring-background-accent-200 px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default w-full col-span-3"
+          class="nb-button nb-button--standard nb-button--size-s nb-button--rounded-default nb-demo-w-full nb-demo-span-3"
           type="button"
           variant="standard"
         >
           Cancel
         </button>
         <button
-          class="
-    flex flex-row items-center justify-center gap-3
-    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
-    ring-border-1
-    hover:ring-background-contrast-primary-500
-    hover:ring-border-2
-    active:ring-button-background-secondary 
-    active:bg-button-background-pressed 
-    focus:outline-0 focus:ring-background-contrast-primary-500 
-    disabled:cursor-not-allowed
-    disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big w-full col-span-2"
+          class="nb-button nb-button--filled nb-button--size-s nb-button--rounded-r nb-demo-w-full nb-demo-span-2"
           rounded="R"
           type="button"
           variant="filled"
@@ -1274,19 +942,15 @@ exports[`Paper > renders correctly with round: xs, outline: 200, with actions an
 exports[`Paper > renders correctly with round: xs, outline: 200, with content only 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-paper-border-radius-md border-background-accent-200"
+      class="nb-panel__inner nb-panel--round-xs nb-panel--outline-200"
       outline="200"
       round="xs"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           xs-200-content only
@@ -1300,26 +964,22 @@ exports[`Paper > renders correctly with round: xs, outline: 200, with content on
 exports[`Paper > renders correctly with round: xs, outline: 200, with title only 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="pb-4"
+      class="nb-panel__title"
     >
       <h6>
         xs-200-no actions
       </h6>
     </div>
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-paper-border-radius-md border-background-accent-200"
+      class="nb-panel__inner nb-panel--round-xs nb-panel--outline-200"
       outline="200"
       round="xs"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           xs-200-title only
@@ -1333,65 +993,39 @@ exports[`Paper > renders correctly with round: xs, outline: 200, with title only
 exports[`Paper > renders correctly with round: xs, outline: 500, with actions and title 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="pb-4"
+      class="nb-panel__title"
     >
       <h6>
         xs-500
       </h6>
     </div>
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-paper-border-radius-md border-background-accent-500"
+      class="nb-panel__inner nb-panel--round-xs nb-panel--outline-500"
       outline="500"
       round="xs"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           xs-500-actions & title
         </span>
       </div>
       <div
-        class="grid grid-cols-5 gap-4 items-center"
+        class="nb-demo-actions"
       >
         <button
-          class="
-    flex flex-row items-center justify-center gap-3
-    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
-    ring-border-1
-    hover:ring-background-contrast-primary-500
-    hover:ring-border-2
-    active:ring-button-background-secondary 
-    active:bg-button-background-pressed 
-    focus:outline-0 focus:ring-background-contrast-primary-500 
-    disabled:cursor-not-allowed
-    disabled:opacity-button-opacity-disabled
-   ring-background-accent-200 px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default w-full col-span-3"
+          class="nb-button nb-button--standard nb-button--size-s nb-button--rounded-default nb-demo-w-full nb-demo-span-3"
           type="button"
           variant="standard"
         >
           Cancel
         </button>
         <button
-          class="
-    flex flex-row items-center justify-center gap-3
-    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
-    ring-border-1
-    hover:ring-background-contrast-primary-500
-    hover:ring-border-2
-    active:ring-button-background-secondary 
-    active:bg-button-background-pressed 
-    focus:outline-0 focus:ring-background-contrast-primary-500 
-    disabled:cursor-not-allowed
-    disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big w-full col-span-2"
+          class="nb-button nb-button--filled nb-button--size-s nb-button--rounded-r nb-demo-w-full nb-demo-span-2"
           rounded="R"
           type="button"
           variant="filled"
@@ -1407,19 +1041,15 @@ exports[`Paper > renders correctly with round: xs, outline: 500, with actions an
 exports[`Paper > renders correctly with round: xs, outline: 500, with content only 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-paper-border-radius-md border-background-accent-500"
+      class="nb-panel__inner nb-panel--round-xs nb-panel--outline-500"
       outline="500"
       round="xs"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           xs-500-content only
@@ -1433,26 +1063,22 @@ exports[`Paper > renders correctly with round: xs, outline: 500, with content on
 exports[`Paper > renders correctly with round: xs, outline: 500, with title only 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="pb-4"
+      class="nb-panel__title"
     >
       <h6>
         xs-500-no actions
       </h6>
     </div>
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-paper-border-radius-md border-background-accent-500"
+      class="nb-panel__inner nb-panel--round-xs nb-panel--outline-500"
       outline="500"
       round="xs"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           xs-500-title only
@@ -1466,65 +1092,39 @@ exports[`Paper > renders correctly with round: xs, outline: 500, with title only
 exports[`Paper > renders correctly with round: xs, outline: 700, with actions and title 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="pb-4"
+      class="nb-panel__title"
     >
       <h6>
         xs-700
       </h6>
     </div>
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-paper-border-radius-md border-background-contrast-primary-200"
+      class="nb-panel__inner nb-panel--round-xs nb-panel--outline-700"
       outline="700"
       round="xs"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           xs-700-actions & title
         </span>
       </div>
       <div
-        class="grid grid-cols-5 gap-4 items-center"
+        class="nb-demo-actions"
       >
         <button
-          class="
-    flex flex-row items-center justify-center gap-3
-    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
-    ring-border-1
-    hover:ring-background-contrast-primary-500
-    hover:ring-border-2
-    active:ring-button-background-secondary 
-    active:bg-button-background-pressed 
-    focus:outline-0 focus:ring-background-contrast-primary-500 
-    disabled:cursor-not-allowed
-    disabled:opacity-button-opacity-disabled
-   ring-background-accent-200 px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-button-border-radius-xs-default w-full col-span-3"
+          class="nb-button nb-button--standard nb-button--size-s nb-button--rounded-default nb-demo-w-full nb-demo-span-3"
           type="button"
           variant="standard"
         >
           Cancel
         </button>
         <button
-          class="
-    flex flex-row items-center justify-center gap-3
-    font-orbitron font-orbitron-3 text-button-text-color-default leading-2 text-2
-    ring-border-1
-    hover:ring-background-contrast-primary-500
-    hover:ring-border-2
-    active:ring-button-background-secondary 
-    active:bg-button-background-pressed 
-    focus:outline-0 focus:ring-background-contrast-primary-500 
-    disabled:cursor-not-allowed
-    disabled:opacity-button-opacity-disabled
-   bg-button-background-primary text-button-text-color-primary ring-button-background-primary px-button-spacing-xs-h-default py-button-spacing-xs-v-default h-button-sm rounded-l-button-border-radius-xs-default rounded-r-button-border-radius-xs-big w-full col-span-2"
+          class="nb-button nb-button--filled nb-button--size-s nb-button--rounded-r nb-demo-w-full nb-demo-span-2"
           rounded="R"
           type="button"
           variant="filled"
@@ -1540,19 +1140,15 @@ exports[`Paper > renders correctly with round: xs, outline: 700, with actions an
 exports[`Paper > renders correctly with round: xs, outline: 700, with content only 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-paper-border-radius-md border-background-contrast-primary-200"
+      class="nb-panel__inner nb-panel--round-xs nb-panel--outline-700"
       outline="700"
       round="xs"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           xs-700-content only
@@ -1566,26 +1162,22 @@ exports[`Paper > renders correctly with round: xs, outline: 700, with content on
 exports[`Paper > renders correctly with round: xs, outline: 700, with title only 1`] = `
 <div>
   <div
-    class="mt-20"
+    class="nb-panel nb-demo-panels__panel"
   >
     <div
-      class="pb-4"
+      class="nb-panel__title"
     >
       <h6>
         xs-700-no actions
       </h6>
     </div>
     <div
-      class="
-    relative flex flex-col gap-5 pl-5 pr-5 pt-5 pb-5 bg-background-primary 
-    border-border-1 rounded-tr-border-radius-default rounded-tl-border-radius-default 
-    rounded-br-border-radius-default
-   rounded-bl-paper-border-radius-md border-background-contrast-primary-200"
+      class="nb-panel__inner nb-panel--round-xs nb-panel--outline-700"
       outline="700"
       round="xs"
     >
       <div
-        class="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md"
+        class="nb-demo-block"
       >
         <span>
           xs-700-title only

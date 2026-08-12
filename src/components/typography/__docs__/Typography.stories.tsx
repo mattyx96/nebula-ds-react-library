@@ -48,7 +48,7 @@ export const Default: Story = {
 
 export const AllVariants: Story = {
   render: () => (
-    <div className="flex flex-col gap-4">
+    <div className="nb-demo-col">
       <Text component="h1" variant="display1">Text with display1</Text>
       <Text component="h2" variant="display2">Text with display2</Text>
       <Text component="h1" variant="header1">Text with header1</Text>

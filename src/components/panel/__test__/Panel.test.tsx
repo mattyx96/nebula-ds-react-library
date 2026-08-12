@@ -5,9 +5,9 @@ import {Button} from '../../button/Button';
 import {Paper} from "../Panel.tsx";
 
 const actions = (
-  <div className="grid grid-cols-5 gap-4 items-center">
-    <Button className="w-full col-span-3" size="S" variant="standard" text="Cancel"/>
-    <Button className="w-full col-span-2" rounded="R" size="S" variant="filled" text="Do it"/>
+  <div className="nb-demo-actions">
+    <Button className="nb-demo-w-full nb-demo-span-3" size="S" variant="standard" text="Cancel"/>
+    <Button className="nb-demo-w-full nb-demo-span-2" rounded="R" size="S" variant="filled" text="Do it"/>
   </div>
 );
 
@@ -16,7 +16,7 @@ const title = (title = 'Title card') => (
 );
 
 const content = (content = 'Content here') => (
-  <div className="h-40 min-w-60 w-full bg-background-accent-200 flex justify-center items-center rounded-md">
+  <div className="nb-demo-block">
     <span>{content}</span>
   </div>
 );
@@ -29,7 +29,7 @@ describe('Paper', () => {
         const {container} = render(
           <Paper
             key={`${round}-${outline}`}
-            className="mt-20"
+            className="nb-demo-panels__panel"
             round={round}
             outline={outline}
             renderTitle={title(`${round}-${outline}`)}
@@ -46,7 +46,7 @@ describe('Paper', () => {
         const {container} = render(
           <Paper
             key={`${round}-${outline}-no-actions`}
-            className="mt-20"
+            className="nb-demo-panels__panel"
             round={round}
             outline={outline}
             renderTitle={title(`${round}-${outline}-no actions`)}
@@ -62,7 +62,7 @@ describe('Paper', () => {
         const {container} = render(
           <Paper
             key={`${round}-${outline}-no`}
-            className="mt-20"
+            className="nb-demo-panels__panel"
             round={round}
             outline={outline}
           >
