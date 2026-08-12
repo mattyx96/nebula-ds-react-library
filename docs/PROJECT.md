@@ -403,6 +403,8 @@ Internal showcase pages, switched from `src/App.tsx`: `Buttons`, `Panels`, `Typo
 - `outputDirectory`: `./storybook-static`
 - `framework: null`
 
+The toolchain is pinned in `package.json` so Vercel uses the right versions: `packageManager: pnpm@11.7.0` (pnpm 11 understands the settings-only `pnpm-workspace.yaml` — pnpm 9 errors with "packages field missing or empty") and `engines.node: ">=24.0.0"` (Node 20 is deprecated on Vercel).
+
 Live at https://nebula-ds-react-library.irongalaxy.space
 
 ---
@@ -430,4 +432,4 @@ Live at https://nebula-ds-react-library.irongalaxy.space
 - `FramePanel`'s stories live in `__docs___` (three underscores) instead of `__docs__`.
 - `Panel.tsx` exports a component named `Paper` with a TODO to rename.
 - `tsconfig.json` includes a `theme.ts` file that does not exist.
-- `vercel.json` uses `pnpm install` while all local tooling uses pnpm.
+- `vercel.json` uses `pnpm install`; the pnpm/Node versions are pinned via `packageManager` + `engines` in `package.json`.

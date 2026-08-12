@@ -9,6 +9,10 @@
   },
   "description": "Nebula Design System React UI components",
   "type": "module",
+  "packageManager": "pnpm@11.7.0",
+  "engines": {
+    "node": ">=24.0.0"
+  },
   "main": "dist/index.umd.js",
   "module": "dist/index.es.js",
   "types": "./dist/index.d.ts",
