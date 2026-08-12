@@ -1,3 +1,8 @@
+# packages: ['.'] keeps pnpm 9 (used by Vercel) happy — without a
+# packages field it errors with "packages field missing or empty".
+# The settings below (allowBuilds, minimumReleaseAgeExclude) are pnpm 11.
+packages:
+  - '.'
 allowBuilds:
   esbuild: true
 minimumReleaseAgeExclude:
