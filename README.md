@@ -39,6 +39,11 @@ function App() {
 
 Nested providers are supported (an inner `ThemeProvider` themes only its own subtree). Generated token files (light/dark variables) remain the source of truth; the split files are regenerated with `pnpm generate-themes`.
 
+### Releasing a new version
+
+1. Locally run `pnpm release` — it bumps the patch version, builds, commits and pushes (`pnpm release` no longer publishes; publishing happens in CI so there's a single publish path).
+2. On GitHub, run the **Publish to npm** workflow (Actions → "Publish to npm" → Run workflow) — it builds and publishes that version to npm with provenance via Trusted Publishing (OIDC). Requires npmjs.org to be configured for "Publish from GitHub Actions" for this repo (no `NPM_TOKEN` secret needed).
+
 ### Roadmap:
 - [X] document tokens
 - [X] document typography
