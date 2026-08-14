@@ -368,7 +368,7 @@ Consumers import styling via `import 'nebula-ds-react-library/style';` (document
 | `pnpm storybook` | Builds the library first, then starts Storybook dev on 6006. |
 | `pnpm build-storybook` | Builds library, then `storybook build` → `storybook-static/`. |
 | `pnpm run generate-themes` | Regenerates `src/styles/tokens` + `src/styles/themes` from the upstream token CSS. |
-| `pnpm run release` | `.scripts/release.sh`: patch-bump version (no git tag), build, commit `new release vX.Y.Z`, push to the current branch. Publishing happens in CI via the **Publish to npm** workflow (`.github/workflows/publish.yml`) so there is a single publish path. |
+| `pnpm run release` | `.scripts/release.sh [patch\|minor\|major] [--publish]`: bumps the version (no git tag), builds, and commits `new release vX.Y.Z` + pushes the current branch. With `--publish` it also publishes to npm (this is what the **Publish to npm** GitHub workflow runs). |
 | `prepare` | `husky` (husky 9 init; pre-commit hook runs lint). |
 
 ### Tests
