@@ -1,25 +1,23 @@
-name: Publish to npm
+name: Release (reusable)
 
-# Manual trigger button in the GitHub Actions UI.
+# Shared release logic called by the "Publish patch/minor/major"
+# workflows (manual triggers in the Actions UI).
+#
 # Bumps the version, builds, publishes to npm (with provenance) and
-# commits + pushes the version bump — no local steps required.
+# commits + pushes the version bump. Publishing happens BEFORE the
+# commit/push, so a failed publish leaves no bumped version on the
+# remote.
 #
 # Requirements:
 #   - npmjs.org must be set up for "Publish from GitHub Actions"
 #     (Trusted Publishing / OIDC) for this repo, so the `id-token`
 #     below is enough — no NPM_TOKEN secret is needed.
 on:
-  workflow_dispatch:
+  workflow_call:
     inputs:
       version:
-        description: 'Version bump type'
         required: true
-        default: 'patch'
-        type: choice
-        options:
-          - patch
-          - minor
-          - major
+        type: string
 
 jobs:
   publish:

@@ -41,10 +41,10 @@ Nested providers are supported (an inner `ThemeProvider` themes only its own sub
 
 ### Releasing a new version
 
-On GitHub run the **Publish to npm** workflow (Actions → "Publish to npm" → Run workflow), pick a version bump type (`patch`/`minor`/`major`) and hit Run. The workflow bumps the version, builds, publishes to npm (with provenance via npm Trusted Publishing / OIDC), and commits + pushes the version bump — no local steps needed.
+On GitHub run the matching **Publish** workflow (Actions → **Publish patch** / **Publish minor** / **Publish major** → Run workflow). The workflow bumps the version accordingly, builds, publishes to npm (with provenance via npm Trusted Publishing / OIDC), and commits + pushes the version bump — no local steps needed.
 
 - Requires npmjs.org to be configured for "Publish from GitHub Actions" for this repo (no `NPM_TOKEN` secret needed).
-- It runs `.scripts/release.sh <type> --publish`, so the local `pnpm release` command mirrors the same logic (bump → build → commit → push; publish only via the workflow).
+- The three buttons share one reusable workflow (`.github/workflows/release.yml`), which runs `.scripts/release.sh <type> --publish`. The local `pnpm release` mirrors the same logic (bump → build → commit → push; publish only via the workflow).
 
 ### Roadmap:
 - [X] document tokens

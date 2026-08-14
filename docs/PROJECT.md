@@ -49,7 +49,7 @@ Currently the library ships **8 public components**, **2 hooks** (`useBreakpoint
 ```
 .
 ├── .github/
-│   └── workflows/publish.yml # manual "Publish to npm" (pnpm, provenance/OIDC)
+│   └── workflows/          # Publish patch/minor/major buttons -> release.yml (reusable)
 ├── .husky/                 # pre-commit hook -> pnpm run lint
 ├── .scripts/
 │   └── release.sh          # version bump + build + commit + push (no publish)
@@ -368,7 +368,7 @@ Consumers import styling via `import 'nebula-ds-react-library/style';` (document
 | `pnpm storybook` | Builds the library first, then starts Storybook dev on 6006. |
 | `pnpm build-storybook` | Builds library, then `storybook build` → `storybook-static/`. |
 | `pnpm run generate-themes` | Regenerates `src/styles/tokens` + `src/styles/themes` from the upstream token CSS. |
-| `pnpm run release` | `.scripts/release.sh [patch\|minor\|major] [--publish]`: bumps the version (no git tag), builds, and commits `new release vX.Y.Z` + pushes the current branch. With `--publish` it also publishes to npm (this is what the **Publish to npm** GitHub workflow runs). |
+| `pnpm run release` | `.scripts/release.sh [patch\|minor\|major] [--publish]`: bumps the version (no git tag), builds, and commits `new release vX.Y.Z` + pushes the current branch. With `--publish` it also publishes to npm (this is what the GitHub **Publish patch/minor/major** workflows run via the reusable `release.yml`). |
 | `prepare` | `husky` (husky 9 init; pre-commit hook runs lint). |
 
 ### Tests
