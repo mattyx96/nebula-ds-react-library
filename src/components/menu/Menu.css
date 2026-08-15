@@ -1,0 +1,143 @@
+/* Nebula Menu — powered by @zag-js/menu, styled with Nebula tokens. */
+
+.nb-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.nb-menu__positioner {
+  /* Configurable via --nb-menu-z-index (inherit it from a parent to override). */
+  --nb-menu-z-index: 100;
+  /* Zag sets `z-index: var(--z-index)` (→ auto) inline, so the dropdown would
+     stack at the same level as surrounding content and get painted underneath
+     later elements. Raise it so an open dropdown always floats on top. */
+  z-index: var(--nb-menu-z-index) !important;
+}
+
+/* ---- Content (floating panel) ---- */
+.nb-menu__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--nb-1);
+
+  margin: 0;
+  padding: var(--nb-3);
+  list-style: none;
+
+  font-family: var(--nb-font-families-orbitron);
+
+  background-color: var(--nb-background-secondary-default);
+  border: var(--nb-border-1) solid var(--nb-background-accent-500);
+  border-radius: var(--nb-border-radius-default);
+}
+
+/* `display: flex` above would override the UA's `[hidden] { display: none }`,
+   so a closed menu's panel stays rendered/focusable. Restore the hidden rule. */
+.nb-menu__content[hidden] {
+  display: none;
+}
+
+.nb-menu__content--round-no {
+  border-bottom-left-radius: var(--nb-border-radius-default);
+}
+
+.nb-menu__content--round-xs {
+  border-bottom-left-radius: var(--nb-paper-border-radius-md);
+}
+
+.nb-menu__content--round-lg {
+  border-bottom-left-radius: var(--nb-paper-border-radius-big);
+}
+
+.nb-menu__content--outline-700 {
+  border-color: var(--nb-background-contrast-primary-200);
+}
+
+.nb-menu__content--outline-500 {
+  border-color: var(--nb-background-accent-500);
+}
+
+.nb-menu__content--outline-200 {
+  border-color: var(--nb-background-accent-200);
+}
+
+.nb-menu__content--outline-50 {
+  border-color: var(--nb-background-contrast-primary-50);
+  box-shadow: 0 1px 6px rgb(0 0 0 / 0.07);
+}
+
+/* ---- Items ---- */
+.nb-menu__item {
+  display: flex;
+  align-items: center;
+  gap: var(--nb-2);
+
+  border-radius: var(--nb-border-radius-50);
+
+  color: var(--nb-background-contrast-primary-500);
+  font-family: var(--nb-font-families-orbitron);
+  font-weight: var(--nb-font-weights-orbitron-3);
+
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.nb-menu__item[data-highlighted] {
+  background-color: var(--nb-background-accent-200);
+}
+
+.nb-menu__item[data-disabled] {
+  color: var(--nb-background-accent-500);
+  cursor: not-allowed;
+  opacity: var(--nb-button-opacity-disabled);
+}
+
+.nb-menu__item[data-disabled][data-highlighted] {
+  background-color: transparent;
+}
+
+.nb-menu__item-icon {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.nb-menu__item-icon--end {
+  margin-left: auto;
+}
+
+/* ---- Separator ---- */
+.nb-menu__separator {
+  display: block;
+  height: 0;
+  margin: var(--nb-2) var(--nb-4);
+  border-top: var(--nb-border-0-5) solid var(--nb-background-accent-500);
+}
+
+/* ---- Trigger indicator ---- */
+.nb-menu__indicator {
+  display: flex;
+  align-items: center;
+  transition: transform 150ms ease;
+}
+
+[data-part='indicator'][data-state='open'] {
+  transform: rotate(180deg);
+}
+
+/* ---- Sizes (items scale with the trigger size) ---- */
+.nb-menu--size-s .nb-menu__item {
+  padding: var(--nb-2) var(--nb-3);
+  font-size: var(--nb-font-size-1);
+}
+
+.nb-menu--size-m .nb-menu__item {
+  padding: var(--nb-3) var(--nb-4);
+  font-size: var(--nb-font-size-2);
+}
+
+.nb-menu--size-l .nb-menu__item {
+  padding: var(--nb-4) var(--nb-5);
+  font-size: var(--nb-font-size-3);
+}

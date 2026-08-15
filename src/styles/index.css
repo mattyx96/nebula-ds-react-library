@@ -10,6 +10,7 @@
 @import '../components/button/Button.css';
 @import '../components/button/IconButton.css';
 @import '../components/panel/Panel.css';
+@import '../components/menu/Menu.css';
 @import '../components/typography/Typography.css';
 @import '../components/frameConnector/FrameConnector.css';
 @import '../components/framePanel/FramePanel.css';

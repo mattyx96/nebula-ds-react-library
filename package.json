@@ -45,6 +45,8 @@
     "release": "sh ./.scripts/release.sh"
   },
   "dependencies": {
+    "@zag-js/menu": "^1.43.0",
+    "@zag-js/react": "^1.43.0",
     "nebula-ds-tokens": "0.2.0"
   },
   "peerDependencies": {

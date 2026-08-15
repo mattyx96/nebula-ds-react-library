@@ -1,0 +1,79 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Menu > renders the trigger and keeps the content hidden by default 1`] = `
+<div
+  class="nb-menu nb-menu nb-menu--size-m"
+>
+  <button
+    aria-controls="menu:_r_0_:content"
+    aria-expanded="false"
+    aria-haspopup="menu"
+    class="nb-button nb-button--filled nb-button--size-m nb-button--rounded-default nb-menu__trigger"
+    data-controls="menu:_r_0_:content"
+    data-part="trigger"
+    data-scope="menu"
+    data-state="closed"
+    data-uid="_r_0_"
+    id="menu:_r_0_:trigger"
+    type="button"
+  >
+    Actions
+  </button>
+  <div
+    class="nb-menu__positioner"
+    data-part="positioner"
+    data-scope="menu"
+    id="menu:_r_0_:popper"
+    style="position: absolute; isolation: isolate; min-width: max-content; pointer-events: none; top: 0px; left: 0px; transform: translate3d(0, -100vh, 0); z-index: var(--z-index);"
+  >
+    <ul
+      aria-labelledby="menu:_r_0_:trigger"
+      class="nb-menu__content nb-menu__content--round-no nb-menu__content--outline-500"
+      data-part="content"
+      data-scope="menu"
+      data-state="closed"
+      hidden=""
+      id="menu:_r_0_:content"
+      role="menu"
+      tabindex="0"
+    >
+      <li
+        class="nb-menu__item"
+        data-ownedby="menu:_r_0_:content"
+        data-part="item"
+        data-scope="menu"
+        data-value="edit"
+        data-valuetext="Edit"
+        id="_r_0_/edit"
+        role="menuitem"
+      >
+        Edit
+      </li>
+      <li
+        class="nb-menu__item"
+        data-ownedby="menu:_r_0_:content"
+        data-part="item"
+        data-scope="menu"
+        data-value="duplicate"
+        data-valuetext="Duplicate"
+        id="_r_0_/duplicate"
+        role="menuitem"
+      >
+        Duplicate
+      </li>
+      <li
+        class="nb-menu__item"
+        data-ownedby="menu:_r_0_:content"
+        data-part="item"
+        data-scope="menu"
+        data-value="delete"
+        data-valuetext="Delete"
+        id="_r_0_/delete"
+        role="menuitem"
+      >
+        Delete
+      </li>
+    </ul>
+  </div>
+</div>
+`;
