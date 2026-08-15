@@ -40,6 +40,42 @@ export const MenuPage = () => {
 
       <section className="nb-demo-menu__section">
         <Text component="h2" variant="header2" className="nb-demo-menu__title">
+          Responsive
+        </Text>
+        <div className="nb-demo-menu__row">
+          <Menu
+            text="Actions"
+            title="Actions"
+            indicator={chevron}
+            items={defaultItems}
+          />
+        </div>
+        <Text component="span" className="nb-demo-menu__hint">
+          Shrink the window below the breakpoint (default: lg / 1024px) — the dropdown automatically becomes a bottom sheet.
+        </Text>
+      </section>
+
+      <section className="nb-demo-menu__section">
+        <Text component="h2" variant="header2" className="nb-demo-menu__title">
+          Bottom Sheet
+        </Text>
+        <div className="nb-demo-menu__row">
+          <Menu
+            text="Actions"
+            mode="sheet"
+            title="Actions"
+            description="Choose an action"
+            indicator={chevron}
+            items={defaultItems}
+          />
+        </div>
+        <Text component="span" className="nb-demo-menu__hint">
+          Forced with <code>mode=&quot;sheet&quot;</code> — the same items render in a bottom sheet.
+        </Text>
+      </section>
+
+      <section className="nb-demo-menu__section">
+        <Text component="h2" variant="header2" className="nb-demo-menu__title">
           Trigger Variants
         </Text>
         <div className="nb-demo-menu__row">

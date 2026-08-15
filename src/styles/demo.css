@@ -130,6 +130,17 @@
   gap: var(--nb-5);
 }
 
+.nb-demo-menu__hint {
+  display: block;
+  margin-top: var(--nb-3);
+  font-size: var(--nb-font-size-3);
+  color: var(--nb-background-contrast-primary-200);
+}
+
+.nb-demo-menu__hint code {
+  font-family: var(--nb-font-families-roboto-mono);
+}
+
 /* ---- Panels page ---- */
 .nb-demo-panels {
   display: flex;

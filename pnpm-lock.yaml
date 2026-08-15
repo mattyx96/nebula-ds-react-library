@@ -11,6 +11,9 @@ importers:
       '@heroicons/react':
         specifier: ^2.1.3
         version: 2.1.3(react@19.2.8)
+      '@zag-js/drawer':
+        specifier: ^1.43.0
+        version: 1.43.0
       '@zag-js/menu':
         specifier: ^1.43.0
         version: 1.43.0
@@ -1396,6 +1399,9 @@ packages:
   '@zag-js/anatomy@1.43.0':
     resolution: {integrity: sha512-hcARaNvhU+jXukKCU4Gz4eXU2oUSlppi15L/MoxcckMum+Pu1HFqjWpllDgjb7RyByHYX6XfFk6ijPRV8EzPpg==}
 
+  '@zag-js/aria-hidden@1.43.0':
+    resolution: {integrity: sha512-JUPIIPbcNsWW3vbPBkGBTHiPwC1jPsiYCMptyXif73J3RQpEW2DLdjen4jl7CrolSZndhVtkAUAQSfmuvWel8Q==}
+
   '@zag-js/core@1.43.0':
     resolution: {integrity: sha512-iIpTu/U1OHKXGjXq/bn/ek32nIKE0lmS2gLdihYmv1jtPXH8hVHaIOXR5KYGfOjMVb4+FiMMCZHlH9MWbLk2iA==}
 
@@ -1404,6 +1410,12 @@ packages:
 
   '@zag-js/dom-query@1.43.0':
     resolution: {integrity: sha512-yQDR00jJj0tgrRH43QJx7NtQH+EBxQtEdFKMzG7c88xL1ZRtqXYpqNNSmCuGj5RTsEceQjEhAxeTJikUYp9M0g==}
+
+  '@zag-js/drawer@1.43.0':
+    resolution: {integrity: sha512-h5FY7XN53hxgMZCIl+ftQclY2YVPqJAkBnA5r5qFhwFh66gnzZUnsrbdHL2H09pcA60fTYm46mD2GjaF3S5Seg==}
+
+  '@zag-js/focus-trap@1.43.0':
+    resolution: {integrity: sha512-6JApoRanDOcrfQBd7pz/rp2YxdtBmIjRenH9+1tKscbtXRJLWUGZTtr2QiCHCkyRKZdi7kyo7309HTzM62n+OA==}
 
   '@zag-js/focus-visible@1.43.0':
     resolution: {integrity: sha512-1CDA2BZ9k6E6DozNjpTmt+i68HuDAvME2pbqtC+aM7woJK9SuHAXA82qyz//NnaOQnXKQMAOigumfS3fguNswQ==}
@@ -1425,6 +1437,9 @@ packages:
 
   '@zag-js/rect-utils@1.43.0':
     resolution: {integrity: sha512-Cj4Y9trhY4+NpVN74dkLb5ZOkLFieypnIRFvOovo0JrexZ/wtj1srG9Y35zWgBsmWDTkvp9bexdFg0rggPcNGQ==}
+
+  '@zag-js/remove-scroll@1.43.0':
+    resolution: {integrity: sha512-2cE7yS3G6JffdlKMzECDQm2ro3mAqWf2ovSylFcsHh/xLx4RIgtv3EivJrNTcr1d+H0YF2/uVyDuUwYlycWNsQ==}
 
   '@zag-js/store@1.43.0':
     resolution: {integrity: sha512-Q6b6vbAbIGDkXO1sGoM+hjOP2BL6uHIMX3MUhpjFpIZ6qhkxU+iRa8bCGU7xYT2vRyEMlN5NUU77PjoITpSwRg==}
@@ -4689,6 +4704,10 @@ snapshots:
 
   '@zag-js/anatomy@1.43.0': {}
 
+  '@zag-js/aria-hidden@1.43.0':
+    dependencies:
+      '@zag-js/dom-query': 1.43.0
+
   '@zag-js/core@1.43.0':
     dependencies:
       '@zag-js/dom-query': 1.43.0
@@ -4703,6 +4722,22 @@ snapshots:
   '@zag-js/dom-query@1.43.0':
     dependencies:
       '@zag-js/types': 1.43.0
+
+  '@zag-js/drawer@1.43.0':
+    dependencies:
+      '@zag-js/anatomy': 1.43.0
+      '@zag-js/aria-hidden': 1.43.0
+      '@zag-js/core': 1.43.0
+      '@zag-js/dismissable': 1.43.0
+      '@zag-js/dom-query': 1.43.0
+      '@zag-js/focus-trap': 1.43.0
+      '@zag-js/remove-scroll': 1.43.0
+      '@zag-js/types': 1.43.0
+      '@zag-js/utils': 1.43.0
+
+  '@zag-js/focus-trap@1.43.0':
+    dependencies:
+      '@zag-js/dom-query': 1.43.0
 
   '@zag-js/focus-visible@1.43.0':
     dependencies:
@@ -4741,6 +4776,10 @@ snapshots:
       react-dom: 19.2.8(react@19.2.8)
 
   '@zag-js/rect-utils@1.43.0': {}
+
+  '@zag-js/remove-scroll@1.43.0':
+    dependencies:
+      '@zag-js/dom-query': 1.43.0
 
   '@zag-js/store@1.43.0':
     dependencies:

@@ -1,56 +1,30 @@
-import {useEffect, useId, type ComponentPropsWithRef, type ReactNode} from 'react';
-import * as menu from '@zag-js/menu';
-import {normalizeProps, useMachine} from '@zag-js/react';
+import {type ComponentPropsWithRef, type ReactNode} from 'react';
 import type {PositioningOptions} from '@zag-js/menu';
-import {clsxMerge} from '../../common/utils/classNameUtils';
-import {restoreNativeFocus} from '../../common/utils/restoreNativeFocus';
-import {Icon} from '../icon/Icon.tsx';
-import {buttonVariants} from '../../variants';
+import {useBreakpoint} from '../../hook/useBreakpoint';
+import type {MenuItem} from '../../common/types';
+import {Sheet} from '../sheet/Sheet.tsx';
+import {MenuDropdown} from './MenuDropdown.tsx';
 import {
-  menuContentVariants,
-  menuVariants,
   type MenuAlign,
   type MenuOutline,
   type MenuRounded,
   type MenuRound,
   type MenuSize,
   type MenuVariant,
-  type MenuVariants,
 } from '../../variants/menu';
-import './Menu.css';
 
-// Zag's focus-visible tracking reads `HTMLElement.prototype.focus`, which
-// Storybook's instrumenter turns into an accessor (throws "Illegal invocation").
-// Normalize it before the machine's effects run.
-restoreNativeFocus();
+export type {MenuItem} from '../../common/types';
+export {MenuDropdown, type MenuDropdownProps} from './MenuDropdown.tsx';
+
+export type MenuMode = 'auto' | 'menu' | 'sheet';
+export type MenuBreakpoint = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl';
+
+const BREAKPOINT_ORDER: readonly MenuBreakpoint[] = ['xs', 'sm', 'md', 'lg', 'xl', '2xl'];
 
 type MenuElementProps = Omit<ComponentPropsWithRef<'div'>, 'onSelect'>;
 
-export interface MenuItem {
-  /** The unique value of the menu item option. */
-  value: string;
-  /** The menu item label (used for typeahead navigation when `text` is not provided). */
-  text?: string;
-  /** Custom content rendered inside the item (replaces `text`). */
-  label?: ReactNode;
-  leftIcon?: ReactNode;
-  rightIcon?: ReactNode;
-  disabled?: boolean;
-  /** Render a separator instead of an item. */
-  separator?: boolean;
-  /** Whether the menu should be closed when this option is selected. */
-  closeOnSelect?: boolean;
-  /** Called when the item is selected (click or keyboard). */
-  onSelect?: (value: string) => void;
-}
-
-interface MenuPropsBase
-  extends MenuElementProps,
-    MenuVariants {
-}
-
-export interface MenuProps extends MenuPropsBase {
-  /** The menu items to render. */
+export interface MenuProps extends MenuElementProps {
+  /** The items to render in the dropdown or the bottom sheet. */
   items: MenuItem[];
   /** Custom trigger content (replaces `text`). */
   trigger?: ReactNode;
@@ -63,92 +37,49 @@ export interface MenuProps extends MenuPropsBase {
   size?: MenuSize;
   variant?: MenuVariant;
   rounded?: MenuRounded;
+  /** Dropdown panel corner rounding (desktop only). */
   round?: MenuRound;
+  /** Dropdown panel outline tone (desktop only). */
   outline?: MenuOutline;
-  /** Where the dropdown is placed relative to the trigger. */
+  /** Where the dropdown is placed relative to the trigger (desktop only). */
   align?: MenuAlign;
-  /** The options used to dynamically position the menu. Overrides `align`. */
+  /** The options used to dynamically position the dropdown. Overrides `align`. */
   positioning?: PositioningOptions;
-  /** Called when a menu item is selected. */
+  /** Called when an item is selected. */
   onSelect?: (value: string) => void;
-  /** Called when the menu opens or closes. */
+  /** Called when the menu/sheet opens or closes. */
   onOpenChange?: (open: boolean) => void;
-  /** The controlled open state of the menu. */
+  /** The controlled open state of the menu/sheet. */
   open?: boolean;
-  /** The initial open state of the menu. */
+  /** The initial open state of the menu/sheet. */
   defaultOpen?: boolean;
-  /** Whether to close the menu when an option is selected. */
+  /** Whether to close the menu/sheet when an option is selected. */
   closeOnSelect?: boolean;
-  /** Whether pressing printable characters triggers typeahead navigation. */
+  /** Whether pressing printable characters triggers typeahead navigation (desktop only). */
   typeahead?: boolean;
-  /** Whether to loop the keyboard navigation. */
+  /** Whether to loop the keyboard navigation (desktop only). */
   loopFocus?: boolean;
-  /** The initial highlighted value of the menu item. */
+  /** The initial highlighted value of the menu item (desktop only). */
   defaultHighlightedValue?: string | null;
-  /** The accessibility label for the menu. */
+  /** The accessibility label for the dropdown (desktop only). */
   ariaLabel?: string;
+  /** Sheet header title (bottom sheet only). */
+  title?: string;
+  /** Optional description under the title (bottom sheet only). */
+  description?: string;
+  /**
+   * Which presentation to use.
+   * - `auto`: dropdown on desktop, bottom sheet below `breakpoint` (default)
+   * - `menu`: always the dropdown
+   * - `sheet`: always the bottom sheet
+   */
+  mode?: MenuMode;
+  /** The breakpoint at which the menu switches to the bottom sheet (used when `mode="auto"`). */
+  breakpoint?: MenuBreakpoint;
   contentClassName?: string;
   itemClassName?: string;
   triggerClassName?: string;
 }
-
-const alignToPlacement = (align: MenuAlign): 'bottom' | 'bottom-start' | 'bottom-end' => {
-  switch (align) {
-    case 'start':
-      return 'bottom-start';
-    case 'center':
-      return 'bottom';
-    case 'end':
-      return 'bottom-end';
-  }
-};
-
-type MenuRowProps = {
-  item: MenuItem;
-  api: ReturnType<typeof menu.connect>;
-  className?: string;
-};
-
-const MenuRow = (props: MenuRowProps) => {
-  const {item, api, className} = props;
-
-  const itemProps = api.getItemProps({
-    value: item.value,
-    disabled: item.disabled,
-    closeOnSelect: item.closeOnSelect,
-    valueText: item.text ?? item.value,
-  });
-
-  useEffect(() => {
-    if (!item.onSelect) return;
-    return api.addItemListener({
-      id: itemProps.id,
-      onSelect: () => item.onSelect?.(item.value),
-    });
-  }, [api, item.onSelect, item.value, itemProps.id]);
-
-  if (item.separator) {
-    return (
-      <li {...api.getSeparatorProps()} className={clsxMerge('nb-menu__separator', className)} />
-    );
-  }
-
-  return (
-    <li
-      {...itemProps}
-      className={clsxMerge('nb-menu__item', className)}
-    >
-      {Boolean(item.leftIcon) && (
-        <span className="nb-menu__item-icon">{item.leftIcon}</span>
-      )}
-      {Boolean(item.text) && item.text}
-      {Boolean(item.label) && item.label}
-      {Boolean(item.rightIcon) && (
-        <span className="nb-menu__item-icon nb-menu__item-icon--end">{item.rightIcon}</span>
-      )}
-    </li>
-  );
-};
 
 export const Menu = (props: MenuProps) => {
   const {
@@ -174,6 +105,10 @@ export const Menu = (props: MenuProps) => {
     loopFocus,
     defaultHighlightedValue,
     ariaLabel,
+    title,
+    description,
+    mode = 'auto',
+    breakpoint = 'lg',
     className,
     contentClassName,
     itemClassName,
@@ -181,59 +116,58 @@ export const Menu = (props: MenuProps) => {
     ...rest
   } = props;
 
-  const service = useMachine(menu.machine, {
-    id: useId(),
+  const {current} = useBreakpoint();
+
+  const showSheet =
+    mode === 'sheet' ||
+    (mode === 'auto' &&
+      BREAKPOINT_ORDER.indexOf(current as MenuBreakpoint) <
+        BREAKPOINT_ORDER.indexOf(breakpoint));
+
+  const commonProps = {
+    items,
+    trigger,
+    text,
+    leftIcon,
+    rightIcon,
+    indicator,
+    size,
+    variant,
+    rounded,
+    onSelect,
+    onOpenChange,
     open,
     defaultOpen,
     closeOnSelect,
-    typeahead,
-    loopFocus,
-    defaultHighlightedValue,
-    'aria-label': ariaLabel,
-    positioning: {placement: alignToPlacement(align ?? 'start'), ...positioning},
-    onOpenChange: (details) => onOpenChange?.(details.open),
-    onSelect: (details) => onSelect?.(details.value),
-  });
+    className,
+    contentClassName,
+    itemClassName,
+    triggerClassName,
+  };
 
-  const api = menu.connect(service, normalizeProps);
-
-  const triggerProps = api.getTriggerProps();
+  if (showSheet) {
+    return (
+      <Sheet
+        {...commonProps}
+        title={title}
+        description={description}
+        {...rest}
+      />
+    );
+  }
 
   return (
-    <div className={clsxMerge('nb-menu', menuVariants({size}), className)} {...rest}>
-      <button
-        {...triggerProps}
-        className={clsxMerge(
-          buttonVariants({size, variant, rounded}),
-          'nb-menu__trigger',
-          triggerClassName
-        )}
-      >
-        {Boolean(leftIcon) && <Icon size={size}>{leftIcon}</Icon>}
-        {Boolean(text) && text}
-        {Boolean(trigger) && trigger}
-        {Boolean(indicator) && (
-          <span {...api.getIndicatorProps()} className="nb-menu__indicator">
-            {indicator}
-          </span>
-        )}
-        {Boolean(rightIcon) && <Icon size={size}>{rightIcon}</Icon>}
-      </button>
-      <div {...api.getPositionerProps()} className="nb-menu__positioner">
-        <ul
-          {...api.getContentProps()}
-          className={clsxMerge(menuContentVariants({round, outline}), contentClassName)}
-        >
-          {items.map((item) => (
-            <MenuRow
-              key={item.value}
-              item={item}
-              api={api}
-              className={itemClassName}
-            />
-          ))}
-        </ul>
-      </div>
-    </div>
+    <MenuDropdown
+      {...commonProps}
+      round={round}
+      outline={outline}
+      align={align}
+      positioning={positioning}
+      typeahead={typeahead}
+      loopFocus={loopFocus}
+      defaultHighlightedValue={defaultHighlightedValue}
+      ariaLabel={ariaLabel}
+      {...rest}
+    />
   );
 };

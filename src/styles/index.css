@@ -11,6 +11,7 @@
 @import '../components/button/IconButton.css';
 @import '../components/panel/Panel.css';
 @import '../components/menu/Menu.css';
+@import '../components/sheet/Sheet.css';
 @import '../components/typography/Typography.css';
 @import '../components/frameConnector/FrameConnector.css';
 @import '../components/framePanel/FramePanel.css';

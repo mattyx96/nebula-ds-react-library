@@ -1,0 +1,187 @@
+/* Nebula Sheet — bottom sheet presentation (powered by @zag-js/drawer). */
+
+.nb-sheet {
+  position: relative;
+  display: inline-block;
+}
+
+/* ---- Positioner (fixed full-screen wrapper) ---- */
+.nb-sheet__positioner {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.nb-sheet__backdrop {
+  position: absolute;
+  inset: 0;
+
+  background-color: rgb(0 0 0 / 0.5);
+
+  animation: nb-sheet-fade-in 200ms ease-out;
+}
+
+/* ---- Content (the sheet itself) ---- */
+.nb-sheet__content {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--nb-2);
+
+  width: 100%;
+  max-width: 640px;
+  max-height: 85dvh;
+  padding: var(--nb-5) var(--nb-4) var(--nb-7);
+  overflow-y: auto;
+
+  font-family: var(--nb-font-families-orbitron);
+  color: var(--nb-background-contrast-primary-500);
+
+  background-color: var(--nb-background-primary);
+  border-top: var(--nb-border-1) solid var(--nb-background-accent-500);
+  border-radius: var(--nb-border-radius-200) var(--nb-border-radius-200) 0 0;
+
+  will-change: transform;
+  transform: translate3d(0, var(--drawer-translate-y, 0px), 0);
+
+  animation: nb-sheet-slide-up 200ms ease-out;
+}
+
+/* Restore the UA `hidden` rule (overridden by `display: flex` above). */
+.nb-sheet__positioner[hidden],
+.nb-sheet__backdrop[hidden],
+.nb-sheet__content[hidden] {
+  display: none;
+}
+
+/* ---- Grabber ---- */
+.nb-sheet__grabber {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--nb-1) 0;
+  cursor: grab;
+  touch-action: none;
+}
+
+.nb-sheet__grabber-indicator {
+  width: var(--nb-8);
+  height: var(--nb-1);
+  border-radius: var(--nb-border-radius-500);
+  background-color: var(--nb-background-accent-500);
+}
+
+/* ---- Title / description ---- */
+.nb-sheet__title {
+  font-family: var(--nb-font-families-orbitron);
+  font-weight: var(--nb-font-weights-orbitron-3);
+  font-size: var(--nb-font-size-4);
+}
+
+.nb-sheet__description {
+  font-family: var(--nb-font-families-roboto-mono);
+  font-size: var(--nb-font-size-3);
+  color: var(--nb-background-contrast-primary-200);
+}
+
+/* ---- Items ---- */
+.nb-sheet__items {
+  display: flex;
+  flex-direction: column;
+  gap: var(--nb-1);
+}
+
+.nb-sheet__item {
+  display: flex;
+  align-items: center;
+  gap: var(--nb-2);
+  width: 100%;
+
+  border-radius: var(--nb-border-radius-50);
+
+  color: var(--nb-background-contrast-primary-500);
+  font-family: var(--nb-font-families-orbitron);
+  font-weight: var(--nb-font-weights-orbitron-3);
+
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.nb-sheet__item:active:not(:disabled) {
+  background-color: var(--nb-background-accent-200);
+}
+
+.nb-sheet__item:disabled {
+  color: var(--nb-background-accent-500);
+  cursor: not-allowed;
+  opacity: var(--nb-button-opacity-disabled);
+}
+
+.nb-sheet__item-icon {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.nb-sheet__item-icon--end {
+  margin-left: auto;
+}
+
+/* ---- Separator ---- */
+.nb-sheet__separator {
+  height: 0;
+  margin: var(--nb-2) var(--nb-4);
+  border-top: var(--nb-border-0-5) solid var(--nb-background-accent-500);
+}
+
+/* ---- Trigger indicator ---- */
+.nb-sheet__indicator {
+  display: flex;
+  align-items: center;
+  transition: transform 150ms ease;
+}
+
+.nb-sheet__trigger[data-state='open'] .nb-sheet__indicator {
+  transform: rotate(180deg);
+}
+
+/* ---- Sizes (items scale with the trigger size) ---- */
+.nb-sheet--size-s .nb-sheet__item {
+  padding: var(--nb-3) var(--nb-3);
+  font-size: var(--nb-font-size-1);
+}
+
+.nb-sheet--size-m .nb-sheet__item {
+  padding: var(--nb-3) var(--nb-4);
+  font-size: var(--nb-font-size-2);
+}
+
+.nb-sheet--size-l .nb-sheet__item {
+  padding: var(--nb-4) var(--nb-5);
+  font-size: var(--nb-font-size-3);
+}
+
+/* ---- Animations ---- */
+@keyframes nb-sheet-slide-up {
+  from {
+    translate: 0 100%;
+  }
+  to {
+    translate: 0 0;
+  }
+}
+
+@keyframes nb-sheet-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
