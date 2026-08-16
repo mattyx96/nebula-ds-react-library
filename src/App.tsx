@@ -9,13 +9,16 @@ import {FramePanelPage} from "./pages/FramePanelPage.tsx";
 import {TokensPage} from "./pages/Tokens.tsx";
 import {FramePanelFullPage} from "./pages/FramePanelFullPage.tsx";
 import {MenuPage} from "./pages/Menu.tsx";
+import {FlashPage} from "./pages/Flash.tsx";
 import {useTheme} from "./components/themeProvider/themeContext.ts";
+import {useFlash} from "./components/flash/flashContext.ts";
 
-const Pages = ['tokens', 'buttons', 'panels', 'typography', 'frameConnector', 'horizon', 'framePanel', "framePanelFullPage", 'menu'] as const
+const Pages = ['tokens', 'buttons', 'panels', 'typography', 'frameConnector', 'horizon', 'framePanel', "framePanelFullPage", 'menu', 'flash'] as const
 
 export default function App() {
   const [page, setPage] = useState<typeof Pages[number]>('buttons');
   const {theme, setTheme} = useTheme();
+  const {flash} = useFlash();
   // console.log(tw.generateTailwindCompatibleTheme())
   return (
     <div className="nb-app">
@@ -33,6 +36,18 @@ export default function App() {
         <Button
           variant="outlined"
           size="S"
+          text="Flash red"
+          onClick={() => flash('error')}
+        />
+        <Button
+          variant="outlined"
+          size="S"
+          text="Flash green"
+          onClick={() => flash('success')}
+        />
+        <Button
+          variant="outlined"
+          size="S"
           text={theme === 'light' ? 'Dark' : 'Light'}
           onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
         />
@@ -47,6 +62,7 @@ export default function App() {
         {page === 'horizon' && <HorizonPage/>}
         {page === 'tokens' && <TokensPage/>}
         {page === 'menu' && <MenuPage/>}
+        {page === 'flash' && <FlashPage/>}
       </main>
     </div>
   )

@@ -1,0 +1,92 @@
+/* Nebula Flash — temporary color feedback layer.
+ * Applies the error/success tone by overriding the Nebula semantic color
+ * tokens under the `.nb-flash--*` class, keeping the same token roles
+ * (light surfaces, dark text, accent borders) so the UI stays recognizable.
+ * Signal colors reference the palette tokens directly: red-500/red-700 for
+ * danger, shamrock for success; surface tints are derived with color-mix.
+ */
+
+/* ---- Theme-invariant primitives ---- */
+.nb-flash--error {
+  --nb-button-background-primary: var(--nb-red-500);
+  --nb-button-background-secondary: var(--nb-red-700);
+}
+
+.nb-flash--success {
+  --nb-button-background-primary: var(--nb-shamrock-green-500);
+  --nb-button-background-secondary: var(--nb-sharmrock-green-400);
+}
+
+/* ---- Light theme ---- */
+.nb-flash--error {
+  --nb-background-primary: color-mix(in srgb, var(--nb-red-500) 10%, #ffffff);
+  --nb-background-secondary-default: color-mix(in srgb, var(--nb-red-500) 18%, #ffffff);
+  --nb-background-accent-200: color-mix(in srgb, var(--nb-red-500) 28%, #ffffff);
+  --nb-background-accent-500: var(--nb-red-500);
+  --nb-background-contrast-primary-50: color-mix(in srgb, var(--nb-red-500) 8%, #ffffff);
+  --nb-background-contrast-primary-200: var(--nb-red-700);
+  --nb-background-contrast-primary-500: var(--nb-red-700);
+  --nb-button-background-pressed: color-mix(in srgb, var(--nb-red-500) 28%, #ffffff);
+  --nb-button-text-color-default: var(--nb-red-700);
+  --nb-button-text-color-primary: #ffffff;
+  --nb-button-text-color-secondary: #ffffff;
+  --nb-frame-background-primary: color-mix(in srgb, var(--nb-red-500) 18%, #ffffff);
+  --nb-clickable-outline-500: var(--nb-red-700);
+  --nb-primary-300: color-mix(in srgb, var(--nb-red-500) 40%, #ffffff);
+  --nb-secondary-300: var(--nb-red-500);
+}
+
+.nb-flash--success {
+  --nb-background-primary: color-mix(in srgb, var(--nb-shamrock-green-500) 10%, #ffffff);
+  --nb-background-secondary-default: color-mix(in srgb, var(--nb-shamrock-green-500) 18%, #ffffff);
+  --nb-background-accent-200: color-mix(in srgb, var(--nb-shamrock-green-500) 28%, #ffffff);
+  --nb-background-accent-500: var(--nb-shamrock-green-500);
+  --nb-background-contrast-primary-50: color-mix(in srgb, var(--nb-shamrock-green-500) 8%, #ffffff);
+  --nb-background-contrast-primary-200: color-mix(in srgb, var(--nb-shamrock-green-500) 40%, #000000);
+  --nb-background-contrast-primary-500: color-mix(in srgb, var(--nb-shamrock-green-500) 60%, #000000);
+  --nb-button-background-pressed: color-mix(in srgb, var(--nb-shamrock-green-500) 28%, #ffffff);
+  --nb-button-text-color-default: color-mix(in srgb, var(--nb-shamrock-green-500) 60%, #000000);
+  --nb-button-text-color-primary: #ffffff;
+  --nb-button-text-color-secondary: #ffffff;
+  --nb-frame-background-primary: color-mix(in srgb, var(--nb-shamrock-green-500) 18%, #ffffff);
+  --nb-clickable-outline-500: color-mix(in srgb, var(--nb-shamrock-green-500) 60%, #000000);
+  --nb-primary-300: color-mix(in srgb, var(--nb-shamrock-green-500) 40%, #ffffff);
+  --nb-secondary-300: var(--nb-shamrock-green-500);
+}
+
+/* ---- Dark theme ---- */
+[data-nb-theme='dark'] .nb-flash--error {
+  --nb-background-primary: color-mix(in srgb, var(--nb-red-700) 25%, #1f1f1f);
+  --nb-background-secondary-default: color-mix(in srgb, var(--nb-red-700) 34%, #1f1f1f);
+  --nb-background-accent-200: color-mix(in srgb, var(--nb-red-500) 30%, #2a2a2a);
+  --nb-background-accent-500: var(--nb-red-500);
+  --nb-background-contrast-primary-50: color-mix(in srgb, var(--nb-red-700) 25%, #1f1f1f);
+  --nb-background-contrast-primary-200: color-mix(in srgb, var(--nb-red-500) 45%, #ffffff);
+  --nb-background-contrast-primary-500: color-mix(in srgb, var(--nb-red-500) 60%, #ffffff);
+  --nb-button-background-pressed: color-mix(in srgb, var(--nb-red-700) 40%, #1f1f1f);
+  --nb-button-text-color-default: color-mix(in srgb, var(--nb-red-500) 60%, #ffffff);
+  --nb-button-text-color-primary: #ffffff;
+  --nb-button-text-color-secondary: #ffffff;
+  --nb-frame-background-primary: color-mix(in srgb, var(--nb-red-700) 34%, #1f1f1f);
+  --nb-clickable-outline-500: color-mix(in srgb, var(--nb-red-500) 60%, #ffffff);
+  --nb-primary-300: var(--nb-red-500);
+  --nb-secondary-300: var(--nb-red-700);
+}
+
+[data-nb-theme='dark'] .nb-flash--success {
+  --nb-background-primary: color-mix(in srgb, var(--nb-shamrock-green-500) 25%, #1f1f1f);
+  --nb-background-secondary-default: color-mix(in srgb, var(--nb-shamrock-green-500) 34%, #1f1f1f);
+  --nb-background-accent-200: color-mix(in srgb, var(--nb-shamrock-green-500) 30%, #2a2a2a);
+  --nb-background-accent-500: var(--nb-shamrock-green-500);
+  --nb-background-contrast-primary-50: color-mix(in srgb, var(--nb-shamrock-green-500) 25%, #1f1f1f);
+  --nb-background-contrast-primary-200: color-mix(in srgb, var(--nb-shamrock-green-500) 45%, #ffffff);
+  --nb-background-contrast-primary-500: color-mix(in srgb, var(--nb-shamrock-green-500) 60%, #ffffff);
+  --nb-button-background-pressed: color-mix(in srgb, var(--nb-shamrock-green-500) 40%, #1f1f1f);
+  --nb-button-text-color-default: color-mix(in srgb, var(--nb-shamrock-green-500) 60%, #ffffff);
+  --nb-button-text-color-primary: #ffffff;
+  --nb-button-text-color-secondary: #ffffff;
+  --nb-frame-background-primary: color-mix(in srgb, var(--nb-shamrock-green-500) 34%, #1f1f1f);
+  --nb-clickable-outline-500: color-mix(in srgb, var(--nb-shamrock-green-500) 60%, #ffffff);
+  --nb-primary-300: var(--nb-shamrock-green-500);
+  --nb-secondary-300: var(--nb-shamrock-green-500);
+}
