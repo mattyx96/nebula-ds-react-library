@@ -1,15 +1,17 @@
 /**
  * Restores `HTMLElement.prototype.focus` to a plain method.
  *
- * Storybook's test/instrumenter addon redefines `focus` as an accessor whose
- * getter reads `this.ownerDocument`. Zag.js reads `HTMLElement.prototype.focus`
- * off the prototype (to track keyboard focus), which invokes that getter with
- * `this` bound to the prototype — throwing `TypeError: Illegal invocation` and
- * breaking any Zag-powered component in Storybook.
+ * Storybook's runtime redefines `focus` as an accessor whose getter reads
+ * `this.ownerDocument`. Reading it off the prototype (as Zag.js and Storybook's
+ * own focus tracking do) invokes the getter with `this` bound to the prototype,
+ * throwing `TypeError: Illegal invocation`.
  *
- * When the descriptor is an accessor we swap it for the native implementation
- * (obtained from a pristine iframe document). In regular apps the property is
- * already a plain method, so this is a no-op.
+ * When the descriptor is an accessor we call its getter with a detached,
+ * same-realm element to recover the underlying focus implementation, then swap
+ * the accessor for that plain method. Using a same-realm element (rather than
+ * an iframe) is important: DOM methods are realm-branded, so a function from a
+ * different iframe realm would reject calls with local elements. In regular
+ * apps the property is already a plain method, so this is a no-op.
  */
 export function restoreNativeFocus(): void {
   if (typeof window === 'undefined') return;
@@ -20,16 +22,9 @@ export function restoreNativeFocus(): void {
 
     if (!descriptor || (!('get' in descriptor) && !('set' in descriptor))) return;
 
-    const iframe = window.document.createElement('iframe');
-    iframe.style.display = 'none';
-    iframe.setAttribute('aria-hidden', 'true');
-    window.document.documentElement.appendChild(iframe);
-
-    const nativeFocus = (
-      iframe.contentWindow as Window & {HTMLElement: typeof HTMLElement}
-    )?.HTMLElement.prototype.focus;
-
-    iframe.remove();
+    const probe = window.document.createElement('div');
+    const nativeFocus = descriptor.get ? descriptor.get.call(probe) : null;
+    probe.remove();
 
     if (typeof nativeFocus === 'function') {
       Object.defineProperty(proto, 'focus', {

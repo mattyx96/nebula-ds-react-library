@@ -109,6 +109,9 @@ export const Sheet = (props: SheetProps) => {
     ...rest
   } = props;
 
+  // Defensive: keep `HTMLElement.prototype.focus` readable in Storybook (see Menu).
+  restoreNativeFocus();
+
   const service = useMachine(drawer.machine, {
     id: useId(),
     open,

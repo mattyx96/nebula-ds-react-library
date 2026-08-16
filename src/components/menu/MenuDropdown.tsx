@@ -165,6 +165,10 @@ export const MenuDropdown = (props: MenuDropdownProps) => {
     ...rest
   } = props;
 
+  // Storybook can redefine `HTMLElement.prototype.focus` as a throwing accessor
+  // after module load; normalize it before the machine's effects read it.
+  restoreNativeFocus();
+
   const service = useMachine(menu.machine, {
     id: useId(),
     open,

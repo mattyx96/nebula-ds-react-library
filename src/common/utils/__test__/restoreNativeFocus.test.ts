@@ -20,12 +20,13 @@ describe('restoreNativeFocus', () => {
     expect(typeof descriptor?.value).toBe('function');
   });
 
-  it('replaces an accessor with a plain method', () => {
+  it('replaces an accessor with a plain method from the same realm', () => {
+    const nativeFocus = HTMLElement.prototype.focus;
     Object.defineProperty(HTMLElement.prototype, 'focus', {
       configurable: true,
       get() {
         void (this as HTMLElement).ownerDocument;
-        return () => {};
+        return nativeFocus;
       },
     });
 
@@ -34,7 +35,7 @@ describe('restoreNativeFocus', () => {
     const descriptor = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'focus');
     expect(descriptor?.get).toBeUndefined();
     expect(descriptor?.set).toBeUndefined();
-    expect(typeof descriptor?.value).toBe('function');
+    expect(descriptor?.value).toBe(nativeFocus);
     expect(() => HTMLElement.prototype.focus).not.toThrow();
   });
 });
