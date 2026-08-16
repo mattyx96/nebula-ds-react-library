@@ -8,10 +8,12 @@ name: Release (reusable)
 # commit/push, so a failed publish leaves no bumped version on the
 # remote.
 #
-# Requirements:
-#   - npmjs.org must be set up for "Publish from GitHub Actions"
-#     (Trusted Publishing / OIDC) for this repo, so the `id-token`
-#     below is enough — no NPM_TOKEN secret is needed.
+# Requirements — pick one:
+#   1. Classic token: add an npm "Automation" token as the NPM_TOKEN GitHub
+#      secret (used directly, no provenance), or
+#   2. OIDC / Trusted Publishing: on npmjs.org enable "Publish from GitHub
+#      Actions" for this package/repo so the `id-token` below is enough
+#      (adds provenance signatures, no secret needed).
 on:
   workflow_call:
     inputs:
@@ -50,3 +52,8 @@ jobs:
 
       - name: Bump, build, publish, commit and push
         run: sh ./.scripts/release.sh "${{ inputs.version }}" --publish
+        env:
+          # Optional classic npm token. When set, publishing uses it directly;
+          # when absent, the script uses OIDC provenance (requires npm
+          # "Publish from GitHub Actions" / Trusted Publishing to be configured).
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

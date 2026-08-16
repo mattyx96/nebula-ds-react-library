@@ -28,9 +28,16 @@ echo "New version: $new_version"
 # Build the project
 pnpm run build
 
-# Publish (CI only)
+# Publish (CI only).
+# Prefer a classic npm token (NPM_TOKEN / NODE_AUTH_TOKEN) when one is
+# available; otherwise fall back to OIDC provenance, which requires npm
+# "Trusted Publishing" to be configured for this repo (see release.yml).
 if [ -n "$publish" ]; then
-  pnpm publish --provenance --access public --no-git-checks
+  if [ -n "${NPM_TOKEN:-}${NODE_AUTH_TOKEN:-}" ]; then
+    pnpm publish --access public --no-git-checks
+  else
+    pnpm publish --provenance --access public --no-git-checks
+  fi
 fi
 
 # Commit and push the version bump
