@@ -51,7 +51,7 @@ export const MenuPage = () => {
           />
         </div>
         <Text component="span" className="nb-demo-menu__hint">
-          Shrink the window below the breakpoint (default: lg / 1024px) — the dropdown automatically becomes a bottom sheet.
+          Shrink the window below the breakpoint (default: md / 768px) — the dropdown automatically becomes a bottom sheet.
         </Text>
       </section>
 

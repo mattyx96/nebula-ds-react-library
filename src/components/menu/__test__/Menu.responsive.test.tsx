@@ -72,6 +72,20 @@ describe('Menu (responsive)', () => {
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
   });
 
+  it('renders a dropdown on md (only sm and xs use the sheet by default)', () => {
+    mockUseBreakpoint.mockReturnValue({
+      current: 'md',
+      isDesktop: false,
+      isMobile: false,
+      isTablet: true,
+    } as ReturnType<typeof breakpointHook.useBreakpoint>);
+
+    render(<Menu text="Actions" items={items}/>);
+
+    expect(screen.getByRole('menu', {hidden: true})).toBeInTheDocument();
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
+  });
+
   it('breakpoint prop controls the switch point', () => {
     // current is 'lg'; with breakpoint="xl" the menu should render a sheet
     mockUseBreakpoint.mockReturnValue({

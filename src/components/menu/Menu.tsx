@@ -74,7 +74,7 @@ export interface MenuProps extends MenuElementProps {
    * - `sheet`: always the bottom sheet
    */
   mode?: MenuMode;
-  /** The breakpoint at which the menu switches to the bottom sheet (used when `mode="auto"`). */
+  /** The breakpoint at which the menu switches to the bottom sheet (used when `mode="auto"`). Sheet below it, dropdown at/above it. */
   breakpoint?: MenuBreakpoint;
   contentClassName?: string;
   itemClassName?: string;
@@ -108,7 +108,7 @@ export const Menu = (props: MenuProps) => {
     title,
     description,
     mode = 'auto',
-    breakpoint = 'lg',
+    breakpoint = 'md',
     className,
     contentClassName,
     itemClassName,
