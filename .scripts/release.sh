@@ -34,8 +34,10 @@ pnpm run build
 # "Trusted Publishing" to be configured for this repo (see release.yml).
 if [ -n "$publish" ]; then
   if [ -n "${NPM_TOKEN:-}${NODE_AUTH_TOKEN:-}" ]; then
+    echo "Publishing with classic npm token (no provenance)"
     pnpm publish --access public --no-git-checks
   else
+    echo "Publishing with OIDC provenance (requires npm Trusted Publishing setup)"
     pnpm publish --provenance --access public --no-git-checks
   fi
 fi
