@@ -2,89 +2,91 @@
  * Applies the error/success tone by overriding the Nebula semantic color
  * tokens under the `.nb-flash--*` class, keeping the same token roles
  * (light surfaces, dark text, accent borders) so the UI stays recognizable.
+ * Hues come from the Nebula palette itself: sienna/red for danger,
+ * shamrock green for success (retro 60s-80s LCARS feel).
  */
 
 /* ---- Theme-invariant primitives ---- */
 .nb-flash--error {
-  --nb-button-background-primary: #c62828;
-  --nb-button-background-secondary: #d32f2f;
+  --nb-button-background-primary: #c86547;
+  --nb-button-background-secondary: #912a15;
 }
 
 .nb-flash--success {
-  --nb-button-background-primary: #2e7d32;
-  --nb-button-background-secondary: #388e3c;
+  --nb-button-background-primary: #28965a;
+  --nb-button-background-secondary: #1f6b40;
 }
 
 /* ---- Light theme ---- */
 .nb-flash--error {
-  --nb-background-primary: #fceae7;
-  --nb-background-secondary-default: #f6d8d3;
-  --nb-background-accent-200: #eec4ba;
-  --nb-background-accent-500: #d98b79;
-  --nb-background-contrast-primary-50: #f8e5e0;
-  --nb-background-contrast-primary-200: #a6503f;
-  --nb-background-contrast-primary-500: #7c1d1a;
-  --nb-button-background-pressed: #e57373;
-  --nb-button-text-color-default: #7c1d1a;
+  --nb-background-primary: #f6e5e0;
+  --nb-background-secondary-default: #efd6cd;
+  --nb-background-accent-200: #e2bdb1;
+  --nb-background-accent-500: #c86547;
+  --nb-background-contrast-primary-50: #f8ebe6;
+  --nb-background-contrast-primary-200: #a05139;
+  --nb-background-contrast-primary-500: #6f2413;
+  --nb-button-background-pressed: #e2bdb1;
+  --nb-button-text-color-default: #6f2413;
   --nb-button-text-color-primary: #ffffff;
   --nb-button-text-color-secondary: #ffffff;
-  --nb-frame-background-primary: #f6d8d3;
-  --nb-clickable-outline-500: #7c1d1a;
-  --nb-primary-300: #e57373;
-  --nb-secondary-300: #c62828;
+  --nb-frame-background-primary: #efd6cd;
+  --nb-clickable-outline-500: #6f2413;
+  --nb-primary-300: #d3846c;
+  --nb-secondary-300: #c86547;
 }
 
 .nb-flash--success {
-  --nb-background-primary: #eaf5eb;
-  --nb-background-secondary-default: #d4ead7;
-  --nb-background-accent-200: #bfe0c5;
-  --nb-background-accent-500: #6fae79;
-  --nb-background-contrast-primary-50: #e0f1e2;
-  --nb-background-contrast-primary-200: #2e7d32;
-  --nb-background-contrast-primary-500: #1b5e20;
-  --nb-button-background-pressed: #66bb6a;
-  --nb-button-text-color-default: #1b5e20;
+  --nb-background-primary: #e9f3ec;
+  --nb-background-secondary-default: #d4e8da;
+  --nb-background-accent-200: #bcdbc4;
+  --nb-background-accent-500: #53ab7b;
+  --nb-background-contrast-primary-50: #e1f0e6;
+  --nb-background-contrast-primary-200: #3a7a53;
+  --nb-background-contrast-primary-500: #175534;
+  --nb-button-background-pressed: #bcdbc4;
+  --nb-button-text-color-default: #175534;
   --nb-button-text-color-primary: #ffffff;
   --nb-button-text-color-secondary: #ffffff;
-  --nb-frame-background-primary: #d4ead7;
-  --nb-clickable-outline-500: #1b5e20;
-  --nb-primary-300: #66bb6a;
-  --nb-secondary-300: #2e7d32;
+  --nb-frame-background-primary: #d4e8da;
+  --nb-clickable-outline-500: #175534;
+  --nb-primary-300: #53ab7b;
+  --nb-secondary-300: #28965a;
 }
 
 /* ---- Dark theme ---- */
 [data-nb-theme='dark'] .nb-flash--error {
-  --nb-background-primary: #4a2c29;
-  --nb-background-secondary-default: #5f3833;
-  --nb-background-accent-200: #7a4b45;
-  --nb-background-accent-500: #8f5850;
-  --nb-background-contrast-primary-50: #4a2c29;
-  --nb-background-contrast-primary-200: #b0706a;
-  --nb-background-contrast-primary-500: #f6d2ce;
-  --nb-button-background-pressed: #7a4b45;
-  --nb-button-text-color-default: #f6d2ce;
+  --nb-background-primary: #3f2a24;
+  --nb-background-secondary-default: #51352d;
+  --nb-background-accent-200: #6e4a3f;
+  --nb-background-accent-500: #7a5447;
+  --nb-background-contrast-primary-50: #3f2a24;
+  --nb-background-contrast-primary-200: #b07a67;
+  --nb-background-contrast-primary-500: #f2d5c9;
+  --nb-button-background-pressed: #6e4a3f;
+  --nb-button-text-color-default: #f2d5c9;
   --nb-button-text-color-primary: #ffffff;
   --nb-button-text-color-secondary: #ffffff;
-  --nb-frame-background-primary: #5f3833;
-  --nb-clickable-outline-500: #f6d2ce;
-  --nb-primary-300: #c62828;
-  --nb-secondary-300: #d32f2f;
+  --nb-frame-background-primary: #51352d;
+  --nb-clickable-outline-500: #f2d5c9;
+  --nb-primary-300: #c86547;
+  --nb-secondary-300: #912a15;
 }
 
 [data-nb-theme='dark'] .nb-flash--success {
-  --nb-background-primary: #2a3a2b;
-  --nb-background-secondary-default: #33503a;
-  --nb-background-accent-200: #4a6b50;
-  --nb-background-accent-500: #57755c;
-  --nb-background-contrast-primary-50: #2a3a2b;
-  --nb-background-contrast-primary-200: #7fa085;
-  --nb-background-contrast-primary-500: #d6ebd8;
-  --nb-button-background-pressed: #4a6b50;
-  --nb-button-text-color-default: #d6ebd8;
+  --nb-background-primary: #22352a;
+  --nb-background-secondary-default: #2b4435;
+  --nb-background-accent-200: #3f5c49;
+  --nb-background-accent-500: #486550;
+  --nb-background-contrast-primary-50: #22352a;
+  --nb-background-contrast-primary-200: #7ca28a;
+  --nb-background-contrast-primary-500: #d4ecdb;
+  --nb-button-background-pressed: #3f5c49;
+  --nb-button-text-color-default: #d4ecdb;
   --nb-button-text-color-primary: #ffffff;
   --nb-button-text-color-secondary: #ffffff;
-  --nb-frame-background-primary: #33503a;
-  --nb-clickable-outline-500: #d6ebd8;
-  --nb-primary-300: #66bb6a;
-  --nb-secondary-300: #2e7d32;
+  --nb-frame-background-primary: #2b4435;
+  --nb-clickable-outline-500: #d4ecdb;
+  --nb-primary-300: #53ab7b;
+  --nb-secondary-300: #28965a;
 }

@@ -5,7 +5,7 @@ export type FlashColor = 'error' | 'success';
 export type FlashOptions = {
   /** How many times the UI blinks (default 2). */
   repeats?: number;
-  /** Duration of each blink phase in ms (default 300). */
+  /** Duration of each blink phase in ms (default 100). */
   duration?: number;
 };
 

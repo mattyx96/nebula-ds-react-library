@@ -31,7 +31,7 @@ export const FlashProvider = (props: FlashProviderProps) => {
   }, []);
 
   const flash = useCallback((color: FlashColor, options?: FlashOptions) => {
-    const {repeats = 2, duration = 300} = options ?? {};
+    const {repeats = 2, duration = 100} = options ?? {};
 
     timers.current.forEach((timer) => clearTimeout(timer));
     timers.current = [];
