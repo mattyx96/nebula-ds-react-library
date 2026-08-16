@@ -1,0 +1,10 @@
+name: Publish minor
+
+on:
+  workflow_dispatch:
+
+jobs:
+  release:
+    uses: ./.github/workflows/release.yml
+    with:
+      version: minor

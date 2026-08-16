@@ -39,6 +39,13 @@ function App() {
 
 Nested providers are supported (an inner `ThemeProvider` themes only its own subtree). Generated token files (light/dark variables) remain the source of truth; the split files are regenerated with `pnpm generate-themes`.
 
+### Releasing a new version
+
+On GitHub run the matching **Publish** workflow (Actions → **Publish patch** / **Publish minor** / **Publish major** → Run workflow). The workflow bumps the version accordingly, builds, publishes to npm (with provenance via npm Trusted Publishing / OIDC), and commits + pushes the version bump — no local steps needed.
+
+- Requires npmjs.org to be configured for "Publish from GitHub Actions" for this repo (no `NPM_TOKEN` secret needed).
+- The three buttons share one reusable workflow (`.github/workflows/release.yml`), which runs `.scripts/release.sh <type> --publish`. The local `pnpm release` mirrors the same logic (bump → build → commit → push; publish only via the workflow).
+
 ### Roadmap:
 - [X] document tokens
 - [X] document typography

@@ -1,0 +1,52 @@
+name: Release (reusable)
+
+# Shared release logic called by the "Publish patch/minor/major"
+# workflows (manual triggers in the Actions UI).
+#
+# Bumps the version, builds, publishes to npm (with provenance) and
+# commits + pushes the version bump. Publishing happens BEFORE the
+# commit/push, so a failed publish leaves no bumped version on the
+# remote.
+#
+# Requirements:
+#   - npmjs.org must be set up for "Publish from GitHub Actions"
+#     (Trusted Publishing / OIDC) for this repo, so the `id-token`
+#     below is enough — no NPM_TOKEN secret is needed.
+on:
+  workflow_call:
+    inputs:
+      version:
+        required: true
+        type: string
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # to commit + push the version bump
+      id-token: write # Required for Trusted Publishing (OIDC)
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Enable pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11.7.0
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Bump, build, publish, commit and push
+        run: sh ./.scripts/release.sh "${{ inputs.version }}" --publish
