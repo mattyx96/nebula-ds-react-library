@@ -8,9 +8,10 @@ import {HorizonPage} from "./pages/HorizonPage.tsx";
 import {FramePanelPage} from "./pages/FramePanelPage.tsx";
 import {TokensPage} from "./pages/Tokens.tsx";
 import {FramePanelFullPage} from "./pages/FramePanelFullPage.tsx";
+import {MenuPage} from "./pages/Menu.tsx";
 import {useTheme} from "./components/themeProvider/themeContext.ts";
 
-const Pages = ['tokens', 'buttons', 'panels', 'typography', 'frameConnector', 'horizon', 'framePanel', "framePanelFullPage"] as const
+const Pages = ['tokens', 'buttons', 'panels', 'typography', 'frameConnector', 'horizon', 'framePanel', "framePanelFullPage", 'menu'] as const
 
 export default function App() {
   const [page, setPage] = useState<typeof Pages[number]>('buttons');
@@ -45,6 +46,7 @@ export default function App() {
         {page === 'framePanelFullPage' && <FramePanelFullPage/>}
         {page === 'horizon' && <HorizonPage/>}
         {page === 'tokens' && <TokensPage/>}
+        {page === 'menu' && <MenuPage/>}
       </main>
     </div>
   )

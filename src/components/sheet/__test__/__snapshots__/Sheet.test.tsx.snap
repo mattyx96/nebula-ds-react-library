@@ -1,0 +1,22 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Sheet > renders the trigger with the content hidden by default 1`] = `
+<div
+  class="nb-sheet nb-sheet--size-m"
+>
+  <button
+    aria-controls="drawer:_r_0_:content"
+    aria-expanded="false"
+    aria-haspopup="dialog"
+    class="nb-button nb-button--filled nb-button--size-m nb-button--rounded-default nb-sheet__trigger"
+    data-ownedby="_r_0_"
+    data-part="trigger"
+    data-scope="drawer"
+    data-state="closed"
+    id="drawer:_r_0_:trigger"
+    type="button"
+  >
+    Actions
+  </button>
+</div>
+`;

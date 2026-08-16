@@ -113,6 +113,34 @@
   gap: var(--nb-4);
 }
 
+/* ---- Menu page ---- */
+.nb-demo-menu__section {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.nb-demo-menu__title {
+  margin-bottom: var(--nb-4);
+}
+
+.nb-demo-menu__row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--nb-5);
+}
+
+.nb-demo-menu__hint {
+  display: block;
+  margin-top: var(--nb-3);
+  font-size: var(--nb-font-size-3);
+  color: var(--nb-background-contrast-primary-200);
+}
+
+.nb-demo-menu__hint code {
+  font-family: var(--nb-font-families-roboto-mono);
+}
+
 /* ---- Panels page ---- */
 .nb-demo-panels {
   display: flex;
