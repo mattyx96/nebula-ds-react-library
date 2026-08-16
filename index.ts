@@ -14,5 +14,7 @@ export * from './src/components/framePanel/FramePanel.tsx';
 export * from './src/components/typography/Typography.tsx';
 export * from './src/components/themeProvider/ThemeProvider.tsx';
 export * from './src/components/themeProvider/themeContext.ts';
+export * from './src/components/flash/flashContext.ts';
+export * from './src/components/flash/FlashProvider.tsx';
 export {useBreakpoint} from './src/hook/useBreakpoint.ts';
 

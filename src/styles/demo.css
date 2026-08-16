@@ -113,6 +113,11 @@
   gap: var(--nb-4);
 }
 
+/* ---- Flash page ---- */
+.nb-demo-flash__form {
+  max-width: 560px;
+}
+
 /* ---- Menu page ---- */
 .nb-demo-menu__section {
   width: 100%;

@@ -1,0 +1,90 @@
+/* Nebula Flash — temporary color feedback layer.
+ * Applies the error/success tone by overriding the Nebula semantic color
+ * tokens under the `.nb-flash--*` class, keeping the same token roles
+ * (light surfaces, dark text, accent borders) so the UI stays recognizable.
+ */
+
+/* ---- Theme-invariant primitives ---- */
+.nb-flash--error {
+  --nb-button-background-primary: #c62828;
+  --nb-button-background-secondary: #d32f2f;
+}
+
+.nb-flash--success {
+  --nb-button-background-primary: #2e7d32;
+  --nb-button-background-secondary: #388e3c;
+}
+
+/* ---- Light theme ---- */
+.nb-flash--error {
+  --nb-background-primary: #fceae7;
+  --nb-background-secondary-default: #f6d8d3;
+  --nb-background-accent-200: #eec4ba;
+  --nb-background-accent-500: #d98b79;
+  --nb-background-contrast-primary-50: #f8e5e0;
+  --nb-background-contrast-primary-200: #a6503f;
+  --nb-background-contrast-primary-500: #7c1d1a;
+  --nb-button-background-pressed: #e57373;
+  --nb-button-text-color-default: #7c1d1a;
+  --nb-button-text-color-primary: #ffffff;
+  --nb-button-text-color-secondary: #ffffff;
+  --nb-frame-background-primary: #f6d8d3;
+  --nb-clickable-outline-500: #7c1d1a;
+  --nb-primary-300: #e57373;
+  --nb-secondary-300: #c62828;
+}
+
+.nb-flash--success {
+  --nb-background-primary: #eaf5eb;
+  --nb-background-secondary-default: #d4ead7;
+  --nb-background-accent-200: #bfe0c5;
+  --nb-background-accent-500: #6fae79;
+  --nb-background-contrast-primary-50: #e0f1e2;
+  --nb-background-contrast-primary-200: #2e7d32;
+  --nb-background-contrast-primary-500: #1b5e20;
+  --nb-button-background-pressed: #66bb6a;
+  --nb-button-text-color-default: #1b5e20;
+  --nb-button-text-color-primary: #ffffff;
+  --nb-button-text-color-secondary: #ffffff;
+  --nb-frame-background-primary: #d4ead7;
+  --nb-clickable-outline-500: #1b5e20;
+  --nb-primary-300: #66bb6a;
+  --nb-secondary-300: #2e7d32;
+}
+
+/* ---- Dark theme ---- */
+[data-nb-theme='dark'] .nb-flash--error {
+  --nb-background-primary: #4a2c29;
+  --nb-background-secondary-default: #5f3833;
+  --nb-background-accent-200: #7a4b45;
+  --nb-background-accent-500: #8f5850;
+  --nb-background-contrast-primary-50: #4a2c29;
+  --nb-background-contrast-primary-200: #b0706a;
+  --nb-background-contrast-primary-500: #f6d2ce;
+  --nb-button-background-pressed: #7a4b45;
+  --nb-button-text-color-default: #f6d2ce;
+  --nb-button-text-color-primary: #ffffff;
+  --nb-button-text-color-secondary: #ffffff;
+  --nb-frame-background-primary: #5f3833;
+  --nb-clickable-outline-500: #f6d2ce;
+  --nb-primary-300: #c62828;
+  --nb-secondary-300: #d32f2f;
+}
+
+[data-nb-theme='dark'] .nb-flash--success {
+  --nb-background-primary: #2a3a2b;
+  --nb-background-secondary-default: #33503a;
+  --nb-background-accent-200: #4a6b50;
+  --nb-background-accent-500: #57755c;
+  --nb-background-contrast-primary-50: #2a3a2b;
+  --nb-background-contrast-primary-200: #7fa085;
+  --nb-background-contrast-primary-500: #d6ebd8;
+  --nb-button-background-pressed: #4a6b50;
+  --nb-button-text-color-default: #d6ebd8;
+  --nb-button-text-color-primary: #ffffff;
+  --nb-button-text-color-secondary: #ffffff;
+  --nb-frame-background-primary: #33503a;
+  --nb-clickable-outline-500: #d6ebd8;
+  --nb-primary-300: #66bb6a;
+  --nb-secondary-300: #2e7d32;
+}
