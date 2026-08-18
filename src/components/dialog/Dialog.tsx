@@ -1,6 +1,7 @@
 import {useId, type ComponentPropsWithRef, type ReactNode} from 'react';
 import * as dialog from '@zag-js/dialog';
 import {normalizeProps, Portal, useMachine} from '@zag-js/react';
+import {XMarkIcon} from '@heroicons/react/24/solid';
 import {clsxMerge} from '../../common/utils/classNameUtils';
 import {restoreNativeFocus} from '../../common/utils/restoreNativeFocus';
 import {Icon} from '../icon/Icon.tsx';
@@ -119,15 +120,17 @@ export const Dialog = (props: DialogProps) => {
                   </h2>
                 )}
                 <button {...api.getCloseTriggerProps()} className="nb-dialog__close" aria-label="Close">
-                  ×
+                  <XMarkIcon width={16} height={16}/>
                 </button>
               </div>
-              {Boolean(description) && (
-                <p {...api.getDescriptionProps()} className="nb-dialog__description">
-                  {description}
-                </p>
-              )}
-              <div className="nb-dialog__body">{children}</div>
+              <div className="nb-dialog__body">
+                {Boolean(description) && (
+                  <p {...api.getDescriptionProps()} className="nb-dialog__description">
+                    {description}
+                  </p>
+                )}
+                {children}
+              </div>
             </div>
           </div>
         </Portal>

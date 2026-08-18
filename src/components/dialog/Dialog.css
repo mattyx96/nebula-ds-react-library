@@ -33,12 +33,10 @@
 
   display: flex;
   flex-direction: column;
-  gap: var(--nb-3);
 
   width: 100%;
   max-width: 480px;
   max-height: 85dvh;
-  padding: var(--nb-5);
 
   overflow-y: auto;
 
@@ -47,17 +45,25 @@
 
   background-color: var(--nb-background-primary);
   border: var(--nb-border-1) solid var(--nb-background-accent-500);
-  border-radius: var(--nb-border-radius-default);
-  border-top-left-radius: var(--nb-paper-border-radius-big);
+  border-radius: var(--nb-border-radius-200);
 
   animation: nb-dialog-zoom-in 200ms ease-out;
 }
 
+/* Header band with an LCARS-style slanted edge, so the title is never cut. */
 .nb-dialog__header {
+  position: relative;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: var(--nb-3);
+
+  padding: var(--nb-5) var(--nb-5) var(--nb-4);
+
+  background-color: var(--nb-background-secondary-default);
+  border-bottom: var(--nb-border-0-5) solid var(--nb-background-accent-200);
+  border-radius: var(--nb-border-radius-200) var(--nb-border-radius-200)
+    var(--nb-border-radius-10) var(--nb-border-radius-10);
 }
 
 .nb-dialog__title {
@@ -77,10 +83,8 @@
   width: var(--nb-7);
   height: var(--nb-7);
   flex-shrink: 0;
+  padding: var(--nb-1);
 
-  font-family: var(--nb-font-families-orbitron);
-  font-size: var(--nb-font-size-5);
-  line-height: 1;
   color: var(--nb-background-contrast-primary-500);
 
   border-radius: var(--nb-border-radius-50);
@@ -91,17 +95,19 @@
   background-color: var(--nb-background-accent-200);
 }
 
+.nb-dialog__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--nb-4);
+
+  padding: var(--nb-5);
+}
+
 .nb-dialog__description {
   margin: 0;
   font-family: var(--nb-font-families-roboto-mono);
   font-size: var(--nb-font-size-3);
   color: var(--nb-background-contrast-primary-200);
-}
-
-.nb-dialog__body {
-  display: flex;
-  flex-direction: column;
-  gap: var(--nb-4);
 }
 
 @keyframes nb-dialog-fade-in {

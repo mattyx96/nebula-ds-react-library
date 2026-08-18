@@ -1,6 +1,7 @@
 import {useId, type ComponentPropsWithRef, type ReactNode} from 'react';
 import * as select from '@zag-js/select';
 import {normalizeProps, Portal, useMachine} from '@zag-js/react';
+import {CheckIcon} from '@heroicons/react/24/solid';
 import {clsxMerge} from '../../common/utils/classNameUtils';
 import {restoreNativeFocus} from '../../common/utils/restoreNativeFocus';
 import {buttonVariants} from '../../variants';
@@ -211,7 +212,7 @@ export const Select = (props: SelectProps) => {
                   <span {...api.getItemTextProps({item})}>{item.label}</span>
                   {state.selected && (
                     <span {...api.getItemIndicatorProps({item})} className="nb-select__item-indicator">
-                      ✓
+                      <CheckIcon width={14} height={14}/>
                     </span>
                   )}
                 </li>

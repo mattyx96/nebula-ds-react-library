@@ -139,7 +139,7 @@
 }
 
 .nb-select__item[data-state='checked'] {
-  color: var(--nb-button-background-primary);
+  color: var(--nb-background-contrast-primary-500);
 }
 
 .nb-select__item-indicator {
@@ -147,6 +147,7 @@
   display: flex;
   align-items: center;
   flex-shrink: 0;
+  color: var(--nb-button-background-primary);
 }
 
 /* ---- Sizes (items scale with the trigger size) ---- */
