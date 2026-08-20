@@ -95,6 +95,11 @@
   background-color: var(--nb-background-accent-200);
 }
 
+/* Dark mode: see Menu — use a darker hover band for contrast. */
+[data-nb-theme='dark'] .nb-dialog__close:hover {
+  background-color: var(--nb-background-accent-500);
+}
+
 .nb-dialog__body {
   display: flex;
   flex-direction: column;

@@ -117,6 +117,11 @@
   background-color: var(--nb-background-accent-200);
 }
 
+/* Dark mode: see Menu — use a darker active band for contrast. */
+[data-nb-theme='dark'] .nb-sheet__item:active:not(:disabled) {
+  background-color: var(--nb-background-accent-500);
+}
+
 .nb-sheet__item:disabled {
   color: var(--nb-background-accent-500);
   cursor: not-allowed;

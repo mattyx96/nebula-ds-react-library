@@ -41,6 +41,12 @@
   color: var(--nb-input-label-text-color-placeholder);
 }
 
+/* The surface-token placeholder is too faint in dark mode (1.48:1). Use the
+   secondary contrast color for a properly readable placeholder in both themes. */
+[data-nb-theme='dark'] .nb-input::placeholder {
+  color: var(--nb-background-contrast-primary-200);
+}
+
 .nb-input:hover:not(:disabled):not(:focus) {
   box-shadow: 0 0 0 var(--nb-border-0-5) var(--nb-background-accent-200);
 }

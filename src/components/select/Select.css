@@ -132,6 +132,11 @@
   background-color: var(--nb-background-accent-200);
 }
 
+/* Dark mode: see Menu — use a darker highlight band for contrast. */
+[data-nb-theme='dark'] .nb-select__item[data-highlighted] {
+  background-color: var(--nb-background-accent-500);
+}
+
 .nb-select__item[data-disabled] {
   color: var(--nb-background-accent-500);
   cursor: not-allowed;

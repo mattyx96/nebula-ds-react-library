@@ -87,6 +87,12 @@
   background-color: var(--nb-background-accent-200);
 }
 
+/* Dark mode: the default accent-200 highlight is too light against the light
+   text — use a darker band that still reads as a highlight (≥4.5:1). */
+[data-nb-theme='dark'] .nb-menu__item[data-highlighted] {
+  background-color: var(--nb-background-accent-500);
+}
+
 .nb-menu__item[data-disabled] {
   color: var(--nb-background-accent-500);
   cursor: not-allowed;
