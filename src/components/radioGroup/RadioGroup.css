@@ -73,13 +73,13 @@
   opacity: var(--nb-button-opacity-disabled);
 }
 
-/* Checked dot: an LCARS-styled small rounded block */
+/* Checked dot: uses the contrast color for content on the primary fill */
 .nb-radio__dot {
   width: 50%;
   height: 50%;
   display: block;
   border-radius: var(--nb-checkbox-border-radius-default);
-  background-color: var(--nb-white);
+  background-color: var(--nb-button-text-color-primary);
 }
 
 /* ---- Label ---- */
