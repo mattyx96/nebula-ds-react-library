@@ -10,6 +10,7 @@ export * from './src/components/menu/Menu.tsx';
 export * from './src/components/sheet/Sheet.tsx';
 export * from './src/components/select/Select.tsx';
 export * from './src/components/dialog/Dialog.tsx';
+export * from './src/components/input/Input.tsx';
 export * from './src/components/horizon/Horizon.tsx';
 export * from './src/components/frameConnector/FrameConnector.tsx';
 export * from './src/components/framePanel/FramePanel.tsx';

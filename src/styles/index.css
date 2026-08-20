@@ -14,6 +14,7 @@
 @import '../components/sheet/Sheet.css';
 @import '../components/select/Select.css';
 @import '../components/dialog/Dialog.css';
+@import '../components/input/Input.css';
 @import '../components/typography/Typography.css';
 @import '../components/frameConnector/FrameConnector.css';
 @import '../components/framePanel/FramePanel.css';

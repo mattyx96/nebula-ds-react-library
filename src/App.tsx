@@ -11,10 +11,11 @@ import {FramePanelFullPage} from "./pages/FramePanelFullPage.tsx";
 import {MenuPage} from "./pages/Menu.tsx";
 import {FlashPage} from "./pages/Flash.tsx";
 import {SelectDialogPage} from "./pages/SelectDialog.tsx";
+import {InputPage} from "./pages/InputPage.tsx";
 import {useTheme} from "./components/themeProvider/themeContext.ts";
 import {useFlash} from "./components/flash/flashContext.ts";
 
-const Pages = ['tokens', 'buttons', 'panels', 'typography', 'frameConnector', 'horizon', 'framePanel', "framePanelFullPage", 'menu', 'selectDialog', 'flash'] as const
+const Pages = ['tokens', 'buttons', 'panels', 'typography', 'frameConnector', 'horizon', 'framePanel', "framePanelFullPage", 'menu', 'selectDialog', 'input', 'flash'] as const
 
 export default function App() {
   const [page, setPage] = useState<typeof Pages[number]>('buttons');
@@ -64,6 +65,7 @@ export default function App() {
         {page === 'tokens' && <TokensPage/>}
         {page === 'menu' && <MenuPage/>}
         {page === 'selectDialog' && <SelectDialogPage/>}
+        {page === 'input' && <InputPage/>}
         {page === 'flash' && <FlashPage/>}
       </main>
     </div>
