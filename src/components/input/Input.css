@@ -32,7 +32,7 @@
 
   background-color: transparent;
   border: var(--nb-border-1) solid var(--nb-background-accent-500);
-  border-radius: var(--nb-input-border-radius-xs-default);
+  border-radius: var(--nb-button-border-radius-md-lg-default);
 
   transition: background-color 120ms ease, box-shadow 120ms ease;
 }
@@ -92,24 +92,24 @@
   padding: var(--nb-input-spacing-xs-v-default) var(--nb-input-spacing-xs-h-default);
   height: var(--nb-button-sm);
   font-size: var(--nb-font-size-2);
-  --nb-input-radius: var(--nb-input-border-radius-xs-default);
-  --nb-input-radius-big: var(--nb-input-border-radius-xs-big);
+  --nb-input-radius: var(--nb-button-border-radius-xs-default);
+  --nb-input-radius-big: var(--nb-button-border-radius-xs-big);
 }
 
 .nb-input--size-m {
   padding: var(--nb-input-spacing-md-v-default) var(--nb-input-spacing-md-h-default);
   height: var(--nb-button-md);
   font-size: var(--nb-font-size-3);
-  --nb-input-radius: var(--nb-input-border-radius-md-lg-default);
-  --nb-input-radius-big: var(--nb-input-border-radius-md-big);
+  --nb-input-radius: var(--nb-button-border-radius-md-lg-default);
+  --nb-input-radius-big: var(--nb-button-border-radius-md-big);
 }
 
 .nb-input--size-l {
   padding: var(--nb-input-spacing-lg-v-default) var(--nb-input-spacing-lg-h-default);
   height: var(--nb-button-lg);
   font-size: var(--nb-font-size-4);
-  --nb-input-radius: var(--nb-input-border-radius-md-lg-default);
-  --nb-input-radius-big: var(--nb-input-border-radius-lg-big);
+  --nb-input-radius: var(--nb-button-border-radius-md-lg-default);
+  --nb-input-radius-big: var(--nb-button-border-radius-lg-big);
 }
 
 /* ---- Rounded corners (LCARS style) ---- */
