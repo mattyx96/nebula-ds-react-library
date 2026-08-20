@@ -1,0 +1,152 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RadioGroup > renders a group label and all options 1`] = `
+<div
+  aria-labelledby="radio-group:_r_0_:label"
+  aria-orientation="vertical"
+  class="nb-radio-group nb-radio-group--vertical"
+  data-orientation="vertical"
+  data-part="root"
+  data-scope="radio-group"
+  id="radio-group:_r_0_"
+  role="radiogroup"
+  style="position: relative;"
+>
+  <span
+    class="nb-radio-group__label"
+    data-orientation="vertical"
+    data-part="label"
+    data-scope="radio-group"
+    id="radio-group:_r_0_:label"
+  >
+    Fruits
+  </span>
+  <div
+    class="nb-radio-group__items"
+  >
+    <label
+      class="nb-radio__item"
+      data-orientation="vertical"
+      data-part="item"
+      data-scope="radio-group"
+      data-ssr=""
+      data-state="unchecked"
+      for="radio-group:_r_0_:radio:input:apple"
+      id="radio-group:_r_0_:radio:apple"
+    >
+      <span
+        aria-hidden="true"
+        class="nb-radio__control nb-radio nb-radio--size-m nb-radio--rounded-default"
+        data-orientation="vertical"
+        data-part="item-control"
+        data-scope="radio-group"
+        data-ssr=""
+        data-state="unchecked"
+        id="radio-group:_r_0_:radio:control:apple"
+      />
+      <span
+        class="nb-radio__label"
+        data-orientation="vertical"
+        data-part="item-text"
+        data-scope="radio-group"
+        data-ssr=""
+        data-state="unchecked"
+        id="radio-group:_r_0_:radio:label:apple"
+      >
+        Apples
+      </span>
+      <input
+        aria-labelledby="radio-group:_r_0_:radio:label:apple"
+        data-ownedby="radio-group:_r_0_"
+        id="radio-group:_r_0_:radio:input:apple"
+        name="_r_0_"
+        style="border: 0px; clip: rect(0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; word-wrap: normal;"
+        type="radio"
+        value="apple"
+      />
+    </label>
+    <label
+      class="nb-radio__item"
+      data-orientation="vertical"
+      data-part="item"
+      data-scope="radio-group"
+      data-ssr=""
+      data-state="unchecked"
+      for="radio-group:_r_0_:radio:input:orange"
+      id="radio-group:_r_0_:radio:orange"
+    >
+      <span
+        aria-hidden="true"
+        class="nb-radio__control nb-radio nb-radio--size-m nb-radio--rounded-default"
+        data-orientation="vertical"
+        data-part="item-control"
+        data-scope="radio-group"
+        data-ssr=""
+        data-state="unchecked"
+        id="radio-group:_r_0_:radio:control:orange"
+      />
+      <span
+        class="nb-radio__label"
+        data-orientation="vertical"
+        data-part="item-text"
+        data-scope="radio-group"
+        data-ssr=""
+        data-state="unchecked"
+        id="radio-group:_r_0_:radio:label:orange"
+      >
+        Oranges
+      </span>
+      <input
+        aria-labelledby="radio-group:_r_0_:radio:label:orange"
+        data-ownedby="radio-group:_r_0_"
+        id="radio-group:_r_0_:radio:input:orange"
+        name="_r_0_"
+        style="border: 0px; clip: rect(0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; word-wrap: normal;"
+        type="radio"
+        value="orange"
+      />
+    </label>
+    <label
+      class="nb-radio__item"
+      data-orientation="vertical"
+      data-part="item"
+      data-scope="radio-group"
+      data-ssr=""
+      data-state="unchecked"
+      for="radio-group:_r_0_:radio:input:mango"
+      id="radio-group:_r_0_:radio:mango"
+    >
+      <span
+        aria-hidden="true"
+        class="nb-radio__control nb-radio nb-radio--size-m nb-radio--rounded-default"
+        data-orientation="vertical"
+        data-part="item-control"
+        data-scope="radio-group"
+        data-ssr=""
+        data-state="unchecked"
+        id="radio-group:_r_0_:radio:control:mango"
+      />
+      <span
+        class="nb-radio__label"
+        data-orientation="vertical"
+        data-part="item-text"
+        data-scope="radio-group"
+        data-ssr=""
+        data-state="unchecked"
+        id="radio-group:_r_0_:radio:label:mango"
+      >
+        Mangoes
+      </span>
+      <input
+        aria-labelledby="radio-group:_r_0_:radio:label:mango"
+        data-ownedby="radio-group:_r_0_"
+        id="radio-group:_r_0_:radio:input:mango"
+        name="_r_0_"
+        style="border: 0px; clip: rect(0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; word-wrap: normal;"
+        type="radio"
+        value="mango"
+      />
+    </label>
+  </div>
+</div>
+`;

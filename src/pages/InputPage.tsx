@@ -1,10 +1,12 @@
 import {useState} from 'react';
 import {Input} from '../components/input/Input.tsx';
 import {Checkbox} from '../components/checkbox/Checkbox.tsx';
+import {RadioGroup} from '../components/radioGroup/RadioGroup.tsx';
 import {Text} from '../components/typography/Typography.tsx';
 import {Button} from '../components/button/Button.tsx';
 import {inputRoundedVariants, inputSizeVariants, inputVariantVariants} from '../variants/input';
 import {checkboxRoundedVariants, checkboxSizeVariants} from '../variants/checkbox';
+import {radioRoundedVariants, radioSizeVariants} from '../variants/radioGroup';
 
 export const InputPage = () => {
   const [name, setName] = useState('');
@@ -81,6 +83,56 @@ export const InputPage = () => {
         <div className="nb-demo-input__col">
           {checkboxRoundedVariants.map((rounded) => (
             <Checkbox key={rounded} rounded={rounded} defaultChecked label={String(rounded)}/>
+          ))}
+        </div>
+      </section>
+
+      <section className="nb-demo-menu__section">
+        <Text component="h2" variant="header2" className="nb-demo-menu__title">
+          Radio Group — Sizes
+        </Text>
+        <div className="nb-demo-input__col">
+          {radioSizeVariants.map((size) => (
+            <RadioGroup
+              key={size}
+              size={size}
+              label={`Size ${size}`}
+              defaultValue="apple"
+              items={[
+                {value: 'apple', label: 'Apples'},
+                {value: 'orange', label: 'Oranges'},
+              ]}
+            />
+          ))}
+        </div>
+      </section>
+
+      <section className="nb-demo-menu__section">
+        <Text component="h2" variant="header2" className="nb-demo-menu__title">
+          Radio Group — Orientation & Rounded
+        </Text>
+        <div className="nb-demo-input__col">
+          <RadioGroup
+            label="Horizontal"
+            orientation="horizontal"
+            defaultValue="apple"
+            items={[
+              {value: 'apple', label: 'Apples'},
+              {value: 'orange', label: 'Oranges'},
+              {value: 'mango', label: 'Mangoes'},
+            ]}
+          />
+          {radioRoundedVariants.map((rounded) => (
+            <RadioGroup
+              key={rounded}
+              label={String(rounded)}
+              rounded={rounded}
+              defaultValue="apple"
+              items={[
+                {value: 'apple', label: 'Apples'},
+                {value: 'orange', label: 'Oranges'},
+              ]}
+            />
           ))}
         </div>
       </section>
