@@ -113,6 +113,21 @@
   gap: var(--nb-4);
 }
 
+/* ---- Input page ---- */
+.nb-demo-input__col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--nb-5);
+  max-width: 420px;
+}
+
+.nb-demo-input__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--nb-5);
+  max-width: 420px;
+}
+
 /* ---- Flash page ---- */
 .nb-demo-flash__form {
   max-width: 560px;

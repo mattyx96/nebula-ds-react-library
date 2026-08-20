@@ -1,0 +1,159 @@
+/* Nebula Input — the standard text input, styled with Nebula tokens. */
+
+.nb-input__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--nb-2);
+}
+
+.nb-input__wrapper--full {
+  width: 100%;
+}
+
+/* ---- Label ---- */
+.nb-input__label {
+  font-family: var(--nb-font-families-orbitron);
+  font-weight: var(--nb-font-weights-orbitron-3);
+  font-size: var(--nb-font-size-2);
+  line-height: var(--nb-line-heights-2);
+  color: var(--nb-background-contrast-primary-500);
+}
+
+.nb-input__required {
+  color: var(--nb-input-color-error);
+}
+
+/* ---- Field ---- */
+.nb-input {
+  width: 100%;
+
+  font-family: var(--nb-font-families-roboto-mono);
+  color: var(--nb-background-contrast-primary-500);
+
+  background-color: transparent;
+  border: var(--nb-border-1) solid var(--nb-background-accent-500);
+  border-radius: var(--nb-button-border-radius-md-lg-default);
+
+  transition: background-color 120ms ease, box-shadow 120ms ease;
+}
+
+.nb-input::placeholder {
+  color: var(--nb-input-label-text-color-placeholder);
+}
+
+.nb-input:hover:not(:disabled):not(:focus) {
+  box-shadow: 0 0 0 var(--nb-border-0-5) var(--nb-background-accent-200);
+}
+
+.nb-input:focus-visible,
+.nb-input:focus {
+  outline: 0;
+  background-color: var(--nb-input-background-color-focused);
+  border-color: transparent;
+  box-shadow: 0 0 0 var(--nb-border-1) var(--nb-input-color-focused);
+}
+
+.nb-input:disabled {
+  cursor: not-allowed;
+  opacity: var(--nb-input-opacity-disabled);
+}
+
+.nb-input--invalid,
+.nb-input--invalid:focus,
+.nb-input--invalid:focus-visible {
+  border-color: var(--nb-input-color-error);
+  box-shadow: 0 0 0 var(--nb-border-1) var(--nb-input-color-error);
+  background-color: transparent;
+}
+
+/* ---- Variants ---- */
+.nb-input--outlined {
+  border: var(--nb-border-1) solid var(--nb-background-accent-500);
+}
+
+.nb-input--filled {
+  background-color: var(--nb-background-secondary-default);
+  border: var(--nb-border-1) solid transparent;
+}
+
+.nb-input--standard {
+  background-color: var(--nb-background-secondary-default);
+  border: var(--nb-border-1) solid var(--nb-background-accent-200);
+}
+
+.nb-input--text {
+  border: var(--nb-border-1) solid transparent;
+  border-bottom: var(--nb-border-1) solid var(--nb-background-accent-500);
+  border-radius: 0;
+}
+
+/* ---- Sizes ---- */
+.nb-input--size-s {
+  padding: var(--nb-input-spacing-xs-v-default) var(--nb-input-spacing-xs-h-default);
+  height: var(--nb-button-sm);
+  font-size: var(--nb-font-size-2);
+  --nb-input-radius: var(--nb-button-border-radius-xs-default);
+  --nb-input-radius-big: var(--nb-button-border-radius-xs-big);
+}
+
+.nb-input--size-m {
+  padding: var(--nb-input-spacing-md-v-default) var(--nb-input-spacing-md-h-default);
+  height: var(--nb-button-md);
+  font-size: var(--nb-font-size-3);
+  --nb-input-radius: var(--nb-button-border-radius-md-lg-default);
+  --nb-input-radius-big: var(--nb-button-border-radius-md-big);
+}
+
+.nb-input--size-l {
+  padding: var(--nb-input-spacing-lg-v-default) var(--nb-input-spacing-lg-h-default);
+  height: var(--nb-button-lg);
+  font-size: var(--nb-font-size-4);
+  --nb-input-radius: var(--nb-button-border-radius-md-lg-default);
+  --nb-input-radius-big: var(--nb-button-border-radius-lg-big);
+}
+
+/* ---- Rounded corners (LCARS style) ---- */
+.nb-input--rounded-default {
+  border-radius: var(--nb-input-radius);
+}
+
+.nb-input--rounded-r {
+  border-radius: var(--nb-input-radius) var(--nb-input-radius-big) var(--nb-input-radius-big) var(--nb-input-radius);
+}
+
+.nb-input--rounded-l {
+  border-radius: var(--nb-input-radius-big) var(--nb-input-radius) var(--nb-input-radius) var(--nb-input-radius-big);
+}
+
+.nb-input--rounded-rtop {
+  border-radius: var(--nb-input-radius) var(--nb-input-radius-big) var(--nb-input-radius) var(--nb-input-radius);
+}
+
+.nb-input--rounded-rbottom {
+  border-radius: var(--nb-input-radius) var(--nb-input-radius) var(--nb-input-radius-big) var(--nb-input-radius);
+}
+
+.nb-input--rounded-ltop {
+  border-radius: var(--nb-input-radius-big) var(--nb-input-radius) var(--nb-input-radius) var(--nb-input-radius);
+}
+
+.nb-input--rounded-lbottom {
+  border-radius: var(--nb-input-radius) var(--nb-input-radius) var(--nb-input-radius) var(--nb-input-radius-big);
+}
+
+/* ---- Helper / error text ---- */
+.nb-input__helper {
+  font-family: var(--nb-font-families-roboto-mono);
+  font-size: var(--nb-font-size-3);
+  color: var(--nb-input-label-text-color-secondary);
+}
+
+.nb-input__error {
+  display: flex;
+  flex-direction: column;
+  gap: var(--nb-1);
+
+  font-family: var(--nb-font-families-roboto-mono);
+  font-size: var(--nb-font-size-3);
+  color: var(--nb-input-color-error);
+}

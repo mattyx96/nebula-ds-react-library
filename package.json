@@ -53,6 +53,7 @@
     "release": "sh ./.scripts/release.sh"
   },
   "dependencies": {
+    "@zag-js/checkbox": "1.43.0",
     "@zag-js/dialog": "^1.43.0",
     "@zag-js/drawer": "^1.43.0",
     "@zag-js/menu": "^1.43.0",

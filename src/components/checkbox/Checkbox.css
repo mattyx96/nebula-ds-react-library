@@ -1,0 +1,116 @@
+/* Nebula Checkbox — powered by @zag-js/checkbox, styled with Nebula tokens. */
+
+.nb-checkbox__root {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--nb-3);
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.nb-checkbox__root[data-disabled] {
+  cursor: not-allowed;
+}
+
+/* ---- Control (the box) ---- */
+.nb-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background-color: transparent;
+  border: var(--nb-border-1) solid var(--nb-background-accent-500);
+  border-radius: var(--nb-checkbox-border-radius-xs-default);
+
+  transition: background-color 120ms ease, box-shadow 120ms ease;
+}
+
+.nb-checkbox[data-focus-visible] {
+  outline: 0;
+  box-shadow: 0 0 0 var(--nb-border-1) var(--nb-clickable-outline-500);
+}
+
+.nb-checkbox[data-state='checked'],
+.nb-checkbox[data-state='indeterminate'] {
+  background-color: var(--nb-primary-500);
+  border-color: var(--nb-primary-500);
+}
+
+.nb-checkbox__root[data-disabled] .nb-checkbox {
+  opacity: var(--nb-button-opacity-disabled);
+  cursor: not-allowed;
+}
+
+.nb-checkbox__indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--nb-white);
+}
+
+/* ---- Label ---- */
+.nb-checkbox__label {
+  font-family: var(--nb-font-families-orbitron);
+  font-weight: var(--nb-font-weights-orbitron-3);
+  font-size: var(--nb-font-size-2);
+  line-height: var(--nb-line-heights-2);
+  color: var(--nb-background-contrast-primary-500);
+}
+
+.nb-checkbox__root[data-disabled] .nb-checkbox__label {
+  opacity: var(--nb-button-opacity-disabled);
+}
+
+/* ---- Sizes ---- */
+.nb-checkbox--size-s {
+  width: var(--nb-input-sm);
+  height: var(--nb-input-sm);
+  --nb-checkbox-radius: var(--nb-checkbox-border-radius-xs-default);
+  --nb-checkbox-radius-big: var(--nb-checkbox-border-radius-xs-big);
+}
+
+.nb-checkbox--size-m {
+  width: var(--nb-input-md);
+  height: var(--nb-input-md);
+  --nb-checkbox-radius: var(--nb-checkbox-border-radius-md-lg-default);
+  --nb-checkbox-radius-big: var(--nb-checkbox-border-radius-md-big);
+}
+
+.nb-checkbox--size-l {
+  width: var(--nb-input-lg);
+  height: var(--nb-input-lg);
+  --nb-checkbox-radius: var(--nb-checkbox-border-radius-md-lg-default);
+  --nb-checkbox-radius-big: var(--nb-checkbox-border-radius-lg-big);
+}
+
+/* ---- Rounded corners (LCARS style — one corner fully rounded) ---- */
+.nb-checkbox--rounded-default {
+  border-radius: var(--nb-checkbox-radius);
+}
+
+.nb-checkbox--rounded-r {
+  border-radius: var(--nb-checkbox-radius) var(--nb-checkbox-radius-big) var(--nb-checkbox-radius-big) var(--nb-checkbox-radius);
+}
+
+.nb-checkbox--rounded-l {
+  border-radius: var(--nb-checkbox-radius-big) var(--nb-checkbox-radius) var(--nb-checkbox-radius) var(--nb-checkbox-radius-big);
+}
+
+.nb-checkbox--rounded-rtop {
+  border-radius: var(--nb-checkbox-radius) var(--nb-checkbox-radius-big) var(--nb-checkbox-radius) var(--nb-checkbox-radius);
+}
+
+.nb-checkbox--rounded-rbottom {
+  border-radius: var(--nb-checkbox-radius) var(--nb-checkbox-radius) var(--nb-checkbox-radius-big) var(--nb-checkbox-radius);
+}
+
+.nb-checkbox--rounded-ltop {
+  border-radius: var(--nb-checkbox-radius-big) var(--nb-checkbox-radius) var(--nb-checkbox-radius) var(--nb-checkbox-radius);
+}
+
+.nb-checkbox--rounded-lbottom {
+  border-radius: var(--nb-checkbox-radius) var(--nb-checkbox-radius) var(--nb-checkbox-radius) var(--nb-checkbox-radius-big);
+}

@@ -1,0 +1,38 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Checkbox > renders a label and an unchecked checkbox 1`] = `
+<label
+  class="nb-checkbox__root"
+  data-part="root"
+  data-scope="checkbox"
+  data-state="unchecked"
+  for="checkbox:_r_0_:input"
+  id="checkbox:_r_0_"
+>
+  <span
+    aria-hidden="true"
+    class="nb-checkbox nb-checkbox--size-m nb-checkbox--rounded-default"
+    data-part="control"
+    data-scope="checkbox"
+    data-state="unchecked"
+    id="checkbox:_r_0_:control"
+  />
+  <span
+    class="nb-checkbox__label"
+    data-part="label"
+    data-scope="checkbox"
+    data-state="unchecked"
+    id="checkbox:_r_0_:label"
+  >
+    Remember me
+  </span>
+  <input
+    aria-invalid="false"
+    aria-labelledby="checkbox:_r_0_:label"
+    id="checkbox:_r_0_:input"
+    style="border: 0px; clip: rect(0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; word-wrap: normal;"
+    type="checkbox"
+    value="on"
+  />
+</label>
+`;

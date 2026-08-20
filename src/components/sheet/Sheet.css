@@ -153,7 +153,7 @@
 
 /* ---- Sizes (items scale with the trigger size) ---- */
 .nb-sheet--size-s .nb-sheet__item {
-  padding: var(--nb-3) var(--nb-3);
+  padding: var(--nb-2) var(--nb-3);
   font-size: var(--nb-font-size-1);
 }
 

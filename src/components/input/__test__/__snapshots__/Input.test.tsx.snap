@@ -1,0 +1,18 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Input > renders an input with the given label 1`] = `
+<div
+  class="nb-input__wrapper"
+>
+  <label
+    class="nb-input__label"
+    for="_r_0_"
+  >
+    Username
+  </label>
+  <input
+    class="nb-input nb-input--outlined nb-input--size-m nb-input--rounded-default"
+    id="_r_0_"
+  />
+</div>
+`;
