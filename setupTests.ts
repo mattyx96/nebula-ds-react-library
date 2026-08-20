@@ -21,6 +21,14 @@ globalThis.ResizeObserver = globalThis.ResizeObserver ?? ResizeObserverStub;
 globalThis.IntersectionObserver =
   globalThis.IntersectionObserver ?? IntersectionObserverStub;
 
+// jsdom does not implement Element.prototype.scrollTo, which Zag's select
+// (and menu highlight scrolling) calls. Stub it out.
+Element.prototype.scrollTo =
+  Element.prototype.scrollTo ??
+  function scrollTo() {
+    /* no-op */
+  };
+
 declare module 'vitest' {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   interface Assertion<T = any>

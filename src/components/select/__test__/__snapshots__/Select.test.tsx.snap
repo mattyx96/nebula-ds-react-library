@@ -1,0 +1,72 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Select > renders the label, trigger and hidden native select 1`] = `
+<div
+  class="nb-select nb-select nb-select--size-m nb-select--align-start"
+>
+  <div
+    class="nb-select__control"
+    data-part="control"
+    data-scope="select"
+    data-state="closed"
+    id="select:_r_0_:control"
+  >
+    <label
+      class="nb-select__label"
+      data-part="label"
+      data-scope="select"
+      for="select:_r_0_:select"
+      id="select:_r_0_:label"
+    >
+      Country
+    </label>
+    <button
+      aria-controls="select:_r_0_:content"
+      aria-expanded="false"
+      aria-haspopup="listbox"
+      aria-invalid="false"
+      aria-labelledby="select:_r_0_:label"
+      aria-required="false"
+      class="nb-button nb-button--filled nb-button--size-m nb-button--rounded-default nb-select__trigger"
+      data-part="trigger"
+      data-placeholder-shown=""
+      data-scope="select"
+      data-state="closed"
+      id="select:_r_0_:trigger"
+      role="combobox"
+      type="button"
+    >
+      <span
+        class="nb-select__value"
+        data-part="value-text"
+        data-scope="select"
+      >
+        Select option
+      </span>
+    </button>
+  </div>
+  <select
+    aria-hidden="true"
+    aria-labelledby="select:_r_0_:label"
+    id="select:_r_0_:select"
+    style="border: 0px; clip: rect(0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap; word-wrap: normal;"
+    tabindex="-1"
+  >
+    <option
+      value="NG"
+    >
+      Nigeria
+    </option>
+    <option
+      value="JP"
+    >
+      Japan
+    </option>
+    <option
+      value="IT"
+    >
+      Italy
+    </option>
+  </select>
+</div>
+`;

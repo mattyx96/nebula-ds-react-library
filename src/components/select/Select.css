@@ -1,0 +1,167 @@
+/* Nebula Select — powered by @zag-js/select, styled with Nebula tokens. */
+
+.nb-select {
+  position: relative;
+  display: inline-block;
+  min-width: 200px;
+}
+
+.nb-select__control {
+  display: flex;
+  flex-direction: column;
+  gap: var(--nb-2);
+}
+
+.nb-select__label {
+  font-family: var(--nb-font-families-orbitron);
+  font-weight: var(--nb-font-weights-orbitron-3);
+  font-size: var(--nb-font-size-2);
+  color: var(--nb-background-contrast-primary-500);
+}
+
+.nb-select__label[data-disabled] {
+  opacity: var(--nb-button-opacity-disabled);
+}
+
+.nb-select__trigger {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nb-select__value {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.nb-select__trigger[data-placeholder-shown] .nb-select__value {
+  color: var(--nb-background-contrast-primary-200);
+}
+
+.nb-select__trigger[data-invalid] {
+  box-shadow: 0 0 0 var(--nb-border-1) var(--nb-core-error-1);
+}
+
+.nb-select__indicator {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  transition: transform 150ms ease;
+}
+
+[data-part='indicator'][data-state='open'] {
+  transform: rotate(180deg);
+}
+
+/* ---- Positioner ---- */
+.nb-select__positioner {
+  /* Configurable via --nb-select-z-index (inherit it from a parent to override). */
+  --nb-select-z-index: 100;
+  z-index: var(--nb-select-z-index) !important;
+}
+
+/* ---- Content (floating panel) ---- */
+.nb-select__content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--nb-1);
+
+  margin: 0;
+  padding: var(--nb-3);
+  list-style: none;
+
+  font-family: var(--nb-font-families-orbitron);
+
+  background-color: var(--nb-background-secondary-default);
+  border: var(--nb-border-1) solid var(--nb-background-accent-500);
+  border-radius: var(--nb-border-radius-default);
+}
+
+.nb-select__content[hidden] {
+  display: none;
+}
+
+.nb-select__content--round-no {
+  border-bottom-left-radius: var(--nb-border-radius-default);
+}
+
+.nb-select__content--round-xs {
+  border-bottom-left-radius: var(--nb-paper-border-radius-md);
+}
+
+.nb-select__content--round-lg {
+  border-bottom-left-radius: var(--nb-paper-border-radius-big);
+}
+
+.nb-select__content--outline-700 {
+  border-color: var(--nb-background-contrast-primary-200);
+}
+
+.nb-select__content--outline-500 {
+  border-color: var(--nb-background-accent-500);
+}
+
+.nb-select__content--outline-200 {
+  border-color: var(--nb-background-accent-200);
+}
+
+.nb-select__content--outline-50 {
+  border-color: var(--nb-background-contrast-primary-50);
+  box-shadow: 0 1px 6px rgb(0 0 0 / 0.07);
+}
+
+/* ---- Items ---- */
+.nb-select__item {
+  display: flex;
+  align-items: center;
+  gap: var(--nb-2);
+
+  border-radius: var(--nb-border-radius-50);
+
+  color: var(--nb-background-contrast-primary-500);
+  font-family: var(--nb-font-families-orbitron);
+  font-weight: var(--nb-font-weights-orbitron-3);
+
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.nb-select__item[data-highlighted] {
+  background-color: var(--nb-background-accent-200);
+}
+
+.nb-select__item[data-disabled] {
+  color: var(--nb-background-accent-500);
+  cursor: not-allowed;
+  opacity: var(--nb-button-opacity-disabled);
+}
+
+.nb-select__item[data-state='checked'] {
+  color: var(--nb-background-contrast-primary-500);
+}
+
+.nb-select__item-indicator {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  color: var(--nb-button-background-primary);
+}
+
+/* ---- Sizes (items scale with the trigger size) ---- */
+.nb-select--size-s .nb-select__item {
+  padding: var(--nb-2) var(--nb-3);
+  font-size: var(--nb-font-size-1);
+}
+
+.nb-select--size-m .nb-select__item {
+  padding: var(--nb-3) var(--nb-4);
+  font-size: var(--nb-font-size-2);
+}
+
+.nb-select--size-l .nb-select__item {
+  padding: var(--nb-4) var(--nb-5);
+  font-size: var(--nb-font-size-3);
+}

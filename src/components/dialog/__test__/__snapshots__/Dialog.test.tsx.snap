@@ -1,0 +1,22 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Dialog > renders the trigger and keeps the dialog hidden by default 1`] = `
+<div
+  class="nb-dialog"
+>
+  <button
+    aria-controls="dialog:_r_0_:content"
+    aria-expanded="false"
+    aria-haspopup="dialog"
+    class="nb-button nb-button--filled nb-button--size-m nb-button--rounded-default nb-dialog__trigger"
+    data-ownedby="_r_0_"
+    data-part="trigger"
+    data-scope="dialog"
+    data-state="closed"
+    id="dialog:_r_0_:trigger"
+    type="button"
+  >
+    Open
+  </button>
+</div>
+`;
