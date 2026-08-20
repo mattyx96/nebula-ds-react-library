@@ -53,9 +53,10 @@
 
 /* ---- Label ---- */
 .nb-checkbox__label {
-  font-family: var(--nb-font-families-roboto-mono);
-  font-size: var(--nb-font-size-3);
-  line-height: var(--nb-line-heights-3);
+  font-family: var(--nb-font-families-orbitron);
+  font-weight: var(--nb-font-weights-orbitron-3);
+  font-size: var(--nb-font-size-2);
+  line-height: var(--nb-line-heights-2);
   color: var(--nb-background-contrast-primary-500);
 }
 
