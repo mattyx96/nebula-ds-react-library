@@ -48,7 +48,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--nb-white);
+  color: var(--nb-button-text-color-primary);
 }
 
 /* ---- Label ---- */
