@@ -1,8 +1,8 @@
 import type {Meta, StoryObj} from '@storybook/react';
 import {useRef} from 'react';
 import {Button} from '../../button/Button';
-import {ToastProvider} from '../Toast.tsx';
-import {useToast} from '../toastContext.ts';
+import {Toaster, ToastProvider} from '../Toast.tsx';
+import {createToastStore, useToast} from '../toastContext.ts';
 import {Text} from '../../typography/Typography';
 import {toastPlacementVariants, toastTypeVariants} from '../../../variants/toast';
 
@@ -172,6 +172,49 @@ export const OverlapMode: Story = {
     docs: {
       description: {
         story: '`overlap` collapses queued toasts into a compact stack.',
+      },
+    },
+  },
+};
+
+// Module-level store: toasts can be fired from anywhere (no provider).
+const globalStore = createToastStore({placement: 'bottom-end'});
+
+const StandaloneDemo = () => {
+  const toast = useToast(globalStore);
+
+  return (
+    <div className="nb-demo-col">
+      <Text component="h6" variant="header6">Standalone Toaster (no provider)</Text>
+      <div className="nb-demo-menu__row">
+        <Button
+          size="S"
+          variant="standard"
+          text="Fire from store"
+          onClick={() => toast.success({title: 'Standalone toast', description: 'No <ToastProvider> required.'})}
+        />
+      </div>
+      <Text component="span" variant="body3">
+        The store is created at module scope with <code>createToastStore()</code>;
+        the <code>&lt;Toaster store={'{…}'} /&gt;</code> viewport is mounted once. Great
+        for firing toasts from non-React code.
+      </Text>
+    </div>
+  );
+};
+
+export const StandaloneToaster: Story = {
+  render: () => (
+    <>
+      <StandaloneDemo />
+      <Toaster store={globalStore} />
+    </>
+  ),
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'Provider-free usage: create a store at module scope, mount a single `<Toaster store={store} />`, and fire toasts from anywhere — even outside React.',
       },
     },
   },

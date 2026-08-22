@@ -2,8 +2,8 @@ import {render, screen, waitFor, within} from '@testing-library/react';
 import {describe, expect, it} from 'vitest';
 import {Button} from '../../button/Button';
 import {ThemeProvider} from '../../themeProvider/ThemeProvider';
-import {ToastProvider} from '../Toast.tsx';
-import {useToast} from '../toastContext.ts';
+import {Toaster, ToastProvider} from '../Toast.tsx';
+import {createToastStore, useToast} from '../toastContext.ts';
 
 const ToastDemo = () => {
   const toast = useToast();
@@ -120,5 +120,30 @@ describe('Toast', () => {
     const group = toast.closest('.nb-toast__group');
     expect(group).not.toBeNull();
     expect(group?.getAttribute('data-nb-theme')).toBe('dark');
+  });
+
+  it('works standalone: a Toaster renders toasts from an external store without a provider', async () => {
+    const store = createToastStore();
+
+    render(<Toaster store={store} />);
+
+    store.success({title: 'Saved', description: 'Done.'});
+
+    const toast = await screen.findByRole('status');
+    expect(toast).toHaveTextContent('Saved');
+    expect(toast).toHaveTextContent('Done.');
+  });
+
+  it('useToast can be called with an explicit store (no provider needed)', () => {
+    const store = createToastStore();
+
+    let captured: unknown;
+    const Probe = () => {
+      captured = useToast(store);
+      return null;
+    };
+
+    render(<Probe />);
+    expect(captured).toBe(store);
   });
 });

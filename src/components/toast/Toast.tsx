@@ -95,22 +95,31 @@ export const ToastProvider = (props: ToastProviderProps) => {
   return (
     <ToastContext.Provider value={store}>
       {children}
-      <ToastViewport store={store} placement={placement} className={className} />
+      <Toaster store={store} placement={placement} className={className} />
     </ToastContext.Provider>
   );
 };
 
 /* ------------------------------------------------------------------ */
-/* Viewport (toast group)                                               */
+/* Standalone viewport (Toaster)                                        */
 /* ------------------------------------------------------------------ */
 
-type ToastViewportProps = {
+export interface ToasterProps {
+  /** The toast store whose toasts should be rendered.
+   *  Create one with `createToastStore()` (e.g. at module scope) and pass it
+   *  here, or rely on the store created internally by `<ToastProvider>`. */
   store: toast.Store;
-  placement: ToastPlacement;
+  /** Where the toasts appear on screen. @default 'bottom-end' */
+  placement?: ToastPlacement;
   className?: string;
-};
+}
 
-const ToastViewport = (props: ToastViewportProps) => {
+/**
+ * Standalone toast viewport. Mount it once (rendered through a Portal) and
+ * drive it from any store: `createToastStore()` + `store.success({...})`,
+ * without needing a `<ToastProvider>` around your app.
+ */
+export const Toaster = (props: ToasterProps) => {
   const {store, placement, className} = props;
 
   const {theme} = useTheme();
