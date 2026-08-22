@@ -1,0 +1,24 @@
+import {Meta} from "@storybook/addon-docs/blocks";
+
+
+<Meta title="Recipes"/>
+
+# Recipes
+
+Recipes are **copy-paste compositions** that combine two or more Nebula components into a common, reusable flow — a login form, a destructive-action confirmation, a filter toolbar. Unlike the components under `Components`, a recipe is not a new API: it shows you *how to compose* the existing library to solve a real product problem.
+
+Every recipe is a self-contained example with working state, validation and feedback, so you can lift it straight into your app.
+
+## Available recipes
+
+- [Login Form](?path=/docs/recipes-login-form--docs) — `Paper` + `Input` + `Checkbox` + `Button` with inline validation and `Flash` feedback.
+- [Sign Up Form](?path=/docs/recipes-sign-up-form--docs) — a longer registration form mixing `Select`, `RadioGroup`, `Checkbox` and validation.
+- [Confirm Delete Dialog](?path=/docs/recipes-confirm-delete-dialog--docs) — a reusable destructive-action dialog (`Dialog` + `Button` + `Flash`).
+- [Settings Form](?path=/docs/recipes-settings-form--docs) — a profile editor with `Select`, `RadioGroup` and `Checkbox` grouped in a `Paper`.
+- [Filter Toolbar](?path=/docs/recipes-filter-toolbar--docs) — a search + filter toolbar applied to a list.
+
+## Conventions
+
+- **Validation is inline**: `Input` renders its own `errors`; for `Select`/`RadioGroup`/`Checkbox` use the `invalid` flag and render a small error line.
+- **Feedback uses `Flash`**: wrap the recipe in a `<FlashProvider>` and call `useFlash().flash('error' | 'success')`.
+- **Controlled inputs**: every recipe keeps the component state in `useState` and passes `value`/`onChange` down, so the pattern works in any framework (React Hook Form, Zod, Formik, etc.).

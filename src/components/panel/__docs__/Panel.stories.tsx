@@ -22,7 +22,7 @@ const content = (content = 'Content here') => (
 );
 
 const meta = {
-  title: 'Components/Paper',
+  title: 'Components/Panel',
   component: Paper,
   tags: ['autodocs', '!dev'],
   parameters: {

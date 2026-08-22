@@ -222,77 +222,77 @@ exports[`Horizon > renders correctly with className prop 1`] = `
   >
     <path
       d="M0 0H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="13"
     />
     <path
       d="M0 16.2H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="11.700000000000001"
     />
     <path
       d="M0 32.4H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="10.530000000000001"
     />
     <path
       d="M0 48.599999999999994H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="9.477000000000002"
     />
     <path
       d="M0 64.8H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="8.529300000000003"
     />
     <path
       d="M0 81H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="7.676370000000003"
     />
     <path
       d="M0 97.2H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="6.9087330000000025"
     />
     <path
       d="M0 113.4H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="6.217859700000003"
     />
     <path
       d="M0 129.6H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="5.596073730000002"
     />
     <path
       d="M0 145.79999999999998H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="5.036466357000002"
     />
     <path
       d="M0 161.99999999999997H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="4.532819721300002"
     />
     <path
       d="M0 178.19999999999996H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="4.079537749170002"
     />
     <path
       d="M0 194.39999999999995H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="3.671583974253002"
     />
     <path
       d="M0 210.59999999999994H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="3.3044255768277018"
     />
     <path
       d="M0 226.79999999999993H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="2.9739830191449315"
     />
   </svg>
@@ -396,77 +396,77 @@ exports[`Horizon > renders correctly with custom distance and distance growth fa
   >
     <path
       d="M0 0H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="13"
     />
     <path
       d="M0 16.1H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="11.700000000000001"
     />
     <path
       d="M0 32.2H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="10.530000000000001"
     />
     <path
       d="M0 48.300000000000004H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="9.477000000000002"
     />
     <path
       d="M0 64.4H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="8.529300000000003"
     />
     <path
       d="M0 80.5H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="7.676370000000003"
     />
     <path
       d="M0 96.6H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="6.9087330000000025"
     />
     <path
       d="M0 112.69999999999999H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="6.217859700000003"
     />
     <path
       d="M0 128.79999999999998H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="5.596073730000002"
     />
     <path
       d="M0 144.89999999999998H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="5.036466357000002"
     />
     <path
       d="M0 160.99999999999997H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="4.532819721300002"
     />
     <path
       d="M0 177.09999999999997H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="4.079537749170002"
     />
     <path
       d="M0 193.19999999999996H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="3.671583974253002"
     />
     <path
       d="M0 209.29999999999995H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="3.3044255768277018"
     />
     <path
       d="M0 225.39999999999995H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="2.9739830191449315"
     />
   </svg>
@@ -483,77 +483,77 @@ exports[`Horizon > renders correctly with custom height and width 1`] = `
   >
     <path
       d="M0 0H500"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="13"
     />
     <path
       d="M0 16.2H500"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="11.700000000000001"
     />
     <path
       d="M0 32.4H500"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="10.530000000000001"
     />
     <path
       d="M0 48.599999999999994H500"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="9.477000000000002"
     />
     <path
       d="M0 64.8H500"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="8.529300000000003"
     />
     <path
       d="M0 81H500"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="7.676370000000003"
     />
     <path
       d="M0 97.2H500"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="6.9087330000000025"
     />
     <path
       d="M0 113.4H500"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="6.217859700000003"
     />
     <path
       d="M0 129.6H500"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="5.596073730000002"
     />
     <path
       d="M0 145.79999999999998H500"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="5.036466357000002"
     />
     <path
       d="M0 161.99999999999997H500"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="4.532819721300002"
     />
     <path
       d="M0 178.19999999999996H500"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="4.079537749170002"
     />
     <path
       d="M0 194.39999999999995H500"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="3.671583974253002"
     />
     <path
       d="M0 210.59999999999994H500"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="3.3044255768277018"
     />
     <path
       d="M0 226.79999999999993H500"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="2.9739830191449315"
     />
   </svg>
@@ -570,152 +570,152 @@ exports[`Horizon > renders correctly with custom line thickness 1`] = `
   >
     <path
       d="M0 0H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="20"
     />
     <path
       d="M0 16.2H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="19"
     />
     <path
       d="M0 32.4H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="18.05"
     />
     <path
       d="M0 48.599999999999994H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="17.1475"
     />
     <path
       d="M0 64.8H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="16.290125"
     />
     <path
       d="M0 81H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="15.475618749999999"
     />
     <path
       d="M0 97.2H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="14.701837812499999"
     />
     <path
       d="M0 113.4H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="13.966745921874999"
     />
     <path
       d="M0 129.6H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="13.268408625781248"
     />
     <path
       d="M0 145.79999999999998H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="12.604988194492185"
     />
     <path
       d="M0 161.99999999999997H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="11.974738784767576"
     />
     <path
       d="M0 178.19999999999996H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="11.376001845529196"
     />
     <path
       d="M0 194.39999999999995H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="10.807201753252736"
     />
     <path
       d="M0 210.59999999999994H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="10.266841665590098"
     />
     <path
       d="M0 226.79999999999993H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="9.753499582310592"
     />
     <path
       d="M0 242.99999999999991H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="9.265824603195062"
     />
     <path
       d="M0 259.19999999999993H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="8.802533373035308"
     />
     <path
       d="M0 275.3999999999999H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="8.362406704383542"
     />
     <path
       d="M0 291.5999999999999H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="7.944286369164364"
     />
     <path
       d="M0 307.7999999999999H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="7.547072050706145"
     />
     <path
       d="M0 323.9999999999999H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="7.169718448170838"
     />
     <path
       d="M0 340.1999999999999H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="6.811232525762295"
     />
     <path
       d="M0 356.39999999999986H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="6.470670899474181"
     />
     <path
       d="M0 372.59999999999985H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="6.1471373545004715"
     />
     <path
       d="M0 388.79999999999984H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="5.839780486775448"
     />
     <path
       d="M0 404.99999999999983H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="5.547791462436675"
     />
     <path
       d="M0 421.1999999999998H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="5.270401889314841"
     />
     <path
       d="M0 437.3999999999998H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="5.0068817948490985"
     />
     <path
       d="M0 453.5999999999998H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="4.756537705106643"
     />
     <path
       d="M0 469.7999999999998H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="4.518710819851311"
     />
   </svg>
@@ -732,152 +732,152 @@ exports[`Horizon > renders correctly with custom number of lines 1`] = `
   >
     <path
       d="M0 0H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="13"
     />
     <path
       d="M0 16.2H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="11.700000000000001"
     />
     <path
       d="M0 32.4H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="10.530000000000001"
     />
     <path
       d="M0 48.599999999999994H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="9.477000000000002"
     />
     <path
       d="M0 64.8H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="8.529300000000003"
     />
     <path
       d="M0 81H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="7.676370000000003"
     />
     <path
       d="M0 97.2H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="6.9087330000000025"
     />
     <path
       d="M0 113.4H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="6.217859700000003"
     />
     <path
       d="M0 129.6H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="5.596073730000002"
     />
     <path
       d="M0 145.79999999999998H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="5.036466357000002"
     />
     <path
       d="M0 161.99999999999997H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="4.532819721300002"
     />
     <path
       d="M0 178.19999999999996H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="4.079537749170002"
     />
     <path
       d="M0 194.39999999999995H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="3.671583974253002"
     />
     <path
       d="M0 210.59999999999994H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="3.3044255768277018"
     />
     <path
       d="M0 226.79999999999993H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="2.9739830191449315"
     />
     <path
       d="M0 242.99999999999991H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="2.6765847172304382"
     />
     <path
       d="M0 259.19999999999993H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="2.4089262455073945"
     />
     <path
       d="M0 275.3999999999999H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="2.1680336209566553"
     />
     <path
       d="M0 291.5999999999999H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="1.9512302588609898"
     />
     <path
       d="M0 307.7999999999999H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="1.7561072329748908"
     />
     <path
       d="M0 323.9999999999999H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="1.5804965096774017"
     />
     <path
       d="M0 340.1999999999999H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="1.4224468587096617"
     />
     <path
       d="M0 356.39999999999986H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="1.2802021728386956"
     />
     <path
       d="M0 372.59999999999985H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="1.152181955554826"
     />
     <path
       d="M0 388.79999999999984H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="1.0369637599993435"
     />
     <path
       d="M0 404.99999999999983H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="0.9332673839994092"
     />
     <path
       d="M0 421.1999999999998H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="0.8399406455994683"
     />
     <path
       d="M0 437.3999999999998H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="0.7559465810395215"
     />
     <path
       d="M0 453.5999999999998H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="0.6803519229355693"
     />
     <path
       d="M0 469.7999999999998H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="0.6123167306420124"
     />
   </svg>
@@ -894,77 +894,77 @@ exports[`Horizon > renders correctly with custom thickness decay factor 1`] = `
   >
     <path
       d="M0 0H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="13"
     />
     <path
       d="M0 16.2H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="11.700000000000001"
     />
     <path
       d="M0 32.4H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="10.530000000000001"
     />
     <path
       d="M0 48.599999999999994H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="9.477000000000002"
     />
     <path
       d="M0 64.8H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="8.529300000000003"
     />
     <path
       d="M0 81H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="7.676370000000003"
     />
     <path
       d="M0 97.2H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="6.9087330000000025"
     />
     <path
       d="M0 113.4H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="6.217859700000003"
     />
     <path
       d="M0 129.6H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="5.596073730000002"
     />
     <path
       d="M0 145.79999999999998H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="5.036466357000002"
     />
     <path
       d="M0 161.99999999999997H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="4.532819721300002"
     />
     <path
       d="M0 178.19999999999996H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="4.079537749170002"
     />
     <path
       d="M0 194.39999999999995H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="3.671583974253002"
     />
     <path
       d="M0 210.59999999999994H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="3.3044255768277018"
     />
     <path
       d="M0 226.79999999999993H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="2.9739830191449315"
     />
   </svg>
@@ -980,77 +980,77 @@ exports[`Horizon > renders correctly with default props 1`] = `
 >
   <path
     d="M0 0H100"
-    stroke="#000"
+    stroke="var(--nb-background-contrast-primary-500)"
     stroke-width="13"
   />
   <path
     d="M0 16.2H100"
-    stroke="#000"
+    stroke="var(--nb-background-contrast-primary-500)"
     stroke-width="11.700000000000001"
   />
   <path
     d="M0 32.4H100"
-    stroke="#000"
+    stroke="var(--nb-background-contrast-primary-500)"
     stroke-width="10.530000000000001"
   />
   <path
     d="M0 48.599999999999994H100"
-    stroke="#000"
+    stroke="var(--nb-background-contrast-primary-500)"
     stroke-width="9.477000000000002"
   />
   <path
     d="M0 64.8H100"
-    stroke="#000"
+    stroke="var(--nb-background-contrast-primary-500)"
     stroke-width="8.529300000000003"
   />
   <path
     d="M0 81H100"
-    stroke="#000"
+    stroke="var(--nb-background-contrast-primary-500)"
     stroke-width="7.676370000000003"
   />
   <path
     d="M0 97.2H100"
-    stroke="#000"
+    stroke="var(--nb-background-contrast-primary-500)"
     stroke-width="6.9087330000000025"
   />
   <path
     d="M0 113.4H100"
-    stroke="#000"
+    stroke="var(--nb-background-contrast-primary-500)"
     stroke-width="6.217859700000003"
   />
   <path
     d="M0 129.6H100"
-    stroke="#000"
+    stroke="var(--nb-background-contrast-primary-500)"
     stroke-width="5.596073730000002"
   />
   <path
     d="M0 145.79999999999998H100"
-    stroke="#000"
+    stroke="var(--nb-background-contrast-primary-500)"
     stroke-width="5.036466357000002"
   />
   <path
     d="M0 161.99999999999997H100"
-    stroke="#000"
+    stroke="var(--nb-background-contrast-primary-500)"
     stroke-width="4.532819721300002"
   />
   <path
     d="M0 178.19999999999996H100"
-    stroke="#000"
+    stroke="var(--nb-background-contrast-primary-500)"
     stroke-width="4.079537749170002"
   />
   <path
     d="M0 194.39999999999995H100"
-    stroke="#000"
+    stroke="var(--nb-background-contrast-primary-500)"
     stroke-width="3.671583974253002"
   />
   <path
     d="M0 210.59999999999994H100"
-    stroke="#000"
+    stroke="var(--nb-background-contrast-primary-500)"
     stroke-width="3.3044255768277018"
   />
   <path
     d="M0 226.79999999999993H100"
-    stroke="#000"
+    stroke="var(--nb-background-contrast-primary-500)"
     stroke-width="2.9739830191449315"
   />
 </svg>
@@ -1066,77 +1066,77 @@ exports[`Horizon > renders correctly with inverse prop 1`] = `
   >
     <path
       d="M0 226.79999999999998H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="13"
     />
     <path
       d="M0 210.6H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="11.700000000000001"
     />
     <path
       d="M0 194.4H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="10.530000000000001"
     />
     <path
       d="M0 178.20000000000002H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="9.477000000000002"
     />
     <path
       d="M0 162.00000000000003H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="8.529300000000003"
     />
     <path
       d="M0 145.80000000000004H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="7.676370000000003"
     />
     <path
       d="M0 129.60000000000005H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="6.9087330000000025"
     />
     <path
       d="M0 113.40000000000005H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="6.217859700000003"
     />
     <path
       d="M0 97.20000000000005H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="5.596073730000002"
     />
     <path
       d="M0 81.00000000000004H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="5.036466357000002"
     />
     <path
       d="M0 64.80000000000004H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="4.532819721300002"
     />
     <path
       d="M0 48.60000000000004H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="4.079537749170002"
     />
     <path
       d="M0 32.400000000000034H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="3.671583974253002"
     />
     <path
       d="M0 16.200000000000035H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="3.3044255768277018"
     />
     <path
       d="M0 3.552713678800501e-14H100"
-      stroke="#000"
+      stroke="var(--nb-background-contrast-primary-500)"
       stroke-width="2.9739830191449315"
     />
   </svg>

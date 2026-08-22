@@ -14,7 +14,7 @@ type Props = {
 };
 
 export const Horizon = ({
-                          color = '#000',
+                          color = 'var(--nb-background-contrast-primary-500)',
                           numLines = 15,
                           lineThickness = 13,
                           distance = 15,
