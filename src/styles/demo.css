@@ -338,3 +338,83 @@
   max-width: 100%;
   display: flex;
 }
+
+/* ---- Recipes (Storybook section) ---- */
+.nb-recipe-form {
+  width: 100%;
+  max-width: 420px;
+}
+
+.nb-recipe-fields {
+  display: flex;
+  flex-direction: column;
+  gap: var(--nb-5);
+}
+
+.nb-recipe-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--nb-4);
+}
+
+.nb-recipe-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--nb-5);
+  width: 100%;
+  max-width: 640px;
+}
+
+.nb-recipe-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--nb-3);
+}
+
+.nb-recipe-list__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--nb-4);
+  padding: var(--nb-3) var(--nb-5);
+  border: var(--nb-border-1) solid var(--nb-background-accent-200);
+  border-radius: var(--nb-border-radius-default);
+}
+
+.nb-recipe-list__item > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: var(--nb-1);
+}
+
+.nb-recipe-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--nb-4);
+}
+
+.nb-recipe-toolbar__grow {
+  flex-grow: 1;
+  min-width: 220px;
+}
+
+/* Groups the single-line "Active only" checkbox with the Reset button so
+   they sit on the same baseline, centered instead of hugging the top. */
+.nb-recipe-toolbar__controls {
+  display: flex;
+  align-items: center;
+  gap: var(--nb-5);
+}
+
+.nb-recipe-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--nb-4);
+}
+
+.nb-recipe-error {
+  color: var(--nb-input-color-error);
+  display: block;
+}

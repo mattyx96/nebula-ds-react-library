@@ -30,6 +30,24 @@
   code:not(.sb-anchor, .sb-unstyled, .sb-unstyled code),
   pre:not(.sb-anchor, .sb-unstyled, .sb-unstyled pre) {
     font-family: var(--nb-font-families-roboto-mono) !important;
+    color: var(--nb-background-contrast-primary-500) !important;
+  }
+
+  /* Inline component mentions (`` `Paper` `` etc.) — aligned to the Nebula
+     palette instead of Storybook's default white/light code chip. */
+  code:not(.sb-anchor, .sb-unstyled, .sb-unstyled code) {
+    background-color: var(--nb-background-accent-200) !important;
+    border: var(--nb-border-0-5) solid var(--nb-background-accent-500) !important;
+    border-radius: var(--nb-border-radius-10) !important;
+    padding: 0 0.35em !important;
+  }
+
+  /* Code blocks (fenced code / MDX) — keep the accent surface, strip the
+     default white box and give it a Nebula-tinted border. */
+  pre:not(.sb-anchor, .sb-unstyled, .sb-unstyled pre),
+  pre:not(.sb-anchor, .sb-unstyled, .sb-unstyled pre) code {
+    background-color: var(--nb-background-accent-200) !important;
+    border: var(--nb-border-1) solid var(--nb-background-accent-500) !important;
   }
 
   * :where(p:not(.sb-anchor, .sb-unstyled, .sb-unstyled p)),
