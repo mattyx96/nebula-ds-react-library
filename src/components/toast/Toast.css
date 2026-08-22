@@ -35,7 +35,7 @@
   font-family: var(--nb-font-families-roboto-mono);
 
   background-color: var(--nb-background-secondary-default);
-  border: var(--nb-border-1) solid var(--nb-background-accent-500);
+  border: var(--nb-border-1) solid var(--nb-toast-accent, var(--nb-background-accent-500));
   border-radius: var(--nb-border-radius-default);
   /* LCARS signature corner */
   border-bottom-right-radius: var(--nb-paper-border-radius-big);
@@ -61,16 +61,7 @@
   pointer-events: none;
 }
 
-/* ---- Accent bar (type color) ---- */
-.nb-toast::before {
-  content: '';
-  position: absolute;
-  inset: 0 auto 0 0;
-  width: var(--nb-border-2);
-  border-radius: var(--nb-border-radius-10);
-  background-color: var(--nb-toast-accent, var(--nb-background-accent-500));
-}
-
+/* ---- Type color (border + icon + action, driven by design tokens) ---- */
 .nb-toast--type-info {
   --nb-toast-accent: var(--nb-bice-blue-500);
 }
@@ -94,10 +85,8 @@
 /* ---- Dark theme ----
    The type accents are theme-invariant primitives that are far too dark to
    read on the dark toast surface (#575757). Bump them with the same
-   color-mix approach Flash uses, and give the card a visible border since
-   `accent-500` equals the surface in dark mode. */
+   color-mix approach Flash uses so the border stays visible. */
 [data-nb-theme='dark'] .nb-toast {
-  border-color: var(--nb-background-contrast-primary-200);
   box-shadow: 0 2px 12px rgb(0 0 0 / 0.45);
 }
 
