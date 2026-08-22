@@ -32,6 +32,9 @@ importers:
       '@zag-js/select':
         specifier: ^1.43.0
         version: 1.43.0
+      '@zag-js/toast':
+        specifier: 1.43.0
+        version: 1.43.0
       class-variance-authority:
         specifier: ^0.7.0
         version: 0.7.0
@@ -1471,6 +1474,9 @@ packages:
   '@zag-js/store@1.43.0':
     resolution: {integrity: sha512-Q6b6vbAbIGDkXO1sGoM+hjOP2BL6uHIMX3MUhpjFpIZ6qhkxU+iRa8bCGU7xYT2vRyEMlN5NUU77PjoITpSwRg==}
 
+  '@zag-js/toast@1.43.0':
+    resolution: {integrity: sha512-T2bChbXQXfYCk8Kw4NYqoybRBN1z3XL2HnpzRe1zRyNQ/Q9RfnUsU492P+sl8IlLB2nchNKgN2BCg/UacffSYQ==}
+
   '@zag-js/types@1.43.0':
     resolution: {integrity: sha512-pheZyCiVjJaXBzbfoj/gMKXkZUo1D5JWd46QVYWonHJZIdUfDRDwBvDKcXGIHmpuq7fJrnGXbegAk0+D2aa4bw==}
 
@@ -2000,6 +2006,7 @@ packages:
   eslint@9.39.5:
     resolution: {integrity: sha512-DgZS62aPLXKlnxILS/AYCoRvHaZeXceIzlXPkkGGzJWSow1aEk0lbTlxUSlyjC8jcaKxAdOnTDz+o1JFSBsyjw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
     peerDependencies:
       jiti: '*'
@@ -4873,6 +4880,15 @@ snapshots:
   '@zag-js/store@1.43.0':
     dependencies:
       proxy-compare: 3.0.1
+
+  '@zag-js/toast@1.43.0':
+    dependencies:
+      '@zag-js/anatomy': 1.43.0
+      '@zag-js/core': 1.43.0
+      '@zag-js/dismissable': 1.43.0
+      '@zag-js/dom-query': 1.43.0
+      '@zag-js/types': 1.43.0
+      '@zag-js/utils': 1.43.0
 
   '@zag-js/types@1.43.0':
     dependencies:

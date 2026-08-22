@@ -11,14 +11,15 @@ Every recipe is a self-contained example with working state, validation and feed
 
 ## Available recipes
 
-- [Login Form](?path=/docs/recipes-login-form--docs) — `Paper` + `Input` + `Checkbox` + `Button` with inline validation and `Flash` feedback.
+- [Login Form](?path=/docs/recipes-login-form--docs) — `Paper` + `Input` + `Checkbox` + `Button` with inline validation and `Toast` feedback.
 - [Sign Up Form](?path=/docs/recipes-sign-up-form--docs) — a longer registration form mixing `Select`, `RadioGroup`, `Checkbox` and validation.
-- [Confirm Delete Dialog](?path=/docs/recipes-confirm-delete-dialog--docs) — a reusable destructive-action dialog (`Dialog` + `Button` + `Flash`).
+- [Confirm Delete Dialog](?path=/docs/recipes-confirm-delete-dialog--docs) — a reusable destructive-action dialog (`Dialog` + `Button` + `Flash` + `Toast`).
 - [Settings Form](?path=/docs/recipes-settings-form--docs) — a profile editor with `Select`, `RadioGroup` and `Checkbox` grouped in a `Paper`.
 - [Filter Toolbar](?path=/docs/recipes-filter-toolbar--docs) — a search + filter toolbar applied to a list.
 
 ## Conventions
 
 - **Validation is inline**: `Input` renders its own `errors`; for `Select`/`RadioGroup`/`Checkbox` use the `invalid` flag and render a small error line.
-- **Feedback uses `Flash`**: wrap the recipe in a `<FlashProvider>` and call `useFlash().flash('error' | 'success')`.
+- **Feedback uses `Toast`**: wrap the recipe in a `<ToastProvider>` and call `useToast()` — `toast.error(...)` for failures and `toast.success(...)` for confirmations.
+- **`Flash` for whole-UI feedback**: when the entire page should blink in a tone (e.g. after a destructive action), also use `<FlashProvider>` + `useFlash()`.
 - **Controlled inputs**: every recipe keeps the component state in `useState` and passes `value`/`onChange` down, so the pattern works in any framework (React Hook Form, Zod, Formik, etc.).

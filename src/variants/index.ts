@@ -4,3 +4,4 @@ export * from './select/selectVariants.ts';
 export * from './input/inputVariants.ts';
 export * from './checkbox/checkboxVariants.ts';
 export * from './radioGroup/radioGroupVariants.ts';
+export * from './toast/toastVariants.ts';

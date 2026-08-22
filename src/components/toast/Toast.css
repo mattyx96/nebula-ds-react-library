@@ -1,0 +1,221 @@
+/* Nebula Toast — powered by @zag-js/toast, styled with Nebula tokens. */
+
+/* ---- Viewport (fixed, portal-mounted) ---- */
+.nb-toast__group {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: var(--nb-3);
+  z-index: 200 !important;
+  pointer-events: none;
+}
+
+.nb-toast__group[data-placement] {
+  pointer-events: none; /* the viewport never blocks the page; toasts enable it */
+}
+
+.nb-toast__group > * {
+  pointer-events: auto;
+}
+
+/* ---- Single toast ---- */
+.nb-toast {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--nb-4);
+
+  width: 100%;
+  min-width: 280px;
+  max-width: min(380px, calc(100vw - var(--nb-7)));
+
+  padding: var(--nb-4);
+  box-sizing: border-box;
+
+  font-family: var(--nb-font-families-roboto-mono);
+
+  background-color: var(--nb-background-secondary-default);
+  border: var(--nb-border-1) solid var(--nb-background-accent-500);
+  border-radius: var(--nb-border-radius-default);
+  /* LCARS signature corner */
+  border-bottom-right-radius: var(--nb-paper-border-radius-big);
+
+  color: var(--nb-background-contrast-primary-500);
+  box-shadow: 0 2px 12px rgb(0 0 0 / 0.12);
+
+  /* Zag feeds these as inline custom props; wire them into a smooth
+     entrance/exit transition driven by the machine state. */
+  transform: translate(var(--x, 0), var(--y, 0)) scale(var(--scale, 1));
+  opacity: var(--opacity, 0);
+  transition:
+    opacity 160ms ease,
+    transform 160ms ease;
+}
+
+.nb-toast[data-state='open'] {
+  opacity: 1;
+}
+
+.nb-toast[data-state='closed'],
+.nb-toast[data-state='dismissing'] {
+  pointer-events: none;
+}
+
+/* ---- Accent bar (type color) ---- */
+.nb-toast::before {
+  content: '';
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: var(--nb-border-2);
+  border-radius: var(--nb-border-radius-10);
+  background-color: var(--nb-toast-accent, var(--nb-background-accent-500));
+}
+
+.nb-toast--type-info {
+  --nb-toast-accent: var(--nb-bice-blue-500);
+}
+
+.nb-toast--type-success {
+  --nb-toast-accent: var(--nb-shamrock-green-500);
+}
+
+.nb-toast--type-error {
+  --nb-toast-accent: var(--nb-red-500);
+}
+
+.nb-toast--type-warning {
+  --nb-toast-accent: var(--nb-orange-500);
+}
+
+.nb-toast--type-loading {
+  --nb-toast-accent: var(--nb-background-contrast-primary-200);
+}
+
+/* ---- Dark theme ----
+   The type accents are theme-invariant primitives that are far too dark to
+   read on the dark toast surface (#575757). Bump them with the same
+   color-mix approach Flash uses, and give the card a visible border since
+   `accent-500` equals the surface in dark mode. */
+[data-nb-theme='dark'] .nb-toast {
+  border-color: var(--nb-background-contrast-primary-200);
+  box-shadow: 0 2px 12px rgb(0 0 0 / 0.45);
+}
+
+[data-nb-theme='dark'] .nb-toast--type-info {
+  --nb-toast-accent: color-mix(in srgb, var(--nb-bice-blue-400) 65%, #ffffff);
+}
+
+[data-nb-theme='dark'] .nb-toast--type-success {
+  --nb-toast-accent: color-mix(in srgb, var(--nb-shamrock-green-500) 55%, #ffffff);
+}
+
+[data-nb-theme='dark'] .nb-toast--type-error {
+  --nb-toast-accent: color-mix(in srgb, var(--nb-red-500) 70%, #ffffff);
+}
+
+[data-nb-theme='dark'] .nb-toast--type-warning {
+  --nb-toast-accent: color-mix(in srgb, var(--nb-orange-500) 75%, #ffffff);
+}
+
+/* ---- Icon ---- */
+.nb-toast__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--nb-toast-accent, var(--nb-background-accent-500));
+}
+
+.nb-toast--type-loading .nb-toast__icon {
+  animation: nb-toast-spin 1s linear infinite;
+}
+
+@keyframes nb-toast-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ---- Body ---- */
+.nb-toast__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--nb-1);
+  min-width: 0;
+  flex: 1;
+}
+
+.nb-toast__title {
+  margin: 0;
+  /* Storybook (and some hosts) normalize all h1–h4 to a large header font.
+     Force the design-system size so the compact toast title can't be
+     inflated by global heading resets. */
+  font-family: var(--nb-font-families-orbitron) !important;
+  font-weight: var(--nb-font-weights-orbitron-3) !important;
+  font-size: var(--nb-font-size-3) !important;
+  line-height: var(--nb-line-heights-2) !important;
+  color: var(--nb-background-contrast-primary-500) !important;
+}
+
+.nb-toast__description {
+  margin: 0;
+  /* Same defense as the title — protect the caption text from global
+     p/body resets that would change its size. */
+  font-family: var(--nb-font-families-roboto-mono) !important;
+  font-size: var(--nb-font-size-2) !important;
+  line-height: var(--nb-line-heights-2) !important;
+  color: var(--nb-background-contrast-primary-200) !important;
+  overflow-wrap: anywhere;
+}
+
+/* ---- Action trigger ---- */
+.nb-toast__action {
+  align-self: flex-start;
+  margin-top: var(--nb-1);
+  padding: 0;
+
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  text-decoration: underline;
+
+  font-family: var(--nb-font-families-orbitron);
+  font-weight: var(--nb-font-weights-orbitron-3);
+  font-size: var(--nb-font-size-2);
+  color: var(--nb-toast-accent, var(--nb-background-accent-500));
+}
+
+.nb-toast__action:focus-visible {
+  outline: 0;
+  box-shadow: 0 0 0 var(--nb-border-1) var(--nb-clickable-outline-500);
+}
+
+/* ---- Close trigger ---- */
+.nb-toast__close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  padding: var(--nb-1);
+  margin: calc(var(--nb-1) * -1) calc(var(--nb-1) * -1) 0 0;
+
+  background: transparent;
+  border: 0;
+  border-radius: var(--nb-border-radius-10);
+  cursor: pointer;
+
+  color: var(--nb-background-contrast-primary-200);
+  transition: color 120ms ease, background-color 120ms ease;
+}
+
+.nb-toast__close:hover {
+  color: var(--nb-background-contrast-primary-500);
+  background-color: var(--nb-background-accent-200);
+}
+
+.nb-toast__close:focus-visible {
+  outline: 0;
+  box-shadow: 0 0 0 var(--nb-border-1) var(--nb-clickable-outline-500);
+}

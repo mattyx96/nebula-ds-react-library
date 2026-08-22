@@ -21,5 +21,8 @@ export * from './src/components/themeProvider/ThemeProvider.tsx';
 export * from './src/components/themeProvider/themeContext.ts';
 export * from './src/components/flash/flashContext.ts';
 export * from './src/components/flash/FlashProvider.tsx';
+export * from './src/components/toast/toastContext.ts';
+export * from './src/components/toast/Toast.tsx';
+export * from './src/variants/toast';
 export {useBreakpoint} from './src/hook/useBreakpoint.ts';
 

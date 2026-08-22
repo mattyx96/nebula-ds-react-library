@@ -2,8 +2,8 @@ import type {Meta, StoryObj} from '@storybook/react';
 import {useState} from 'react';
 import {Button} from '../../components/button/Button';
 import {Checkbox} from '../../components/checkbox/Checkbox';
-import {FlashProvider} from '../../components/flash/FlashProvider';
-import {useFlash} from '../../components/flash/flashContext';
+import {ToastProvider} from '../../components/toast/Toast';
+import {useToast} from '../../components/toast/toastContext';
 import {Input} from '../../components/input/Input';
 import {Paper} from '../../components/panel/Panel';
 import {Text} from '../../components/typography/Typography';
@@ -15,7 +15,7 @@ type LoginValues = {
 };
 
 const LoginForm = () => {
-  const {flash} = useFlash();
+  const toast = useToast();
   const [values, setValues] = useState<LoginValues>({email: '', password: '', rememberMe: false});
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -31,7 +31,7 @@ const LoginForm = () => {
     event.preventDefault();
     setSubmitted(true);
     if (emailError || passwordError) {
-      flash('error');
+      toast.error({title: 'Cannot sign in', description: 'Check the highlighted fields.'});
       return;
     }
     setIsSubmitting(true);
@@ -39,7 +39,7 @@ const LoginForm = () => {
       setIsSubmitting(false);
       setSubmitted(false);
       setValues({email: '', password: '', rememberMe: false});
-      flash('success');
+      toast.success({title: 'Welcome aboard', description: 'You have been signed in.'});
     }, 800);
   };
 
@@ -94,7 +94,7 @@ const meta = {
     docs: {
       description: {
         component:
-          'A self-contained sign-in card. Uses `Paper` as the shell with a submit action in `renderActions`, two `Input`s with inline validation and a `Checkbox` for “remember me”. On submit the form flashes `error` or `success` via the `Flash` provider.',
+          'A self-contained sign-in card. Uses `Paper` as the shell with a submit action in `renderActions`, two `Input`s with inline validation and a `Checkbox` for “remember me”. On submit the form fires an `error`/`success` **toast** via the `Toast` provider.',
       },
     },
   },
@@ -106,8 +106,8 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   render: () => (
-    <FlashProvider>
+    <ToastProvider>
       <LoginForm />
-    </FlashProvider>
+    </ToastProvider>
   ),
 };

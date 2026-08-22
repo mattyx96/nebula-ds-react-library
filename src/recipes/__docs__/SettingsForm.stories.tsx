@@ -3,8 +3,8 @@ import {useState} from 'react';
 import {ChevronDownIcon} from '@heroicons/react/24/solid';
 import {Button} from '../../components/button/Button';
 import {Checkbox} from '../../components/checkbox/Checkbox';
-import {FlashProvider} from '../../components/flash/FlashProvider';
-import {useFlash} from '../../components/flash/flashContext';
+import {ToastProvider} from '../../components/toast/Toast';
+import {useToast} from '../../components/toast/toastContext';
 import {Input} from '../../components/input/Input';
 import {Paper} from '../../components/panel/Panel';
 import {RadioGroup} from '../../components/radioGroup/RadioGroup';
@@ -44,7 +44,7 @@ const defaultSettings: SettingsValues = {
 };
 
 const SettingsForm = () => {
-  const {flash} = useFlash();
+  const toast = useToast();
   const [values, setValues] = useState<SettingsValues>(defaultSettings);
   const [saved, setSaved] = useState(false);
 
@@ -57,7 +57,10 @@ const SettingsForm = () => {
 
   const save = () => {
     setSaved(true);
-    flash('success');
+    toast.success({
+      title: 'Preferences saved',
+      description: 'Your settings have been persisted.',
+    });
   };
 
   return (
@@ -133,7 +136,7 @@ const meta = {
     docs: {
       description: {
         component:
-          'A profile/settings editor. Groups `Input`, `Select`, `RadioGroup` and `Checkbox` in one `Paper`, tracks dirty state against a default snapshot and disables the actions until something changes.',
+          'A profile/settings editor. Groups `Input`, `Select`, `RadioGroup` and `Checkbox` in one `Paper`, tracks dirty state against a default snapshot and disables the actions until something changes. Saving fires a success `Toast`.',
       },
     },
   },
@@ -145,8 +148,8 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   render: () => (
-    <FlashProvider>
+    <ToastProvider>
       <SettingsForm />
-    </FlashProvider>
+    </ToastProvider>
   ),
 };

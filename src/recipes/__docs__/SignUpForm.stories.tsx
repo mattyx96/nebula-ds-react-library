@@ -3,8 +3,8 @@ import {useState} from 'react';
 import {ChevronDownIcon} from '@heroicons/react/24/solid';
 import {Button} from '../../components/button/Button';
 import {Checkbox} from '../../components/checkbox/Checkbox';
-import {FlashProvider} from '../../components/flash/FlashProvider';
-import {useFlash} from '../../components/flash/flashContext';
+import {ToastProvider} from '../../components/toast/Toast';
+import {useToast} from '../../components/toast/toastContext';
 import {Input} from '../../components/input/Input';
 import {Paper} from '../../components/panel/Panel';
 import {RadioGroup} from '../../components/radioGroup/RadioGroup';
@@ -36,7 +36,7 @@ type SignUpValues = {
 };
 
 const SignUpForm = () => {
-  const {flash} = useFlash();
+  const toast = useToast();
   const [values, setValues] = useState<SignUpValues>({
     name: '',
     email: '',
@@ -69,10 +69,13 @@ const SignUpForm = () => {
       divisionError ||
       termsError
     ) {
-      flash('error');
+      toast.error({title: 'Cannot create account', description: 'Check the highlighted fields.'});
       return;
     }
-    flash('success');
+    toast.success({
+      title: 'Welcome to Starfleet',
+      description: 'Your account has been created and you are signed in.',
+    });
     setSubmitted(false);
     setValues({name: '', email: '', password: '', rank: [], division: null, terms: false});
   };
@@ -149,7 +152,7 @@ const meta = {
     docs: {
       description: {
         component:
-          'A full registration form. Shows how to mix `Input`, `Select`, `RadioGroup` and `Checkbox` in one `Paper`, each wired to a single `values` state object with submit-time validation.',
+          'A full registration form. Shows how to mix `Input`, `Select`, `RadioGroup` and `Checkbox` in one `Paper`, each wired to a single `values` state object with submit-time validation. Fires an `error`/`success` `Toast` on submit.',
       },
     },
   },
@@ -161,8 +164,8 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   render: () => (
-    <FlashProvider>
+    <ToastProvider>
       <SignUpForm />
-    </FlashProvider>
+    </ToastProvider>
   ),
 };

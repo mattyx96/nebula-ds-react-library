@@ -4,6 +4,8 @@ import {Button} from '../../components/button/Button';
 import {Dialog} from '../../components/dialog/Dialog';
 import {FlashProvider} from '../../components/flash/FlashProvider';
 import {useFlash} from '../../components/flash/flashContext';
+import {ToastProvider} from '../../components/toast/Toast';
+import {useToast} from '../../components/toast/toastContext';
 import {Text} from '../../components/typography/Typography';
 
 type CrewMember = {
@@ -67,11 +69,16 @@ const ConfirmDeleteDialog = (props: ConfirmDeleteDialogProps) => {
 
 const CrewManifest = () => {
   const {flash} = useFlash();
+  const toast = useToast();
   const [crew, setCrew] = useState(initialCrew);
 
   const removeMember = (member: CrewMember) => {
     setCrew((prev) => prev.filter((item) => item.id !== member.id));
     flash('success');
+    toast.success({
+      title: 'Member removed',
+      description: `${member.name} was removed from the roster.`,
+    });
   };
 
   return (
@@ -115,7 +122,7 @@ const meta = {
     docs: {
       description: {
         component:
-          'A reusable destructive-action confirmation. Wraps `Dialog` with `role="alertdialog"`, keeps its own `open` state and exposes an `onConfirm` callback, so any screen can get a consistent “are you sure?” flow. Combine with `Flash` to acknowledge the action.',
+          'A reusable destructive-action confirmation. Wraps `Dialog` with `role="alertdialog"`, keeps its own `open` state and exposes an `onConfirm` callback, so any screen can get a consistent “are you sure?” flow. Combine with `Flash` and a `Toast` to acknowledge the action.',
       },
     },
   },
@@ -128,7 +135,9 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   render: () => (
     <FlashProvider>
-      <CrewManifest />
+      <ToastProvider>
+        <CrewManifest />
+      </ToastProvider>
     </FlashProvider>
   ),
 };
