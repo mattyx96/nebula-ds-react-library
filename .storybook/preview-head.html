@@ -50,22 +50,48 @@
     border: var(--nb-border-1) solid var(--nb-background-accent-500) !important;
   }
 
-  * :where(p:not(.sb-anchor, .sb-unstyled, .sb-unstyled p)),
-  * :where(h1:not(.sb-anchor, .sb-unstyled, .sb-unstyled h1)),
-  * :where(h2:not(.sb-anchor, .sb-unstyled, .sb-unstyled h2)),
-  * :where(h3:not(.sb-anchor, .sb-unstyled, .sb-unstyled h3)),
-  * :where(h4:not(.sb-anchor, .sb-unstyled, .sb-unstyled h4)),
-  * :where(ul:not(.sb-anchor, .sb-unstyled, .sb-unstyled ul)),
-  * :where(ol:not(.sb-anchor, .sb-unstyled, .sb-unstyled ol)),
-  * :where(li:not(.sb-anchor, .sb-unstyled, .sb-unstyled li)) {
+  /* The Storybook docs prose surface (descriptions, MDX pages) keeps a light
+     background (rgb 233,233,225 = #E9E9E1) even in dark mode because the
+     docs theme hardcodes light surface tokens. Keep that prose dark-on-light
+     so component descriptions stay readable in both themes. Only the story
+     canvases (.docs-story) follow the light/dark toggle below. */
+  .sbdocs-wrapper :where(p:not(.sb-anchor, .sb-unstyled, .sb-unstyled p)),
+  .sbdocs-wrapper :where(h1:not(.sb-anchor, .sb-unstyled, .sb-unstyled h1)),
+  .sbdocs-wrapper :where(h2:not(.sb-anchor, .sb-unstyled, .sb-unstyled h2)),
+  .sbdocs-wrapper :where(h3:not(.sb-anchor, .sb-unstyled, .sb-unstyled h3)),
+  .sbdocs-wrapper :where(h4:not(.sb-anchor, .sb-unstyled, .sb-unstyled h4)),
+  .sbdocs-wrapper :where(ul:not(.sb-anchor, .sb-unstyled, .sb-unstyled ul)),
+  .sbdocs-wrapper :where(ol:not(.sb-anchor, .sb-unstyled, .sb-unstyled ol)),
+  .sbdocs-wrapper :where(li:not(.sb-anchor, .sb-unstyled, .sb-unstyled li)) {
+    color: #3E3E3D !important;
+    font: var(--nb-header3) !important;
+  }
+
+  .sbdocs-wrapper :where(p:not(.sb-anchor, .sb-unstyled, .sb-unstyled p)),
+  .sbdocs-wrapper :where(ul:not(.sb-anchor, .sb-unstyled, .sb-unstyled ul)),
+  .sbdocs-wrapper :where(ol:not(.sb-anchor, .sb-unstyled, .sb-unstyled ol)),
+  .sbdocs-wrapper :where(li:not(.sb-anchor, .sb-unstyled, .sb-unstyled li)) {
+    color: #3E3E3D !important;
+    font: var(--nb-body2) !important;
+  }
+
+  /* Story canvases — follow the theme toggle (light text on dark bg). */
+  .docs-story :where(p:not(.sb-anchor, .sb-unstyled, .sb-unstyled p)),
+  .docs-story :where(h1:not(.sb-anchor, .sb-unstyled, .sb-unstyled h1)),
+  .docs-story :where(h2:not(.sb-anchor, .sb-unstyled, .sb-unstyled h2)),
+  .docs-story :where(h3:not(.sb-anchor, .sb-unstyled, .sb-unstyled h3)),
+  .docs-story :where(h4:not(.sb-anchor, .sb-unstyled, .sb-unstyled h4)),
+  .docs-story :where(ul:not(.sb-anchor, .sb-unstyled, .sb-unstyled ul)),
+  .docs-story :where(ol:not(.sb-anchor, .sb-unstyled, .sb-unstyled ol)),
+  .docs-story :where(li:not(.sb-anchor, .sb-unstyled, .sb-unstyled li)) {
     color: var(--nb-background-contrast-primary-500) !important;
     font: var(--nb-header3) !important;
   }
 
-  * :where(p:not(.sb-anchor, .sb-unstyled, .sb-unstyled p)),
-  * :where(ul:not(.sb-anchor, .sb-unstyled, .sb-unstyled ul)),
-  * :where(ol:not(.sb-anchor, .sb-unstyled, .sb-unstyled ol)),
-  * :where(li:not(.sb-anchor, .sb-unstyled, .sb-unstyled li)) {
+  .docs-story :where(p:not(.sb-anchor, .sb-unstyled, .sb-unstyled p)),
+  .docs-story :where(ul:not(.sb-anchor, .sb-unstyled, .sb-unstyled ul)),
+  .docs-story :where(ol:not(.sb-anchor, .sb-unstyled, .sb-unstyled ol)),
+  .docs-story :where(li:not(.sb-anchor, .sb-unstyled, .sb-unstyled li)) {
     color: var(--nb-background-contrast-primary-500) !important;
     font: var(--nb-body2) !important;
   }
