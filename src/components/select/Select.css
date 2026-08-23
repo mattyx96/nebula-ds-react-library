@@ -36,7 +36,10 @@
 }
 
 .nb-select__trigger[data-placeholder-shown] .nb-select__value {
-  color: var(--nb-background-contrast-primary-200);
+  /* Follow the trigger button's own text color (theme + variant aware) so the
+     placeholder reads like the rest of the button instead of a fixed gray. */
+  color: currentColor;
+  opacity: 0.65;
 }
 
 .nb-select__trigger[data-invalid] {

@@ -20,6 +20,6 @@ Every recipe is a self-contained example with working state, validation and feed
 ## Conventions
 
 - **Validation is inline**: `Input` renders its own `errors`; for `Select`/`RadioGroup`/`Checkbox` use the `invalid` flag and render a small error line.
-- **Feedback uses `Toast`**: wrap the recipe in a `<ToastProvider>` and call `useToast()` — `toast.error(...)` for failures and `toast.success(...)` for confirmations.
-- **`Flash` for whole-UI feedback**: when the entire page should blink in a tone (e.g. after a destructive action), also use `<FlashProvider>` + `useFlash()`.
+- **Feedback uses `Toast` + `Flash` together**: wrap the recipe in `<ToastProvider>` and `<FlashProvider>`. On submit, call `flash('error'|'success')` for the whole-UI blink **and** `toast.error(...)`/`toast.success(...)` for the message.
+- **Controlled inputs**: every recipe keeps the component state in `useState` and passes `value`/`onChange` down, so the pattern works in any framework (React Hook Form, Zod, Formik, etc.).
 - **Controlled inputs**: every recipe keeps the component state in `useState` and passes `value`/`onChange` down, so the pattern works in any framework (React Hook Form, Zod, Formik, etc.).
