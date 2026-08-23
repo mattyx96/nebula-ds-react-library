@@ -35,13 +35,13 @@
   font-family: var(--nb-font-families-roboto-mono);
 
   background-color: var(--nb-background-secondary-default);
-  border: var(--nb-border-1) solid var(--nb-toast-accent, var(--nb-background-accent-500));
   border-radius: var(--nb-border-radius-default);
   /* LCARS signature corner */
   border-bottom-right-radius: var(--nb-paper-border-radius-big);
 
   color: var(--nb-background-contrast-primary-500);
-  box-shadow: 0 2px 12px rgb(0 0 0 / 0.12);
+  /* Crisp 2px ring like .nb-button — no blur, colored by the toast type. */
+  box-shadow: 0 0 0 var(--nb-border-1) var(--nb-toast-accent, var(--nb-background-accent-500));
 
   /* Zag feeds these as inline custom props; wire them into a smooth
      entrance/exit transition driven by the machine state. */
@@ -85,11 +85,7 @@
 /* ---- Dark theme ----
    The type accents are theme-invariant primitives that are far too dark to
    read on the dark toast surface (#575757). Bump them with the same
-   color-mix approach Flash uses so the border stays visible. */
-[data-nb-theme='dark'] .nb-toast {
-  box-shadow: 0 2px 12px rgb(0 0 0 / 0.45);
-}
-
+   color-mix approach Flash uses so the ring stays visible. */
 [data-nb-theme='dark'] .nb-toast--type-info {
   --nb-toast-accent: color-mix(in srgb, var(--nb-bice-blue-400) 65%, #ffffff);
 }
