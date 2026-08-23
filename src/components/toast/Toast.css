@@ -40,8 +40,8 @@
   border-bottom-right-radius: var(--nb-paper-border-radius-big);
 
   color: var(--nb-background-contrast-primary-500);
-  /* Crisp 2px ring like .nb-button — no blur, colored by the toast type. */
-  box-shadow: 0 0 0 var(--nb-border-1) var(--nb-toast-accent, var(--nb-background-accent-500));
+  /* Crisp 3px ring like .nb-button — no blur, colored by the toast type. */
+  box-shadow: 0 0 0 var(--nb-border-2) var(--nb-toast-accent, var(--nb-background-accent-500));
 
   /* Zag feeds these as inline custom props; wire them into a smooth
      entrance/exit transition driven by the machine state. */
