@@ -5,6 +5,7 @@ import {Text} from '../../typography/Typography';
 import {IconButton} from "../../button/IconButton";
 import {ArrowRightIcon, CodeBracketIcon, ArrowLeftIcon} from "@heroicons/react/16/solid";
 import {useBreakpoint} from "../../../hook/useBreakpoint.ts";
+import {AppShellExample} from "../../../../examples/app-shell/AppShellExample";
 
 const content = (content = 'Content Here') => (
   <div className="nb-demo-block nb-demo-block--tall">
@@ -249,6 +250,18 @@ export const ChainedSections: Story = {
     title: '',
     inverse: false,
     children: content(),
+  },
+};
+
+export const AppShellComposition: Story = {
+  render: () => <AppShellExample/>,
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'A complete page inside the frame — header actions, side stack, footer with the one primary, theme toggle and flash+toast feedback. Source: `examples/app-shell` in the repo (see its README for the slot map).',
+      },
+    },
   },
 };
 

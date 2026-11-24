@@ -29,6 +29,7 @@
   "include": [
     "index.ts",
     "src",
+    "examples",
     "theme.ts",
     "setupTests.ts"
   ],
