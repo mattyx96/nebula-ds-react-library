@@ -7,6 +7,17 @@ const meta = {
   title: 'Components/Input',
   component: Input,
   tags: ['autodocs', '!dev'],
+  parameters: {
+    docs: {
+      description: {
+        component: [
+          'Labeled text field. `label` renders above, `helperText` a quiet hint below, and `errors` an error list — pass `errors` (or `invalid` on the composite controls) from your form state, never a boolean alone.',
+          'Controlled usage: pass `value` + `onChange`. `isRequired` renders the asterisk; `fullWidth` stretches the field.',
+          'Focus ring and error styling are token-driven (`--nb-input-border-focused`, `--nb-input-border-error`) — do not restyle them.',
+        ].join('\n\n'),
+      },
+    },
+  },
   argTypes: {
     size: {
       control: {type: 'inline-radio'},

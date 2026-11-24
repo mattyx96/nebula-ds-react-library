@@ -21,6 +21,17 @@ const meta = {
   title: 'Components/Menu',
   component: Menu,
   tags: ['autodocs', '!dev'],
+  parameters: {
+    docs: {
+      description: {
+        component: [
+          'Dropdown menu behind a Button-style trigger. `items` takes `{ value, text, leftIcon?, rightIcon?, disabled?, separator? }`; `indicator` is the chevron node.',
+          'Selection: `onSelect(value)` fires with the item `value`. Controlled open state: `open` + `onOpenChange`.',
+          'On narrow screens the pattern is Menu → Sheet: render a `Menu` on desktop and a `Sheet` with the same `items` when `useBreakpoint().isMobile` (see `src/pages/Menu.tsx` for the canonical responsive wiring).',
+        ].join('\n\n'),
+      },
+    },
+  },
   argTypes: {
     size: {
       control: {type: 'inline-radio'},

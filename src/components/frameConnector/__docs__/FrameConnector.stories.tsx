@@ -6,6 +6,16 @@ const meta = {
   title: 'Components/FrameConnector',
   component: FrameConnector,
   tags: ['autodocs', '!dev'],
+  parameters: {
+    docs: {
+      description: {
+        component: [
+          'The signature LCARS structural element: two curved frame nodes joined by a straight bridge. `FramePanel` composes it internally — reach for it directly only to extend a frame\'s geometry, never as decoration.',
+          '`size` (`S/M/L`) applies to the bridge and to any node that does not override it; `vertical` rotates the bridge; `divider` renders the bridge only; each node takes `hidden`, `fill` (defaults to the theme frame token) and `className`.',
+        ].join('\n\n'),
+      },
+    },
+  },
   argTypes: {
     divider: {
       control: 'boolean',

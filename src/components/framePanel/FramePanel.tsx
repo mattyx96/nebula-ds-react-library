@@ -6,20 +6,67 @@ import useElementDimensions from "../../hook/useElementDimentions.ts";
 import './FramePanel.css'
 
 type Props = ({ title: string; renderTitle?: undefined } | { renderTitle: ReactNode; title?: undefined }) & {
+  /** Classes for the outermost frame element. */
   className?: string
+  /** Classes for the header row (title + connectors + header actions). */
   headerClassName?: string
+  /** Classes for the footer row (footer actions + connectors). */
   footerClassName?: string
+  /** Classes for the vertical-connector column between body and side actions. */
   verticalFrameConnectorContainerClassName?: string
+  /** Classes for the body container that wraps the side column and the body. */
   bodyContainerClassName?: string
+  /** Classes for the side action column. */
   sideClassName?: string
+  /** Main body content (required). */
   children: ReactNode
+  /** Extra element in the header, on the same side as the title (before it when `inverse`). */
   renderSideHeader?: ReactNode
+  /**
+   * Actions on the header row, on the opposite side from the title.
+   * Mirrors to the title side when `inverse`.
+   */
   renderHeader?: ReactNode
+  /**
+   * Actions in the footer row. Mirrored to the opposite edge when `inverse`.
+   * Omit it and the footer connector loses its end node.
+   */
   renderFooter?: ReactNode
+  /**
+   * Side action stack (typically `IconButton`s). Rendered in the side column
+   * on desktop; collapses into a horizontal strip above the body on mobile.
+   * Mirrored when `inverse`.
+   */
   renderSide?: ReactNode
+  /** Mirror the whole frame (title right, actions left). */
   inverse?: boolean
 }
 
+/**
+ * The LCARS page frame: title + header connectors + optional header actions,
+ * a body with an optional side action column, and a footer row.
+ *
+ * **Title**: pass exactly one of `title` (plain string, rendered as an
+ * Orbitron `header1`) or `renderTitle` (custom ReactNode) — never both.
+ *
+ * **Slots by position** (default frame; every position mirrors with `inverse`):
+ *
+ * | Slot | Default position | With `inverse` | Mobile |
+ * | --- | --- | --- | --- |
+ * | `title`/`renderTitle` | header, left | header, right | unchanged |
+ * | `renderHeader` | header, right (after connector) | header, left | unchanged |
+ * | `renderSideHeader` | header, left (before title) | header, right (after title) | unchanged |
+ * | `renderSide` | body, left column | body, right column | strip above body |
+ * | `renderFooter` | footer, right | footer, left | unchanged |
+ *
+ * **Connector collapse thresholds** (automatic, do not disable): the header
+ * connector hides below ~70 px (desktop) / ~50 px (mobile) width and drops to
+ * one node below ~140/150 px; the footer node hides below ~240/103 px; the
+ * side node hides below ~200/160 px height. Size of every connector follows
+ * `useBreakpoint()` (M on desktop, S below).
+ *
+ * See `examples/app-shell` for a complete page composition.
+ */
 export const FramePanel = (props: Props) => {
   const breakpoint = useBreakpoint();
   const {dimensions: headerFrameConnectorDimensions, ref: headerFrameConnectorRef} = useElementDimensions();
@@ -190,7 +237,7 @@ export const FramePanel = (props: Props) => {
 
           {/* body */}
           <div
-            className={`nb-frame-panel__body-inner ${bodySideClass} ${props.bodyContainerClassName || ''}`}>
+            className={`nb-frame-panel__body-inner ${bodySideClass}`}>
             {props.children}
           </div>
           {/* end body */}

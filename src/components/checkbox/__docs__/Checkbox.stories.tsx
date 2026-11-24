@@ -7,6 +7,17 @@ const meta = {
   title: 'Components/Checkbox',
   component: Checkbox,
   tags: ['autodocs', '!dev'],
+  parameters: {
+    docs: {
+      description: {
+        component: [
+          'Zag-powered checkbox. `checked` is controlled (`true | false | "indeterminate"`), or seed `defaultChecked` and read `onCheckedChange`.',
+          '`label` renders beside the control; use `renderLabel` for custom label content. `invalid` turns the box\'s ring to the error tone — pair it with an error message in your form.',
+          'A parent "select all" checkbox takes `defaultChecked="indeterminate"` while only some children are checked.',
+        ].join('\n\n'),
+      },
+    },
+  },
   argTypes: {
     size: {
       control: {type: 'inline-radio'},

@@ -11,35 +11,42 @@ import './IconButton.css';
 type ButtonElementProps = ComponentPropsWithRef<'button'>;
 
 interface BaseIconButton extends ButtonElementProps {
+  /** Icon content — required. Sized by the wrapper div (`size`). */
   icon: React.ReactNode;
-  iconClasses?: string;
 }
 
 export type IconButtonProps = (BaseIconButton & IconButtonVariants) & ButtonVariants;
 
+/**
+ * Icon-only button. Same `variant`/`size`/`rounded` vocabulary as `Button`.
+ * The icon is centered in a size-specific wrapper; give the button an
+ * accessible name via `aria-label` (icons carry none by themselves).
+ */
 export const IconButton = (props: IconButtonProps) => {
+  const {icon, className, size, variant, rounded, ...rest} = props;
+
   return (
     <button
       className={clsxMerge(
         buttonVariants({
-          size: props.size,
-          rounded: props.rounded,
-          variant: props.variant,
+          size,
+          rounded,
+          variant,
         }),
         iconButtonVariantsExtendsButton({
-          size: props.size,
+          size,
         }),
-        props.className
+        className
       )}
       type="button"
-      {...props}
+      {...rest}
     >
       <div
         className={clsxMerge(
-          buttonIconIconVariants({size: props.size, rounded: props.rounded})
+          buttonIconIconVariants({size, rounded})
         )}
       >
-        {props.icon}
+        {icon}
       </div>
     </button>
   );

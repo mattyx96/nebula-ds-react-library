@@ -52,7 +52,19 @@ const meta = {
   title: 'Components/FramePanel',
   component: FramePanel,
   tags: ['autodocs', '!dev'],
-  parameters: {},
+  parameters: {
+    docs: {
+      description: {
+        component: [
+          'The LCARS **page frame**: title + header connectors + optional header actions, a body with an optional side-action column, and a footer. Wrap a whole page or a major section in it — never build the frame geometry by hand.',
+          '**Title**: pass exactly one of `title` (string, rendered as Orbitron `header1`) or `renderTitle` (custom node) — never both.',
+          '**Slots**: `renderHeader` sits on the header row opposite the title; `renderSide` is the side action stack (it collapses into a strip above the body on mobile); `renderFooter` anchors the footer; `renderSideHeader` sits beside the title. `inverse` mirrors every position.',
+          'Connector nodes collapse automatically below internal width/height thresholds (header ~70/50 px, footer node ~240/103 px, side node ~200/160 px) — that is intended behaviour, not a bug.',
+          'Full page composition: `examples/app-shell` in the repo.',
+        ].join('\n\n'),
+      },
+    },
+  },
   argTypes: {
     renderHeader: {
       control: {disable: true},

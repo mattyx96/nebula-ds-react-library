@@ -47,7 +47,7 @@ exports[`FramePanel with mocked useBreakpoint > renders correctly on desktop 1`]
           </div>
         </div>
         <div
-          class="nb-frame-panel__body-inner nb-frame-panel__body-inner--pad-left "
+          class="nb-frame-panel__body-inner nb-frame-panel__body-inner--pad-left"
         >
           <div
             class="nb-demo-fill"
@@ -169,7 +169,7 @@ exports[`FramePanel with mocked useBreakpoint > renders correctly on mobile 1`] 
           </div>
         </div>
         <div
-          class="nb-frame-panel__body-inner nb-frame-panel__body-inner--pad-left-sm "
+          class="nb-frame-panel__body-inner nb-frame-panel__body-inner--pad-left-sm"
         >
           <div
             class="nb-demo-fill"
@@ -270,7 +270,7 @@ exports[`FramePanel with mocked useBreakpoint > renders correctly on tablet 1`] 
           </div>
         </div>
         <div
-          class="nb-frame-panel__body-inner nb-frame-panel__body-inner--pad-left "
+          class="nb-frame-panel__body-inner nb-frame-panel__body-inner--pad-left"
         >
           <div
             class="nb-demo-fill"

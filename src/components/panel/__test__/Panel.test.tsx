@@ -2,7 +2,7 @@ import {render} from '@testing-library/react';
 import {describe, expect, it} from 'vitest';
 import {panelRoundVariants, panelOutlineVariants} from '../../../variants/panel'; // Adjust the import path as necessary
 import {Button} from '../../button/Button';
-import {Paper} from "../Panel.tsx";
+import {Panel} from "../Panel.tsx";
 
 const actions = (
   <div className="nb-demo-actions">
@@ -21,13 +21,13 @@ const content = (content = 'Content here') => (
   </div>
 );
 
-describe('Paper', () => {
+describe("Panel", () => {
   panelRoundVariants.forEach((round) => {
     panelOutlineVariants.forEach((outline) => {
 
       it(`renders correctly with round: ${round}, outline: ${outline}, with actions and title`, () => {
         const {container} = render(
-          <Paper
+          <Panel
             key={`${round}-${outline}`}
             className="nb-demo-panels__panel"
             round={round}
@@ -36,7 +36,7 @@ describe('Paper', () => {
             renderActions={actions}
           >
             {content(`${round}-${outline}-actions & title`)}
-          </Paper>
+          </Panel>
         );
 
         expect(container).toMatchSnapshot();
@@ -44,7 +44,7 @@ describe('Paper', () => {
 
       it(`renders correctly with round: ${round}, outline: ${outline}, with title only`, () => {
         const {container} = render(
-          <Paper
+          <Panel
             key={`${round}-${outline}-no-actions`}
             className="nb-demo-panels__panel"
             round={round}
@@ -52,7 +52,7 @@ describe('Paper', () => {
             renderTitle={title(`${round}-${outline}-no actions`)}
           >
             {content(`${round}-${outline}-title only`)}
-          </Paper>
+          </Panel>
         );
 
         expect(container).toMatchSnapshot();
@@ -60,14 +60,14 @@ describe('Paper', () => {
 
       it(`renders correctly with round: ${round}, outline: ${outline}, with content only`, () => {
         const {container} = render(
-          <Paper
+          <Panel
             key={`${round}-${outline}-no`}
             className="nb-demo-panels__panel"
             round={round}
             outline={outline}
           >
             {content(`${round}-${outline}-content only`)}
-          </Paper>
+          </Panel>
         );
 
         expect(container).toMatchSnapshot();

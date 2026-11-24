@@ -8,6 +8,18 @@ const meta = {
   title: 'Components/Button',
   component: Button,
   tags: ['autodocs', '!dev'],
+  parameters: {
+    docs: {
+      description: {
+        component: [
+          'The action button. Variant roles are fixed: **`filled`** is the single primary action per view or panel, **`standard`** is the default for secondary actions and groups, **`outlined`** adds tertiary emphasis, **`text`** is for inline/quiet actions.',
+          'Label with `children` (or the `text` shorthand — both render if both are passed, `text` first). Icons passed via `leftIcon`/`rightIcon` are sized by `size` automatically.',
+          'Renders `<button type="button">` — pass `type="submit"` inside forms. There is no `href` prop; wrap the button in `<a>` for links.',
+          'Full rules: `docs/DESIGN_LANGUAGE.md` in the repo. Copyable compositions: `examples/`.',
+        ].join('\n\n'),
+      },
+    },
+  },
   argTypes: {
     size: {
       control: {type: 'inline-radio'},

@@ -6,12 +6,23 @@ const meta = {
   title: 'Components/Horizon',
   component: Horizon,
   tags: ['autodocs', '!dev'],
+  parameters: {
+    docs: {
+      description: {
+        component: [
+          'Decorative SVG band of horizontal lines whose thickness and spacing decay — a receding horizon. Pure decoration: pass `aria-hidden="true"`.',
+          'The default `color` is the theme contrast token (`var(--nb-background-contrast-primary-500)`), so the band stays visible in both light and dark themes. Override only with a token value, never a literal color.',
+          'It re-fits on resize and prop changes; `inverse` draws the lines from the bottom up.',
+        ].join('\n\n'),
+      },
+    },
+  },
   argTypes: {
     color: {
       control: 'color',
       table: {
         defaultValue: {
-          summary: '#000',
+          summary: 'var(--nb-background-contrast-primary-500)',
         },
       },
     },
@@ -19,7 +30,7 @@ const meta = {
       control: 'number',
       table: {
         defaultValue: {
-          summary: '55',
+          summary: '15',
         },
       },
     },
@@ -27,7 +38,7 @@ const meta = {
       control: 'number',
       table: {
         defaultValue: {
-          summary: '10',
+          summary: '13',
         },
       },
     },
@@ -35,7 +46,7 @@ const meta = {
       control: 'number',
       table: {
         defaultValue: {
-          summary: '10',
+          summary: '15',
         },
       },
     },
@@ -43,7 +54,7 @@ const meta = {
       control: 'number',
       table: {
         defaultValue: {
-          summary: '1.05',
+          summary: '1.2',
         },
       },
     },
@@ -51,7 +62,7 @@ const meta = {
       control: 'number',
       table: {
         defaultValue: {
-          summary: '0.95',
+          summary: '0.9',
         },
       },
     },
@@ -74,12 +85,11 @@ const meta = {
     },
   },
   args: {
-    color: '#000',
-    numLines: 55,
-    lineThickness: 10,
-    distance: 10,
-    distanceGrowthFactor: 1.05,
-    thicknessDecayFactor: 0.95,
+    numLines: 15,
+    lineThickness: 13,
+    distance: 15,
+    distanceGrowthFactor: 1.2,
+    thicknessDecayFactor: 0.9,
     className: 'nb-demo-w-full',
     inverse: false,
   },
@@ -92,6 +102,16 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/react/writing-stories/args
 export const Default: Story = {
   args: {},
+};
+
+export const DenseBand: Story = {
+  args: {
+    numLines: 55,
+    lineThickness: 10,
+    distance: 10,
+    distanceGrowthFactor: 1.05,
+    thicknessDecayFactor: 0.95,
+  },
 };
 
 export const ColoredLines: Story = {

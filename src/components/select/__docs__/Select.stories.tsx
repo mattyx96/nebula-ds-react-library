@@ -26,6 +26,17 @@ const meta = {
   title: 'Components/Select',
   component: Select,
   tags: ['autodocs', '!dev'],
+  parameters: {
+    docs: {
+      description: {
+        component: [
+          'Zag-powered listbox from an `items` array of `{ label, value, disabled? }`. `label` and `placeholder` are strings; the chevron `indicator` is a node (heroicons `ChevronDownIcon` at 16 px).',
+          "Controlled: `value: string[]` + `onValueChange` (the value is always an array, even single-select). Uncontrolled: `defaultValue: ['IT']`. `multiple` picks many.",
+          'Invalid state: pass `invalid` plus an error line in your form, matching `Input`\'s error pattern.',
+        ].join('\n\n'),
+      },
+    },
+  },
   argTypes: {
     size: {
       control: {type: 'inline-radio'},

@@ -20,6 +20,13 @@ type ActiveFlash = {
   seq: number;
 };
 
+/**
+ * Wraps the app so any component can call
+ * `useFlash().flash('error' | 'success', {repeats, duration})` and blink the
+ * whole UI (backgrounds, buttons, frames, typography) in that tone. The blink
+ * is the *feeling* of the feedback; pair it with a `Toast` for the message.
+ * Mount once, above the content that triggers flashes.
+ */
 export const FlashProvider = (props: FlashProviderProps) => {
   const {children, className} = props;
   const [active, setActive] = useState<ActiveFlash | null>(null);

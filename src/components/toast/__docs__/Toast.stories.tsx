@@ -104,6 +104,18 @@ const meta = {
   title: 'Components/Toast',
   component: ToastProvider,
   tags: ['autodocs', '!dev'],
+  parameters: {
+    docs: {
+      description: {
+        component: [
+          'Toast notifications, Zag-powered. The documented surface is the **hook**, not the provider component: `useToast()` gives `.create({...})`, `.success/.error/.warning/.info/.loading({...})`, `.dismiss()` and `.remove()`.',
+          'A toast takes `title`, optional `description`, `type`, `closable`, and an optional `action: { label, onClick }` (clicking it runs the handler and dismisses).',
+          'Two ways to mount: wrap content in `<ToastProvider placement overlap max>` (placement default `bottom-end`), or — for toasts fired from outside React — `createToastStore({ placement })` at module scope plus one `<Toaster store={store} />`.',
+          'Pair with `flash(...)` on submit results: the toast carries the message, the flash carries the feeling.',
+        ].join('\n\n'),
+      },
+    },
+  },
   argTypes: {
     placement: {
       control: {type: 'inline-radio'},
