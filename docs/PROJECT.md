@@ -15,7 +15,15 @@ Comprehensive project documentation for the `nebula-ds-react-library` repository
 
 The aesthetic is "retro-futuristic": inspired by 1970s space-age design, Bauhaus geometry, and Star Trek's **LCARS** interface. Its signature elements are the *frame connector* graphics (curved "LCARS-style" node SVG shapes connected by bridges) used to build the `FrameConnector` and `FramePanel` components, and the **Orbitron / Roboto Mono** font pairing.
 
-Currently the library ships **8 public components**, **2 hooks** (`useBreakpoint`, `useTheme`), plus the tokens re-exported under a `config` namespace.
+Currently the library ships **17 public components** (Button, IconButton, Icon, Text, Panel, Horizon, FrameConnector, FramePanel, Menu, Sheet, Select, Dialog, Input, Checkbox, RadioGroup, ThemeProvider, Toast + the Flash/Toast providers), **2 hooks** (`useBreakpoint`, `useTheme`), plus the tokens re-exported under a `config` namespace.
+
+> **2026-11-25:** the agent-facing documentation now lives in dedicated
+> files — [`DESIGN_LANGUAGE.md`](DESIGN_LANGUAGE.md) (visual authority),
+> [`PALETTE.md`](PALETTE.md), the repo [`README.md`](../README.md)
+> (consumer contract), [`AGENTS.md`](../AGENTS.md) (maintainer rules),
+> [`skills/nebula-ds`](../skills/nebula-ds) (consumer skill) and
+> `public/llms.txt` (machine index). This file remains the structural
+> exploration snapshot; where it disagrees with those, they win.
 
 ---
 
@@ -142,7 +150,6 @@ Props:
 | Prop | Type | Default | Description |
 | --- | --- | --- | --- |
 | `icon` | `ReactNode` | **required** | Icon content |
-| `iconClasses` | `string` | — | Extra classes for the icon wrapper (currently unused in impl) |
 | `size` | `'S' \| 'M' \| 'L'` | `'M'` | Also drives the icon size |
 | `variant` / `rounded` | as `Button` | — | Reuses `buttonVariants` |
 | `...rest` | `ComponentPropsWithRef<'button'>` | — | Native props |
@@ -161,9 +168,10 @@ Props:
 
 Sizes map to Tailwind classes: S → `w-5 h-5`, M → `w-6 h-6`, L → `w-7 h-7`.
 
-### 4.4 `Paper` (exported as `Panel.tsx` / component file)
+### 4.4 `Panel` (historically `Paper`)
 
-A card/panel container. **The component is internally named `Paper`** and there is a `//todo: rename to Panel` comment. Both the export name and the file are `Panel`.
+A card/panel container. The component is named `Panel` (file `Panel.tsx`);
+`Paper` is kept as a **deprecated alias** until 1.0.
 
 Props:
 
@@ -202,7 +210,7 @@ Props (all optional):
 
 | Prop | Type | Default |
 | --- | --- | --- |
-| `color` | `string` | `'#000'` |
+| `color` | `string` | `'var(--nb-background-contrast-primary-500)'` (theme-aware) |
 | `numLines` | `number` | `15` |
 | `lineThickness` | `number` | `13` |
 | `distance` | `number` | `15` |
@@ -380,7 +388,7 @@ Consumers import styling via `import 'nebula-ds-react-library/style';` (document
 ### Storybook
 
 - Config: `stories: '../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'`.
-- Addons: onboarding, links, essentials, chromatic, interactions.
+- Addons: `@chromatic-com/storybook` + `@storybook/addon-docs` (a11y addon still to be added).
 - Custom theme in `.storybook/theme.ts` (Orbitron/Roboto Mono, Nebula colors, brand image).
 - `preview.tsx` imports `../dist/style.css` — so Storybook requires the library to be built first (hence the `build` in the storybook scripts).
 - `preview-head.html` enforces Nebula typography/color on docs paragraphs/headings.
@@ -430,8 +438,8 @@ Live at https://nebula-ds-react-library.irongalaxy.space
 
 > The README roadmap and TODOs in code were requested to stay out of this doc, but the following are factual observations about the *current* state that are useful for anyone working on the repo.
 
-- `index.ts` exports `Icon`, `Paper`, `Text`, `FrameConnector`, `FramePanel`, `Horizon` with `.tsx` extensions, but `Button`, `IconButton`, and the `useBreakpoint` hook without — inconsistent import style.
+- `index.ts` exports `Icon`, `Panel`, `Text`, `FrameConnector`, `FramePanel`, `Horizon` with `.tsx` extensions, but `Button`, `IconButton`, and the `useBreakpoint` hook without — inconsistent import style.
 - `FramePanel`'s stories live in `__docs___` (three underscores) instead of `__docs__`.
-- `Panel.tsx` exports a component named `Paper` with a TODO to rename.
+- `Paper` is a deprecated alias of `Panel` (removed at 1.0).
 - `tsconfig.json` includes a `theme.ts` file that does not exist.
 - `vercel.json` uses `pnpm install`; the pnpm/Node versions are pinned via `packageManager` + `engines` in `package.json`.

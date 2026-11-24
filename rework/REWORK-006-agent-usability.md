@@ -287,9 +287,29 @@ args), `package.json` (`files`), `.storybook/main.ts` (a11y addon),
 - Independent of REWORK-001..005 (all merged/verified).
 - Phase 3's `examples/app-shell` benefits from Phase 1's FramePanel fixes but
   can be built against the current API.
-- Open decisions to confirm with the owner:
-  1. Variant rename (`filled→primary`, `standard→secondary`,
-     `rounded→corner`) — document now and rename at 1.0, or never?
-  2. Ship the skill + docs inside the npm tarball (small size cost, large
-     agent benefit)?
-  3. Landing page: SSR the Next app, or replace with a static page?
+- **Decisions (owner, 2026-11-24):**
+  1. **Variant names stay.** No rename, no 1.0 vocabulary break — semantics
+     are documented instead (`filled` = the one primary, `standard` =
+     secondary, …) in the design language, stories and skill.
+  2. **The skill ships** in the npm tarball (`files: ["/dist", "/skills",
+     "/docs"]`), so any agent with `node_modules` access finds it.
+  3. "storyblok" was a typo for **Storybook** — it stays the rendered
+     evidence surface; markdown contracts + `llms.txt` are the agent
+     surface. The landing page (a separate repo) keeps its two buttons
+     and should link `llms.txt`.
+
+## Status (branch `feat/agent-usability`)
+
+| Phase | State |
+| --- | --- |
+| 0 — design language + palette | done (`docs/DESIGN_LANGUAGE.md`, `docs/PALETTE.md`) |
+| 1 — API traps | done (Button/IconButton DOM-attr leaks, Icon rest spread, Paper→Panel rename + alias, FramePanel double className + slot JSDoc; inert-controls story sweep still pending) |
+| 2 — content | done (JSDoc on all previously undocumented components, component prose on all 16 component stories, README contract, root `AGENTS.md`) |
+| 3 — examples | `examples/app-shell` (the FramePanel recipe) done; `dashboard` and `form-page` follow-ups |
+| 4 — skill | done (`skills/nebula-ds/**`, registered in `~/skills-lab/skills/engineering/` on the maintainer host, shipped in the tarball) |
+| 5 — llms.txt | generator + `public/llms.txt` done (served at the Storybook host root once deployed); landing-page link is in the other repo; mcp-dev-bridge registration pending |
+| 6 — scenarios | prompts + rubric written (`skills/NEBULA_SCENARIOS.md`); first measured runs pending |
+
+Known pre-existing (not this branch): 2 Toast dismissal tests fail on
+`main` under jsdom (animation/`--remove-delay` timing), reproduced on a
+clean checkout before any of these changes.

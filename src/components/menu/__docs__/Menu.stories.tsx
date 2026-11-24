@@ -27,7 +27,7 @@ const meta = {
         component: [
           'Dropdown menu behind a Button-style trigger. `items` takes `{ value, text, leftIcon?, rightIcon?, disabled?, separator? }`; `indicator` is the chevron node.',
           'Selection: `onSelect(value)` fires with the item `value`. Controlled open state: `open` + `onOpenChange`.',
-          'On narrow screens the pattern is Menu → Sheet: render a `Menu` on desktop and a `Sheet` with the same `items` when `useBreakpoint().isMobile` (see `src/pages/Menu.tsx` for the canonical responsive wiring).',
+          'Responsive by default: `mode="auto"` (the default) renders the dropdown on desktop and a bottom sheet below `breakpoint` — give it `title`/`description` for the sheet header. Set `mode="menu"` or `mode="sheet"` to pin one presentation.',
         ].join('\n\n'),
       },
     },

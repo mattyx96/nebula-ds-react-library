@@ -34,7 +34,9 @@
     "./style": "./dist/style.css"
   },
   "files": [
-    "/dist"
+    "/dist",
+    "/skills",
+    "/docs"
   ],
   "publishConfig": {
     "access": "public"
@@ -42,6 +44,7 @@
   "scripts": {
     "dev": "vite",
     "generate-themes": "node .scripts/generate-themes.mjs",
+    "generate-llms": "node .scripts/generate-llms.mjs",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "prepare": "husky",
