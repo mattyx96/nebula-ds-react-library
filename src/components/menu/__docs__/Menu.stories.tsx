@@ -21,6 +21,17 @@ const meta = {
   title: 'Components/Menu',
   component: Menu,
   tags: ['autodocs', '!dev'],
+  parameters: {
+    docs: {
+      description: {
+        component: [
+          'Dropdown menu behind a Button-style trigger. `items` takes `{ value, text, leftIcon?, rightIcon?, disabled?, separator? }`; `indicator` is the chevron node.',
+          'Selection: `onSelect(value)` fires with the item `value`. Controlled open state: `open` + `onOpenChange`.',
+          'Responsive by default: `mode="auto"` (the default) renders the dropdown on desktop and a bottom sheet below `breakpoint` — give it `title`/`description` for the sheet header. Set `mode="menu"` or `mode="sheet"` to pin one presentation.',
+        ].join('\n\n'),
+      },
+    },
+  },
   argTypes: {
     size: {
       control: {type: 'inline-radio'},

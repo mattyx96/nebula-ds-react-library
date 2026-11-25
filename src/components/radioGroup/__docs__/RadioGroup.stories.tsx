@@ -14,6 +14,17 @@ const meta = {
   title: 'Components/RadioGroup',
   component: RadioGroup,
   tags: ['autodocs', '!dev'],
+  parameters: {
+    docs: {
+      description: {
+        component: [
+          'Single-choice group of radios from an `items` array (`{ value, label }` — the simplest of the form controls).',
+          'Controlled: `value` + `onValueChange`; uncontrolled: `defaultValue`. `invalid` flags the group with the error tone; `orientation` stacks items `vertical` (default) or `horizontal`.',
+          'For multi-choice, use `Checkbox`es (or a `Select` with `multiple`) — a RadioGroup is always exactly one value.',
+        ].join('\n\n'),
+      },
+    },
+  },
   argTypes: {
     items: {control: {disable: true}},
     orientation: {

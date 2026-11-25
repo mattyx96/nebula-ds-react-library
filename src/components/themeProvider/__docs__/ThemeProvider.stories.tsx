@@ -9,6 +9,17 @@ const meta = {
   title: 'Components/ThemeProvider',
   component: ThemeProvider,
   tags: ['autodocs', '!dev'],
+  parameters: {
+    docs: {
+      description: {
+        component: [
+          'Scopes a theme to a subtree by rendering `<div data-nb-theme="…">`. Every Nebula component below the wrapper switches semantic tokens; nested providers theme only their own subtree (see the SideBySide story).',
+          '`theme` is a controlled prop that also seeds internal state; call `useTheme().setTheme` for a toggle. Without a provider, components render the light theme.',
+          'Gotcha: the attribute lives on the wrapper `<div>`, **not** on `<html>` — read theme-scoped CSS variables from the wrapper when using `getComputedStyle`.',
+        ].join('\n\n'),
+      },
+    },
+  },
   argTypes: {
     theme: {
       control: {type: 'inline-radio'},

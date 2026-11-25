@@ -9,6 +9,17 @@ const meta = {
   title: 'Foundations/Typography',
   component: Text,
   tags: ['autodocs', '!dev'],
+  parameters: {
+    docs: {
+      description: {
+        component: [
+          'Nebula typography. `variant` picks the type role; `component` picks the HTML tag — they are independent, so a semantic `h2` can carry a `body1` look and vice versa.',
+          'Orbitron roles: `display1`, `display2`, `header1`–`header6`, `button`, `caption`. Roboto Mono roles (all sentences and copy): `body1`–`body5`. `text` is a string shorthand; `children` wins when both are passed.',
+          'Never set fonts, sizes or weights by hand — if a role is missing, extend the variants.',
+        ].join('\n\n'),
+      },
+    },
+  },
   argTypes: {
     variant: {
       control: {type: 'inline-radio'},

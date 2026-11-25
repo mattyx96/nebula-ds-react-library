@@ -6,19 +6,30 @@ import {panelVariants} from '../../variants/panel/paper';
 
 type DivElementProps = ComponentPropsWithRef<'div'>;
 
-interface PaperPropsBase
+interface PanelPropsBase
   extends DivElementProps,
     VariantProps<typeof panelVariants> {
 }
 
-export interface PaperProps extends PaperPropsBase {
+export interface PanelProps extends PanelPropsBase {
+  /** Title block rendered above the panel body (use `<Text variant="header6">`). */
   renderTitle?: React.ReactNode
+  /** Action block rendered below `children`, inside the panel. */
   renderActions?: React.ReactNode
+  /** Extra classes for the inner panel surface (the outer wrapper takes `className`). */
   panelClassName?: string
 }
 
-//todo: rename to Panel
-export const Paper = (props: PaperProps) => {
+/**
+ * The Nebula card: an optional title above, body content, optional actions
+ * below. `outline` sets border strength (`50|200|500|700`), `round` sets the
+ * bottom-left corner (`no|xs|lg`).
+ *
+ * The inner surface swallows click events (`stopPropagation`) so a panel
+ * inside a clickable container behaves as one unit; pass `onClick` for the
+ * panel's own action.
+ */
+export const Panel = (props: PanelProps) => {
   const {
     children,
     renderActions,
@@ -55,3 +66,9 @@ export const Paper = (props: PaperProps) => {
     </div>
   );
 }
+
+/** @deprecated Use `Panel` — the historical name kept as an alias until 1.0. */
+export const Paper = Panel;
+
+/** @deprecated Use `PanelProps`. */
+export type PaperProps = PanelProps;

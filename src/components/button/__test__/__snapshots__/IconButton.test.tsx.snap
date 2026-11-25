@@ -5,7 +5,6 @@ exports[`IconButton > button is disabled correctly 1`] = `
   <button
     class="nb-button nb-button--filled nb-button--size-m nb-button--rounded-default nb-icon-button nb-icon-button--size-m"
     disabled=""
-    icon="[object Object]"
     id="icon"
     type="button"
   >
@@ -34,8 +33,6 @@ exports[`IconButton > render correctly with rounded prop 1`] = `
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-m nb-button--rounded-default nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="Default"
     type="button"
   >
     <div
@@ -63,8 +60,6 @@ exports[`IconButton > render correctly with rounded prop 2`] = `
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-m nb-button--rounded-r nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="R"
     type="button"
   >
     <div
@@ -92,8 +87,6 @@ exports[`IconButton > render correctly with rounded prop 3`] = `
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-m nb-button--rounded-rtop nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="RTop"
     type="button"
   >
     <div
@@ -121,8 +114,6 @@ exports[`IconButton > render correctly with rounded prop 4`] = `
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-m nb-button--rounded-rbottom nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="RBottom"
     type="button"
   >
     <div
@@ -150,8 +141,6 @@ exports[`IconButton > render correctly with rounded prop 5`] = `
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-m nb-button--rounded-l nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="L"
     type="button"
   >
     <div
@@ -179,8 +168,6 @@ exports[`IconButton > render correctly with rounded prop 6`] = `
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-m nb-button--rounded-ltop nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="LTop"
     type="button"
   >
     <div
@@ -208,8 +195,6 @@ exports[`IconButton > render correctly with rounded prop 7`] = `
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-m nb-button--rounded-lbottom nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="LBottom"
     type="button"
   >
     <div
@@ -237,9 +222,7 @@ exports[`IconButton > render correctly with size prop 1`] = `
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-m nb-button--rounded-default nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
     type="button"
-    variant="filled"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -266,9 +249,7 @@ exports[`IconButton > render correctly with size prop 2`] = `
 <div>
   <button
     class="nb-button nb-button--outlined nb-button--size-m nb-button--rounded-default nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
     type="button"
-    variant="outlined"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -295,9 +276,7 @@ exports[`IconButton > render correctly with size prop 3`] = `
 <div>
   <button
     class="nb-button nb-button--standard nb-button--size-m nb-button--rounded-default nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
     type="button"
-    variant="standard"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -324,9 +303,7 @@ exports[`IconButton > render correctly with size prop 4`] = `
 <div>
   <button
     class="nb-button nb-button--text nb-button--size-m nb-button--rounded-default nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
     type="button"
-    variant="text"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -353,7 +330,6 @@ exports[`IconButton > render correctly with size prop 5`] = `
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-l nb-button--rounded-default nb-icon-button nb-icon-button--size-l"
-    icon="[object Object]"
     type="button"
   >
     <div
@@ -381,7 +357,6 @@ exports[`IconButton > render correctly with size prop 6`] = `
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-m nb-button--rounded-default nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
     type="button"
   >
     <div
@@ -409,7 +384,6 @@ exports[`IconButton > render correctly with size prop 7`] = `
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-s nb-button--rounded-default nb-icon-button nb-icon-button--size-s"
-    icon="[object Object]"
     type="button"
   >
     <div
@@ -437,9 +411,7 @@ exports[`IconButton > render correctly with variant prop 1`] = `
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-m nb-button--rounded-default nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
     type="button"
-    variant="filled"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -466,9 +438,7 @@ exports[`IconButton > render correctly with variant prop 2`] = `
 <div>
   <button
     class="nb-button nb-button--outlined nb-button--size-m nb-button--rounded-default nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
     type="button"
-    variant="outlined"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -495,9 +465,7 @@ exports[`IconButton > render correctly with variant prop 3`] = `
 <div>
   <button
     class="nb-button nb-button--standard nb-button--size-m nb-button--rounded-default nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
     type="button"
-    variant="standard"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -524,9 +492,7 @@ exports[`IconButton > render correctly with variant prop 4`] = `
 <div>
   <button
     class="nb-button nb-button--text nb-button--size-m nb-button--rounded-default nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
     type="button"
-    variant="text"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -552,7 +518,6 @@ exports[`IconButton > render correctly with variant prop 4`] = `
 exports[`IconButton > renders correctly 1`] = `
 <button
   class="nb-button nb-button--filled nb-button--size-m nb-button--rounded-default nb-icon-button nb-icon-button--size-m"
-  icon="[object Object]"
   type="button"
 >
   <div
@@ -579,10 +544,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-l nb-button--rounded-default nb-icon-button nb-icon-button--size-l"
-    icon="[object Object]"
-    rounded="Default"
     type="button"
-    variant="filled"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-l"
@@ -609,10 +571,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-l nb-button--rounded-r nb-icon-button nb-icon-button--size-l"
-    icon="[object Object]"
-    rounded="R"
     type="button"
-    variant="filled"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-l"
@@ -639,10 +598,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-l nb-button--rounded-rtop nb-icon-button nb-icon-button--size-l"
-    icon="[object Object]"
-    rounded="RTop"
     type="button"
-    variant="filled"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-l"
@@ -669,10 +625,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-l nb-button--rounded-rbottom nb-icon-button nb-icon-button--size-l"
-    icon="[object Object]"
-    rounded="RBottom"
     type="button"
-    variant="filled"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-l"
@@ -699,10 +652,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-l nb-button--rounded-l nb-icon-button nb-icon-button--size-l"
-    icon="[object Object]"
-    rounded="L"
     type="button"
-    variant="filled"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-l"
@@ -729,10 +679,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-l nb-button--rounded-ltop nb-icon-button nb-icon-button--size-l"
-    icon="[object Object]"
-    rounded="LTop"
     type="button"
-    variant="filled"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-l"
@@ -759,10 +706,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-l nb-button--rounded-lbottom nb-icon-button nb-icon-button--size-l"
-    icon="[object Object]"
-    rounded="LBottom"
     type="button"
-    variant="filled"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-l"
@@ -789,10 +733,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-m nb-button--rounded-default nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="Default"
     type="button"
-    variant="filled"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -819,10 +760,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-m nb-button--rounded-r nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="R"
     type="button"
-    variant="filled"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -849,10 +787,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-m nb-button--rounded-rtop nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="RTop"
     type="button"
-    variant="filled"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -879,10 +814,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-m nb-button--rounded-rbottom nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="RBottom"
     type="button"
-    variant="filled"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -909,10 +841,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-m nb-button--rounded-l nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="L"
     type="button"
-    variant="filled"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -939,10 +868,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-m nb-button--rounded-ltop nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="LTop"
     type="button"
-    variant="filled"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -969,10 +895,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-m nb-button--rounded-lbottom nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="LBottom"
     type="button"
-    variant="filled"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -999,10 +922,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-s nb-button--rounded-default nb-icon-button nb-icon-button--size-s"
-    icon="[object Object]"
-    rounded="Default"
     type="button"
-    variant="filled"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-s"
@@ -1029,10 +949,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-s nb-button--rounded-r nb-icon-button nb-icon-button--size-s"
-    icon="[object Object]"
-    rounded="R"
     type="button"
-    variant="filled"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-s"
@@ -1059,10 +976,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-s nb-button--rounded-rtop nb-icon-button nb-icon-button--size-s"
-    icon="[object Object]"
-    rounded="RTop"
     type="button"
-    variant="filled"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-s"
@@ -1089,10 +1003,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-s nb-button--rounded-rbottom nb-icon-button nb-icon-button--size-s"
-    icon="[object Object]"
-    rounded="RBottom"
     type="button"
-    variant="filled"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-s"
@@ -1119,10 +1030,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-s nb-button--rounded-l nb-icon-button nb-icon-button--size-s"
-    icon="[object Object]"
-    rounded="L"
     type="button"
-    variant="filled"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-s"
@@ -1149,10 +1057,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-s nb-button--rounded-ltop nb-icon-button nb-icon-button--size-s"
-    icon="[object Object]"
-    rounded="LTop"
     type="button"
-    variant="filled"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-s"
@@ -1179,10 +1084,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-s nb-button--rounded-lbottom nb-icon-button nb-icon-button--size-s"
-    icon="[object Object]"
-    rounded="LBottom"
     type="button"
-    variant="filled"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-s"
@@ -1209,10 +1111,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--outlined nb-button--size-l nb-button--rounded-default nb-icon-button nb-icon-button--size-l"
-    icon="[object Object]"
-    rounded="Default"
     type="button"
-    variant="outlined"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-l"
@@ -1239,10 +1138,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--outlined nb-button--size-l nb-button--rounded-r nb-icon-button nb-icon-button--size-l"
-    icon="[object Object]"
-    rounded="R"
     type="button"
-    variant="outlined"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-l"
@@ -1269,10 +1165,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--outlined nb-button--size-l nb-button--rounded-rtop nb-icon-button nb-icon-button--size-l"
-    icon="[object Object]"
-    rounded="RTop"
     type="button"
-    variant="outlined"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-l"
@@ -1299,10 +1192,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--outlined nb-button--size-l nb-button--rounded-rbottom nb-icon-button nb-icon-button--size-l"
-    icon="[object Object]"
-    rounded="RBottom"
     type="button"
-    variant="outlined"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-l"
@@ -1329,10 +1219,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--outlined nb-button--size-l nb-button--rounded-l nb-icon-button nb-icon-button--size-l"
-    icon="[object Object]"
-    rounded="L"
     type="button"
-    variant="outlined"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-l"
@@ -1359,10 +1246,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--outlined nb-button--size-l nb-button--rounded-ltop nb-icon-button nb-icon-button--size-l"
-    icon="[object Object]"
-    rounded="LTop"
     type="button"
-    variant="outlined"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-l"
@@ -1389,10 +1273,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--outlined nb-button--size-l nb-button--rounded-lbottom nb-icon-button nb-icon-button--size-l"
-    icon="[object Object]"
-    rounded="LBottom"
     type="button"
-    variant="outlined"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-l"
@@ -1419,10 +1300,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--outlined nb-button--size-m nb-button--rounded-default nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="Default"
     type="button"
-    variant="outlined"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -1449,10 +1327,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--outlined nb-button--size-m nb-button--rounded-r nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="R"
     type="button"
-    variant="outlined"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -1479,10 +1354,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--outlined nb-button--size-m nb-button--rounded-rtop nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="RTop"
     type="button"
-    variant="outlined"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -1509,10 +1381,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--outlined nb-button--size-m nb-button--rounded-rbottom nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="RBottom"
     type="button"
-    variant="outlined"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -1539,10 +1408,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--outlined nb-button--size-m nb-button--rounded-l nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="L"
     type="button"
-    variant="outlined"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -1569,10 +1435,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--outlined nb-button--size-m nb-button--rounded-ltop nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="LTop"
     type="button"
-    variant="outlined"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -1599,10 +1462,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--outlined nb-button--size-m nb-button--rounded-lbottom nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="LBottom"
     type="button"
-    variant="outlined"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -1629,10 +1489,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--outlined nb-button--size-s nb-button--rounded-default nb-icon-button nb-icon-button--size-s"
-    icon="[object Object]"
-    rounded="Default"
     type="button"
-    variant="outlined"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-s"
@@ -1659,10 +1516,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--outlined nb-button--size-s nb-button--rounded-r nb-icon-button nb-icon-button--size-s"
-    icon="[object Object]"
-    rounded="R"
     type="button"
-    variant="outlined"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-s"
@@ -1689,10 +1543,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--outlined nb-button--size-s nb-button--rounded-rtop nb-icon-button nb-icon-button--size-s"
-    icon="[object Object]"
-    rounded="RTop"
     type="button"
-    variant="outlined"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-s"
@@ -1719,10 +1570,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--outlined nb-button--size-s nb-button--rounded-rbottom nb-icon-button nb-icon-button--size-s"
-    icon="[object Object]"
-    rounded="RBottom"
     type="button"
-    variant="outlined"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-s"
@@ -1749,10 +1597,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--outlined nb-button--size-s nb-button--rounded-l nb-icon-button nb-icon-button--size-s"
-    icon="[object Object]"
-    rounded="L"
     type="button"
-    variant="outlined"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-s"
@@ -1779,10 +1624,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--outlined nb-button--size-s nb-button--rounded-ltop nb-icon-button nb-icon-button--size-s"
-    icon="[object Object]"
-    rounded="LTop"
     type="button"
-    variant="outlined"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-s"
@@ -1809,10 +1651,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--outlined nb-button--size-s nb-button--rounded-lbottom nb-icon-button nb-icon-button--size-s"
-    icon="[object Object]"
-    rounded="LBottom"
     type="button"
-    variant="outlined"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-s"
@@ -1839,10 +1678,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--standard nb-button--size-l nb-button--rounded-default nb-icon-button nb-icon-button--size-l"
-    icon="[object Object]"
-    rounded="Default"
     type="button"
-    variant="standard"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-l"
@@ -1869,10 +1705,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--standard nb-button--size-l nb-button--rounded-r nb-icon-button nb-icon-button--size-l"
-    icon="[object Object]"
-    rounded="R"
     type="button"
-    variant="standard"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-l"
@@ -1899,10 +1732,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--standard nb-button--size-l nb-button--rounded-rtop nb-icon-button nb-icon-button--size-l"
-    icon="[object Object]"
-    rounded="RTop"
     type="button"
-    variant="standard"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-l"
@@ -1929,10 +1759,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--standard nb-button--size-l nb-button--rounded-rbottom nb-icon-button nb-icon-button--size-l"
-    icon="[object Object]"
-    rounded="RBottom"
     type="button"
-    variant="standard"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-l"
@@ -1959,10 +1786,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--standard nb-button--size-l nb-button--rounded-l nb-icon-button nb-icon-button--size-l"
-    icon="[object Object]"
-    rounded="L"
     type="button"
-    variant="standard"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-l"
@@ -1989,10 +1813,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--standard nb-button--size-l nb-button--rounded-ltop nb-icon-button nb-icon-button--size-l"
-    icon="[object Object]"
-    rounded="LTop"
     type="button"
-    variant="standard"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-l"
@@ -2019,10 +1840,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--standard nb-button--size-l nb-button--rounded-lbottom nb-icon-button nb-icon-button--size-l"
-    icon="[object Object]"
-    rounded="LBottom"
     type="button"
-    variant="standard"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-l"
@@ -2049,10 +1867,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--standard nb-button--size-m nb-button--rounded-default nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="Default"
     type="button"
-    variant="standard"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -2079,10 +1894,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--standard nb-button--size-m nb-button--rounded-r nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="R"
     type="button"
-    variant="standard"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -2109,10 +1921,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--standard nb-button--size-m nb-button--rounded-rtop nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="RTop"
     type="button"
-    variant="standard"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -2139,10 +1948,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--standard nb-button--size-m nb-button--rounded-rbottom nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="RBottom"
     type="button"
-    variant="standard"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -2169,10 +1975,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--standard nb-button--size-m nb-button--rounded-l nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="L"
     type="button"
-    variant="standard"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -2199,10 +2002,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--standard nb-button--size-m nb-button--rounded-ltop nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="LTop"
     type="button"
-    variant="standard"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -2229,10 +2029,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--standard nb-button--size-m nb-button--rounded-lbottom nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="LBottom"
     type="button"
-    variant="standard"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -2259,10 +2056,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--standard nb-button--size-s nb-button--rounded-default nb-icon-button nb-icon-button--size-s"
-    icon="[object Object]"
-    rounded="Default"
     type="button"
-    variant="standard"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-s"
@@ -2289,10 +2083,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--standard nb-button--size-s nb-button--rounded-r nb-icon-button nb-icon-button--size-s"
-    icon="[object Object]"
-    rounded="R"
     type="button"
-    variant="standard"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-s"
@@ -2319,10 +2110,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--standard nb-button--size-s nb-button--rounded-rtop nb-icon-button nb-icon-button--size-s"
-    icon="[object Object]"
-    rounded="RTop"
     type="button"
-    variant="standard"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-s"
@@ -2349,10 +2137,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--standard nb-button--size-s nb-button--rounded-rbottom nb-icon-button nb-icon-button--size-s"
-    icon="[object Object]"
-    rounded="RBottom"
     type="button"
-    variant="standard"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-s"
@@ -2379,10 +2164,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--standard nb-button--size-s nb-button--rounded-l nb-icon-button nb-icon-button--size-s"
-    icon="[object Object]"
-    rounded="L"
     type="button"
-    variant="standard"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-s"
@@ -2409,10 +2191,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--standard nb-button--size-s nb-button--rounded-ltop nb-icon-button nb-icon-button--size-s"
-    icon="[object Object]"
-    rounded="LTop"
     type="button"
-    variant="standard"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-s"
@@ -2439,10 +2218,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--standard nb-button--size-s nb-button--rounded-lbottom nb-icon-button nb-icon-button--size-s"
-    icon="[object Object]"
-    rounded="LBottom"
     type="button"
-    variant="standard"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-s"
@@ -2469,10 +2245,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--text nb-button--size-l nb-button--rounded-default nb-icon-button nb-icon-button--size-l"
-    icon="[object Object]"
-    rounded="Default"
     type="button"
-    variant="text"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-l"
@@ -2499,10 +2272,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--text nb-button--size-l nb-button--rounded-r nb-icon-button nb-icon-button--size-l"
-    icon="[object Object]"
-    rounded="R"
     type="button"
-    variant="text"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-l"
@@ -2529,10 +2299,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--text nb-button--size-l nb-button--rounded-rtop nb-icon-button nb-icon-button--size-l"
-    icon="[object Object]"
-    rounded="RTop"
     type="button"
-    variant="text"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-l"
@@ -2559,10 +2326,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--text nb-button--size-l nb-button--rounded-rbottom nb-icon-button nb-icon-button--size-l"
-    icon="[object Object]"
-    rounded="RBottom"
     type="button"
-    variant="text"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-l"
@@ -2589,10 +2353,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--text nb-button--size-l nb-button--rounded-l nb-icon-button nb-icon-button--size-l"
-    icon="[object Object]"
-    rounded="L"
     type="button"
-    variant="text"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-l"
@@ -2619,10 +2380,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--text nb-button--size-l nb-button--rounded-ltop nb-icon-button nb-icon-button--size-l"
-    icon="[object Object]"
-    rounded="LTop"
     type="button"
-    variant="text"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-l"
@@ -2649,10 +2407,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--text nb-button--size-l nb-button--rounded-lbottom nb-icon-button nb-icon-button--size-l"
-    icon="[object Object]"
-    rounded="LBottom"
     type="button"
-    variant="text"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-l"
@@ -2679,10 +2434,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--text nb-button--size-m nb-button--rounded-default nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="Default"
     type="button"
-    variant="text"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -2709,10 +2461,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--text nb-button--size-m nb-button--rounded-r nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="R"
     type="button"
-    variant="text"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -2739,10 +2488,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--text nb-button--size-m nb-button--rounded-rtop nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="RTop"
     type="button"
-    variant="text"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -2769,10 +2515,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--text nb-button--size-m nb-button--rounded-rbottom nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="RBottom"
     type="button"
-    variant="text"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -2799,10 +2542,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--text nb-button--size-m nb-button--rounded-l nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="L"
     type="button"
-    variant="text"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -2829,10 +2569,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--text nb-button--size-m nb-button--rounded-ltop nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="LTop"
     type="button"
-    variant="text"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -2859,10 +2596,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--text nb-button--size-m nb-button--rounded-lbottom nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
-    rounded="LBottom"
     type="button"
-    variant="text"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-m"
@@ -2889,10 +2623,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--text nb-button--size-s nb-button--rounded-default nb-icon-button nb-icon-button--size-s"
-    icon="[object Object]"
-    rounded="Default"
     type="button"
-    variant="text"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-s"
@@ -2919,10 +2650,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--text nb-button--size-s nb-button--rounded-r nb-icon-button nb-icon-button--size-s"
-    icon="[object Object]"
-    rounded="R"
     type="button"
-    variant="text"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-s"
@@ -2949,10 +2677,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--text nb-button--size-s nb-button--rounded-rtop nb-icon-button nb-icon-button--size-s"
-    icon="[object Object]"
-    rounded="RTop"
     type="button"
-    variant="text"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-s"
@@ -2979,10 +2704,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--text nb-button--size-s nb-button--rounded-rbottom nb-icon-button nb-icon-button--size-s"
-    icon="[object Object]"
-    rounded="RBottom"
     type="button"
-    variant="text"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-s"
@@ -3009,10 +2731,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--text nb-button--size-s nb-button--rounded-l nb-icon-button nb-icon-button--size-s"
-    icon="[object Object]"
-    rounded="L"
     type="button"
-    variant="text"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-s"
@@ -3039,10 +2758,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--text nb-button--size-s nb-button--rounded-ltop nb-icon-button nb-icon-button--size-s"
-    icon="[object Object]"
-    rounded="LTop"
     type="button"
-    variant="text"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-s"
@@ -3069,10 +2785,7 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--text nb-button--size-s nb-button--rounded-lbottom nb-icon-button nb-icon-button--size-s"
-    icon="[object Object]"
-    rounded="LBottom"
     type="button"
-    variant="text"
   >
     <div
       class="nb-icon-button__icon nb-icon-button__icon--size-s"
@@ -3099,7 +2812,6 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-l nb-button--rounded-default nb-icon-button nb-icon-button--size-l"
-    icon="[object Object]"
     type="button"
   >
     <div
@@ -3127,7 +2839,6 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-m nb-button--rounded-default nb-icon-button nb-icon-button--size-m"
-    icon="[object Object]"
     type="button"
   >
     <div
@@ -3155,7 +2866,6 @@ exports[`IconButton > should render correctly with all props mix and handle clic
 <div>
   <button
     class="nb-button nb-button--filled nb-button--size-s nb-button--rounded-default nb-icon-button nb-icon-button--size-s"
-    icon="[object Object]"
     type="button"
   >
     <div

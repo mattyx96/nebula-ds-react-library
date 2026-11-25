@@ -1,0 +1,68 @@
+# Nebula Design System
+
+> Retro-futuristic React 19 component library (LCARS-inspired, Orbitron + Roboto Mono, token-driven). npm: nebula-ds-react-library. Import the stylesheet once: `import 'nebula-ds-react-library/style'`. Load Orbitron + Roboto Mono fonts. Wrap in ThemeProvider > FlashProvider > ToastProvider. Never use literal colors — everything is var(--nb-*).
+
+Storybook (rendered evidence): https://nebula-ds-react-library.irongalaxy.space
+npm package: https://www.npmjs.com/package/nebula-ds-react-library
+
+## Docs
+- [Consumer contract (README)](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/README.md): Install (fonts + style import + providers), component map, quick usage, theming, release workflow.
+- [Design language](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/docs/DESIGN_LANGUAGE.md): CANONICAL visual authority: variant roles, LCARS corner vocabulary, hard rules (no literal colors/sizes), do/don't examples.
+- [Palette](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/docs/PALETTE.md): Color roles, semantic tokens light/dark side by side, contrast constraints.
+- [Maintainer rules (AGENTS.md)](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/AGENTS.md): Rules for agents editing the repo: frozen variant names, zag pin, generated files, docs ownership.
+- [App shell example](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/examples/app-shell/README.md): THE FramePanel recipe: complete page in the frame with a slot map.
+- [Examples index](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/examples/README.md): Copyable compositions.
+- [Consumer skill](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/skills/nebula-ds/SKILL.md): Installable agent skill: workflow, consumer rules, load-by-task routing to references/.
+- [Skill: design language](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/skills/nebula-ds/references/design-language.md): Consumer view of the visual system.
+- [Skill: composition](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/skills/nebula-ds/references/composition.md): Providers, page/frame/form patterns, feedback wiring, responsive actions.
+- [Skill: theming](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/skills/nebula-ds/references/theming.md): Setup order, theme switching, reading token values in JS.
+- [Skill: accessibility](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/skills/nebula-ds/references/accessibility.md): Names, focus, keyboard, form errors, contrast.
+- [Skill: component index](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/skills/nebula-ds/references/components/index.md): Routes every export to its family reference; choosing-between table.
+- [Cold-start scenarios](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/skills/NEBULA_SCENARIOS.md): Prompts + rubric to verify an agent can build on-system UI from the skill alone.
+- [Agent-usability plan](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/rework/REWORK-006-agent-usability.md): The plan behind this documentation layer.
+
+## Components
+API detail: the source file (linked) carries JSDoc on every prop; Storybook renders each at the docs path. Variants: size S/M/L; rounded Default/R/L/RTop/RBottom/LTop/LBottom; one filled primary per view.
+
+### actions
+- [Button](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/src/components/button/Button.tsx): Action button; variant roles: filled=primary (one per view), standard=secondary, outlined=tertiary, text=inline. Storybook: https://nebula-ds-react-library.irongalaxy.space/?path=/docs/components-button--docs.
+- [IconButton](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/src/components/button/IconButton.tsx): Icon-only button; requires icon + aria-label. Storybook: https://nebula-ds-react-library.irongalaxy.space/?path=/docs/components-iconbutton--docs.
+- [Icon](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/src/components/icon/Icon.tsx): Icon sizing wrapper (S/M/L).
+
+### typography
+- [Text](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/src/components/typography/Typography.tsx): Typography: Orbitron display/header roles, Roboto Mono body roles; component tag and visual variant are independent. Storybook: https://nebula-ds-react-library.irongalaxy.space/?path=/docs/foundations-typography--docs.
+
+### forms
+- [Input](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/src/components/input/Input.tsx): Labeled field with helperText and errors list. Storybook: https://nebula-ds-react-library.irongalaxy.space/?path=/docs/components-input--docs.
+- [Select](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/src/components/select/Select.tsx): Listbox; value is string[] even single-select; multiple supported. Storybook: https://nebula-ds-react-library.irongalaxy.space/?path=/docs/components-select--docs.
+- [Checkbox](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/src/components/checkbox/Checkbox.tsx): Checkbox incl. "indeterminate"; form participation via name/value. Storybook: https://nebula-ds-react-library.irongalaxy.space/?path=/docs/components-checkbox--docs.
+- [RadioGroup](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/src/components/radioGroup/RadioGroup.tsx): Single-choice group from items array. Storybook: https://nebula-ds-react-library.irongalaxy.space/?path=/docs/components-radiogroup--docs.
+
+### overlays
+- [Menu](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/src/components/menu/Menu.tsx): Dropdown that becomes a bottom sheet on mobile (mode="auto"); items with icons/separators/disabled. Storybook: https://nebula-ds-react-library.irongalaxy.space/?path=/docs/components-menu--docs.
+- [Sheet](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/src/components/sheet/Sheet.tsx): Standalone bottom drawer with the Menu items API. Storybook: https://nebula-ds-react-library.irongalaxy.space/?path=/docs/components-sheet--docs.
+- [Dialog](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/src/components/dialog/Dialog.tsx): Modal dialog; role="alertdialog" for destructive confirms. Storybook: https://nebula-ds-react-library.irongalaxy.space/?path=/docs/components-dialog--docs.
+
+### feedback
+- [ToastProvider / Toaster / useToast / createToastStore](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/src/components/toast/Toast.tsx): Toasts via useToast(): .create/.success/.error/.warning/.info/.loading; provider or module-level store. Storybook: https://nebula-ds-react-library.irongalaxy.space/?path=/docs/components-toast--docs.
+- [FlashProvider / useFlash](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/src/components/flash/FlashProvider.tsx): Whole-UI blink: flash('error'|'success', {repeats, duration}). Storybook: https://nebula-ds-react-library.irongalaxy.space/?path=/docs/components-flash--docs.
+
+### layout
+- [FramePanel](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/src/components/framePanel/FramePanel.tsx): LCARS page frame; title XOR renderTitle; renderHeader/renderSide/renderFooter slots; inverse mirrors; connectors auto-collapse. Storybook: https://nebula-ds-react-library.irongalaxy.space/?path=/docs/components-framepanel--docs.
+- [Panel (alias Paper)](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/src/components/panel/Panel.tsx): Card: renderTitle above, children, renderActions below; outline 50/200/500/700, round no/xs/lg. Storybook: https://nebula-ds-react-library.irongalaxy.space/?path=/docs/components-panel--docs.
+- [FrameConnector / FrameConnectorNode](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/src/components/frameConnector/FrameConnector.tsx): Structural node+bridge element; divider, vertical, per-node hidden/fill. Storybook: https://nebula-ds-react-library.irongalaxy.space/?path=/docs/components-frameconnector--docs.
+- [Horizon](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/src/components/horizon/Horizon.tsx): Decorative decaying line band, theme-aware default color; aria-hidden it. Storybook: https://nebula-ds-react-library.irongalaxy.space/?path=/docs/components-horizon--docs.
+
+### theme
+- [ThemeProvider / useTheme / themes](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/src/components/themeProvider/ThemeProvider.tsx): Scopes data-nb-theme to a subtree; nested providers theme only their subtree. Storybook: https://nebula-ds-react-library.irongalaxy.space/?path=/docs/components-themeprovider--docs.
+
+### hooks
+- [useBreakpoint](https://raw.githubusercontent.com/mattyx96/nebula-ds-react-library/main/src/hook/useBreakpoint.ts): Responsive breakpoint state {current, isDesktop, isMobile, isTablet}.
+
+## Rules agents break most often
+1. One `filled` Button per view/panel; the rest standard/outlined/text.
+2. `FramePanel` title XOR renderTitle — exactly one, never both, never neither.
+3. `Menu` switches to a bottom sheet on mobile by itself (mode="auto") — do not hand-roll a useBreakpoint switch.
+4. Feedback = flash() AND toast together on submit results.
+5. No literal colors/fonts/sizes/spacings/radii — var(--nb-*) tokens or Text variants only.
+

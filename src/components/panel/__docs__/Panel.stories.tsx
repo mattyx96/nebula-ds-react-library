@@ -1,6 +1,6 @@
 import type {Meta, StoryObj} from '@storybook/react';
 import {Button} from '../../button/Button';
-import {Paper} from "../Panel.tsx";
+import {Panel} from "../Panel.tsx";
 import {Text} from "../../typography/Typography";
 import {panelOutlineVariants, panelRoundVariants} from "../../../variants/panel";
 
@@ -23,10 +23,20 @@ const content = (content = 'Content here') => (
 
 const meta = {
   title: 'Components/Panel',
-  component: Paper,
+  component: Panel,
   tags: ['autodocs', '!dev'],
   parameters: {
     layout: 'centered',
+    docs: {
+      description: {
+        component: [
+          'The Nebula **card**: an optional title above, body content, optional actions below. Use it to group content; use `FramePanel` for a whole page or major section.',
+          '`outline` (`50|200|500|700`) sets border strength, `round` (`no|xs|lg`) the bottom-left corner. Give the title as `<Text component="h6" variant="header6">`.',
+          'The inner surface swallows click events (`stopPropagation`) so a panel inside a clickable container acts as one unit — pass `onClick` for the panel\'s own action.',
+          'Historical name: the component was renamed from `Paper` to `Panel`; `Paper` remains a deprecated alias.',
+        ].join('\n\n'),
+      },
+    },
   },
   argTypes: {
     round: {
@@ -81,7 +91,7 @@ const meta = {
     renderTitle: 'on',
     renderActions: 'on',
   },
-} satisfies Meta<typeof Paper>;
+} satisfies Meta<typeof Panel>;
 
 export default meta;
 
@@ -89,13 +99,13 @@ type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   render: (args) => (
-    <Paper
+    <Panel
       {...args}
       renderTitle={args.renderTitle === 'on' && title(`Title card`)}
       renderActions={args.renderActions === 'on' && actions}
     >
       {content(`Default-content`)}
-    </Paper>
+    </Panel>
   ),
   args: {
     round: 'lg',
@@ -109,7 +119,7 @@ export const WithActionsAndTitle: Story = {
     <div className="nb-demo-row--lg">
       {panelRoundVariants.map((round) =>
         panelOutlineVariants.map((outline) => (
-          <Paper
+          <Panel
             key={`${round}-${outline}`}
             round={round}
             outline={outline}
@@ -117,7 +127,7 @@ export const WithActionsAndTitle: Story = {
             renderActions={actions}
           >
             {content(`${round}-${outline}-actions & title`)}
-          </Paper>
+          </Panel>
         ))
       )}
     </div>
@@ -129,14 +139,14 @@ export const WithTitleOnly: Story = {
     <div className="nb-demo-row--lg">
       {panelRoundVariants.map((round) =>
         panelOutlineVariants.map((outline) => (
-          <Paper
+          <Panel
             key={`${round}-${outline}-no-actions`}
             round={round}
             outline={outline}
             renderTitle={title(`${round}-${outline}-no actions`)}
           >
             {content(`${round}-${outline}-title only`)}
-          </Paper>
+          </Panel>
         ))
       )}
     </div>
@@ -148,13 +158,13 @@ export const WithContentOnly: Story = {
     <div className="nb-demo-row--lg">
       {panelRoundVariants.map((round) =>
         panelOutlineVariants.map((outline) => (
-          <Paper
+          <Panel
             key={`${round}-${outline}-no`}
             round={round}
             outline={outline}
           >
             {content(`${round}-${outline}-content only`)}
-          </Paper>
+          </Panel>
         ))
       )}
     </div>

@@ -4,7 +4,6 @@ exports[`Toast > renders children and keeps the viewport empty by default 1`] = 
 <button
   class="nb-button nb-button--standard nb-button--size-m nb-button--rounded-default"
   type="button"
-  variant="standard"
 >
   Fire
 </button>

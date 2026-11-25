@@ -5,6 +5,7 @@ import {Text} from '../../typography/Typography';
 import {IconButton} from "../../button/IconButton";
 import {ArrowRightIcon, CodeBracketIcon, ArrowLeftIcon} from "@heroicons/react/16/solid";
 import {useBreakpoint} from "../../../hook/useBreakpoint.ts";
+import {AppShellExample} from "../../../../examples/app-shell/AppShellExample";
 
 const content = (content = 'Content Here') => (
   <div className="nb-demo-block nb-demo-block--tall">
@@ -52,7 +53,19 @@ const meta = {
   title: 'Components/FramePanel',
   component: FramePanel,
   tags: ['autodocs', '!dev'],
-  parameters: {},
+  parameters: {
+    docs: {
+      description: {
+        component: [
+          'The LCARS **page frame**: title + header connectors + optional header actions, a body with an optional side-action column, and a footer. Wrap a whole page or a major section in it — never build the frame geometry by hand.',
+          '**Title**: pass exactly one of `title` (string, rendered as Orbitron `header1`) or `renderTitle` (custom node) — never both.',
+          '**Slots**: `renderHeader` sits on the header row opposite the title; `renderSide` is the side action stack (it collapses into a strip above the body on mobile); `renderFooter` anchors the footer; `renderSideHeader` sits beside the title. `inverse` mirrors every position.',
+          'Connector nodes collapse automatically below internal width/height thresholds (header ~70/50 px, footer node ~240/103 px, side node ~200/160 px) — that is intended behaviour, not a bug.',
+          'Full page composition: `examples/app-shell` in the repo.',
+        ].join('\n\n'),
+      },
+    },
+  },
   argTypes: {
     renderHeader: {
       control: {disable: true},
@@ -237,6 +250,18 @@ export const ChainedSections: Story = {
     title: '',
     inverse: false,
     children: content(),
+  },
+};
+
+export const AppShellComposition: Story = {
+  render: () => <AppShellExample/>,
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'A complete page inside the frame — header actions, side stack, footer with the one primary, theme toggle and flash+toast feedback. Source: `examples/app-shell` in the repo (see its README for the slot map).',
+      },
+    },
   },
 };
 

@@ -6,10 +6,17 @@ import './Icon.css';
 
 type Props = VariantProps<typeof iconStyles> & ComponentPropsWithRef<'div'>;
 
+/**
+ * Sizing wrapper for icons (heroicons sized 20/24/28 px by `size`).
+ * Pass `aria-hidden="true"` for decorative icons; labelled icons belong in
+ * `Button`'s `leftIcon`/`rightIcon` or `IconButton`'s `icon` slots.
+ */
 export const Icon = (props: Props) => {
+  const {size, className, children, ...rest} = props;
+
   return (
-    <div className={clsxMerge(iconStyles({size: props.size}), props.className)}>
-      {props.children}
+    <div className={clsxMerge(iconStyles({size}), className)} {...rest}>
+      {children}
     </div>
   );
 };

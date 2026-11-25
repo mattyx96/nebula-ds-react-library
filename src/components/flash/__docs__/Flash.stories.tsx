@@ -55,7 +55,17 @@ const meta = {
   title: 'Components/Flash',
   component: FlashProvider,
   tags: ['autodocs', '!dev'],
-  parameters: {},
+  parameters: {
+    docs: {
+      description: {
+        component: [
+          "Whole-UI feedback: `useFlash().flash('error' | 'success', { repeats, duration })` blinks every themed surface (backgrounds, buttons, frames, typography) twice by default, then returns to normal.",
+          'The blink is the *feeling*; the message belongs to a `Toast`. On a failed submit call both — see the recipes in `src/recipes/__docs__/` and `examples/`.',
+          'Requires `<FlashProvider>` above the flashing content. The hook throws outside a provider (deliberately — a silent no-op would hide broken feedback).',
+        ].join('\n\n'),
+      },
+    },
+  },
 } satisfies Meta<typeof FlashProvider>;
 
 export default meta;

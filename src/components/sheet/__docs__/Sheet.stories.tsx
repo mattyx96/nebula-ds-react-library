@@ -8,6 +8,17 @@ const meta = {
   title: 'Components/Sheet',
   component: Sheet,
   tags: ['autodocs', '!dev'],
+  parameters: {
+    docs: {
+      description: {
+        component: [
+          'Bottom drawer behind a Button-style trigger — the mobile half of the Menu → Sheet responsive pattern (same `items` API, same `onSelect`).',
+          '`title` and `description` head the sheet; `indicator` is the chevron node. Controlled open state: `open` + `onOpenChange`.',
+          'Render it when `useBreakpoint().isMobile` is true and hide the `Menu` — never both for the same actions.',
+        ].join('\n\n'),
+      },
+    },
+  },
   argTypes: {
     size: {
       control: {type: 'inline-radio'},

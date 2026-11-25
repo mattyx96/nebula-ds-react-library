@@ -11,6 +11,17 @@ const meta = {
   title: 'Components/IconButton',
   component: IconButton,
   tags: ['autodocs', '!dev'],
+  parameters: {
+    docs: {
+      description: {
+        component: [
+          'Icon-only button with the same `variant`/`size`/`rounded` vocabulary as `Button`. `icon` is required — pass a heroicons element.',
+          'Always set `aria-label`: an icon carries no accessible name by itself. In toolbars, prefer `standard`; use `filled` for the one primary icon action, matching Button rules.',
+          'Pair the heavy corner (`rounded`) with the frame edge the button sits against — `R*` on a right edge, `L*` when mirrored by an `inverse` layout.',
+        ].join('\n\n'),
+      },
+    },
+  },
   argTypes: {
     icon: {
       control: { disable: true },

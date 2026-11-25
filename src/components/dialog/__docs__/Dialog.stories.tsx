@@ -8,6 +8,17 @@ const meta = {
   title: 'Components/Dialog',
   component: Dialog,
   tags: ['autodocs', '!dev'],
+  parameters: {
+    docs: {
+      description: {
+        component: [
+          'Modal (or non-modal) dialog behind a Button-style trigger. `title` names the dialog; `children` is the body — put the action row there and make "Cancel" close it.',
+          'For destructive confirmations pass `role="alertdialog"` and keep the confirm button `filled`, everything else `standard` (see `examples/` / the recipes for the full pattern with Flash + Toast).',
+          'Controlled open state: `open` + `onOpenChange`. `modal: false` for a non-blocking dialog.',
+        ].join('\n\n'),
+      },
+    },
+  },
   argTypes: {
     size: {
       control: {type: 'inline-radio'},

@@ -4,27 +4,42 @@ import './FrameConnector.css'
 type Size = 'M' | 'L' | 'S'
 
 type BridgeProps = {
+  /** Bridge size (defaults to the connector's own `size`). */
   size?: Size
   className?: string
 }
 
 type NodeProps = {
+  /** Node fill color (defaults to `var(--nb-frame-background-primary)`). */
   fill?: string
   className?: string
+  /** Node size (defaults to the connector's own `size`). */
   size?: Size
+  /** Hide this node (render bridge only, or bridge + the other node). */
   hidden?: boolean
 }
 
 export type Props = {
+  /** Render the bridge only, with both nodes hidden. */
   divider?: boolean
+  /** Render the bridge vertically instead of horizontally. */
   vertical?: boolean
   className?: string
+  /** Overall size; applies to bridge and to any node that does not override it. */
   size?: Size
   bridge?: BridgeProps
+  /** First node (the left/top one). */
   firstNode?: NodeProps
+  /** Second node (the right/bottom one). */
   secondNode?: NodeProps
 }
 
+/**
+ * The signature LCARS structural element: two curved "frame nodes" joined by
+ * a straight bridge. This is structure, not decoration — `FramePanel` uses it
+ * to build page frames; use it directly only to extend a frame's geometry.
+ * Also exports the standalone `FrameConnectorNode` (the curved shape alone).
+ */
 export const FrameConnector = (props: Props) => {
   const size = props.size || 'M'
 
