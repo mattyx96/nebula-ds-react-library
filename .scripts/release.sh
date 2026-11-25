@@ -4,9 +4,10 @@
 # Usage:
 #   sh .scripts/release.sh [patch|minor|major] [--publish]
 #
-# Locally: bumps the version, builds, commits and pushes the current
-# branch. Add --publish to also publish to npm (used by the
-# "Publish to npm" GitHub workflow — see .github/workflows/publish.yml).
+# Locally: bumps the version, builds, commits, pushes and tags the
+# current branch. Add --publish to also publish to npm (used by the
+# "Publish" GitHub workflow, which additionally creates the GitHub
+# Release from the tag — see .github/workflows/release.yml).
 #
 # The version bump is published BEFORE the commit/push, so a failed
 # publish does not leave a bumped version on the remote.
@@ -47,5 +48,10 @@ git add .
 git commit -m "new release $new_version"
 git push origin "$(git branch --show-current)"
 
+# Tag the release commit. release.yml turns this tag into a GitHub
+# Release in CI (--verify-tag fails loudly if this step was skipped).
+git tag -a "$new_version" -m "Release $new_version"
+git push origin "$new_version"
+
 # Inform the user
-echo "Released $new_version"
+echo "Released $new_version (tag $new_version pushed)"

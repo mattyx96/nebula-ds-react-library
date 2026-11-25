@@ -90,4 +90,7 @@ owner: link to the owning file instead of copying a rule.
   without the other.
 - Publishing happens **only** through the GitHub Publish workflows
   (`.github/workflows/publish.yml` → `release.yml`); never `npm publish`
-  locally. Version bumps via `pnpm release <type>` without `--publish`.
+  locally. Version bumps via `pnpm release <type>` without `--publish`
+  (it also pushes the `vX.Y.Z` tag). The **GitHub Release** is created by
+  `release.yml` from that tag (`--verify-tag` fails the job if the tag is
+  missing — never publish a version that has no release entry again).

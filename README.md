@@ -173,9 +173,10 @@ the runtime source of truth (`pnpm generate-themes` regenerates them from
 On GitHub run the matching **Publish** workflow (Actions → **Publish patch** /
 **Publish minor** / **Publish major** → Run workflow). The workflow bumps the
 version, builds, publishes to npm (with provenance via npm Trusted
-Publishing / OIDC), and commits + pushes the version bump — no local steps
-needed. The local `pnpm release` mirrors the same logic (bump → build →
-commit → push; publish only via the workflow).
+Publishing / OIDC), commits + pushes + **tags** the version bump, and creates
+the matching **GitHub Release** from the tag — no local steps needed. The
+local `pnpm release` mirrors the same logic (bump → build → commit → push →
+tag; publish and the GitHub Release only via the workflow).
 
 ### Roadmap
 

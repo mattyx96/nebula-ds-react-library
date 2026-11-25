@@ -4,7 +4,8 @@ name: Release (reusable)
 # workflows (manual triggers in the Actions UI).
 #
 # Bumps the version, builds, publishes to npm (with provenance) and
-# commits + pushes the version bump. Publishing happens BEFORE the
+# commits + pushes + tags the version bump, then creates the matching
+# GitHub Release from the tag. Publishing happens BEFORE the
 # commit/push, so a failed publish leaves no bumped version on the
 # remote.
 #
@@ -50,10 +51,26 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Bump, build, publish, commit and push
+      - name: Bump, build, publish, commit, push and tag
         run: sh ./.scripts/release.sh "${{ inputs.version }}" --publish
         env:
           # Optional classic npm token. When set, publishing uses it directly;
           # when absent, the script uses OIDC provenance (requires npm
           # "Publish from GitHub Actions" / Trusted Publishing to be configured).
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      # The npm publish above is the source of truth; the GitHub Release is
+      # derived from the tag release.sh just pushed. --verify-tag keeps this
+      # honest: a missing tag fails the job instead of silently shipping a
+      # version with no release entry (that is how v0.3.0 briefly shipped
+      # without one).
+      - name: Create the GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          VERSION="v$(node -p "require('./package.json').version")"
+          gh release create "$VERSION" \
+            --verify-tag \
+            --latest \
+            --title "$VERSION" \
+            --generate-notes
